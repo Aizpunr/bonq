@@ -1,8 +1,8 @@
 {
  "meta": {
-  "generated": "2026-09-27T16:57:52Z",
-  "cups": 0,
-  "players": 0,
+  "generated": "2026-09-27T17:47:54Z",
+  "cups": 1,
+  "players": 28,
   "rank_points": {
    "w1": 200,
    "w2": 140,
@@ -12,6 +12,1705 @@
    "f": 10
   }
  },
- "cups": [],
- "ranking": []
+ "cups": [
+  {
+   "id": 1,
+   "date": "2026-09-27",
+   "header": "Bonq Cup #1 - Maps by Kreeeeee, LKat, Victor",
+   "maps": [
+    "Bonq 1 - Au même endroit",
+    "Bonq 1 - Magnet Slop",
+    "Bonq 1 - Rapid Rotation",
+    "Bonq 1 - Magnetic Bob",
+    "Bonq 1 - Turntable Turnarounds"
+   ],
+   "scoring_rounds": 20,
+   "lobby_size": 28,
+   "winners": [
+    {
+     "name": "justMaki",
+     "sid": "76561198050792757",
+     "map": "Bonq 1 - Magnetic Bob",
+     "time": "22.527",
+     "won": 14,
+     "qualified": 11
+    },
+    {
+     "name": "Kernkob",
+     "sid": "76561199024808939",
+     "map": "Bonq 1 - Turntable Turnarounds",
+     "time": "25.418",
+     "won": 15,
+     "qualified": 13
+    },
+    {
+     "name": "RoundNzt",
+     "sid": "76561198896246339",
+     "map": "Bonq 1 - Magnet Slop",
+     "time": "18.880",
+     "won": 17,
+     "qualified": 17
+    },
+    {
+     "name": "Lexer",
+     "sid": "76561198851912263",
+     "map": "Bonq 1 - Rapid Rotation",
+     "time": "23.185",
+     "won": 18,
+     "qualified": 17
+    },
+    {
+     "name": "microways",
+     "sid": "76561199448462477",
+     "map": "Bonq 1 - Magnetic Bob",
+     "time": "22.670",
+     "won": 19,
+     "qualified": 16
+    }
+   ],
+   "finalists": [
+    {
+     "name": "Warsnac",
+     "sid": "76561198001387193",
+     "qualified": 17
+    }
+   ],
+   "others": [
+    {
+     "name": "PlusMicron",
+     "sid": "76561199186342067",
+     "points": 951,
+     "rounds": 20,
+     "finishes": 10
+    },
+    {
+     "name": "brrryy",
+     "sid": "76561199129302746",
+     "points": 921,
+     "rounds": 20,
+     "finishes": 9
+    },
+    {
+     "name": "variableferret",
+     "sid": "76561198157436732",
+     "points": 900,
+     "rounds": 20,
+     "finishes": 9
+    },
+    {
+     "name": "Beans",
+     "sid": "76561198842622746",
+     "points": 852,
+     "rounds": 20,
+     "finishes": 7
+    },
+    {
+     "name": "Heart-TGV",
+     "sid": "76561198364662649",
+     "points": 852,
+     "rounds": 20,
+     "finishes": 7
+    },
+    {
+     "name": "Tommygaming",
+     "sid": "76561199187327002",
+     "points": 849,
+     "rounds": 18,
+     "finishes": 6
+    },
+    {
+     "name": "Quickracer10",
+     "sid": "76561198149636594",
+     "points": 802,
+     "rounds": 14,
+     "finishes": 7
+    },
+    {
+     "name": "Noxitu",
+     "sid": "76561198126038296",
+     "points": 771,
+     "rounds": 20,
+     "finishes": 6
+    },
+    {
+     "name": "Akane",
+     "sid": "76561198031919228",
+     "points": 734,
+     "rounds": 20,
+     "finishes": 7
+    },
+    {
+     "name": "VroomVroomer",
+     "sid": "76561199101994275",
+     "points": 703,
+     "rounds": 20,
+     "finishes": 5
+    },
+    {
+     "name": "SuperHeavy",
+     "sid": "76561198287630337",
+     "points": 696,
+     "rounds": 20,
+     "finishes": 5
+    },
+    {
+     "name": "Ruckooe",
+     "sid": "76561198315900248",
+     "points": 662,
+     "rounds": 20,
+     "finishes": 4
+    },
+    {
+     "name": "aizpun",
+     "sid": "76561197972890120",
+     "points": 655,
+     "rounds": 20,
+     "finishes": 4
+    },
+    {
+     "name": "BrickEdwards",
+     "sid": "76561198748988602",
+     "points": 564,
+     "rounds": 20,
+     "finishes": 3
+    },
+    {
+     "name": "Matic_D",
+     "sid": "76561198846673916",
+     "points": 564,
+     "rounds": 20,
+     "finishes": 4
+    },
+    {
+     "name": "Milk Man",
+     "sid": "76561199153054076",
+     "points": 518,
+     "rounds": 20,
+     "finishes": 2
+    },
+    {
+     "name": "Yksdjcj",
+     "sid": "76561199731808063",
+     "points": 453,
+     "rounds": 20,
+     "finishes": 1
+    },
+    {
+     "name": "OccasionallyAmazingGamer",
+     "sid": "76561199032318188",
+     "points": 337,
+     "rounds": 8,
+     "finishes": 2
+    },
+    {
+     "name": "St Nicholas",
+     "sid": "76561198047403251",
+     "points": 243,
+     "rounds": 10,
+     "finishes": 1
+    },
+    {
+     "name": "phrogrock",
+     "sid": "76561198958881478",
+     "points": 208,
+     "rounds": 8,
+     "finishes": 1
+    },
+    {
+     "name": "jofk2415",
+     "sid": "76561199589394762",
+     "points": 205,
+     "rounds": 7,
+     "finishes": 1
+    },
+    {
+     "name": "joshuadwyer79",
+     "sid": "76561198368656405",
+     "points": 188,
+     "rounds": 7,
+     "finishes": 1
+    }
+   ],
+   "nuisances": [
+    {
+     "name": "Victor",
+     "sid": "76561199380118922",
+     "points": 1350
+    },
+    {
+     "name": "LKat",
+     "sid": "76561199733601754",
+     "points": 1059
+    },
+    {
+     "name": "Kreeeeee",
+     "sid": "76561198348911001",
+     "points": 490
+    }
+   ],
+   "rounds": [
+    {
+     "n": 1,
+     "map": "Bonq 1 - Au même endroit",
+     "ts": "2026-09-27T19:02:00.269",
+     "roster": 31,
+     "finishers": 7,
+     "finish_pct": 22.6,
+     "top": [
+      {
+       "sid": "76561199380118922",
+       "name": "Victor",
+       "time": "20.149"
+      },
+      {
+       "sid": "76561199032318188",
+       "name": "OccasionallyAmazingGamer",
+       "time": "21.128"
+      },
+      {
+       "sid": "76561199024808939",
+       "name": "Kernkob",
+       "time": "21.524"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 2,
+     "map": "Bonq 1 - Magnet Slop",
+     "ts": "2026-09-27T19:03:46.893",
+     "roster": 33,
+     "finishers": 5,
+     "finish_pct": 15.2,
+     "top": [
+      {
+       "sid": "76561198050792757",
+       "name": "justMaki",
+       "time": "18.807"
+      },
+      {
+       "sid": "76561199380118922",
+       "name": "Victor",
+       "time": "18.976"
+      },
+      {
+       "sid": "76561199024808939",
+       "name": "Kernkob",
+       "time": "19.012"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 3,
+     "map": "Bonq 1 - Rapid Rotation",
+     "ts": "2026-09-27T19:05:53.148",
+     "roster": 34,
+     "finishers": 7,
+     "finish_pct": 20.6,
+     "top": [
+      {
+       "sid": "76561199733601754",
+       "name": "LKat",
+       "time": "23.548"
+      },
+      {
+       "sid": "76561199129302746",
+       "name": "brrryy",
+       "time": "23.581"
+      },
+      {
+       "sid": "76561198050792757",
+       "name": "justMaki",
+       "time": "23.757"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 4,
+     "map": "Bonq 1 - Magnetic Bob",
+     "ts": "2026-09-27T19:08:53.244",
+     "roster": 31,
+     "finishers": 10,
+     "finish_pct": 32.3,
+     "top": [
+      {
+       "sid": "76561199448462477",
+       "name": "microways",
+       "time": "23.853"
+      },
+      {
+       "sid": "76561198896246339",
+       "name": "RoundNzt",
+       "time": "24.247"
+      },
+      {
+       "sid": "76561199380118922",
+       "name": "Victor",
+       "time": "25.901"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 5,
+     "map": "Bonq 1 - Turntable Turnarounds",
+     "ts": "2026-09-27T19:10:40.931",
+     "roster": 34,
+     "finishers": 10,
+     "finish_pct": 29.4,
+     "top": [
+      {
+       "sid": "76561199380118922",
+       "name": "Victor",
+       "time": "25.535"
+      },
+      {
+       "sid": "76561199082360966",
+       "name": "B_ES",
+       "time": "26.067"
+      },
+      {
+       "sid": "76561199024808939",
+       "name": "Kernkob",
+       "time": "26.298"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 6,
+     "map": "Bonq 1 - Au même endroit",
+     "ts": "2026-09-27T19:12:29.840",
+     "roster": 36,
+     "finishers": 12,
+     "finish_pct": 33.3,
+     "top": [
+      {
+       "sid": "76561199024808939",
+       "name": "Kernkob",
+       "time": "19.412"
+      },
+      {
+       "sid": "76561199380118922",
+       "name": "Victor",
+       "time": "19.643"
+      },
+      {
+       "sid": "76561198348911001",
+       "name": "Kreeeeee",
+       "time": "20.606"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 7,
+     "map": "Bonq 1 - Magnet Slop",
+     "ts": "2026-09-27T19:14:07.061",
+     "roster": 35,
+     "finishers": 7,
+     "finish_pct": 20.0,
+     "top": [
+      {
+       "sid": "76561198050792757",
+       "name": "justMaki",
+       "time": "18.837"
+      },
+      {
+       "sid": "76561199448462477",
+       "name": "microways",
+       "time": "19.008"
+      },
+      {
+       "sid": "76561199380118922",
+       "name": "Victor",
+       "time": "19.017"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 8,
+     "map": "Bonq 1 - Rapid Rotation",
+     "ts": "2026-09-27T19:16:04.220",
+     "roster": 33,
+     "finishers": 6,
+     "finish_pct": 18.2,
+     "top": [
+      {
+       "sid": "76561199733601754",
+       "name": "LKat",
+       "time": "22.932"
+      },
+      {
+       "sid": "76561198001387193",
+       "name": "Warsnac",
+       "time": "24.252"
+      },
+      {
+       "sid": "76561198748988602",
+       "name": "BrickEdwards",
+       "time": "24.351"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 9,
+     "map": "Bonq 1 - Magnetic Bob",
+     "ts": "2026-09-27T19:17:44.830",
+     "roster": 31,
+     "finishers": 9,
+     "finish_pct": 29.0,
+     "top": [
+      {
+       "sid": "76561198050792757",
+       "name": "justMaki",
+       "time": "22.574"
+      },
+      {
+       "sid": "76561199380118922",
+       "name": "Victor",
+       "time": "22.884"
+      },
+      {
+       "sid": "76561199448462477",
+       "name": "microways",
+       "time": "24.795"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 10,
+     "map": "Bonq 1 - Turntable Turnarounds",
+     "ts": "2026-09-27T19:19:26.267",
+     "roster": 30,
+     "finishers": 15,
+     "finish_pct": 50.0,
+     "top": [
+      {
+       "sid": "76561199380118922",
+       "name": "Victor",
+       "time": "25.035"
+      },
+      {
+       "sid": "76561198126038296",
+       "name": "Noxitu",
+       "time": "25.440"
+      },
+      {
+       "sid": "76561198896246339",
+       "name": "RoundNzt",
+       "time": "25.940"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 11,
+     "map": "Bonq 1 - Au même endroit",
+     "ts": "2026-09-27T19:21:10.134",
+     "roster": 26,
+     "finishers": 14,
+     "finish_pct": 53.8,
+     "top": [
+      {
+       "sid": "76561199733601754",
+       "name": "LKat",
+       "time": "19.718"
+      },
+      {
+       "sid": "76561199187327002",
+       "name": "Tommygaming",
+       "time": "20.210"
+      },
+      {
+       "sid": "76561199024808939",
+       "name": "Kernkob",
+       "time": "20.476"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 12,
+     "map": "Bonq 1 - Magnet Slop",
+     "ts": "2026-09-27T19:22:53.953",
+     "roster": 26,
+     "finishers": 7,
+     "finish_pct": 26.9,
+     "top": [
+      {
+       "sid": "76561198896246339",
+       "name": "RoundNzt",
+       "time": "18.863"
+      },
+      {
+       "sid": "76561198851912263",
+       "name": "Lexer",
+       "time": "18.877"
+      },
+      {
+       "sid": "76561198050792757",
+       "name": "justMaki",
+       "time": "18.910"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 13,
+     "map": "Bonq 1 - Rapid Rotation",
+     "ts": "2026-09-27T19:24:29.438",
+     "roster": 26,
+     "finishers": 10,
+     "finish_pct": 38.5,
+     "top": [
+      {
+       "sid": "76561198851912263",
+       "name": "Lexer",
+       "time": "23.174"
+      },
+      {
+       "sid": "76561198149636594",
+       "name": "Quickracer10",
+       "time": "23.251"
+      },
+      {
+       "sid": "76561198050792757",
+       "name": "justMaki",
+       "time": "23.405"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 14,
+     "map": "Bonq 1 - Magnetic Bob",
+     "ts": "2026-09-27T19:26:09.277",
+     "roster": 28,
+     "finishers": 9,
+     "finish_pct": 32.1,
+     "top": [
+      {
+       "sid": "76561198050792757",
+       "name": "justMaki",
+       "time": "22.527"
+      },
+      {
+       "sid": "76561199448462477",
+       "name": "microways",
+       "time": "22.932"
+      },
+      {
+       "sid": "76561198001387193",
+       "name": "Warsnac",
+       "time": "24.665"
+      }
+     ],
+     "winner": "justMaki"
+    },
+    {
+     "n": 15,
+     "map": "Bonq 1 - Turntable Turnarounds",
+     "ts": "2026-09-27T19:27:49.652",
+     "roster": 28,
+     "finishers": 15,
+     "finish_pct": 53.6,
+     "top": [
+      {
+       "sid": "76561199024808939",
+       "name": "Kernkob",
+       "time": "25.418"
+      },
+      {
+       "sid": "76561198851912263",
+       "name": "Lexer",
+       "time": "25.572"
+      },
+      {
+       "sid": "76561198896246339",
+       "name": "RoundNzt",
+       "time": "25.938"
+      }
+     ],
+     "winner": "Kernkob"
+    },
+    {
+     "n": 16,
+     "map": "Bonq 1 - Au même endroit",
+     "ts": "2026-09-27T19:29:32.151",
+     "roster": 29,
+     "finishers": 13,
+     "finish_pct": 44.8,
+     "top": [
+      {
+       "sid": "76561198842622746",
+       "name": "Beans",
+       "time": "20.127"
+      },
+      {
+       "sid": "76561199187327002",
+       "name": "Tommygaming",
+       "time": "20.184"
+      },
+      {
+       "sid": "76561198287630337",
+       "name": "SuperHeavy",
+       "time": "20.226"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 17,
+     "map": "Bonq 1 - Magnet Slop",
+     "ts": "2026-09-27T19:31:09.234",
+     "roster": 31,
+     "finishers": 6,
+     "finish_pct": 19.4,
+     "top": [
+      {
+       "sid": "76561198896246339",
+       "name": "RoundNzt",
+       "time": "18.880"
+      },
+      {
+       "sid": "76561198001387193",
+       "name": "Warsnac",
+       "time": "18.893"
+      },
+      {
+       "sid": "76561198851912263",
+       "name": "Lexer",
+       "time": "18.928"
+      }
+     ],
+     "winner": "RoundNzt"
+    },
+    {
+     "n": 18,
+     "map": "Bonq 1 - Rapid Rotation",
+     "ts": "2026-09-27T19:32:45.407",
+     "roster": 30,
+     "finishers": 9,
+     "finish_pct": 30.0,
+     "top": [
+      {
+       "sid": "76561198851912263",
+       "name": "Lexer",
+       "time": "23.185"
+      },
+      {
+       "sid": "76561199448462477",
+       "name": "microways",
+       "time": "23.317"
+      },
+      {
+       "sid": "76561199101994275",
+       "name": "VroomVroomer",
+       "time": "23.372"
+      }
+     ],
+     "winner": "Lexer"
+    },
+    {
+     "n": 19,
+     "map": "Bonq 1 - Magnetic Bob",
+     "ts": "2026-09-27T19:34:25.454",
+     "roster": 29,
+     "finishers": 9,
+     "finish_pct": 31.0,
+     "top": [
+      {
+       "sid": "76561199448462477",
+       "name": "microways",
+       "time": "22.670"
+      },
+      {
+       "sid": "76561198001387193",
+       "name": "Warsnac",
+       "time": "24.133"
+      },
+      {
+       "sid": "76561198149636594",
+       "name": "Quickracer10",
+       "time": "24.371"
+      }
+     ],
+     "winner": "microways"
+    },
+    {
+     "n": 20,
+     "map": "Bonq 1 - Turntable Turnarounds",
+     "ts": "2026-09-27T19:36:07.911",
+     "roster": 29,
+     "finishers": 11,
+     "finish_pct": 37.9,
+     "top": [
+      {
+       "sid": "76561198896246339",
+       "name": "RoundNzt",
+       "time": "25.175"
+      },
+      {
+       "sid": "76561198364662649",
+       "name": "Heart-TGV",
+       "time": "25.809"
+      },
+      {
+       "sid": "76561199187327002",
+       "name": "Tommygaming",
+       "time": "25.902"
+      }
+     ],
+     "winner": null
+    }
+   ],
+   "finish": {
+    "76561198001387193": [
+     13,
+     19
+    ],
+    "76561198050792757": [
+     12,
+     20
+    ],
+    "76561199448462477": [
+     12,
+     20
+    ],
+    "76561199024808939": [
+     11,
+     20
+    ],
+    "76561199186342067": [
+     10,
+     20
+    ],
+    "76561198896246339": [
+     10,
+     20
+    ],
+    "76561199129302746": [
+     9,
+     20
+    ],
+    "76561198851912263": [
+     9,
+     20
+    ],
+    "76561198157436732": [
+     9,
+     20
+    ],
+    "76561199380118922": [
+     9,
+     20
+    ],
+    "76561198149636594": [
+     7,
+     14
+    ],
+    "76561198031919228": [
+     7,
+     20
+    ],
+    "76561198842622746": [
+     7,
+     20
+    ],
+    "76561198364662649": [
+     7,
+     20
+    ],
+    "76561199733601754": [
+     7,
+     20
+    ],
+    "76561199187327002": [
+     6,
+     18
+    ],
+    "76561198126038296": [
+     6,
+     20
+    ],
+    "76561198287630337": [
+     5,
+     20
+    ],
+    "76561199101994275": [
+     5,
+     20
+    ],
+    "76561197972890120": [
+     4,
+     20
+    ],
+    "76561198846673916": [
+     4,
+     20
+    ],
+    "76561198315900248": [
+     4,
+     20
+    ],
+    "76561198748988602": [
+     3,
+     20
+    ],
+    "76561199082360966": [
+     2,
+     5
+    ],
+    "76561199032318188": [
+     2,
+     8
+    ],
+    "76561199153054076": [
+     2,
+     20
+    ],
+    "76561198027169155": [
+     1,
+     3
+    ],
+    "76561198060405963": [
+     1,
+     5
+    ],
+    "76561198212710700": [
+     1,
+     5
+    ],
+    "76561199589394762": [
+     1,
+     7
+    ],
+    "76561198368656405": [
+     1,
+     7
+    ],
+    "76561198958881478": [
+     1,
+     8
+    ],
+    "76561198047403251": [
+     1,
+     10
+    ],
+    "76561198348911001": [
+     1,
+     20
+    ],
+    "76561199731808063": [
+     1,
+     20
+    ],
+    "76561198030518760": [
+     0,
+     4
+    ],
+    "76561198172378351": [
+     0,
+     2
+    ],
+    "76561199756332058": [
+     0,
+     1
+    ],
+    "76561199278221929": [
+     0,
+     3
+    ],
+    "76561198083300332": [
+     0,
+     1
+    ],
+    "76561198156955177": [
+     0,
+     2
+    ],
+    "76561198056113005": [
+     0,
+     3
+    ],
+    "76561198213715297": [
+     0,
+     3
+    ],
+    "76561198011664478": [
+     0,
+     1
+    ],
+    "76561199185761055": [
+     0,
+     1
+    ],
+    "76561198305054806": [
+     0,
+     10
+    ],
+    "76561198111366624": [
+     0,
+     10
+    ]
+   },
+   "map_finish": [
+    [
+     "Bonq 1 - Magnet Slop",
+     25,
+     125
+    ],
+    [
+     "Bonq 1 - Rapid Rotation",
+     32,
+     123
+    ],
+    [
+     "Bonq 1 - Magnetic Bob",
+     37,
+     119
+    ],
+    [
+     "Bonq 1 - Au même endroit",
+     46,
+     122
+    ],
+    [
+     "Bonq 1 - Turntable Turnarounds",
+     51,
+     121
+    ]
+   ]
+  }
+ ],
+ "ranking": [
+  {
+   "sid": "76561198050792757",
+   "name": "justMaki",
+   "apps": 1,
+   "wins": 1,
+   "w1": 1,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 200,
+   "finished": 12,
+   "present": 20,
+   "best": 1,
+   "history": [
+    {
+     "cup": 1,
+     "result": "w1",
+     "points": 200,
+     "pos": 1
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "sid": "76561199024808939",
+   "name": "Kernkob",
+   "apps": 1,
+   "wins": 1,
+   "w1": 0,
+   "w2": 1,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 140,
+   "finished": 11,
+   "present": 20,
+   "best": 2,
+   "history": [
+    {
+     "cup": 1,
+     "result": "w2",
+     "points": 140,
+     "pos": 2
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "sid": "76561198896246339",
+   "name": "RoundNzt",
+   "apps": 1,
+   "wins": 1,
+   "w1": 0,
+   "w2": 0,
+   "w3": 1,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 100,
+   "finished": 10,
+   "present": 20,
+   "best": 3,
+   "history": [
+    {
+     "cup": 1,
+     "result": "w3",
+     "points": 100,
+     "pos": 3
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "sid": "76561198851912263",
+   "name": "Lexer",
+   "apps": 1,
+   "wins": 1,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 1,
+   "w5": 0,
+   "finalist": 0,
+   "points": 70,
+   "finished": 9,
+   "present": 20,
+   "best": 4,
+   "history": [
+    {
+     "cup": 1,
+     "result": "w4",
+     "points": 70,
+     "pos": 4
+    }
+   ],
+   "rank": 4
+  },
+  {
+   "sid": "76561199448462477",
+   "name": "microways",
+   "apps": 1,
+   "wins": 1,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 1,
+   "finalist": 0,
+   "points": 40,
+   "finished": 12,
+   "present": 20,
+   "best": 5,
+   "history": [
+    {
+     "cup": 1,
+     "result": "w5",
+     "points": 40,
+     "pos": 5
+    }
+   ],
+   "rank": 5
+  },
+  {
+   "sid": "76561198001387193",
+   "name": "Warsnac",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 1,
+   "points": 10,
+   "finished": 13,
+   "present": 19,
+   "best": 6,
+   "history": [
+    {
+     "cup": 1,
+     "result": "f",
+     "points": 10,
+     "pos": 6
+    }
+   ],
+   "rank": 6
+  },
+  {
+   "sid": "76561199186342067",
+   "name": "PlusMicron",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 10,
+   "present": 20,
+   "best": 7,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 951,
+     "points": 0,
+     "pos": 7
+    }
+   ],
+   "rank": 7
+  },
+  {
+   "sid": "76561199129302746",
+   "name": "brrryy",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 9,
+   "present": 20,
+   "best": 8,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 921,
+     "points": 0,
+     "pos": 8
+    }
+   ],
+   "rank": 8
+  },
+  {
+   "sid": "76561198157436732",
+   "name": "variableferret",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 9,
+   "present": 20,
+   "best": 9,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 900,
+     "points": 0,
+     "pos": 9
+    }
+   ],
+   "rank": 9
+  },
+  {
+   "sid": "76561198842622746",
+   "name": "Beans",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 7,
+   "present": 20,
+   "best": 10,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 852,
+     "points": 0,
+     "pos": 10
+    }
+   ],
+   "rank": 10
+  },
+  {
+   "sid": "76561198364662649",
+   "name": "Heart-TGV",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 7,
+   "present": 20,
+   "best": 11,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 852,
+     "points": 0,
+     "pos": 11
+    }
+   ],
+   "rank": 11
+  },
+  {
+   "sid": "76561199187327002",
+   "name": "Tommygaming",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 6,
+   "present": 18,
+   "best": 12,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 849,
+     "points": 0,
+     "pos": 12
+    }
+   ],
+   "rank": 12
+  },
+  {
+   "sid": "76561198149636594",
+   "name": "Quickracer10",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 7,
+   "present": 14,
+   "best": 13,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 802,
+     "points": 0,
+     "pos": 13
+    }
+   ],
+   "rank": 13
+  },
+  {
+   "sid": "76561198126038296",
+   "name": "Noxitu",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 6,
+   "present": 20,
+   "best": 14,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 771,
+     "points": 0,
+     "pos": 14
+    }
+   ],
+   "rank": 14
+  },
+  {
+   "sid": "76561198031919228",
+   "name": "Akane",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 7,
+   "present": 20,
+   "best": 15,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 734,
+     "points": 0,
+     "pos": 15
+    }
+   ],
+   "rank": 15
+  },
+  {
+   "sid": "76561199101994275",
+   "name": "VroomVroomer",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 5,
+   "present": 20,
+   "best": 16,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 703,
+     "points": 0,
+     "pos": 16
+    }
+   ],
+   "rank": 16
+  },
+  {
+   "sid": "76561198287630337",
+   "name": "SuperHeavy",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 5,
+   "present": 20,
+   "best": 17,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 696,
+     "points": 0,
+     "pos": 17
+    }
+   ],
+   "rank": 17
+  },
+  {
+   "sid": "76561198315900248",
+   "name": "Ruckooe",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 4,
+   "present": 20,
+   "best": 18,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 662,
+     "points": 0,
+     "pos": 18
+    }
+   ],
+   "rank": 18
+  },
+  {
+   "sid": "76561197972890120",
+   "name": "aizpun",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 4,
+   "present": 20,
+   "best": 19,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 655,
+     "points": 0,
+     "pos": 19
+    }
+   ],
+   "rank": 19
+  },
+  {
+   "sid": "76561198748988602",
+   "name": "BrickEdwards",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 3,
+   "present": 20,
+   "best": 20,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 564,
+     "points": 0,
+     "pos": 20
+    }
+   ],
+   "rank": 20
+  },
+  {
+   "sid": "76561198846673916",
+   "name": "Matic_D",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 4,
+   "present": 20,
+   "best": 21,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 564,
+     "points": 0,
+     "pos": 21
+    }
+   ],
+   "rank": 21
+  },
+  {
+   "sid": "76561199153054076",
+   "name": "Milk Man",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 2,
+   "present": 20,
+   "best": 22,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 518,
+     "points": 0,
+     "pos": 22
+    }
+   ],
+   "rank": 22
+  },
+  {
+   "sid": "76561199731808063",
+   "name": "Yksdjcj",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 1,
+   "present": 20,
+   "best": 23,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 453,
+     "points": 0,
+     "pos": 23
+    }
+   ],
+   "rank": 23
+  },
+  {
+   "sid": "76561199032318188",
+   "name": "OccasionallyAmazingGamer",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 2,
+   "present": 8,
+   "best": 24,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 337,
+     "points": 0,
+     "pos": 24
+    }
+   ],
+   "rank": 24
+  },
+  {
+   "sid": "76561198047403251",
+   "name": "St Nicholas",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 1,
+   "present": 10,
+   "best": 25,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 243,
+     "points": 0,
+     "pos": 25
+    }
+   ],
+   "rank": 25
+  },
+  {
+   "sid": "76561198958881478",
+   "name": "phrogrock",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 1,
+   "present": 8,
+   "best": 26,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 208,
+     "points": 0,
+     "pos": 26
+    }
+   ],
+   "rank": 26
+  },
+  {
+   "sid": "76561199589394762",
+   "name": "jofk2415",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 1,
+   "present": 7,
+   "best": 27,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 205,
+     "points": 0,
+     "pos": 27
+    }
+   ],
+   "rank": 27
+  },
+  {
+   "sid": "76561198368656405",
+   "name": "joshuadwyer79",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 1,
+   "present": 7,
+   "best": 28,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 188,
+     "points": 0,
+     "pos": 28
+    }
+   ],
+   "rank": 28
+  }
+ ]
 }

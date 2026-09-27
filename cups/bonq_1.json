@@ -1,0 +1,1237 @@
+{
+  "cup": 1,
+  "date": "2026-09-27",
+  "header": "Bonq Cup #1 - Maps by Kreeeeee, LKat, Victor",
+  "points_system": "Top->Out v2 (Kerki v2 settings)",
+  "rotation": [
+    "Bonq 1 - Au même endroit",
+    "Bonq 1 - Magnet Slop",
+    "Bonq 1 - Rapid Rotation",
+    "Bonq 1 - Magnetic Bob",
+    "Bonq 1 - Turntable Turnarounds"
+  ],
+  "scoring_rounds_count": 20,
+  "winners": [
+    {
+      "rank": 1,
+      "sid": "76561198050792757",
+      "name": "justMaki",
+      "won_scoring_round": 14,
+      "qualified_scoring_round": 11,
+      "map": "Bonq 1 - Magnetic Bob",
+      "time": "22.527"
+    },
+    {
+      "rank": 2,
+      "sid": "76561199024808939",
+      "name": "Kernkob",
+      "won_scoring_round": 15,
+      "qualified_scoring_round": 13,
+      "map": "Bonq 1 - Turntable Turnarounds",
+      "time": "25.418"
+    },
+    {
+      "rank": 3,
+      "sid": "76561198896246339",
+      "name": "RoundNzt",
+      "won_scoring_round": 17,
+      "qualified_scoring_round": 17,
+      "map": "Bonq 1 - Magnet Slop",
+      "time": "18.880"
+    },
+    {
+      "rank": 4,
+      "sid": "76561198851912263",
+      "name": "Lexer",
+      "won_scoring_round": 18,
+      "qualified_scoring_round": 17,
+      "map": "Bonq 1 - Rapid Rotation",
+      "time": "23.185"
+    },
+    {
+      "rank": 5,
+      "sid": "76561199448462477",
+      "name": "microways",
+      "won_scoring_round": 19,
+      "qualified_scoring_round": 16,
+      "map": "Bonq 1 - Magnetic Bob",
+      "time": "22.670"
+    }
+  ],
+  "finalists": [
+    {
+      "rank": 1,
+      "sid": "76561198001387193",
+      "name": "Warsnac",
+      "qualified_scoring_round": 17
+    }
+  ],
+  "others": [
+    {
+      "rank": 1,
+      "sid": "76561199186342067",
+      "name": "PlusMicron",
+      "points": 951,
+      "rounds_played": 20,
+      "finishes": 10
+    },
+    {
+      "rank": 2,
+      "sid": "76561199129302746",
+      "name": "brrryy",
+      "points": 921,
+      "rounds_played": 20,
+      "finishes": 9
+    },
+    {
+      "rank": 3,
+      "sid": "76561198157436732",
+      "name": "variableferret",
+      "points": 900,
+      "rounds_played": 20,
+      "finishes": 9
+    },
+    {
+      "rank": 4,
+      "sid": "76561198842622746",
+      "name": "Beans",
+      "points": 852,
+      "rounds_played": 20,
+      "finishes": 7
+    },
+    {
+      "rank": 5,
+      "sid": "76561198364662649",
+      "name": "Heart-TGV",
+      "points": 852,
+      "rounds_played": 20,
+      "finishes": 7
+    },
+    {
+      "rank": 6,
+      "sid": "76561199187327002",
+      "name": "Tommygaming",
+      "points": 849,
+      "rounds_played": 18,
+      "finishes": 6
+    },
+    {
+      "rank": 7,
+      "sid": "76561198149636594",
+      "name": "Quickracer10",
+      "points": 802,
+      "rounds_played": 14,
+      "finishes": 7
+    },
+    {
+      "rank": 8,
+      "sid": "76561198126038296",
+      "name": "Noxitu",
+      "points": 771,
+      "rounds_played": 20,
+      "finishes": 6
+    },
+    {
+      "rank": 9,
+      "sid": "76561198031919228",
+      "name": "Akane",
+      "points": 734,
+      "rounds_played": 20,
+      "finishes": 7
+    },
+    {
+      "rank": 10,
+      "sid": "76561199101994275",
+      "name": "VroomVroomer",
+      "points": 703,
+      "rounds_played": 20,
+      "finishes": 5
+    },
+    {
+      "rank": 11,
+      "sid": "76561198287630337",
+      "name": "SuperHeavy",
+      "points": 696,
+      "rounds_played": 20,
+      "finishes": 5
+    },
+    {
+      "rank": 12,
+      "sid": "76561198315900248",
+      "name": "Ruckooe",
+      "points": 662,
+      "rounds_played": 20,
+      "finishes": 4
+    },
+    {
+      "rank": 13,
+      "sid": "76561197972890120",
+      "name": "aizpun",
+      "points": 655,
+      "rounds_played": 20,
+      "finishes": 4
+    },
+    {
+      "rank": 14,
+      "sid": "76561198748988602",
+      "name": "BrickEdwards",
+      "points": 564,
+      "rounds_played": 20,
+      "finishes": 3
+    },
+    {
+      "rank": 15,
+      "sid": "76561198846673916",
+      "name": "Matic_D",
+      "points": 564,
+      "rounds_played": 20,
+      "finishes": 4
+    },
+    {
+      "rank": 16,
+      "sid": "76561199153054076",
+      "name": "Milk Man",
+      "points": 518,
+      "rounds_played": 20,
+      "finishes": 2
+    },
+    {
+      "rank": 17,
+      "sid": "76561199731808063",
+      "name": "Yksdjcj",
+      "points": 453,
+      "rounds_played": 20,
+      "finishes": 1
+    },
+    {
+      "rank": 18,
+      "sid": "76561199032318188",
+      "name": "OccasionallyAmazingGamer",
+      "points": 337,
+      "rounds_played": 8,
+      "finishes": 2
+    },
+    {
+      "rank": 19,
+      "sid": "76561198047403251",
+      "name": "St Nicholas",
+      "points": 243,
+      "rounds_played": 10,
+      "finishes": 1
+    },
+    {
+      "rank": 20,
+      "sid": "76561198958881478",
+      "name": "phrogrock",
+      "points": 208,
+      "rounds_played": 8,
+      "finishes": 1
+    },
+    {
+      "rank": 21,
+      "sid": "76561199589394762",
+      "name": "jofk2415",
+      "points": 205,
+      "rounds_played": 7,
+      "finishes": 1
+    },
+    {
+      "rank": 22,
+      "sid": "76561198368656405",
+      "name": "joshuadwyer79",
+      "points": 188,
+      "rounds_played": 7,
+      "finishes": 1
+    }
+  ],
+  "nuisance": [
+    {
+      "sid": "76561199380118922",
+      "name": "Victor",
+      "points": 1350,
+      "rounds_played": 20,
+      "finishes": 9
+    },
+    {
+      "sid": "76561199733601754",
+      "name": "LKat",
+      "points": 1059,
+      "rounds_played": 20,
+      "finishes": 7
+    },
+    {
+      "sid": "76561198348911001",
+      "name": "Kreeeeee",
+      "points": 490,
+      "rounds_played": 20,
+      "finishes": 1
+    }
+  ],
+  "excluded": [
+    {
+      "sid": "76561198305054806",
+      "name": "wokonbike",
+      "points": 200,
+      "rounds_played": 10,
+      "finishes": 0
+    },
+    {
+      "sid": "76561198111366624",
+      "name": "Zeus",
+      "points": 200,
+      "rounds_played": 10,
+      "finishes": 0
+    },
+    {
+      "sid": "76561198212710700",
+      "name": "Minkus",
+      "points": 132,
+      "rounds_played": 5,
+      "finishes": 1
+    },
+    {
+      "sid": "76561199082360966",
+      "name": "B_ES",
+      "points": 244,
+      "rounds_played": 5,
+      "finishes": 2
+    },
+    {
+      "sid": "76561198060405963",
+      "name": "ForestTheBoy",
+      "points": 172,
+      "rounds_played": 5,
+      "finishes": 1
+    },
+    {
+      "sid": "76561198030518760",
+      "name": "ActuallyRuben",
+      "points": 80,
+      "rounds_played": 4,
+      "finishes": 0
+    },
+    {
+      "sid": "76561198027169155",
+      "name": "DeiRex",
+      "points": 132,
+      "rounds_played": 3,
+      "finishes": 1
+    },
+    {
+      "sid": "76561198056113005",
+      "name": "Six",
+      "points": 60,
+      "rounds_played": 3,
+      "finishes": 0
+    },
+    {
+      "sid": "76561199278221929",
+      "name": "icRS",
+      "points": 60,
+      "rounds_played": 3,
+      "finishes": 0
+    },
+    {
+      "sid": "76561198213715297",
+      "name": "stindt",
+      "points": 60,
+      "rounds_played": 3,
+      "finishes": 0
+    },
+    {
+      "sid": "76561198156955177",
+      "name": "LocalDerpFace",
+      "points": 40,
+      "rounds_played": 2,
+      "finishes": 0
+    },
+    {
+      "sid": "76561198172378351",
+      "name": "Brachaldis",
+      "points": 40,
+      "rounds_played": 2,
+      "finishes": 0
+    },
+    {
+      "sid": "76561198011664478",
+      "name": "tobiniho01",
+      "points": 20,
+      "rounds_played": 1,
+      "finishes": 0
+    },
+    {
+      "sid": "76561199756332058",
+      "name": "GoBigGoHotWheels",
+      "points": 20,
+      "rounds_played": 1,
+      "finishes": 0
+    },
+    {
+      "sid": "76561198083300332",
+      "name": "K410K3N",
+      "points": 20,
+      "rounds_played": 1,
+      "finishes": 0
+    },
+    {
+      "sid": "76561199185761055",
+      "name": "Winter",
+      "points": 20,
+      "rounds_played": 1,
+      "finishes": 0
+    }
+  ],
+  "rounds": [
+    {
+      "n": 1,
+      "map": "Bonq 1 - Au même endroit",
+      "ts": "2026-09-27T19:02:00.269",
+      "roster": 31,
+      "finishers": 7,
+      "finish_pct": 22.6,
+      "top": [
+        {
+          "sid": "76561199380118922",
+          "name": "Victor",
+          "time": "20.149"
+        },
+        {
+          "sid": "76561199032318188",
+          "name": "OccasionallyAmazingGamer",
+          "time": "21.128"
+        },
+        {
+          "sid": "76561199024808939",
+          "name": "Kernkob",
+          "time": "21.524"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 2,
+      "map": "Bonq 1 - Magnet Slop",
+      "ts": "2026-09-27T19:03:46.893",
+      "roster": 33,
+      "finishers": 5,
+      "finish_pct": 15.2,
+      "top": [
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "18.807"
+        },
+        {
+          "sid": "76561199380118922",
+          "name": "Victor",
+          "time": "18.976"
+        },
+        {
+          "sid": "76561199024808939",
+          "name": "Kernkob",
+          "time": "19.012"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 3,
+      "map": "Bonq 1 - Rapid Rotation",
+      "ts": "2026-09-27T19:05:53.148",
+      "roster": 34,
+      "finishers": 7,
+      "finish_pct": 20.6,
+      "top": [
+        {
+          "sid": "76561199733601754",
+          "name": "LKat",
+          "time": "23.548"
+        },
+        {
+          "sid": "76561199129302746",
+          "name": "brrryy",
+          "time": "23.581"
+        },
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "23.757"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 4,
+      "map": "Bonq 1 - Magnetic Bob",
+      "ts": "2026-09-27T19:08:53.244",
+      "roster": 31,
+      "finishers": 10,
+      "finish_pct": 32.3,
+      "top": [
+        {
+          "sid": "76561199448462477",
+          "name": "microways",
+          "time": "23.853"
+        },
+        {
+          "sid": "76561198896246339",
+          "name": "RoundNzt",
+          "time": "24.247"
+        },
+        {
+          "sid": "76561199380118922",
+          "name": "Victor",
+          "time": "25.901"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 5,
+      "map": "Bonq 1 - Turntable Turnarounds",
+      "ts": "2026-09-27T19:10:40.931",
+      "roster": 34,
+      "finishers": 10,
+      "finish_pct": 29.4,
+      "top": [
+        {
+          "sid": "76561199380118922",
+          "name": "Victor",
+          "time": "25.535"
+        },
+        {
+          "sid": "76561199082360966",
+          "name": "B_ES",
+          "time": "26.067"
+        },
+        {
+          "sid": "76561199024808939",
+          "name": "Kernkob",
+          "time": "26.298"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 6,
+      "map": "Bonq 1 - Au même endroit",
+      "ts": "2026-09-27T19:12:29.840",
+      "roster": 36,
+      "finishers": 12,
+      "finish_pct": 33.3,
+      "top": [
+        {
+          "sid": "76561199024808939",
+          "name": "Kernkob",
+          "time": "19.412"
+        },
+        {
+          "sid": "76561199380118922",
+          "name": "Victor",
+          "time": "19.643"
+        },
+        {
+          "sid": "76561198348911001",
+          "name": "Kreeeeee",
+          "time": "20.606"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 7,
+      "map": "Bonq 1 - Magnet Slop",
+      "ts": "2026-09-27T19:14:07.061",
+      "roster": 35,
+      "finishers": 7,
+      "finish_pct": 20.0,
+      "top": [
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "18.837"
+        },
+        {
+          "sid": "76561199448462477",
+          "name": "microways",
+          "time": "19.008"
+        },
+        {
+          "sid": "76561199380118922",
+          "name": "Victor",
+          "time": "19.017"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 8,
+      "map": "Bonq 1 - Rapid Rotation",
+      "ts": "2026-09-27T19:16:04.220",
+      "roster": 33,
+      "finishers": 6,
+      "finish_pct": 18.2,
+      "top": [
+        {
+          "sid": "76561199733601754",
+          "name": "LKat",
+          "time": "22.932"
+        },
+        {
+          "sid": "76561198001387193",
+          "name": "Warsnac",
+          "time": "24.252"
+        },
+        {
+          "sid": "76561198748988602",
+          "name": "BrickEdwards",
+          "time": "24.351"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 9,
+      "map": "Bonq 1 - Magnetic Bob",
+      "ts": "2026-09-27T19:17:44.830",
+      "roster": 31,
+      "finishers": 9,
+      "finish_pct": 29.0,
+      "top": [
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "22.574"
+        },
+        {
+          "sid": "76561199380118922",
+          "name": "Victor",
+          "time": "22.884"
+        },
+        {
+          "sid": "76561199448462477",
+          "name": "microways",
+          "time": "24.795"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 10,
+      "map": "Bonq 1 - Turntable Turnarounds",
+      "ts": "2026-09-27T19:19:26.267",
+      "roster": 30,
+      "finishers": 15,
+      "finish_pct": 50.0,
+      "top": [
+        {
+          "sid": "76561199380118922",
+          "name": "Victor",
+          "time": "25.035"
+        },
+        {
+          "sid": "76561198126038296",
+          "name": "Noxitu",
+          "time": "25.440"
+        },
+        {
+          "sid": "76561198896246339",
+          "name": "RoundNzt",
+          "time": "25.940"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 11,
+      "map": "Bonq 1 - Au même endroit",
+      "ts": "2026-09-27T19:21:10.134",
+      "roster": 26,
+      "finishers": 14,
+      "finish_pct": 53.8,
+      "top": [
+        {
+          "sid": "76561199733601754",
+          "name": "LKat",
+          "time": "19.718"
+        },
+        {
+          "sid": "76561199187327002",
+          "name": "Tommygaming",
+          "time": "20.210"
+        },
+        {
+          "sid": "76561199024808939",
+          "name": "Kernkob",
+          "time": "20.476"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 12,
+      "map": "Bonq 1 - Magnet Slop",
+      "ts": "2026-09-27T19:22:53.953",
+      "roster": 26,
+      "finishers": 7,
+      "finish_pct": 26.9,
+      "top": [
+        {
+          "sid": "76561198896246339",
+          "name": "RoundNzt",
+          "time": "18.863"
+        },
+        {
+          "sid": "76561198851912263",
+          "name": "Lexer",
+          "time": "18.877"
+        },
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "18.910"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 13,
+      "map": "Bonq 1 - Rapid Rotation",
+      "ts": "2026-09-27T19:24:29.438",
+      "roster": 26,
+      "finishers": 10,
+      "finish_pct": 38.5,
+      "top": [
+        {
+          "sid": "76561198851912263",
+          "name": "Lexer",
+          "time": "23.174"
+        },
+        {
+          "sid": "76561198149636594",
+          "name": "Quickracer10",
+          "time": "23.251"
+        },
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "23.405"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 14,
+      "map": "Bonq 1 - Magnetic Bob",
+      "ts": "2026-09-27T19:26:09.277",
+      "roster": 28,
+      "finishers": 9,
+      "finish_pct": 32.1,
+      "top": [
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "22.527"
+        },
+        {
+          "sid": "76561199448462477",
+          "name": "microways",
+          "time": "22.932"
+        },
+        {
+          "sid": "76561198001387193",
+          "name": "Warsnac",
+          "time": "24.665"
+        }
+      ],
+      "winner": "justMaki"
+    },
+    {
+      "n": 15,
+      "map": "Bonq 1 - Turntable Turnarounds",
+      "ts": "2026-09-27T19:27:49.652",
+      "roster": 28,
+      "finishers": 15,
+      "finish_pct": 53.6,
+      "top": [
+        {
+          "sid": "76561199024808939",
+          "name": "Kernkob",
+          "time": "25.418"
+        },
+        {
+          "sid": "76561198851912263",
+          "name": "Lexer",
+          "time": "25.572"
+        },
+        {
+          "sid": "76561198896246339",
+          "name": "RoundNzt",
+          "time": "25.938"
+        }
+      ],
+      "winner": "Kernkob"
+    },
+    {
+      "n": 16,
+      "map": "Bonq 1 - Au même endroit",
+      "ts": "2026-09-27T19:29:32.151",
+      "roster": 29,
+      "finishers": 13,
+      "finish_pct": 44.8,
+      "top": [
+        {
+          "sid": "76561198842622746",
+          "name": "Beans",
+          "time": "20.127"
+        },
+        {
+          "sid": "76561199187327002",
+          "name": "Tommygaming",
+          "time": "20.184"
+        },
+        {
+          "sid": "76561198287630337",
+          "name": "SuperHeavy",
+          "time": "20.226"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 17,
+      "map": "Bonq 1 - Magnet Slop",
+      "ts": "2026-09-27T19:31:09.234",
+      "roster": 31,
+      "finishers": 6,
+      "finish_pct": 19.4,
+      "top": [
+        {
+          "sid": "76561198896246339",
+          "name": "RoundNzt",
+          "time": "18.880"
+        },
+        {
+          "sid": "76561198001387193",
+          "name": "Warsnac",
+          "time": "18.893"
+        },
+        {
+          "sid": "76561198851912263",
+          "name": "Lexer",
+          "time": "18.928"
+        }
+      ],
+      "winner": "RoundNzt"
+    },
+    {
+      "n": 18,
+      "map": "Bonq 1 - Rapid Rotation",
+      "ts": "2026-09-27T19:32:45.407",
+      "roster": 30,
+      "finishers": 9,
+      "finish_pct": 30.0,
+      "top": [
+        {
+          "sid": "76561198851912263",
+          "name": "Lexer",
+          "time": "23.185"
+        },
+        {
+          "sid": "76561199448462477",
+          "name": "microways",
+          "time": "23.317"
+        },
+        {
+          "sid": "76561199101994275",
+          "name": "VroomVroomer",
+          "time": "23.372"
+        }
+      ],
+      "winner": "Lexer"
+    },
+    {
+      "n": 19,
+      "map": "Bonq 1 - Magnetic Bob",
+      "ts": "2026-09-27T19:34:25.454",
+      "roster": 29,
+      "finishers": 9,
+      "finish_pct": 31.0,
+      "top": [
+        {
+          "sid": "76561199448462477",
+          "name": "microways",
+          "time": "22.670"
+        },
+        {
+          "sid": "76561198001387193",
+          "name": "Warsnac",
+          "time": "24.133"
+        },
+        {
+          "sid": "76561198149636594",
+          "name": "Quickracer10",
+          "time": "24.371"
+        }
+      ],
+      "winner": "microways"
+    },
+    {
+      "n": 20,
+      "map": "Bonq 1 - Turntable Turnarounds",
+      "ts": "2026-09-27T19:36:07.911",
+      "roster": 29,
+      "finishers": 11,
+      "finish_pct": 37.9,
+      "top": [
+        {
+          "sid": "76561198896246339",
+          "name": "RoundNzt",
+          "time": "25.175"
+        },
+        {
+          "sid": "76561198364662649",
+          "name": "Heart-TGV",
+          "time": "25.809"
+        },
+        {
+          "sid": "76561199187327002",
+          "name": "Tommygaming",
+          "time": "25.902"
+        }
+      ],
+      "winner": null
+    }
+  ],
+  "finish_stats": [
+    {
+      "sid": "76561198001387193",
+      "name": "Warsnac",
+      "present": 19,
+      "finished": 13,
+      "pct": 68.4
+    },
+    {
+      "sid": "76561198050792757",
+      "name": "justMaki",
+      "present": 20,
+      "finished": 12,
+      "pct": 60.0
+    },
+    {
+      "sid": "76561199448462477",
+      "name": "microways",
+      "present": 20,
+      "finished": 12,
+      "pct": 60.0
+    },
+    {
+      "sid": "76561199024808939",
+      "name": "Kernkob",
+      "present": 20,
+      "finished": 11,
+      "pct": 55.0
+    },
+    {
+      "sid": "76561199186342067",
+      "name": "PlusMicron",
+      "present": 20,
+      "finished": 10,
+      "pct": 50.0
+    },
+    {
+      "sid": "76561198896246339",
+      "name": "RoundNzt",
+      "present": 20,
+      "finished": 10,
+      "pct": 50.0
+    },
+    {
+      "sid": "76561199129302746",
+      "name": "brrryy",
+      "present": 20,
+      "finished": 9,
+      "pct": 45.0
+    },
+    {
+      "sid": "76561198851912263",
+      "name": "Lexer",
+      "present": 20,
+      "finished": 9,
+      "pct": 45.0
+    },
+    {
+      "sid": "76561198157436732",
+      "name": "variableferret",
+      "present": 20,
+      "finished": 9,
+      "pct": 45.0
+    },
+    {
+      "sid": "76561199380118922",
+      "name": "Victor",
+      "present": 20,
+      "finished": 9,
+      "pct": 45.0
+    },
+    {
+      "sid": "76561198149636594",
+      "name": "Quickracer10",
+      "present": 14,
+      "finished": 7,
+      "pct": 50.0
+    },
+    {
+      "sid": "76561198031919228",
+      "name": "Akane",
+      "present": 20,
+      "finished": 7,
+      "pct": 35.0
+    },
+    {
+      "sid": "76561198842622746",
+      "name": "Beans",
+      "present": 20,
+      "finished": 7,
+      "pct": 35.0
+    },
+    {
+      "sid": "76561198364662649",
+      "name": "Heart-TGV",
+      "present": 20,
+      "finished": 7,
+      "pct": 35.0
+    },
+    {
+      "sid": "76561199733601754",
+      "name": "LKat",
+      "present": 20,
+      "finished": 7,
+      "pct": 35.0
+    },
+    {
+      "sid": "76561199187327002",
+      "name": "Tommygaming",
+      "present": 18,
+      "finished": 6,
+      "pct": 33.3
+    },
+    {
+      "sid": "76561198126038296",
+      "name": "Noxitu",
+      "present": 20,
+      "finished": 6,
+      "pct": 30.0
+    },
+    {
+      "sid": "76561198287630337",
+      "name": "SuperHeavy",
+      "present": 20,
+      "finished": 5,
+      "pct": 25.0
+    },
+    {
+      "sid": "76561199101994275",
+      "name": "VroomVroomer",
+      "present": 20,
+      "finished": 5,
+      "pct": 25.0
+    },
+    {
+      "sid": "76561197972890120",
+      "name": "aizpun",
+      "present": 20,
+      "finished": 4,
+      "pct": 20.0
+    },
+    {
+      "sid": "76561198846673916",
+      "name": "Matic_D",
+      "present": 20,
+      "finished": 4,
+      "pct": 20.0
+    },
+    {
+      "sid": "76561198315900248",
+      "name": "Ruckooe",
+      "present": 20,
+      "finished": 4,
+      "pct": 20.0
+    },
+    {
+      "sid": "76561198748988602",
+      "name": "BrickEdwards",
+      "present": 20,
+      "finished": 3,
+      "pct": 15.0
+    },
+    {
+      "sid": "76561199082360966",
+      "name": "B_ES",
+      "present": 5,
+      "finished": 2,
+      "pct": 40.0
+    },
+    {
+      "sid": "76561199032318188",
+      "name": "OccasionallyAmazingGamer",
+      "present": 8,
+      "finished": 2,
+      "pct": 25.0
+    },
+    {
+      "sid": "76561199153054076",
+      "name": "Milk Man",
+      "present": 20,
+      "finished": 2,
+      "pct": 10.0
+    },
+    {
+      "sid": "76561198027169155",
+      "name": "DeiRex",
+      "present": 3,
+      "finished": 1,
+      "pct": 33.3
+    },
+    {
+      "sid": "76561198060405963",
+      "name": "ForestTheBoy",
+      "present": 5,
+      "finished": 1,
+      "pct": 20.0
+    },
+    {
+      "sid": "76561198212710700",
+      "name": "Minkus",
+      "present": 5,
+      "finished": 1,
+      "pct": 20.0
+    },
+    {
+      "sid": "76561199589394762",
+      "name": "jofk2415",
+      "present": 7,
+      "finished": 1,
+      "pct": 14.3
+    },
+    {
+      "sid": "76561198368656405",
+      "name": "joshuadwyer79",
+      "present": 7,
+      "finished": 1,
+      "pct": 14.3
+    },
+    {
+      "sid": "76561198958881478",
+      "name": "phrogrock",
+      "present": 8,
+      "finished": 1,
+      "pct": 12.5
+    },
+    {
+      "sid": "76561198047403251",
+      "name": "St Nicholas",
+      "present": 10,
+      "finished": 1,
+      "pct": 10.0
+    },
+    {
+      "sid": "76561198348911001",
+      "name": "Kreeeeee",
+      "present": 20,
+      "finished": 1,
+      "pct": 5.0
+    },
+    {
+      "sid": "76561199731808063",
+      "name": "Yksdjcj",
+      "present": 20,
+      "finished": 1,
+      "pct": 5.0
+    },
+    {
+      "sid": "76561198030518760",
+      "name": "ActuallyRuben",
+      "present": 4,
+      "finished": 0,
+      "pct": 0.0
+    },
+    {
+      "sid": "76561198172378351",
+      "name": "Brachaldis",
+      "present": 2,
+      "finished": 0,
+      "pct": 0.0
+    },
+    {
+      "sid": "76561199756332058",
+      "name": "GoBigGoHotWheels",
+      "present": 1,
+      "finished": 0,
+      "pct": 0.0
+    },
+    {
+      "sid": "76561199278221929",
+      "name": "icRS",
+      "present": 3,
+      "finished": 0,
+      "pct": 0.0
+    },
+    {
+      "sid": "76561198083300332",
+      "name": "K410K3N",
+      "present": 1,
+      "finished": 0,
+      "pct": 0.0
+    },
+    {
+      "sid": "76561198156955177",
+      "name": "LocalDerpFace",
+      "present": 2,
+      "finished": 0,
+      "pct": 0.0
+    },
+    {
+      "sid": "76561198056113005",
+      "name": "Six",
+      "present": 3,
+      "finished": 0,
+      "pct": 0.0
+    },
+    {
+      "sid": "76561198213715297",
+      "name": "stindt",
+      "present": 3,
+      "finished": 0,
+      "pct": 0.0
+    },
+    {
+      "sid": "76561198011664478",
+      "name": "tobiniho01",
+      "present": 1,
+      "finished": 0,
+      "pct": 0.0
+    },
+    {
+      "sid": "76561199185761055",
+      "name": "Winter",
+      "present": 1,
+      "finished": 0,
+      "pct": 0.0
+    },
+    {
+      "sid": "76561198305054806",
+      "name": "wokonbike",
+      "present": 10,
+      "finished": 0,
+      "pct": 0.0
+    },
+    {
+      "sid": "76561198111366624",
+      "name": "Zeus",
+      "present": 10,
+      "finished": 0,
+      "pct": 0.0
+    }
+  ]
+}
