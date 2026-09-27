@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bonq Cup</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔔</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script>(function(){var t='dark';try{t=localStorage.getItem('bonq-theme')||'dark'}catch(e){}document.documentElement.setAttribute('data-theme',t)})()</script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --accent: #a78bfa; --accent2: #22d3ee;
+  --gold: #f59e0b; --silver: #9ca3af; --bronze: #b87333;
+  --finalist: #3b82f6; --green: #10b981;
+  --mono: 'JetBrains Mono', monospace;
+}
+[data-theme="dark"] {
+  --bg: #09080f; --surface: rgba(255,255,255,0.02); --border: rgba(255,255,255,0.07);
+  --text: #e5e7eb; --text-dim: #9ca3af; --text-muted: #6b7280;
+  --surface-hover: rgba(255,255,255,0.05); --row-hover: rgba(255,255,255,0.03);
+  --row-border: rgba(255,255,255,0.04); --pname: #f3f4f6;
+}
+[data-theme="light"] {
+  --bg: #f5f5f7; --surface: rgba(0,0,0,0.02); --border: rgba(0,0,0,0.09);
+  --text: #1f2937; --text-dim: #4b5563; --text-muted: #6b7280;
+  --surface-hover: rgba(0,0,0,0.05); --row-hover: rgba(0,0,0,0.03);
+  --row-border: rgba(0,0,0,0.06); --pname: #111827;
+}
+html { background: var(--bg); color: var(--text); }
+body { background: var(--bg); font-family: 'Space Grotesk', system-ui, sans-serif; min-height: 100vh; padding: 20px 16px; }
+.container { max-width: 1080px; margin: 0 auto; }
+
+.header { text-align: center; margin-bottom: 24px; position: relative; }
+.header h1 {
+  font-size: 32px; font-weight: 800;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.header .sub { font-family: var(--mono); font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+.theme-toggle {
+  position: absolute; top: 6px; right: 0; background: var(--surface-hover);
+  border: 1px solid var(--border); border-radius: 8px; padding: 5px 10px; cursor: pointer; font-size: 16px;
+}
+.tabs { display: flex; gap: 6px; justify-content: center; margin-bottom: 18px; flex-wrap: wrap; }
+.tab {
+  font-family: inherit; font-weight: 600; font-size: 14px; color: var(--text-dim);
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 7px 16px; cursor: pointer;
+}
+.tab.active { color: var(--text); border-color: var(--accent); background: var(--surface-hover); }
+.panel { display: none; } .panel.active { display: block; }
+
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px; margin-bottom: 14px; }
+.card h2 { font-size: 18px; margin-bottom: 4px; }
+.card .meta { font-family: var(--mono); font-size: 12px; color: var(--text-muted); margin-bottom: 10px; }
+
+.tbl-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: var(--text-muted); padding: 6px 8px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+td { padding: 6px 8px; border-bottom: 1px solid var(--row-border); white-space: nowrap; }
+tr:hover td { background: var(--row-hover); }
+td.num, th.num { text-align: right; font-family: var(--mono); }
+td.pname { color: var(--pname); font-weight: 600; }
+.chip { display: inline-block; font-family: var(--mono); font-size: 11px; font-weight: 700; border-radius: 5px; padding: 1px 6px; }
+.w1 { background: rgba(245,158,11,.18); color: var(--gold); }
+.w2 { background: rgba(156,163,175,.18); color: var(--silver); }
+.w3 { background: rgba(184,115,51,.2); color: var(--bronze); }
+.w4, .w5 { background: rgba(167,139,250,.15); color: var(--accent); }
+.f { background: rgba(59,130,246,.15); color: var(--finalist); }
+.sec { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--text-muted); margin: 12px 0 4px; }
+.maps { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.maps span { font-size: 12px; border: 1px solid var(--border); border-radius: 6px; padding: 2px 8px; color: var(--text-dim); }
+.empty { text-align: center; color: var(--text-muted); padding: 48px 12px; }
+.empty b { color: var(--text); }
+details summary { cursor: pointer; color: var(--text-dim); font-size: 13px; margin-top: 10px; }
+.foot { text-align: center; font-family: var(--mono); font-size: 11px; color: var(--text-muted); margin-top: 20px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>Bonq Cup</h1>
+    <div class="sub" id="sub">MMM's biweekly topout</div>
+    <button class="theme-toggle" id="themeBtn" aria-label="Toggle theme">◐</button>
+  </div>
+  <div class="tabs">
+    <button class="tab active" data-tab="ranking">Ranking</button>
+    <button class="tab" data-tab="cups">Cups</button>
+  </div>
+  <div class="panel active" id="panel-ranking"></div>
+  <div class="panel" id="panel-cups"></div>
+  <div class="foot" id="foot"></div>
+</div>
+<script>
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const chip = r => r === 'o' ? '' : `<span class="chip ${r}">${r === 'f' ? 'F' : r.toUpperCase()}</span>`;
+const fmtDate = iso => { const d = new Date(iso + 'T12:00:00'); return d.toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric'}); };
+const stripMap = m => m.replace(/^bonq(\s*cup)?\s*#?\d+\s*[-:]\s*/i, '');
+
+document.getElementById('themeBtn').onclick = () => {
+  const t = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', t);
+  try { localStorage.setItem('bonq-theme', t); } catch (e) {}
+};
+document.querySelectorAll('.tab').forEach(b => b.onclick = () => {
+  document.querySelectorAll('.tab').forEach(x => x.classList.toggle('active', x === b));
+  document.querySelectorAll('.panel').forEach(p => p.classList.toggle('active', p.id === 'panel-' + b.dataset.tab));
+});
+
+function renderRanking(d) {
+  const el = document.getElementById('panel-ranking');
+  if (!d.ranking.length) { el.innerHTML = emptyState(); return; }
+  const rp = d.meta.rank_points;
+  el.innerHTML = `<div class="card"><div class="tbl-wrap"><table>
+    <thead><tr><th class="num">#</th><th>Player</th><th class="num">Pts</th><th class="num">Cups</th>
+    <th class="num">W</th><th class="num">W1</th><th class="num">F</th><th class="num">Best</th><th>Results</th></tr></thead>
+    <tbody>${d.ranking.map(p => `<tr>
+      <td class="num">${p.rank}</td><td class="pname">${esc(p.name)}</td>
+      <td class="num">${p.points}</td><td class="num">${p.apps}</td>
+      <td class="num">${p.wins || ''}</td><td class="num">${p.w1 || ''}</td><td class="num">${p.finalist || ''}</td>
+      <td class="num">${p.best ?? ''}</td>
+      <td>${p.history.map(h => h.result === 'o' ? `<span class="chip" style="color:var(--text-muted)" title="#${h.cup}: ${h.cup_points} pts">${h.pos}</span>` : chip(h.result)).join(' ')}</td>
+    </tr>`).join('')}</tbody></table></div>
+    <div class="meta" style="margin:10px 0 0">Points per cup: W1 ${rp.w1} · W2 ${rp.w2} · W3 ${rp.w3} · W4 ${rp.w4} · W5 ${rp.w5} · finalist ${rp.f} (same scale as Kerki)</div></div>`;
+}
+
+function renderCups(d) {
+  const el = document.getElementById('panel-cups');
+  if (!d.cups.length) { el.innerHTML = emptyState(); return; }
+  el.innerHTML = [...d.cups].reverse().map(c => `<div class="card">
+    <h2>Bonq Cup #${c.id}</h2>
+    <div class="meta">${fmtDate(c.date)} · ${c.lobby_size} ranked · ${c.scoring_rounds} rounds${c.header ? ' · ' + esc(c.header) : ''}</div>
+    <div class="maps">${c.maps.map(m => `<span>${esc(stripMap(m))}</span>`).join('')}</div>
+    <div class="sec">Winners</div>
+    <div class="tbl-wrap"><table><tbody>${c.winners.map((w, i) => `<tr>
+      <td>${chip('w' + (i + 1))}</td><td class="pname">${esc(w.name)}</td>
+      <td>${esc(stripMap(w.map))}</td><td class="num">${esc(w.time)}</td>
+      <td class="num" style="color:var(--text-muted)">won R${w.won} · final R${w.qualified}</td></tr>`).join('')}</tbody></table></div>
+    ${c.finalists.length ? `<div class="sec">Finalists</div><div class="tbl-wrap"><table><tbody>${c.finalists.map(f => `<tr>
+      <td>${chip('f')}</td><td class="pname">${esc(f.name)}</td><td class="num" style="color:var(--text-muted)">final R${f.qualified}</td></tr>`).join('')}</tbody></table></div>` : ''}
+    ${c.others.length ? `<div class="sec">Others</div><div class="tbl-wrap"><table><tbody>${c.others.map((o, i) => `<tr>
+      <td class="num">${c.winners.length + c.finalists.length + i + 1}</td><td class="pname">${esc(o.name)}</td>
+      <td class="num">${o.points} pts</td><td class="num" style="color:var(--text-muted)">${o.finishes}/${o.rounds} fin</td></tr>`).join('')}</tbody></table></div>` : ''}
+    ${c.nuisances.length ? `<div class="sec">Nuisance</div><div class="meta">${c.nuisances.map(n => esc(n.name)).join(', ')}</div>` : ''}
+    ${c.rounds.length ? `<details><summary>Round by round</summary><div class="tbl-wrap"><table>
+      <thead><tr><th class="num">R</th><th>Map</th><th>1st</th><th class="num">Time</th><th>2nd</th><th>3rd</th><th>W</th></tr></thead>
+      <tbody>${c.rounds.map(r => `<tr><td class="num">${r.n}</td><td>${esc(stripMap(r.map))}</td>
+        <td class="pname">${esc(r.top[0]?.name)}</td><td class="num">${esc(r.top[0]?.time)}</td>
+        <td>${esc(r.top[1]?.name)}</td><td>${esc(r.top[2]?.name)}</td>
+        <td>${r.winner ? esc(r.winner) : ''}</td></tr>`).join('')}</tbody></table></div></details>` : ''}
+  </div>`).join('');
+}
+
+function emptyState() {
+  return `<div class="empty"><b>No cups ingested yet.</b><br>Bonq Cup #1 runs Sunday 27 Sep 2026.</div>`;
+}
+
+fetch('bonq.json', {cache: 'no-store'}).then(r => r.json()).then(d => {
+  document.getElementById('sub').textContent = `MMM's biweekly topout · ${d.meta.cups} cup${d.meta.cups === 1 ? '' : 's'} · ${d.meta.players} players`;
+  document.getElementById('foot').textContent = `Built ${d.meta.generated}`;
+  renderRanking(d); renderCups(d);
+}).catch(() => {
+  document.getElementById('panel-ranking').innerHTML = `<div class="empty">Could not load bonq.json. Serve this folder with <b>python -m http.server 9005</b>.</div>`;
+});
+</script>
+</body>
+</html>
