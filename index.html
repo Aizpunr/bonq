@@ -507,7 +507,7 @@ details.rounds summary { cursor: pointer; font-family: var(--mono); font-size: 1
     </ul>
 
     <h4>Records tab</h4>
-    <p>The <b>Records</b> tab shows all-time stats (wins, placements, finalist appearances) across every cup, plus <b>Rounds</b>: the share of rounds a player finished out of the rounds they were in the lobby for. It's a career record, not a ranking.</p>
+    <p>The <b>Records</b> tab shows all-time stats (wins, placements, finalist appearances) across every cup, plus <b>Finish %</b>: the share of rounds a player finished out of the rounds they were in the lobby for. It's a career record, not a ranking.</p>
   </div>
 </div>
 
@@ -567,7 +567,7 @@ const RECORDS_COLS = [
   { key: 'w2', label: '2nd', cls: 'center' },
   { key: 'w3', label: '3rd', cls: 'center' },
   { key: 'finalist', label: 'Finalist', cls: 'right' },
-  { key: 'finpct', label: 'Rounds', cls: 'right', title: 'Rounds finished / rounds in the lobby' },
+  { key: 'finpct', label: 'Finish %', cls: 'right', title: 'Rounds finished / rounds in the lobby' },
 ];
 
 const RANKING_COLS = [
@@ -599,7 +599,7 @@ const FINISHES_COLS = [
   { key: 'name', label: 'Player', cls: '' },
   { key: 'finished', label: 'Finished', cls: 'right', title: 'Rounds finished' },
   { key: 'present', label: 'In lobby', cls: 'right', title: 'Rounds in the lobby (spectators and AFK included)' },
-  { key: 'pct', label: '%', cls: 'right', title: 'Finished / in lobby' },
+  { key: 'pct', label: 'Finish %', cls: 'right', title: 'Finished / in lobby' },
   { key: 'cups', label: 'Cups', cls: 'right' },
 ];
 
