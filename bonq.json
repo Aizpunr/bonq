@@ -1,21 +1,56 @@
 {
  "meta": {
-  "generated": "2026-09-27T18:16:25Z",
-  "cups": 1,
-  "players": 28,
-  "rank_points": {
-   "w1": 200,
-   "w2": 140,
-   "w3": 100,
-   "w4": 70,
-   "w5": 40,
-   "f": 10
-  }
+  "total_cups": 1,
+  "total_players": 28,
+  "last_cup": 1,
+  "generated": "2026-09-27T20:03:07Z"
  },
  "cups": [
   {
    "id": 1,
    "date": "2026-09-27",
+   "troll": false,
+   "winners": [
+    "justMaki",
+    "Kernkob",
+    "Lexer",
+    "microways",
+    "RoundNzt"
+   ],
+   "finalists": [
+    "Warsnac"
+   ],
+   "others": [
+    "PlusMicron",
+    "brrryy",
+    "variableferret",
+    "Tommygaming",
+    "Beans",
+    "Heart-TGV",
+    "Quickracer10",
+    "Noxitu",
+    "Akane",
+    "VroomVroomer",
+    "SuperHeavy",
+    "Ruckooe",
+    "aizpun",
+    "BrickEdwards",
+    "Matic_D",
+    "Milk Man",
+    "Yksdjcj",
+    "OccasionallyAmazingGamer",
+    "St Nicholas",
+    "joshuadwyer79",
+    "phrogrock",
+    "jofk2415"
+   ],
+   "nuisances": [
+    "Victor",
+    "LKat",
+    "Kreeeeee"
+   ],
+   "lobby_size": 28,
+   "sof": null,
    "header": "Bonq Cup #1 - Maps by Kreeeeee, LKat, Victor",
    "maps": [
     "Bonq 1 - Au même endroit",
@@ -25,11 +60,9 @@
     "Bonq 1 - Turntable Turnarounds"
    ],
    "scoring_rounds": 20,
-   "lobby_size": 28,
-   "winners": [
+   "winners_detail": [
     {
      "name": "justMaki",
-     "sid": "76561198050792757",
      "map": "Bonq 1 - Magnetic Bob",
      "time": "22.527",
      "won": 14,
@@ -37,7 +70,6 @@
     },
     {
      "name": "Kernkob",
-     "sid": "76561199024808939",
      "map": "Bonq 1 - Turntable Turnarounds",
      "time": "25.418",
      "won": 15,
@@ -45,7 +77,6 @@
     },
     {
      "name": "Lexer",
-     "sid": "76561198851912263",
      "map": "Bonq 1 - Rapid Rotation",
      "time": "23.185",
      "won": 18,
@@ -53,7 +84,6 @@
     },
     {
      "name": "microways",
-     "sid": "76561199448462477",
      "map": "Bonq 1 - Magnetic Bob",
      "time": "22.670",
      "won": 19,
@@ -61,192 +91,35 @@
     },
     {
      "name": "RoundNzt",
-     "sid": "76561198896246339",
      "map": "Bonq 1 - Turntable Turnarounds",
      "time": "25.175",
      "won": 20,
      "qualified": 17
     }
    ],
-   "finalists": [
-    {
-     "name": "Warsnac",
-     "sid": "76561198001387193",
-     "qualified": 17
-    }
-   ],
-   "others": [
-    {
-     "name": "PlusMicron",
-     "sid": "76561199186342067",
-     "points": 951,
-     "rounds": 20,
-     "finishes": 10
-    },
-    {
-     "name": "brrryy",
-     "sid": "76561199129302746",
-     "points": 920,
-     "rounds": 20,
-     "finishes": 9
-    },
-    {
-     "name": "variableferret",
-     "sid": "76561198157436732",
-     "points": 900,
-     "rounds": 20,
-     "finishes": 9
-    },
-    {
-     "name": "Tommygaming",
-     "sid": "76561199187327002",
-     "points": 868,
-     "rounds": 18,
-     "finishes": 6
-    },
-    {
-     "name": "Beans",
-     "sid": "76561198842622746",
-     "points": 852,
-     "rounds": 20,
-     "finishes": 7
-    },
-    {
-     "name": "Heart-TGV",
-     "sid": "76561198364662649",
-     "points": 851,
-     "rounds": 20,
-     "finishes": 7
-    },
-    {
-     "name": "Quickracer10",
-     "sid": "76561198149636594",
-     "points": 802,
-     "rounds": 14,
-     "finishes": 7
-    },
-    {
-     "name": "Noxitu",
-     "sid": "76561198126038296",
-     "points": 770,
-     "rounds": 20,
-     "finishes": 6
-    },
-    {
-     "name": "Akane",
-     "sid": "76561198031919228",
-     "points": 733,
-     "rounds": 20,
-     "finishes": 7
-    },
-    {
-     "name": "VroomVroomer",
-     "sid": "76561199101994275",
-     "points": 702,
-     "rounds": 20,
-     "finishes": 5
-    },
-    {
-     "name": "SuperHeavy",
-     "sid": "76561198287630337",
-     "points": 696,
-     "rounds": 20,
-     "finishes": 5
-    },
-    {
-     "name": "Ruckooe",
-     "sid": "76561198315900248",
-     "points": 662,
-     "rounds": 20,
-     "finishes": 4
-    },
-    {
-     "name": "aizpun",
-     "sid": "76561197972890120",
-     "points": 655,
-     "rounds": 20,
-     "finishes": 4
-    },
-    {
-     "name": "BrickEdwards",
-     "sid": "76561198748988602",
-     "points": 564,
-     "rounds": 20,
-     "finishes": 3
-    },
-    {
-     "name": "Matic_D",
-     "sid": "76561198846673916",
-     "points": 562,
-     "rounds": 20,
-     "finishes": 4
-    },
-    {
-     "name": "Milk Man",
-     "sid": "76561199153054076",
-     "points": 518,
-     "rounds": 20,
-     "finishes": 2
-    },
-    {
-     "name": "Yksdjcj",
-     "sid": "76561199731808063",
-     "points": 453,
-     "rounds": 20,
-     "finishes": 1
-    },
-    {
-     "name": "OccasionallyAmazingGamer",
-     "sid": "76561199032318188",
-     "points": 337,
-     "rounds": 8,
-     "finishes": 2
-    },
-    {
-     "name": "St Nicholas",
-     "sid": "76561198047403251",
-     "points": 223,
-     "rounds": 10,
-     "finishes": 1
-    },
-    {
-     "name": "joshuadwyer79",
-     "sid": "76561198368656405",
-     "points": 208,
-     "rounds": 7,
-     "finishes": 1
-    },
-    {
-     "name": "phrogrock",
-     "sid": "76561198958881478",
-     "points": 188,
-     "rounds": 8,
-     "finishes": 1
-    },
-    {
-     "name": "jofk2415",
-     "sid": "76561199589394762",
-     "points": 185,
-     "rounds": 7,
-     "finishes": 1
-    }
-   ],
-   "nuisances": [
-    {
-     "name": "Victor",
-     "sid": "76561199380118922",
-     "points": 1350
-    },
-    {
-     "name": "LKat",
-     "sid": "76561199733601754",
-     "points": 1059
-    },
-    {
-     "name": "Kreeeeee",
-     "sid": "76561198348911001",
-     "points": 490
-    }
+   "others_points": [
+    951,
+    920,
+    900,
+    868,
+    852,
+    851,
+    802,
+    770,
+    733,
+    702,
+    696,
+    662,
+    655,
+    564,
+    562,
+    518,
+    453,
+    337,
+    223,
+    208,
+    188,
+    185
    ],
    "rounds": [
     {
@@ -771,195 +644,195 @@
     }
    ],
    "finish": {
-    "76561198001387193": [
+    "Warsnac": [
      13,
      20
     ],
-    "76561198050792757": [
+    "justMaki": [
      12,
      20
     ],
-    "76561199448462477": [
+    "microways": [
      12,
      20
     ],
-    "76561199024808939": [
+    "Kernkob": [
      11,
      20
     ],
-    "76561199186342067": [
+    "PlusMicron": [
      10,
      20
     ],
-    "76561198896246339": [
+    "RoundNzt": [
      10,
      20
     ],
-    "76561199129302746": [
+    "brrryy": [
      9,
      20
     ],
-    "76561198851912263": [
+    "Lexer": [
      9,
      20
     ],
-    "76561198157436732": [
+    "variableferret": [
      9,
      20
     ],
-    "76561199380118922": [
+    "Victor": [
      9,
      20
     ],
-    "76561198149636594": [
+    "Quickracer10": [
      7,
      15
     ],
-    "76561198031919228": [
+    "Akane": [
      7,
      20
     ],
-    "76561198842622746": [
+    "Beans": [
      7,
      20
     ],
-    "76561198364662649": [
+    "Heart-TGV": [
      7,
      20
     ],
-    "76561199733601754": [
+    "LKat": [
      7,
      20
     ],
-    "76561199187327002": [
+    "Tommygaming": [
      6,
      18
     ],
-    "76561198126038296": [
+    "Noxitu": [
      6,
      20
     ],
-    "76561198287630337": [
+    "SuperHeavy": [
      5,
      20
     ],
-    "76561199101994275": [
+    "VroomVroomer": [
      5,
      20
     ],
-    "76561197972890120": [
+    "aizpun": [
      4,
      20
     ],
-    "76561198846673916": [
+    "Matic_D": [
      4,
      20
     ],
-    "76561198315900248": [
+    "Ruckooe": [
      4,
      20
     ],
-    "76561198748988602": [
+    "BrickEdwards": [
      3,
      20
     ],
-    "76561199082360966": [
+    "B_ES": [
      2,
      5
     ],
-    "76561199032318188": [
+    "OccasionallyAmazingGamer": [
      2,
      8
     ],
-    "76561199153054076": [
+    "Milk Man": [
      2,
      20
     ],
-    "76561198027169155": [
+    "DeiRex": [
      1,
      2
     ],
-    "76561198060405963": [
+    "ForestTheBoy": [
      1,
      5
     ],
-    "76561199589394762": [
+    "jofk2415": [
      1,
      6
     ],
-    "76561198212710700": [
+    "Minkus": [
      1,
      6
     ],
-    "76561198958881478": [
+    "phrogrock": [
      1,
      7
     ],
-    "76561198368656405": [
+    "joshuadwyer79": [
      1,
      8
     ],
-    "76561198047403251": [
+    "St Nicholas": [
      1,
      9
     ],
-    "76561198348911001": [
+    "Kreeeeee": [
      1,
      20
     ],
-    "76561199731808063": [
+    "Yksdjcj": [
      1,
      20
     ],
-    "76561198107216213": [
+    "13Silvers": [
      0,
      1
     ],
-    "76561198030518760": [
+    "ActuallyRuben": [
      0,
      5
     ],
-    "76561198172378351": [
+    "Brachaldis": [
      0,
      2
     ],
-    "76561199756332058": [
+    "GoBigGoHotWheels": [
      0,
      0
     ],
-    "76561199278221929": [
+    "icRS": [
      0,
      3
     ],
-    "76561198083300332": [
+    "K410K3N": [
      0,
      1
     ],
-    "76561198156955177": [
+    "LocalDerpFace": [
      0,
      2
     ],
-    "76561198056113005": [
+    "Six": [
      0,
      2
     ],
-    "76561198213715297": [
+    "stindt": [
      0,
      3
     ],
-    "76561198011664478": [
+    "tobiniho01": [
      0,
      1
     ],
-    "76561199185761055": [
+    "Winter": [
      0,
      1
     ],
-    "76561198305054806": [
+    "wokonbike": [
      0,
      9
     ],
-    "76561198111366624": [
+    "Zeus": [
      0,
      9
     ]
@@ -994,10 +867,9 @@
    "finish_source": "host"
   }
  ],
- "ranking": [
+ "players": [
   {
    "sid": "76561198050792757",
-   "name": "justMaki",
    "apps": 1,
    "wins": 1,
    "w1": 1,
@@ -1006,23 +878,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 200,
-   "finished": 12,
-   "present": 20,
    "best": 1,
    "history": [
     {
-     "cup": 1,
-     "result": "w1",
-     "points": 200,
-     "pos": 1
+     "k": 1,
+     "result": "w1"
     }
    ],
-   "rank": 1
+   "name": "justMaki",
+   "prev_history": [],
+   "finished": 12,
+   "present": 20
   },
   {
    "sid": "76561199024808939",
-   "name": "Kernkob",
    "apps": 1,
    "wins": 1,
    "w1": 0,
@@ -1031,23 +900,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 140,
-   "finished": 11,
-   "present": 20,
    "best": 2,
    "history": [
     {
-     "cup": 1,
-     "result": "w2",
-     "points": 140,
-     "pos": 2
+     "k": 1,
+     "result": "w2"
     }
    ],
-   "rank": 2
+   "name": "Kernkob",
+   "prev_history": [],
+   "finished": 11,
+   "present": 20
   },
   {
    "sid": "76561198851912263",
-   "name": "Lexer",
    "apps": 1,
    "wins": 1,
    "w1": 0,
@@ -1056,23 +922,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 100,
-   "finished": 9,
-   "present": 20,
    "best": 3,
    "history": [
     {
-     "cup": 1,
-     "result": "w3",
-     "points": 100,
-     "pos": 3
+     "k": 1,
+     "result": "w3"
     }
    ],
-   "rank": 3
+   "name": "Lexer",
+   "prev_history": [],
+   "finished": 9,
+   "present": 20
   },
   {
    "sid": "76561199448462477",
-   "name": "microways",
    "apps": 1,
    "wins": 1,
    "w1": 0,
@@ -1081,23 +944,20 @@
    "w4": 1,
    "w5": 0,
    "finalist": 0,
-   "points": 70,
-   "finished": 12,
-   "present": 20,
    "best": 4,
    "history": [
     {
-     "cup": 1,
-     "result": "w4",
-     "points": 70,
-     "pos": 4
+     "k": 1,
+     "result": "w4"
     }
    ],
-   "rank": 4
+   "name": "microways",
+   "prev_history": [],
+   "finished": 12,
+   "present": 20
   },
   {
    "sid": "76561198896246339",
-   "name": "RoundNzt",
    "apps": 1,
    "wins": 1,
    "w1": 0,
@@ -1106,23 +966,20 @@
    "w4": 0,
    "w5": 1,
    "finalist": 0,
-   "points": 40,
-   "finished": 10,
-   "present": 20,
    "best": 5,
    "history": [
     {
-     "cup": 1,
-     "result": "w5",
-     "points": 40,
-     "pos": 5
+     "k": 1,
+     "result": "w5"
     }
    ],
-   "rank": 5
+   "name": "RoundNzt",
+   "prev_history": [],
+   "finished": 10,
+   "present": 20
   },
   {
    "sid": "76561198001387193",
-   "name": "Warsnac",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1131,23 +988,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 1,
-   "points": 10,
-   "finished": 13,
-   "present": 20,
    "best": 6,
    "history": [
     {
-     "cup": 1,
-     "result": "f",
-     "points": 10,
-     "pos": 6
+     "k": 1,
+     "result": "f"
     }
    ],
-   "rank": 6
+   "name": "Warsnac",
+   "prev_history": [],
+   "finished": 13,
+   "present": 20
   },
   {
    "sid": "76561199186342067",
-   "name": "PlusMicron",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1156,24 +1010,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 10,
-   "present": 20,
-   "best": 7,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 951,
-     "points": 0,
-     "pos": 7
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 7
+   "name": "PlusMicron",
+   "prev_history": [],
+   "finished": 10,
+   "present": 20
   },
   {
    "sid": "76561199129302746",
-   "name": "brrryy",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1182,24 +1032,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 9,
-   "present": 20,
-   "best": 8,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 920,
-     "points": 0,
-     "pos": 8
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 8
+   "name": "brrryy",
+   "prev_history": [],
+   "finished": 9,
+   "present": 20
   },
   {
    "sid": "76561198157436732",
-   "name": "variableferret",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1208,24 +1054,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 9,
-   "present": 20,
-   "best": 9,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 900,
-     "points": 0,
-     "pos": 9
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 9
+   "name": "variableferret",
+   "prev_history": [],
+   "finished": 9,
+   "present": 20
   },
   {
    "sid": "76561199187327002",
-   "name": "Tommygaming",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1234,24 +1076,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 6,
-   "present": 18,
-   "best": 10,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 868,
-     "points": 0,
-     "pos": 10
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 10
+   "name": "Tommygaming",
+   "prev_history": [],
+   "finished": 6,
+   "present": 18
   },
   {
    "sid": "76561198842622746",
-   "name": "Beans",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1260,24 +1098,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 7,
-   "present": 20,
-   "best": 11,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 852,
-     "points": 0,
-     "pos": 11
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 11
+   "name": "Beans",
+   "prev_history": [],
+   "finished": 7,
+   "present": 20
   },
   {
    "sid": "76561198364662649",
-   "name": "Heart-TGV",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1286,24 +1120,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 7,
-   "present": 20,
-   "best": 12,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 851,
-     "points": 0,
-     "pos": 12
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 12
+   "name": "Heart-TGV",
+   "prev_history": [],
+   "finished": 7,
+   "present": 20
   },
   {
    "sid": "76561198149636594",
-   "name": "Quickracer10",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1312,24 +1142,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 7,
-   "present": 15,
-   "best": 13,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 802,
-     "points": 0,
-     "pos": 13
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 13
+   "name": "Quickracer10",
+   "prev_history": [],
+   "finished": 7,
+   "present": 15
   },
   {
    "sid": "76561198126038296",
-   "name": "Noxitu",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1338,24 +1164,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 6,
-   "present": 20,
-   "best": 14,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 770,
-     "points": 0,
-     "pos": 14
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 14
+   "name": "Noxitu",
+   "prev_history": [],
+   "finished": 6,
+   "present": 20
   },
   {
    "sid": "76561198031919228",
-   "name": "Akane",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1364,24 +1186,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 7,
-   "present": 20,
-   "best": 15,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 733,
-     "points": 0,
-     "pos": 15
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 15
+   "name": "Akane",
+   "prev_history": [],
+   "finished": 7,
+   "present": 20
   },
   {
    "sid": "76561199101994275",
-   "name": "VroomVroomer",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1390,24 +1208,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 5,
-   "present": 20,
-   "best": 16,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 702,
-     "points": 0,
-     "pos": 16
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 16
+   "name": "VroomVroomer",
+   "prev_history": [],
+   "finished": 5,
+   "present": 20
   },
   {
    "sid": "76561198287630337",
-   "name": "SuperHeavy",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1416,24 +1230,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 5,
-   "present": 20,
-   "best": 17,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 696,
-     "points": 0,
-     "pos": 17
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 17
+   "name": "SuperHeavy",
+   "prev_history": [],
+   "finished": 5,
+   "present": 20
   },
   {
    "sid": "76561198315900248",
-   "name": "Ruckooe",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1442,24 +1252,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 4,
-   "present": 20,
-   "best": 18,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 662,
-     "points": 0,
-     "pos": 18
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 18
+   "name": "Ruckooe",
+   "prev_history": [],
+   "finished": 4,
+   "present": 20
   },
   {
    "sid": "76561197972890120",
-   "name": "aizpun",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1468,24 +1274,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 4,
-   "present": 20,
-   "best": 19,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 655,
-     "points": 0,
-     "pos": 19
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 19
+   "name": "aizpun",
+   "prev_history": [],
+   "finished": 4,
+   "present": 20
   },
   {
    "sid": "76561198748988602",
-   "name": "BrickEdwards",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1494,24 +1296,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 3,
-   "present": 20,
-   "best": 20,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 564,
-     "points": 0,
-     "pos": 20
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 20
+   "name": "BrickEdwards",
+   "prev_history": [],
+   "finished": 3,
+   "present": 20
   },
   {
    "sid": "76561198846673916",
-   "name": "Matic_D",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1520,24 +1318,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 4,
-   "present": 20,
-   "best": 21,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 562,
-     "points": 0,
-     "pos": 21
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 21
+   "name": "Matic_D",
+   "prev_history": [],
+   "finished": 4,
+   "present": 20
   },
   {
    "sid": "76561199153054076",
-   "name": "Milk Man",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1546,24 +1340,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 2,
-   "present": 20,
-   "best": 22,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 518,
-     "points": 0,
-     "pos": 22
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 22
+   "name": "Milk Man",
+   "prev_history": [],
+   "finished": 2,
+   "present": 20
   },
   {
    "sid": "76561199731808063",
-   "name": "Yksdjcj",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1572,24 +1362,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 1,
-   "present": 20,
-   "best": 23,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 453,
-     "points": 0,
-     "pos": 23
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 23
+   "name": "Yksdjcj",
+   "prev_history": [],
+   "finished": 1,
+   "present": 20
   },
   {
    "sid": "76561199032318188",
-   "name": "OccasionallyAmazingGamer",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1598,24 +1384,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 2,
-   "present": 8,
-   "best": 24,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 337,
-     "points": 0,
-     "pos": 24
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 24
+   "name": "OccasionallyAmazingGamer",
+   "prev_history": [],
+   "finished": 2,
+   "present": 8
   },
   {
    "sid": "76561198047403251",
-   "name": "St Nicholas",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1624,24 +1406,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 1,
-   "present": 9,
-   "best": 25,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 223,
-     "points": 0,
-     "pos": 25
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 25
+   "name": "St Nicholas",
+   "prev_history": [],
+   "finished": 1,
+   "present": 9
   },
   {
    "sid": "76561198368656405",
-   "name": "joshuadwyer79",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1650,24 +1428,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 1,
-   "present": 8,
-   "best": 26,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 208,
-     "points": 0,
-     "pos": 26
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 26
+   "name": "joshuadwyer79",
+   "prev_history": [],
+   "finished": 1,
+   "present": 8
   },
   {
    "sid": "76561198958881478",
-   "name": "phrogrock",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1676,24 +1450,20 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 1,
-   "present": 7,
-   "best": 27,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 188,
-     "points": 0,
-     "pos": 27
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 27
+   "name": "phrogrock",
+   "prev_history": [],
+   "finished": 1,
+   "present": 7
   },
   {
    "sid": "76561199589394762",
-   "name": "jofk2415",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1702,20 +1472,344 @@
    "w4": 0,
    "w5": 0,
    "finalist": 0,
-   "points": 0,
-   "finished": 1,
-   "present": 6,
-   "best": 28,
+   "best": null,
    "history": [
     {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 185,
-     "points": 0,
-     "pos": 28
+     "k": 1,
+     "result": "o"
     }
    ],
-   "rank": 28
+   "name": "jofk2415",
+   "prev_history": [],
+   "finished": 1,
+   "present": 6
   }
- ]
+ ],
+ "ranking": {
+  "window": 26,
+  "best_of": 18,
+  "window_start": 1,
+  "window_end": 1,
+  "eligible_cups": 1,
+  "players": [
+   {
+    "name": "justMaki",
+    "sid": "76561198050792757",
+    "points": 200,
+    "points_all": 200,
+    "apps": 1,
+    "wins": 1,
+    "w1": 1,
+    "w2": 0,
+    "w3": 0,
+    "w4": 0,
+    "w5": 0,
+    "finalist": 0,
+    "counted": 1,
+    "dropped": 0,
+    "history": [
+     {
+      "k": 1,
+      "result": "w1",
+      "points": 200,
+      "counted": true
+     }
+    ],
+    "rank": 1,
+    "prev_rank": null,
+    "prev_points": null
+   },
+   {
+    "name": "Kernkob",
+    "sid": "76561199024808939",
+    "points": 140,
+    "points_all": 140,
+    "apps": 1,
+    "wins": 1,
+    "w1": 0,
+    "w2": 1,
+    "w3": 0,
+    "w4": 0,
+    "w5": 0,
+    "finalist": 0,
+    "counted": 1,
+    "dropped": 0,
+    "history": [
+     {
+      "k": 1,
+      "result": "w2",
+      "points": 140,
+      "counted": true
+     }
+    ],
+    "rank": 2,
+    "prev_rank": null,
+    "prev_points": null
+   },
+   {
+    "name": "Lexer",
+    "sid": "76561198851912263",
+    "points": 100,
+    "points_all": 100,
+    "apps": 1,
+    "wins": 1,
+    "w1": 0,
+    "w2": 0,
+    "w3": 1,
+    "w4": 0,
+    "w5": 0,
+    "finalist": 0,
+    "counted": 1,
+    "dropped": 0,
+    "history": [
+     {
+      "k": 1,
+      "result": "w3",
+      "points": 100,
+      "counted": true
+     }
+    ],
+    "rank": 3,
+    "prev_rank": null,
+    "prev_points": null
+   },
+   {
+    "name": "microways",
+    "sid": "76561199448462477",
+    "points": 70,
+    "points_all": 70,
+    "apps": 1,
+    "wins": 1,
+    "w1": 0,
+    "w2": 0,
+    "w3": 0,
+    "w4": 1,
+    "w5": 0,
+    "finalist": 0,
+    "counted": 1,
+    "dropped": 0,
+    "history": [
+     {
+      "k": 1,
+      "result": "w4",
+      "points": 70,
+      "counted": true
+     }
+    ],
+    "rank": 4,
+    "prev_rank": null,
+    "prev_points": null
+   },
+   {
+    "name": "RoundNzt",
+    "sid": "76561198896246339",
+    "points": 40,
+    "points_all": 40,
+    "apps": 1,
+    "wins": 1,
+    "w1": 0,
+    "w2": 0,
+    "w3": 0,
+    "w4": 0,
+    "w5": 1,
+    "finalist": 0,
+    "counted": 1,
+    "dropped": 0,
+    "history": [
+     {
+      "k": 1,
+      "result": "w5",
+      "points": 40,
+      "counted": true
+     }
+    ],
+    "rank": 5,
+    "prev_rank": null,
+    "prev_points": null
+   },
+   {
+    "name": "Warsnac",
+    "sid": "76561198001387193",
+    "points": 10,
+    "points_all": 10,
+    "apps": 1,
+    "wins": 0,
+    "w1": 0,
+    "w2": 0,
+    "w3": 0,
+    "w4": 0,
+    "w5": 0,
+    "finalist": 1,
+    "counted": 1,
+    "dropped": 0,
+    "history": [
+     {
+      "k": 1,
+      "result": "f",
+      "points": 10,
+      "counted": true
+     }
+    ],
+    "rank": 6,
+    "prev_rank": null,
+    "prev_points": null
+   }
+  ]
+ },
+ "glicko": {
+  "start": 1500,
+  "decay": 0.02,
+  "players": [
+   {
+    "name": "justMaki",
+    "sid": "76561198050792757",
+    "mu": 1952.3,
+    "sigma": 173.6,
+    "apps": 1,
+    "wins": 1,
+    "w1": 1,
+    "w2": 0,
+    "w3": 0,
+    "w4": 0,
+    "w5": 0,
+    "finalist": 0,
+    "history": [
+     {
+      "k": 1,
+      "mu": 1952.3,
+      "sigma": 173.6,
+      "result": "w1"
+     }
+    ],
+    "rank": 1,
+    "prev_rank": null,
+    "prev_mu": null
+   },
+   {
+    "name": "Kernkob",
+    "sid": "76561199024808939",
+    "mu": 1839.2,
+    "sigma": 173.6,
+    "apps": 1,
+    "wins": 1,
+    "w1": 0,
+    "w2": 1,
+    "w3": 0,
+    "w4": 0,
+    "w5": 0,
+    "finalist": 0,
+    "history": [
+     {
+      "k": 1,
+      "mu": 1839.2,
+      "sigma": 173.6,
+      "result": "w2"
+     }
+    ],
+    "rank": 2,
+    "prev_rank": null,
+    "prev_mu": null
+   },
+   {
+    "name": "Lexer",
+    "sid": "76561198851912263",
+    "mu": 1782.7,
+    "sigma": 173.6,
+    "apps": 1,
+    "wins": 1,
+    "w1": 0,
+    "w2": 0,
+    "w3": 1,
+    "w4": 0,
+    "w5": 0,
+    "finalist": 0,
+    "history": [
+     {
+      "k": 1,
+      "mu": 1782.7,
+      "sigma": 173.6,
+      "result": "w3"
+     }
+    ],
+    "rank": 3,
+    "prev_rank": null,
+    "prev_mu": null
+   },
+   {
+    "name": "microways",
+    "sid": "76561199448462477",
+    "mu": 1763.8,
+    "sigma": 173.6,
+    "apps": 1,
+    "wins": 1,
+    "w1": 0,
+    "w2": 0,
+    "w3": 0,
+    "w4": 1,
+    "w5": 0,
+    "finalist": 0,
+    "history": [
+     {
+      "k": 1,
+      "mu": 1763.8,
+      "sigma": 173.6,
+      "result": "w4"
+     }
+    ],
+    "rank": 4,
+    "prev_rank": null,
+    "prev_mu": null
+   },
+   {
+    "name": "RoundNzt",
+    "sid": "76561198896246339",
+    "mu": 1726.2,
+    "sigma": 173.6,
+    "apps": 1,
+    "wins": 1,
+    "w1": 0,
+    "w2": 0,
+    "w3": 0,
+    "w4": 0,
+    "w5": 1,
+    "finalist": 0,
+    "history": [
+     {
+      "k": 1,
+      "mu": 1726.2,
+      "sigma": 173.6,
+      "result": "w5"
+     }
+    ],
+    "rank": 5,
+    "prev_rank": null,
+    "prev_mu": null
+   },
+   {
+    "name": "Warsnac",
+    "sid": "76561198001387193",
+    "mu": 1650.8,
+    "sigma": 173.6,
+    "apps": 1,
+    "wins": 0,
+    "w1": 0,
+    "w2": 0,
+    "w3": 0,
+    "w4": 0,
+    "w5": 0,
+    "finalist": 1,
+    "history": [
+     {
+      "k": 1,
+      "mu": 1650.8,
+      "sigma": 173.6,
+      "result": "f"
+     }
+    ],
+    "rank": 6,
+    "prev_rank": null,
+    "prev_mu": null
+   }
+  ]
+ }
 }

@@ -2,11 +2,22 @@
 
 Usage: python build_bonq.py
 
+Same ranking systems as Kerki Comp (kerki/build_kerki.py), so the two pages
+read the same way:
+- Records: career W / 1st / 2nd / 3rd / Finalist counts.
+- Rolling: placement points, best RANK_BEST_OF of the last RANK_WINDOW cups.
+- Skill: convergent Glicko-style rating toward per-placement performance values.
+Bonq has no troll cups and no seasons, so those Kerki pieces are left out.
+
+Rank arrows compare against the same build minus the latest cup (Kerki keeps a
+snapshot.json instead; recomputing needs no extra step per cup).
+
 Dates are ISO (YYYY-MM-DD) everywhere, on purpose: Kerki's D/M/YY strings
 have already crashed the cross-comp refresh once.
 """
 import glob
 import json
+import math
 import os
 import re
 from datetime import datetime, timezone
@@ -15,8 +26,21 @@ PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 CUPS_DIR = os.path.join(PROJECT_DIR, "cups")
 OUT = os.path.join(PROJECT_DIR, "bonq.json")
 
-# Same result points as Kerki's ranking, so a Bonq W1 weighs like a Kerki W1.
-RANK_POINTS = {"w1": 200, "w2": 140, "w3": 100, "w4": 70, "w5": 40, "f": 10}
+# ── Kerki constants, copied as-is ──────────────────────────────────
+RANK_POINTS = {'w1': 200, 'w2': 140, 'w3': 100, 'w4': 70, 'w5': 40, 'f': 10}
+RANK_WINDOW = 26
+RANK_BEST_OF = 18
+
+GLICKO_PERF = {'w1': 2100, 'w2': 1950, 'w3': 1875, 'w4': 1850, 'w5': 1800, 'f': 1700, 'o': 1500}
+GLICKO_TAU = 200
+GLICKO_MU_START = 1500
+GLICKO_SIGMA_START = 350
+GLICKO_SIGMA_FLOOR = 80
+GLICKO_SIGMA_CAP = 350
+GLICKO_SIGMA_DECAY = 15
+GLICKO_MU_DECAY = 0.02
+GLICKO_SURPRISE_THRESHOLD = 200
+GLICKO_SURPRISE_FACTOR = 0.3
 
 
 def load_cups():
@@ -39,88 +63,206 @@ def map_finish(rounds):
     return sorted(([m, f, p] for m, (f, p) in agg.items()), key=lambda x: x[1] / x[2] if x[2] else 1)
 
 
+def latest_names(cups):
+    """sid -> the most recent name it raced under (parser already resolved it)."""
+    names = {}
+    for c in cups:
+        for grp in ("winners", "finalists", "others", "nuisance"):
+            for e in c.get(grp, []):
+                names[e["sid"]] = e["name"]
+    return names
+
+
+def compute(cups, names):
+    """Records / Rolling / Skill for a list of cups. Keyed by sid, labelled by name."""
+    players = {}
+    for c in cups:
+        k = c["cup"]
+        seen = set()
+        for res, grp in [(f"w{w['rank']}", [w]) for w in c["winners"]] + \
+                        [("f", c["finalists"]), ("o", c["others"])]:
+            for e in grp:
+                if e["sid"] in seen:
+                    continue
+                seen.add(e["sid"])
+                p = players.setdefault(e["sid"], {
+                    'sid': e["sid"], 'apps': 0, 'wins': 0,
+                    'w1': 0, 'w2': 0, 'w3': 0, 'w4': 0, 'w5': 0,
+                    'finalist': 0, 'best': 99, 'history': []})
+                p['apps'] += 1
+                if res.startswith('w'):
+                    p['wins'] += 1
+                    p[res] += 1
+                    p['best'] = min(p['best'], int(res[1]))
+                elif res == 'f':
+                    p['finalist'] += 1
+                    p['best'] = min(p['best'], 6)
+                p['history'].append({'k': k, 'result': res})
+
+    player_list = []
+    for sid, p in sorted(players.items(), key=lambda x: (-x[1]['wins'], -x[1]['apps'])):
+        player_list.append({**p, 'name': names.get(sid, sid),
+                            'best': p['best'] if p['best'] < 99 else None})
+
+    # Rolling
+    ids = sorted(c["cup"] for c in cups)
+    eligible = set(ids[-RANK_WINDOW:])
+    ranking = []
+    for pl in player_list:
+        scoring, window_apps = [], 0
+        for h in pl['history']:
+            if h['k'] not in eligible:
+                continue
+            window_apps += 1
+            pts = RANK_POINTS.get(h['result'], 0)
+            if pts > 0:
+                scoring.append({'k': h['k'], 'result': h['result'], 'points': pts})
+        if not scoring:
+            continue
+        scoring.sort(key=lambda x: -x['points'])
+        for i, e in enumerate(scoring):
+            e['counted'] = i < RANK_BEST_OF
+        res = [e['result'] for e in scoring]
+        counted = sum(1 for e in scoring if e['counted'])
+        ranking.append({
+            'name': pl['name'], 'sid': pl['sid'],
+            'points': sum(e['points'] for e in scoring if e['counted']),
+            'points_all': sum(e['points'] for e in scoring),
+            'apps': window_apps,
+            'wins': sum(1 for r in res if r.startswith('w')),
+            'w1': res.count('w1'), 'w2': res.count('w2'), 'w3': res.count('w3'),
+            'w4': res.count('w4'), 'w5': res.count('w5'), 'finalist': res.count('f'),
+            'counted': counted, 'dropped': len(scoring) - counted,
+            'history': sorted(scoring, key=lambda x: x['k']),
+        })
+    ranking.sort(key=lambda x: (-x['points'], -x['wins'], -x['w1']))
+    for i, r in enumerate(ranking, 1):
+        r['rank'] = i
+
+    # Skill
+    events = {pl['sid']: sorted((h['k'], h['result']) for h in pl['history']) for pl in player_list}
+    ratings = {}
+    for kid in ids:
+        here = {sid for sid, ev in events.items() if any(k == kid for k, _ in ev)}
+        for sid, r in ratings.items():
+            if sid not in here:
+                r['mu'] = GLICKO_MU_START + (r['mu'] - GLICKO_MU_START) * (1 - GLICKO_MU_DECAY)
+                r['sigma'] = min(r['sigma'] + GLICKO_SIGMA_DECAY, GLICKO_SIGMA_CAP)
+        for sid in here:
+            result = next(res for k, res in events[sid] if k == kid)
+            r = ratings.setdefault(sid, {'mu': GLICKO_MU_START, 'sigma': GLICKO_SIGMA_START, 'history': []})
+            perf = GLICKO_PERF.get(result, 1500)
+            surprise = abs(perf - r['mu'])
+            if surprise > GLICKO_SURPRISE_THRESHOLD:
+                r['sigma'] = min(r['sigma'] + (surprise - GLICKO_SURPRISE_THRESHOLD) * GLICKO_SURPRISE_FACTOR,
+                                 GLICKO_SIGMA_CAP)
+            lr = r['sigma'] ** 2 / (r['sigma'] ** 2 + GLICKO_TAU ** 2)
+            r['mu'] += lr * (perf - r['mu'])
+            r['sigma'] = max(math.sqrt((1 - lr) * r['sigma'] ** 2), GLICKO_SIGMA_FLOOR)
+            r['history'].append({'k': kid, 'mu': round(r['mu'], 1), 'sigma': round(r['sigma'], 1),
+                                 'result': result})
+    glicko = []
+    for sid, r in ratings.items():
+        if not any(h['result'] != 'o' for h in r['history']):
+            continue
+        res = [h['result'] for h in r['history']]
+        glicko.append({
+            'name': names.get(sid, sid), 'sid': sid,
+            'mu': round(r['mu'], 1), 'sigma': round(r['sigma'], 1),
+            'apps': len(res), 'wins': sum(1 for x in res if x.startswith('w')),
+            'w1': res.count('w1'), 'w2': res.count('w2'), 'w3': res.count('w3'),
+            'w4': res.count('w4'), 'w5': res.count('w5'), 'finalist': res.count('f'),
+            'history': r['history'],
+        })
+    glicko.sort(key=lambda x: -x['mu'])
+    for i, g in enumerate(glicko, 1):
+        g['rank'] = i
+
+    return player_list, ranking, glicko, eligible
+
+
 def build():
     cups = load_cups()
-    players = {}
+    names = latest_names(cups)
+    player_list, ranking, glicko, eligible = compute(cups, names)
 
-    def player(sid, name):
-        p = players.get(sid)
-        if p is None:
-            p = players[sid] = {"sid": sid, "name": name, "apps": 0, "wins": 0,
-                                "w1": 0, "w2": 0, "w3": 0, "w4": 0, "w5": 0,
-                                "finalist": 0, "points": 0, "finished": 0, "present": 0, "best": None, "history": []}
-        p["name"] = name   # latest canonical wins
-        return p
+    # Arrows: the same build without the latest cup.
+    prev_p, prev_r, prev_g = {}, {}, {}
+    if len(cups) > 1:
+        pp, pr, pg, _ = compute(cups[:-1], names)
+        prev_p = {p['sid']: p['history'] for p in pp}
+        prev_r = {r['sid']: r for r in pr}
+        prev_g = {g['sid']: g for g in pg}
+    for r in ranking:
+        o = prev_r.get(r['sid'])
+        r['prev_rank'], r['prev_points'] = (o['rank'], o['points']) if o else (None, None)
+    for g in glicko:
+        o = prev_g.get(g['sid'])
+        g['prev_rank'], g['prev_mu'] = (o['rank'], o['mu']) if o else (None, None)
+    for p in player_list:
+        p['prev_history'] = prev_p.get(p['sid'], [])
+
+    # Rounds finished, all cups.
+    fin = {}
+    for c in cups:
+        for x in c.get("finish_stats", []):
+            a = fin.setdefault(x["sid"], [0, 0])
+            a[0] += x["finished"]
+            a[1] += x["present"]
+    for p in player_list:
+        p['finished'], p['present'] = fin.get(p['sid'], [0, 0])
 
     cups_out = []
     for c in cups:
-        n = c["cup"]
-        ordinal = []   # winners -> finalists -> others; nuisance excluded (cross-comp convention)
-        for w in c["winners"]:
-            p = player(w["sid"], w["name"])
-            key = f"w{w['rank']}"
-            p[key] += 1
-            p["wins"] += 1
-            res = key
-            ordinal.append(w)
-            p["history"].append({"cup": n, "result": res, "points": RANK_POINTS[res]})
-        for f_ in c["finalists"]:
-            p = player(f_["sid"], f_["name"])
-            p["finalist"] += 1
-            ordinal.append(f_)
-            p["history"].append({"cup": n, "result": "f", "points": RANK_POINTS["f"]})
-        for o in c["others"]:
-            p = player(o["sid"], o["name"])
-            ordinal.append(o)
-            p["history"].append({"cup": n, "result": "o", "cup_points": o["points"], "points": 0})
-        for pos, e in enumerate(ordinal, 1):
-            p = players[e["sid"]]
-            p["apps"] += 1
-            p["best"] = pos if p["best"] is None else min(p["best"], pos)
-            p["history"][-1]["pos"] = pos
-
+        ordinal = c["winners"] + c["finalists"] + c["others"]
         cups_out.append({
-            "id": n, "date": c["date"], "header": c.get("header"),
-            "maps": c.get("rotation", []),
-            "scoring_rounds": c.get("scoring_rounds_count"),
-            "lobby_size": len(ordinal),
-            "winners": [{"name": w["name"], "sid": w["sid"], "map": w["map"], "time": w["time"],
-                         "won": w["won_scoring_round"], "qualified": w["qualified_scoring_round"]}
-                        for w in c["winners"]],
-            "finalists": [{"name": f_["name"], "sid": f_["sid"],
-                           "qualified": f_["qualified_scoring_round"]} for f_ in c["finalists"]],
-            "others": [{"name": o["name"], "sid": o["sid"], "points": o["points"],
-                        "rounds": o["rounds_played"], "finishes": o["finishes"]} for o in c["others"]],
-            "nuisances": [{"name": x["name"], "sid": x["sid"], "points": x["points"]}
-                          for x in c.get("nuisance", [])],
-            "rounds": c.get("rounds", []),
-            "finish": {x["sid"]: [x["finished"], x["present"]] for x in c.get("finish_stats", [])},
-            "map_finish": map_finish(c.get("rounds", [])),
-            "finish_source": "host" if c.get("finish_source") else "log",
+            # Kerki's event shape: names in placement order ...
+            'id': c["cup"], 'date': c["date"], 'troll': False,
+            'winners': [w["name"] for w in c["winners"]],
+            'finalists': [f["name"] for f in c["finalists"]],
+            'others': [o["name"] for o in c["others"]],
+            'nuisances': [n["name"] for n in c.get("nuisance", [])],
+            'lobby_size': len(ordinal),
+            'sof': c.get("sof"),
+            # ... plus the Bonq extras.
+            'header': c.get("header"),
+            'maps': c.get("rotation", []),
+            'scoring_rounds': c.get("scoring_rounds_count"),
+            'winners_detail': [{'name': w["name"], 'map': w["map"], 'time': w["time"],
+                                'won': w["won_scoring_round"], 'qualified': w["qualified_scoring_round"]}
+                               for w in c["winners"]],
+            'others_points': [o["points"] for o in c["others"]],
+            'rounds': c.get("rounds", []),
+            'finish': {names.get(x["sid"], x["name"]): [x["finished"], x["present"]]
+                       for x in c.get("finish_stats", [])},
+            'map_finish': map_finish(c.get("rounds", [])),
+            'finish_source': "host" if c.get("finish_source") else "log",
         })
-        for x in c.get("finish_stats", []):
-            if x["sid"] in players:
-                players[x["sid"]]["finished"] += x["finished"]
-                players[x["sid"]]["present"] += x["present"]
-
-    for p in players.values():
-        p["points"] = sum(h["points"] for h in p["history"])
-    ranking = sorted(players.values(),
-                     key=lambda p: (-p["points"], -p["wins"], -p["finalist"],
-                                    p["best"] or 999, p["name"].lower()))
-    for i, p in enumerate(ranking, 1):
-        p["rank"] = i
 
     out = {
-        "meta": {"generated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-                 "cups": len(cups_out), "players": len(ranking),
-                 "rank_points": RANK_POINTS},
-        "cups": cups_out,
-        "ranking": ranking,
+        'meta': {
+            'total_cups': len(cups_out),
+            'total_players': len(player_list),
+            'last_cup': max((c["cup"] for c in cups), default=0),
+            'generated': datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        },
+        'cups': cups_out,
+        'players': player_list,
+        'ranking': {
+            'window': RANK_WINDOW, 'best_of': RANK_BEST_OF,
+            'window_start': min(eligible) if eligible else 0,
+            'window_end': max(eligible) if eligible else 0,
+            'eligible_cups': len(eligible),
+            'players': ranking,
+        },
+        'glicko': {'start': GLICKO_MU_START, 'decay': GLICKO_MU_DECAY, 'players': glicko},
     }
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(out, f, indent=1, ensure_ascii=False)
-    print(f"bonq.json: {len(cups_out)} cups, {len(ranking)} players")
+    print(f"bonq.json: {len(cups_out)} cups, {len(player_list)} players, "
+          f"{len(ranking)} ranked, {len(glicko)} rated")
+    for r in ranking[:6]:
+        print(f"  #{r['rank']} {r['name']:15s} {r['points']:>4} pts")
 
 
 if __name__ == "__main__":

@@ -21,9 +21,16 @@ Points per round follow the Top->Out mod settings used by the host, checked agai
 - 1000 points makes you a finalist. A finalist who then finishes 1st in a later round wins. Five winners per cup.
 - Map authors race as nuisance: their points don't count and a nuisance 1st place blocks that round's win.
 
-The overall ranking uses the same placement points as Kerki: W1 200, W2 140, W3 100, W4 70, W5 40, finalist 10.
+## Page tabs
 
-**Rounds finished** counts rounds a player finished out of rounds they were in the lobby for. Spectators and AFK players count as in the lobby, so every rate is a lower bound.
+The page uses the same ranking systems as the Kerki Comp page:
+
+- **Ranking**: rolling placement points (W1 200, W2 140, W3 100, W4 70, W5 40, finalist 10), best 18 of the last 26 cups.
+- **Skill**: a convergent Glicko-style rating that pulls toward a performance value per placement (W1 2100 down to finalist 1700, others 1500), with 2% decay per missed cup.
+- **Records**: career wins, placements and finalist appearances, plus **Rounds**: rounds finished out of rounds in the lobby. Spectators and AFK players count as in the lobby, so every rate is a lower bound.
+- **Events**: every cup's full standings, rounds finished per map, and a round-by-round table.
+
+Rank arrows compare each ranking with the same build minus the latest cup.
 
 ## Updating
 

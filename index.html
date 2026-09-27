@@ -4,170 +4,1370 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bonq Cup</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔔</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦜</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
-<script>(function(){var t='dark';try{t=localStorage.getItem('bonq-theme')||'dark'}catch(e){}document.documentElement.setAttribute('data-theme',t)})()</script>
+<script>(function(){var t=localStorage.getItem('bonq-theme')||'dark';document.documentElement.setAttribute('data-theme',t)})()</script>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
-  --accent: #a78bfa; --accent2: #22d3ee;
-  --gold: #f59e0b; --silver: #9ca3af; --bronze: #b87333;
-  --finalist: #3b82f6; --green: #10b981;
+  --gold: #f59e0b;
+  --br-green: #009c3b; --br-yellow: #fedf00; --br-blue: #002776; --silver: #9ca3af; --bronze: #b87333;
+  --finalist: #3b82f6; --green: #10b981; --red: #ef4444;
   --mono: 'JetBrains Mono', monospace;
 }
 [data-theme="dark"] {
-  --bg: #09080f; --surface: rgba(255,255,255,0.02); --border: rgba(255,255,255,0.07);
-  --text: #e5e7eb; --text-dim: #9ca3af; --text-muted: #6b7280;
+  --accent: #fedf00; --accent-rgb: 254,223,0; --on-accent: #002776;
+  --bg: #04101e; --surface: rgba(255,255,255,0.02); --border: rgba(255,255,255,0.06);
+  --border-bright: rgba(255,255,255,0.08); --text: #e5e7eb; --text-dim: #9ca3af;
+  --text-muted: #6b7280; --text-dark: #4b5563;
   --surface-hover: rgba(255,255,255,0.05); --row-hover: rgba(255,255,255,0.03);
-  --row-border: rgba(255,255,255,0.04); --pname: #f3f4f6;
+  --row-border: rgba(255,255,255,0.03); --scrollbar: rgba(255,255,255,0.1);
+  --pname: #f3f4f6;
+  --modal-bg: #0d0d14; --modal-overlay: rgba(0,0,0,0.65); --modal-border: rgba(255,255,255,0.12);
 }
 [data-theme="light"] {
-  --bg: #f5f5f7; --surface: rgba(0,0,0,0.02); --border: rgba(0,0,0,0.09);
-  --text: #1f2937; --text-dim: #4b5563; --text-muted: #6b7280;
+  --accent: #009c3b; --accent-rgb: 0,156,59; --on-accent: #ffffff;
+  --bg: #f4f8f2; --surface: rgba(0,0,0,0.02); --border: rgba(0,0,0,0.08);
+  --border-bright: rgba(0,0,0,0.12); --text: #1f2937; --text-dim: #4b5563;
+  --text-muted: #6b7280; --text-dark: #9ca3af;
   --surface-hover: rgba(0,0,0,0.05); --row-hover: rgba(0,0,0,0.03);
-  --row-border: rgba(0,0,0,0.06); --pname: #111827;
+  --row-border: rgba(0,0,0,0.05); --scrollbar: rgba(0,0,0,0.15);
+  --pname: #111827;
+  --modal-bg: #ffffff; --modal-overlay: rgba(0,0,0,0.35); --modal-border: rgba(0,0,0,0.12);
 }
 html { background: var(--bg); color: var(--text); }
-body { background: var(--bg); font-family: 'Space Grotesk', system-ui, sans-serif; min-height: 100vh; padding: 20px 16px; }
+body { font-family: 'Space Grotesk', system-ui, sans-serif; min-height: 100vh; padding: 20px 12px; }
+::selection { background: rgba(var(--accent-rgb),0.3); }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--scrollbar); border-radius: 3px; }
+
 .container { max-width: 1080px; margin: 0 auto; }
 
-.header { text-align: center; margin-bottom: 24px; position: relative; }
+/* ── Header ── */
+.header { text-align: center; margin-bottom: 28px; position: relative; }
 .header h1 {
-  font-size: 32px; font-weight: 800;
-  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  font-size: 32px; font-weight: 800; margin: 0; display: inline-block;
+  background: linear-gradient(135deg, #009c3b 0%, #fedf00 50%, #2f6bd9 100%);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
 }
+.header::after {
+  content: ''; display: block; height: 3px; width: 120px; margin: 10px auto 0; border-radius: 2px;
+  background: linear-gradient(90deg, var(--br-green) 0 33%, var(--br-yellow) 33% 66%, var(--br-blue) 66%);
+}
+[data-theme="light"] .header h1 {
+  background: linear-gradient(135deg, #009c3b 0%, #c9a400 50%, #002776 100%);
+  -webkit-background-clip: text; background-clip: text;
+}
 .header .sub { font-family: var(--mono); font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+
 .theme-toggle {
-  position: absolute; top: 6px; right: 0; background: var(--surface-hover);
-  border: 1px solid var(--border); border-radius: 8px; padding: 5px 10px; cursor: pointer; font-size: 16px;
+  position: absolute; top: 8px; right: 0;
+  background: var(--surface-hover); border: 1px solid var(--border); border-radius: 8px;
+  padding: 5px 10px; cursor: pointer; font-size: 16px; line-height: 1;
+  transition: border-color 0.15s;
 }
-.tabs { display: flex; gap: 6px; justify-content: center; margin-bottom: 18px; flex-wrap: wrap; }
-.tab {
-  font-family: inherit; font-weight: 600; font-size: 14px; color: var(--text-dim);
-  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
-  padding: 7px 16px; cursor: pointer;
+.theme-toggle:hover { border-color: var(--accent); }
+
+/* ── View Tabs ── */
+.view-tabs { display: flex; gap: 0; }
+.view-tab {
+  font-family: var(--mono); font-size: 11px; padding: 5px 14px;
+  background: transparent; border: 1px solid var(--border); color: var(--text-muted);
+  cursor: pointer; transition: all 0.15s;
 }
-.tab.active { color: var(--text); border-color: var(--accent); background: var(--surface-hover); }
-.panel { display: none; } .panel.active { display: block; }
+.view-tab:first-child { border-radius: 6px 0 0 6px; }
+.view-tab:not(:first-child) { border-left: 0; }
+.view-tab:last-child { border-radius: 0 6px 6px 0; }
+.view-tab.active { background: var(--accent); color: var(--on-accent); border-color: var(--accent); font-weight: 600; }
+.view-tab:hover:not(.active) { color: var(--text); border-color: var(--border-bright); }
 
-.card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px; margin-bottom: 14px; }
-.card h2 { font-size: 18px; margin-bottom: 4px; }
-.card .meta { font-family: var(--mono); font-size: 12px; color: var(--text-muted); margin-bottom: 10px; }
+/* ── Controls ── */
+.controls {
+  display: flex; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; align-items: center;
+  position: sticky; top: 0; z-index: 20; background: var(--bg); padding: 8px 0;
+}
+.search-input {
+  background: var(--surface-hover); border: 1px solid var(--border); color: var(--text);
+  padding: 6px 12px; border-radius: 8px; font-family: var(--mono); font-size: 11px;
+  width: 200px; outline: none; transition: border-color 0.15s;
+}
+.search-input::placeholder { color: var(--text-dark); }
+.search-input:focus { border-color: rgba(var(--accent-rgb),0.45); }
 
-.tbl-wrap { overflow-x: auto; }
-table { width: 100%; border-collapse: collapse; font-size: 14px; }
-th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: var(--text-muted); padding: 6px 8px; border-bottom: 1px solid var(--border); white-space: nowrap; }
-td { padding: 6px 8px; border-bottom: 1px solid var(--row-border); white-space: nowrap; }
-tr:hover td { background: var(--row-hover); }
-td.num, th.num { text-align: right; font-family: var(--mono); }
-td.pname { color: var(--pname); font-weight: 600; }
-.chip { display: inline-block; font-family: var(--mono); font-size: 11px; font-weight: 700; border-radius: 5px; padding: 1px 6px; }
-.w1 { background: rgba(245,158,11,.18); color: var(--gold); }
-.w2 { background: rgba(156,163,175,.18); color: var(--silver); }
-.w3 { background: rgba(184,115,51,.2); color: var(--bronze); }
-.w4, .w5 { background: rgba(167,139,250,.15); color: var(--accent); }
-.f { background: rgba(59,130,246,.15); color: var(--finalist); }
-.sec { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--text-muted); margin: 12px 0 4px; }
-.maps { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
-.maps span { font-size: 12px; border: 1px solid var(--border); border-radius: 6px; padding: 2px 8px; color: var(--text-dim); }
-.empty { text-align: center; color: var(--text-muted); padding: 48px 12px; }
-.empty b { color: var(--text); }
-details summary { cursor: pointer; color: var(--text-dim); font-size: 13px; margin-top: 10px; }
-.foot { text-align: center; font-family: var(--mono); font-size: 11px; color: var(--text-muted); margin-top: 20px; }
+.toggle-wrap {
+  display: flex; align-items: center; gap: 5px; cursor: pointer;
+  font-family: var(--mono); font-size: 11px; color: var(--text-muted); user-select: none;
+}
+.toggle-wrap input { accent-color: var(--accent); width: 13px; height: 13px; cursor: pointer; }
+.toggle-wrap:hover { color: var(--text-dim); }
+
+.min-cups { display: flex; align-items: center; gap: 6px; margin-left: auto; }
+.min-cups span { font-size: 11px; font-family: var(--mono); color: var(--text-muted); }
+.min-cups .val { color: var(--accent); width: 16px; }
+input[type="range"] { width: 70px; accent-color: var(--accent); }
+
+/* ── Table ── */
+.table-wrap {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 12px; overflow: hidden;
+}
+
+.table-header {
+  display: grid; padding: 10px 14px; font-family: var(--mono); font-size: 9px;
+  color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--border-bright);
+}
+.table-header div { cursor: pointer; user-select: none; transition: color 0.15s; }
+.table-header div:hover { color: var(--accent); }
+.table-header .sort-active { color: var(--accent); }
+.table-header .right { text-align: right; }
+.table-header .center { text-align: center; }
+
+.row {
+  display: grid; padding: 8px 14px; border-bottom: 1px solid var(--row-border);
+  cursor: pointer; align-items: center; transition: background 0.1s;
+}
+.row:hover { background: var(--row-hover); }
+.row.selected { background: rgba(var(--accent-rgb),0.09); }
+
+/* Grid columns per view */
+.view-records .table-header, .view-records .row {
+  grid-template-columns: 36px 1fr 58px 40px 40px 40px 52px 62px;
+}
+.view-ranking .table-header, .view-ranking .row {
+  grid-template-columns: 52px 1fr 62px 42px 42px 36px 36px 36px 46px;
+}
+.view-glicko .table-header, .view-glicko .row {
+  grid-template-columns: 52px 1fr 62px 42px 42px 36px 36px 36px 46px;
+}
+.view-events .table-header, .view-events .row {
+  grid-template-columns: 52px 1fr 1fr 1fr 60px 60px;
+}
+.view-season .table-header, .view-season .row {
+  grid-template-columns: 52px 1fr 62px 42px 42px 36px 36px 36px 46px;
+}
+.season-select {
+  background: var(--surface-hover); border: 1px solid var(--border); color: var(--text);
+  padding: 6px 10px; border-radius: 8px; font-family: var(--mono); font-size: 11px;
+  outline: none; cursor: pointer;
+}
+.event-detail-grid {
+  display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 14px;
+  margin-top: 6px;
+}
+.event-detail-grid h5 {
+  font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px;
+  color: var(--accent); margin: 0 0 6px 0; font-weight: 700;
+}
+.event-detail-grid ol, .event-detail-grid ul {
+  margin: 0; padding-left: 22px; font-size: 12px; line-height: 1.6;
+}
+.event-detail-grid .winners li { color: var(--gold); font-weight: 600; }
+.event-detail-grid .finalists li { color: var(--finalist); }
+.event-detail-grid .others li { color: var(--text); }
+.event-detail-grid .nuisance li { color: var(--text-muted); font-style: italic; }
+.event-row.troll .pname, .event-row.troll .num { color: var(--text-muted); font-style: italic; }
+@media (max-width: 720px) {
+  .view-events .table-header, .view-events .row {
+    grid-template-columns: 36px 1fr 60px;
+  }
+  .view-events .table-header > :nth-child(3),
+  .view-events .row > :nth-child(3),
+  .view-events .table-header > :nth-child(4),
+  .view-events .row > :nth-child(4),
+  .view-events .table-header > :nth-child(6),
+  .view-events .row > :nth-child(6) { display: none; }
+  .event-detail-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .event-detail-grid ol, .event-detail-grid ul { font-size: 11px; }
+}
+
+.row .rank { font-family: var(--mono); font-size: 11px; color: var(--text-muted); }
+.rank-delta { font-size: 9px; font-weight: 600; margin-left: 3px; }
+.rank-delta.up { color: var(--green); }
+.rank-delta.down { color: var(--red); }
+.rank-delta.new { color: var(--accent); font-size: 8px; }
+.val-delta { font-size: 8px; font-weight: 600; margin-left: 2px; }
+.val-delta.up { color: var(--green); }
+.val-delta.down { color: var(--red); }
+.row .pname { font-size: 13px; font-weight: 600; color: var(--pname); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: flex; align-items: center; }
+.row .num { text-align: right; font-family: var(--mono); font-size: 12px; }
+.row .num-c { text-align: center; font-family: var(--mono); font-size: 12px; }
+.row .w1 { color: var(--gold); }
+.row .w2 { color: var(--silver); }
+.row .w3 { color: var(--bronze); }
+.row .fin { color: var(--finalist); }
+.row .wins-cell { font-weight: 700; color: var(--accent); }
+.row .dim { color: var(--text-muted); }
+.row .pct { color: var(--text-dim); font-size: 11px; }
+
+/* Tier dot */
+.tier-dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; margin-right: 6px; flex-shrink: 0; }
+
+/* ── Detail Panel ── */
+.detail-panel {
+  background: var(--row-hover); border: 1px solid var(--border-bright);
+  border-radius: 0; padding: 14px 14px; border-bottom: 1px solid var(--row-border);
+  animation: slideDown 0.2s ease-out;
+}
+@keyframes slideDown { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+
+.detail-header {
+  display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;
+}
+.detail-header .name { font-size: 17px; font-weight: 700; }
+.detail-header .close-btn {
+  background: none; border: 1px solid var(--border); color: var(--text-muted);
+  border-radius: 6px; padding: 2px 8px; cursor: pointer; font-size: 13px;
+  transition: all 0.15s;
+}
+.detail-header .close-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+.chart-canvas { width: 100%; height: 180px; position: relative; overflow-x: auto; overflow-y: hidden; }
+.chart-canvas canvas { display: block; }
+.chart-tooltip {
+  display: none; position: absolute; background: var(--bg); border: 1px solid var(--border-bright);
+  border-radius: 6px; padding: 6px 10px; font-family: var(--mono); font-size: 10px;
+  color: var(--text-dim); pointer-events: none; z-index: 10; white-space: nowrap;
+}
+.chart-tooltip .t-cup { color: var(--text-muted); }
+.chart-tooltip .t-result { font-weight: 700; }
+.chart-tooltip .t-pts { color: var(--accent); }
+
+.history-grid {
+  display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px;
+}
+.history-chip {
+  font-family: var(--mono); font-size: 10px; padding: 3px 7px; border-radius: 4px;
+  border: 1px solid var(--border);
+}
+.history-chip.w1 { background: rgba(245,158,11,0.15); color: var(--gold); border-color: rgba(245,158,11,0.3); }
+.history-chip.w2 { background: rgba(156,163,175,0.1); color: var(--silver); border-color: rgba(156,163,175,0.2); }
+.history-chip.w3 { background: rgba(184,115,51,0.15); color: var(--bronze); border-color: rgba(184,115,51,0.3); }
+.history-chip.w4, .history-chip.w5 { background: var(--surface-hover); color: var(--text-dim); }
+.history-chip.f { background: rgba(59,130,246,0.1); color: var(--finalist); border-color: rgba(59,130,246,0.2); }
+.history-chip.o { background: transparent; color: var(--text-dark); }
+.history-chip.troll { opacity: 0.5; font-style: italic; }
+.history-chip.dropped { opacity: 0.35; text-decoration: line-through; }
+.history-chip.outside { opacity: 0.2; font-size: 9px; }
+
+.detail-stats {
+  display: flex; gap: 16px; margin-bottom: 10px; flex-wrap: wrap;
+}
+.detail-stat {
+  font-family: var(--mono); font-size: 11px; color: var(--text-muted);
+}
+.detail-stat .val { color: var(--text); font-weight: 600; }
+
+/* ── Info Button + Modal ── */
+.info-btn {
+  background: none; border: 1px solid var(--border-bright); color: var(--text-muted);
+  border-radius: 4px; padding: 2px 7px; cursor: pointer; font-size: 11px;
+  font-family: var(--mono); margin-left: 2px; transition: all 0.15s; line-height: 1;
+}
+.info-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+.modal-overlay {
+  display: none; position: fixed; inset: 0; background: var(--modal-overlay);
+  z-index: 100; align-items: center; justify-content: center;
+}
+.modal-overlay.open { display: flex; }
+.modal {
+  background: var(--modal-bg); border: 1px solid var(--modal-border);
+  border-radius: 12px; padding: 24px 28px; max-width: 520px; width: 90%;
+  font-family: var(--mono); font-size: 12px; line-height: 1.75; color: var(--text-dim);
+  max-height: 80vh; overflow-y: auto;
+}
+.modal-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+.modal-head h3 { color: var(--text); font-size: 14px; font-weight: 700; margin: 0; }
+.modal-close {
+  background: none; border: 1px solid var(--border); color: var(--text-dim);
+  border-radius: 6px; padding: 3px 8px; cursor: pointer; font-size: 11px; font-family: var(--mono);
+}
+.modal-close:hover { border-color: var(--accent); color: var(--text); }
+.modal h4 { color: var(--text); font-size: 12px; font-weight: 700; margin: 14px 0 6px 0; }
+.modal ul { padding-left: 18px; margin: 0; }
+.modal li { margin-bottom: 5px; }
+.modal code { color: var(--accent); font-size: 11px; }
+.modal .pts-table { width: 100%; border-collapse: collapse; margin: 8px 0; }
+.modal .pts-table td { padding: 3px 8px; border-bottom: 1px solid var(--border); }
+.modal .pts-table td:first-child { font-weight: 600; color: var(--text); }
+.modal .pts-table td:last-child { text-align: right; color: var(--accent); font-weight: 700; }
+
+/* ── Tier Legend ── */
+.tier-legend {
+  display: flex; gap: 16px; justify-content: center; margin-top: 12px;
+  font-family: var(--mono); font-size: 10px; color: var(--text-muted);
+}
+.tier-legend span { display: flex; align-items: center; gap: 4px; }
+.tier-legend .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+
+/* ── Footer ── */
+.footer {
+  text-align: center; margin-top: 24px; padding: 12px 0;
+  font-family: var(--mono); font-size: 10px; color: var(--text-dark);
+  border-top: 1px solid var(--border);
+}
+.footer a { color: var(--text-muted); text-decoration: none; }
+.footer a:hover { color: var(--accent); }
+
+/* ── Bonq event extras ── */
+.sub-h { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--accent); margin: 16px 0 6px; font-weight: 700; }
+.map-row { display: grid; grid-template-columns: minmax(120px, 200px) 1fr 110px; gap: 10px; align-items: center; font-size: 12px; padding: 3px 0; }
+.map-row .num { text-align: right; font-family: var(--mono); font-size: 11px; color: var(--text-dim); }
+.map-bar { height: 6px; background: var(--surface-hover); border-radius: 3px; overflow: hidden; }
+.map-bar span { display: block; height: 100%; background: linear-gradient(90deg, var(--br-green), var(--br-yellow)); border-radius: 3px; }
+.note { font-family: var(--mono); font-size: 10px; color: var(--text-muted); margin-top: 6px; }
+details.rounds { margin-top: 12px; }
+details.rounds summary { cursor: pointer; font-family: var(--mono); font-size: 11px; color: var(--text-dim); }
+.rounds-table { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 12px; }
+.rounds-table th { text-align: left; font-family: var(--mono); font-size: 9px; text-transform: uppercase; color: var(--text-muted); padding: 4px 6px; border-bottom: 1px solid var(--border-bright); }
+.rounds-table td { padding: 3px 6px; border-bottom: 1px solid var(--row-border); white-space: nowrap; }
+.rounds-table .num { font-family: var(--mono); text-align: right; }
+.detail-panel { overflow-x: auto; }
+@media (max-width: 640px) { .map-row { grid-template-columns: 1fr 90px; } .map-bar { display: none; } }
+
+/* ── Mascots ── */
+.mascot { position: fixed; bottom: 60px; width: 140px; z-index: 1; opacity: 0.7; transition: opacity 0.2s; }
+[data-theme="dark"] .mascot { mix-blend-mode: lighten; }
+[data-theme="light"] .mascot { mix-blend-mode: multiply; }
+.mascot:hover { opacity: 1; }
+.mascot-left { left: 10px; }
+.mascot-right { right: 10px; }
+@media (max-width: 1280px) { .mascot { display: none; } }
+
+/* ── Mobile ── */
+@media (max-width: 640px) {
+  /* Records view mobile */
+  .view-records .table-header, .view-records .row {
+    grid-template-columns: 28px 1fr 46px 32px 32px 32px 42px 48px !important;
+    padding: 6px 8px;
+  }
+  .view-records .table-header { font-size: 8px; }
+  .view-records .row .pname { font-size: 12px; }
+  .view-records .row .num, .view-records .row .num-c { font-size: 11px; }
+
+  /* Ranking view mobile: hide Apps(4), 2nd(7), 3rd(8) */
+  .view-ranking .table-header, .view-ranking .row {
+    grid-template-columns: 40px 1fr 50px 36px 36px 36px !important;
+    padding: 6px 8px;
+  }
+  .view-ranking .table-header > :nth-child(4),
+  .view-ranking .row > :nth-child(4),
+  .view-ranking .table-header > :nth-child(7),
+  .view-ranking .row > :nth-child(7),
+  .view-ranking .table-header > :nth-child(8),
+  .view-ranking .row > :nth-child(8) { display: none !important; }
+  .view-ranking .table-header { font-size: 8px; }
+  .view-ranking .row .pname { font-size: 12px; }
+  .view-ranking .row .num, .view-ranking .row .num-c { font-size: 11px; }
+  /* Season view mobile: hide Apps(4), 2nd(7), 3rd(8) */
+  .view-season .table-header, .view-season .row {
+    grid-template-columns: 40px 1fr 50px 36px 36px 36px !important;
+    padding: 6px 8px;
+  }
+  .view-season .table-header > :nth-child(4),
+  .view-season .row > :nth-child(4),
+  .view-season .table-header > :nth-child(7),
+  .view-season .row > :nth-child(7),
+  .view-season .table-header > :nth-child(8),
+  .view-season .row > :nth-child(8) { display: none !important; }
+  .view-season .table-header { font-size: 8px; }
+  .view-season .row .pname { font-size: 12px; }
+  .view-season .row .num, .view-season .row .num-c { font-size: 11px; }
+
+  /* Glicko view mobile: hide sigma(4), Apps(5), 2nd(7), 3rd(8) */
+  .view-glicko .table-header, .view-glicko .row {
+    grid-template-columns: 40px 1fr 50px 36px 36px !important;
+    padding: 6px 8px;
+  }
+  .view-glicko .table-header > :nth-child(4),
+  .view-glicko .row > :nth-child(4),
+  .view-glicko .table-header > :nth-child(5),
+  .view-glicko .row > :nth-child(5),
+  .view-glicko .table-header > :nth-child(7),
+  .view-glicko .row > :nth-child(7),
+  .view-glicko .table-header > :nth-child(8),
+  .view-glicko .row > :nth-child(8) { display: none !important; }
+  .view-glicko .table-header { font-size: 8px; }
+  .view-glicko .row .pname { font-size: 12px; }
+  .view-glicko .row .num, .view-glicko .row .num-c { font-size: 11px; }
+
+  .search-input { width: 140px; }
+  .tier-legend { gap: 8px; font-size: 9px; }
+}
 </style>
 </head>
 <body>
 <div class="container">
-  <div class="header">
-    <h1>Bonq Cup</h1>
-    <div class="sub" id="sub">MMM's biweekly topout</div>
-    <button class="theme-toggle" id="themeBtn" aria-label="Toggle theme">◐</button>
-  </div>
-  <div class="tabs">
-    <button class="tab active" data-tab="ranking">Ranking</button>
-    <button class="tab" data-tab="cups">Cups</button>
-  </div>
-  <div class="panel active" id="panel-ranking"></div>
-  <div class="panel" id="panel-cups"></div>
-  <div class="foot" id="foot"></div>
-</div>
-<script>
-const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const chip = r => r === 'o' ? '' : `<span class="chip ${r}">${r === 'f' ? 'F' : r.toUpperCase()}</span>`;
-const fmtDate = iso => { const d = new Date(iso + 'T12:00:00'); return d.toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric'}); };
-const fin = (c, sid) => { const f = c.finish?.[sid]; return f ? `<td class="num" style="color:var(--text-muted)" title="rounds finished / rounds in lobby">${f[0]}/${f[1]} · ${f[1] ? Math.round(100*f[0]/f[1]) : 0}%</td>` : '<td></td>'; };
-const stripMap = m => m.replace(/^bonq(\s*cup)?\s*#?\d+\s*[-:]\s*/i, '');
 
-document.getElementById('themeBtn').onclick = () => {
-  const t = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-  document.documentElement.setAttribute('data-theme', t);
-  try { localStorage.setItem('bonq-theme', t); } catch (e) {}
-};
-document.querySelectorAll('.tab').forEach(b => b.onclick = () => {
-  document.querySelectorAll('.tab').forEach(x => x.classList.toggle('active', x === b));
-  document.querySelectorAll('.panel').forEach(p => p.classList.toggle('active', p.id === 'panel-' + b.dataset.tab));
+<div class="header">
+  <h1>Bonq Cup</h1>
+  <div class="sub" id="info"></div>
+  <button class="theme-toggle" id="themeToggle"></button>
+</div>
+
+<div class="controls">
+  <div class="view-tabs">
+    <button class="view-tab" data-view="ranking">Ranking</button>
+    <button class="view-tab" data-view="glicko">Skill</button>
+    <button class="view-tab active" data-view="records">Records</button>
+    <button class="view-tab" data-view="events">Events</button>
+  </div>
+  <input type="text" class="search-input" id="search" placeholder="Search player...">
+  <label class="toggle-wrap" id="trollWrap">
+    <input type="checkbox" id="trollToggle">
+    <span>Include Troll</span>
+  </label>
+  <div class="min-cups" id="minCupsWrap">
+    <span>Min apps</span>
+    <input type="range" id="minApps" min="1" max="10" value="1">
+    <span class="val" id="minAppsVal">1</span>
+  </div>
+</div>
+
+<div class="table-wrap view-records" id="tableWrap">
+  <div class="table-header" id="tableHeader"></div>
+  <div id="tableBody"></div>
+</div>
+
+<div class="tier-legend" id="tierLegend">
+  <span><span class="dot" style="background:#dc2626"></span>Legend 2600+</span>
+  <span><span class="dot" style="background:#a855f7"></span>Pro 1300+</span>
+  <span><span class="dot" style="background:#3b82f6"></span>Master 800+</span>
+  <span><span class="dot" style="background:#10b981"></span>Gold 200+</span>
+</div>
+
+<div class="footer">
+  Data from the LiveLeaderboardLogger mod + the host's Top-&gt;Out results<br>
+  Bonq Cup by the MMM | Sundays 19:00, every other week
+</div>
+
+</div>
+
+<div class="modal-overlay" id="infoModal">
+  <div class="modal">
+    <div class="modal-head">
+      <h3>Rolling Points Ranking</h3>
+      <button class="modal-close" id="modalCloseBtn">&#10005; close</button>
+    </div>
+    <p>Rolling points ranking with best-N selection for <b>Bonq Cup</b>, the MMM's Sunday Top-&gt;Out competition. Same system as the Kerki Comp ranking.</p>
+
+    <h4>Points per placement</h4>
+    <table class="pts-table">
+      <tr><td>1st Winner</td><td>200</td></tr>
+      <tr><td>2nd Winner</td><td>140</td></tr>
+      <tr><td>3rd Winner</td><td>100</td></tr>
+      <tr><td>4th Winner</td><td>70</td></tr>
+      <tr><td>5th Winner</td><td>40</td></tr>
+      <tr><td>Finalist</td><td>10</td></tr>
+    </table>
+
+    <h4>Sliding window</h4>
+    <ul>
+      <li>Only the last <code>26</code> cups count (about a year, as Bonq runs every other week).</li>
+      <li>Of those, only your <b>best 18</b> results are summed. The rest are dropped.</li>
+    </ul>
+
+    <h4>How it works</h4>
+    <ul>
+      <li><b>1st Winner</b> is the first player to clinch: they beat the full lobby. After they leave, the field is weaker, so 2nd to 5th earn fewer points.</li>
+      <li>The <b>best-of</b> system means missing a few cups doesn't destroy your ranking, but you can't coast on old results forever.</li>
+      <li>Theoretical max: <code>18 &times; 200 = 3600</code>.</li>
+    </ul>
+
+    <h4>Tiers</h4>
+    <ul>
+      <li><span style="color:#dc2626;font-weight:700">Legend</span>: 2600+ points</li>
+      <li><span style="color:#a855f7;font-weight:700">Pro</span>: 1300+ points</li>
+      <li><span style="color:#3b82f6;font-weight:700">Master</span>: 800+ points</li>
+      <li><span style="color:#10b981;font-weight:700">Gold</span>: 200+ points</li>
+    </ul>
+
+    <h4>Records tab</h4>
+    <p>The <b>Records</b> tab shows all-time stats (wins, placements, finalist appearances) across every cup, plus <b>Rounds</b>: the share of rounds a player finished out of the rounds they were in the lobby for. It's a career record, not a ranking.</p>
+  </div>
+</div>
+
+<div class="modal-overlay" id="glickoModal">
+  <div class="modal">
+    <div class="modal-head">
+      <h3>Convergent Skill Rating</h3>
+      <button class="modal-close" onclick="document.getElementById('glickoModal').classList.remove('open')">&#10005; close</button>
+    </div>
+    <p>A Glicko-inspired skill estimate for <b>Bonq Cup</b>, using the same settings as the Kerki Comp skill rating. Each result pulls your rating toward a performance value based on your placement.</p>
+
+    <h4>How it works</h4>
+    <ul>
+      <li>Every player starts at <code>1500</code> (unproven baseline).</li>
+      <li>Each cup result pulls your rating toward a <b>performance value</b>: winning 1st pulls toward 2100, finalist toward 1700, and so on.</li>
+      <li>Early results cause big jumps (high uncertainty). After several cups, your rating stabilizes and moves slowly.</li>
+    </ul>
+
+    <h4>Performance values</h4>
+    <table class="pts-table">
+      <tr><td>1st Winner</td><td>2100</td></tr>
+      <tr><td>2nd Winner</td><td>1950</td></tr>
+      <tr><td>3rd Winner</td><td>1875</td></tr>
+      <tr><td>4th Winner</td><td>1850</td></tr>
+      <tr><td>5th Winner</td><td>1800</td></tr>
+      <tr><td>Finalist</td><td>1700</td></tr>
+      <tr><td>Other</td><td>1500</td></tr>
+    </table>
+
+    <h4>Decay &amp; uncertainty</h4>
+    <ul>
+      <li><b>Inactivity decay</b>: miss a cup and your rating decays <code>2%</code> toward 1500.</li>
+      <li><b>Surprise widening</b>: if a result is far from your current rating, the system becomes less certain and allows bigger adjustments.</li>
+      <li><b>&plusmn;&sigma;</b> shows uncertainty. High &sigma; means not enough data yet; low &sigma; means the rating is settled.</li>
+    </ul>
+
+    <h4>Limitations</h4>
+    <ul>
+      <li>No lobby context: winning against 30 players counts the same as winning against 7.</li>
+      <li>Players with few cups have high uncertainty, so their rating may not reflect true skill yet.</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+let DATA = null;
+let viewMode = 'records';
+let sortCol = 'wins';
+let sortDir = -1;
+let selected = null;
+
+const RECORDS_COLS = [
+  { key: 'rank', label: '#', cls: '' },
+  { key: 'name', label: 'Player', cls: '' },
+  { key: 'wins', label: 'Winner', cls: 'right' },
+  { key: 'w1', label: '1st', cls: 'center' },
+  { key: 'w2', label: '2nd', cls: 'center' },
+  { key: 'w3', label: '3rd', cls: 'center' },
+  { key: 'finalist', label: 'Finalist', cls: 'right' },
+  { key: 'finpct', label: 'Rounds', cls: 'right', title: 'Rounds finished / rounds in the lobby' },
+];
+
+const RANKING_COLS = [
+  { key: 'rank', label: '#', cls: '' },
+  { key: 'name', label: 'Player', cls: '' },
+  { key: 'points', label: 'Rolling', cls: 'right' },
+  { key: 'apps', label: 'Apps', cls: 'right' },
+  { key: 'wins', label: 'W', cls: 'right' },
+  { key: 'w1', label: '1st', cls: 'center' },
+  { key: 'w2', label: '2nd', cls: 'center' },
+  { key: 'w3', label: '3rd', cls: 'center' },
+  { key: 'finalist', label: 'Fin', cls: 'right' },
+];
+
+const GLICKO_COLS = [
+  { key: 'rank', label: '#', cls: '' },
+  { key: 'name', label: 'Player', cls: '' },
+  { key: 'mu', label: 'Skill', cls: 'right' },
+  { key: 'sigma', label: '\u00b1\u03c3', cls: 'right' },
+  { key: 'apps', label: 'Apps', cls: 'right' },
+  { key: 'w1', label: '1st', cls: 'center' },
+  { key: 'w2', label: '2nd', cls: 'center' },
+  { key: 'w3', label: '3rd', cls: 'center' },
+  { key: 'finalist', label: 'Fin', cls: 'right' },
+];
+
+const EVENTS_COLS = [
+  { key: 'id', label: '#', cls: '' },
+  { key: 'w1', label: '1st', cls: '' },
+  { key: 'w2', label: '2nd', cls: '' },
+  { key: 'w3', label: '3rd', cls: '' },
+  { key: 'lobby_size', label: 'Lobby', cls: 'right' },
+  { key: 'sof', label: 'SOF', cls: 'right', title: 'Cross-comp Strength of Field' },
+];
+
+const TIER_THRESHOLDS = [2600, 1300, 800, 200];
+const TIER_COLORS = ['#dc2626', '#a855f7', '#3b82f6', '#10b981'];
+const TIER_NAMES = ['Legend', 'Pro', 'Master', 'Gold'];
+
+function ptsColor(pts) {
+  for (let i = 0; i < TIER_THRESHOLDS.length; i++) {
+    if (pts >= TIER_THRESHOLDS[i]) return TIER_COLORS[i];
+  }
+  return null;
+}
+
+function getCols() {
+  if (viewMode === 'ranking') return RANKING_COLS;
+  if (viewMode === 'glicko') return GLICKO_COLS;
+  if (viewMode === 'events') return EVENTS_COLS;
+  return RECORDS_COLS;
+}
+
+fetch('bonq.json', { cache: 'no-store' })
+  .then(r => r.json())
+  .then(data => { DATA = data; init(); });
+
+function init() {
+  updateSubtitle();
+  updateControls();
+  buildHeader();
+  render();
+}
+
+function updateSubtitle() {
+  const el = document.getElementById('info');
+  if (viewMode === 'ranking') {
+    const r = DATA.ranking;
+    el.textContent = `Rolling \u00b7 Best ${r.best_of} of last ${r.eligible_cups} cup${r.eligible_cups === 1 ? '' : 's'}`;
+  } else if (viewMode === 'glicko') {
+    el.textContent = `Skill Rating \u00b7 Convergent with ${(DATA.glicko.decay * 100).toFixed(0)}% decay`;
+  } else if (viewMode === 'events') {
+    el.textContent = `${DATA.meta.total_cups} cup${DATA.meta.total_cups === 1 ? '' : 's'} \u00b7 click a row to see full standings`;
+  } else {
+    el.textContent = `${DATA.meta.total_cups} cup${DATA.meta.total_cups === 1 ? '' : 's'} \u00b7 ${DATA.meta.total_players} players \u00b7 Sundays 19:00, every other week`;
+  }
+}
+
+function updateControls() {
+  const isRecords = viewMode === 'records';
+  const isEvents = viewMode === 'events';
+  document.getElementById('trollWrap').style.display = 'none';  // Bonq has no troll cups
+  document.getElementById('minCupsWrap').style.display = isRecords ? '' : 'none';
+  document.getElementById('tierLegend').style.display = viewMode === 'ranking' ? '' : 'none';
+}
+
+function buildHeader() {
+  const cols = getCols();
+  const h = document.getElementById('tableHeader');
+  h.innerHTML = cols.map(c => {
+    const active = c.key === sortCol ? ' sort-active' : '';
+    const dir = c.key === sortCol ? (sortDir === 1 ? ' \u25B2' : ' \u25BC') : '';
+    let infoBtn = '';
+    if (c.key === 'points' && viewMode === 'ranking')
+      infoBtn = ' <button class="info-btn" onclick="event.stopPropagation();document.getElementById(\'infoModal\').classList.add(\'open\')" style="pointer-events:auto;margin-left:2px;font-size:9px;padding:0 4px">\u2139</button>';
+    else if (c.key === 'mu' && viewMode === 'glicko')
+      infoBtn = ' <button class="info-btn" onclick="event.stopPropagation();document.getElementById(\'glickoModal\').classList.add(\'open\')" style="pointer-events:auto;margin-left:2px;font-size:9px;padding:0 4px">\u2139</button>';
+    const titleAttr = c.title ? ` title="${c.title}"` : '';
+    return `<div class="${c.cls}${active}" data-sort="${c.key}"${titleAttr}>${c.label}${dir}${infoBtn}</div>`;
+  }).join('');
+  h.querySelectorAll('[data-sort]').forEach(el => {
+    el.onclick = () => {
+      const col = el.dataset.sort;
+      if (col === 'rank') return;
+      if (col === sortCol) sortDir *= -1;
+      else { sortCol = col; sortDir = col === 'name' ? 1 : -1; }
+      buildHeader();
+      render();
+    };
+  });
+}
+
+function render() {
+  if (viewMode === 'ranking') renderRanking();
+  else if (viewMode === 'glicko') renderGlicko();
+  else if (viewMode === 'events') renderEvents();
+  else renderRecords();
+}
+
+/* ── Events View ── */
+let selectedEvent = null;
+
+function renderEvents() {
+  const search = document.getElementById('search').value.toLowerCase();
+  const includeTroll = document.getElementById('trollToggle').checked;
+  let list = DATA.cups.filter(k => includeTroll || !k.troll);
+
+  if (search) {
+    list = list.filter(k => {
+      if (String(k.id) === search) return true;
+      const allNames = [...(k.winners||[]), ...(k.finalists||[]), ...(k.others||[]), ...(k.nuisances||[])];
+      return allNames.some(n => n.toLowerCase().includes(search));
+    });
+  }
+
+  // Sort
+  list = [...list];
+  list.sort((a, b) => {
+    if (sortCol === 'id') return sortDir * (a.id - b.id);
+    if (sortCol === 'lobby_size') return sortDir * ((a.lobby_size||0) - (b.lobby_size||0));
+    if (sortCol === 'sof') {
+      const av = a.sof == null ? -1 : a.sof;
+      const bv = b.sof == null ? -1 : b.sof;
+      return sortDir * (av - bv);
+    }
+    if (sortCol === 'w1' || sortCol === 'w2' || sortCol === 'w3') {
+      const idx = { w1: 0, w2: 1, w3: 2 }[sortCol];
+      const an = (a.winners && a.winners[idx]) || '';
+      const bn = (b.winners && b.winners[idx]) || '';
+      return sortDir * an.localeCompare(bn);
+    }
+    return 0;
+  });
+
+  const body = document.getElementById('tableBody');
+  body.innerHTML = '';
+
+  list.forEach(k => {
+    const row = document.createElement('div');
+    row.className = 'row event-row' + (k.troll ? ' troll' : '') + (selectedEvent === k.id ? ' selected' : '');
+    const w = k.winners || [];
+    const w1 = w[0] || '<span class="dim">-</span>';
+    const w2 = w[1] || '<span class="dim">-</span>';
+    const w3 = w[2] || '<span class="dim">-</span>';
+
+    const sofTxt = (k.sof == null) ? '<span class="dim">-</span>' : k.sof.toFixed(1);
+    row.innerHTML = `
+      <div class="rank">#${k.id}</div>
+      <div class="pname"><span class="w1">${esc(w1)}</span></div>
+      <div class="pname"><span class="w2">${esc(w2)}</span></div>
+      <div class="pname"><span class="w3">${esc(w3)}</span></div>
+      <div class="num">${k.lobby_size || '-'}</div>
+      <div class="num">${sofTxt}</div>
+    `;
+    row.onclick = () => {
+      selectedEvent = (selectedEvent === k.id) ? null : k.id;
+      render();
+    };
+    body.appendChild(row);
+
+    if (selectedEvent === k.id) {
+      body.appendChild(buildEventDetail(k));
+    }
+  });
+}
+
+function buildEventDetail(k) {
+  const wrap = document.createElement('div');
+  wrap.className = 'detail-panel';
+  const winners = k.winners || [], finalists = k.finalists || [];
+  const others = k.others || [], nuisances = k.nuisances || [];
+  const fin = n => { const f = (k.finish || {})[n]; return f ? ` <span class="dim" title="rounds finished / rounds in the lobby">${f[0]}/${f[1]}</span>` : ''; };
+  const wd = k.winners_detail || [];
+
+  const winList = winners.map((n, i) => `<li>${esc(n)}${wd[i] ? ` <span class="dim">R${wd[i].won} ${esc(stripMap(wd[i].map))}</span>` : ''}</li>`).join('') || '<li class="dim">none</li>';
+  const finList = finalists.map(n => `<li>${esc(n)}${fin(n)}</li>`).join('') || '<li class="dim">none</li>';
+  const othList = others.map((n, i) => `<li>${esc(n)} <span class="dim">${(k.others_points || [])[i] ?? ''}</span>${fin(n)}</li>`).join('') || '<li class="dim">none</li>';
+  const nuiList = nuisances.map(n => `<li>${esc(n)}${fin(n)}</li>`).join('') || '<li class="dim">none</li>';
+
+  const maps = (k.map_finish || []).map(([m, f, p]) => `<div class="map-row">
+      <span class="map-name">${esc(stripMap(m))}</span>
+      <span class="map-bar"><span style="width:${p ? 100 * f / p : 0}%"></span></span>
+      <span class="num">${f}/${p} · ${p ? (100 * f / p).toFixed(1) : 0}%</span></div>`).join('');
+  const rounds = (k.rounds || []).map(r => `<tr><td class="num">${r.n}</td><td>${esc(stripMap(r.map))}</td>
+      <td>${esc(r.top[0]?.name || '')}</td><td class="num">${esc(r.top[0]?.time || '')}</td>
+      <td class="num">${r.finishers ?? ''}/${r.roster}</td><td class="w1">${r.winner ? esc(r.winner) : ''}</td></tr>`).join('');
+  const src = k.finish_source === 'host'
+    ? "the host's Top-&gt;Out results (in the lobby = still there when the round ended)"
+    : 'the live log (in the lobby = there when the round started)';
+
+  wrap.innerHTML = `
+    <div class="detail-header">
+      <div class="name">Bonq #${k.id} · ${esc(fmtDate(k.date))}</div>
+      <button class="close-btn" onclick="event.stopPropagation();selectedEvent=null;render();">close</button>
+    </div>
+    ${k.header ? `<div class="detail-stats"><div class="detail-stat">${esc(k.header)}</div><div class="detail-stat">Rounds <span class="val">${k.scoring_rounds}</span></div></div>` : ''}
+    <div class="event-detail-grid">
+      <div><h5>Winners</h5><ol class="winners">${winList}</ol></div>
+      <div><h5>Finalists</h5><ol class="finalists">${finList}</ol></div>
+      <div><h5>Others (sorted by points)</h5><ol class="others">${othList}</ol></div>
+      <div><h5>Nuisance${nuisances.length ? '' : ' <span class="dim">(none)</span>'}</h5><ol class="nuisance">${nuiList}</ol></div>
+    </div>
+    ${maps ? `<h5 class="sub-h">Rounds finished per map</h5><div class="map-list">${maps}</div>
+      <div class="note">Finished / in the lobby, from ${src}. Spectators and AFK count as in the lobby, so these are floors.</div>` : ''}
+    ${rounds ? `<details class="rounds"><summary>Round by round</summary><table class="rounds-table">
+      <thead><tr><th>R</th><th>Map</th><th>Fastest</th><th>Time</th><th>Fin</th><th>Won by</th></tr></thead>
+      <tbody>${rounds}</tbody></table></details>` : ''}
+  `;
+  return wrap;
+}
+
+function stripMap(m) { return String(m || '').replace(/^bonq(\s*cup)?\s*#?\d+\s*[-:]\s*/i, ''); }
+function fmtDate(iso) {
+  const d = new Date(iso + 'T12:00:00');
+  return isNaN(d) ? (iso || '?') : d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+
+/* ── Ranking View ── */
+function renderRanking() {
+  const search = document.getElementById('search').value.toLowerCase();
+  let list = DATA.ranking.players.filter(p => p.name.toLowerCase().includes(search));
+
+  list = [...list];
+  list.sort((a, b) => {
+    if (sortCol === 'name') return sortDir * a.name.localeCompare(b.name);
+    const va = a[sortCol] ?? 0, vb = b[sortCol] ?? 0;
+    const d = sortDir * (va - vb);
+    return d !== 0 ? d : (b.points - a.points);
+  });
+
+  const body = document.getElementById('tableBody');
+  body.innerHTML = '';
+
+  list.forEach((p, i) => {
+    const row = document.createElement('div');
+    row.className = 'row' + (p.name === selected ? ' selected' : '');
+
+    const color = ptsColor(p.points);
+    const dotHtml = color ? `<span class="tier-dot" style="background:${color}"></span>` : '';
+    const ptsStyle = color ? ` style="color:${color}"` : '';
+
+    const w1h = p.w1 ? `<span class="w1">${p.w1}</span>` : `<span class="dim">-</span>`;
+    const w2h = p.w2 ? `<span class="w2">${p.w2}</span>` : `<span class="dim">-</span>`;
+    const w3h = p.w3 ? `<span class="w3">${p.w3}</span>` : `<span class="dim">-</span>`;
+    const finh = p.finalist ? `<span class="fin">${p.finalist}</span>` : `<span class="dim">-</span>`;
+
+    row.innerHTML = `
+      <div class="rank">${p.rank}${rankDelta(p.prev_rank, p.rank)}</div>
+      <div class="pname">${dotHtml}${esc(p.name)}</div>
+      <div class="num"${ptsStyle}><b>${p.points}</b>${valDelta(p.prev_points, p.points)}</div>
+      <div class="num">${p.apps}</div>
+      <div class="num">${p.wins || '-'}</div>
+      <div class="num-c">${w1h}</div>
+      <div class="num-c">${w2h}</div>
+      <div class="num-c">${w3h}</div>
+      <div class="num">${finh}</div>
+    `;
+
+    row.onclick = () => {
+      selected = selected === p.name ? null : p.name;
+      render();
+    };
+    body.appendChild(row);
+
+    if (p.name === selected) {
+      body.appendChild(buildRankingDetail(p));
+    }
+  });
+}
+
+const RESULT_Y = { w1: 1, w2: 2, w3: 3, w4: 4, w5: 5, f: 6, o: 7 };
+const RESULT_LABEL = { w1: '1st', w2: '2nd', w3: '3rd', w4: '4th', w5: '5th', f: 'Fin', o: 'Other' };
+const RESULT_COLOR = { w1: '#f59e0b', w2: '#9ca3af', w3: '#b87333', w4: '#6b7280', w5: '#4b5563', f: '#3b82f6', o: '#374151' };
+
+function cssVar(name) {
+  return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+}
+
+function drawCupChart(canvas, tip, fullHistory, windowMap, trollSet, wStart, wEnd) {
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const container = canvas.parentElement;
+  const containerW = container.getBoundingClientRect().width;
+  const kRange = Math.max(...fullHistory.map(h => h.k)) - Math.min(...fullHistory.map(h => h.k)) || 1;
+  const desiredW = Math.max(containerW, kRange * 12 + 70);
+  canvas.width = desiredW * dpr; canvas.height = 180 * dpr;
+  canvas.style.width = desiredW + 'px'; canvas.style.height = '180px';
+  ctx.scale(dpr, dpr);
+  container.scrollLeft = container.scrollWidth;
+
+  const W = desiredW, H = 180;
+  const pad = { l: 40, r: 12, t: 14, b: 24 };
+  const kNums = fullHistory.map(h => h.k);
+  const kMin = Math.min(...kNums), kMax = Math.max(...kNums);
+  function x(k) { return pad.l + (k - kMin) / (kMax - kMin || 1) * (W - pad.l - pad.r); }
+  function y(v) { return pad.t + (v - 1) / 6 * (H - pad.t - pad.b); } // 1-7 mapped to chart height
+
+  function draw(hl) {
+    ctx.clearRect(0, 0, W, H);
+    // Grid lines + Y labels
+    ctx.strokeStyle = cssVar('--border') || 'rgba(255,255,255,0.06)'; ctx.lineWidth = 1;
+    ctx.fillStyle = cssVar('--text-muted') || '#6b7280';
+    ctx.font = "9px 'JetBrains Mono',monospace"; ctx.textAlign = 'right';
+    ['w1','w2','w3','w4','w5','f'].forEach(r => {
+      const yv = y(RESULT_Y[r]);
+      ctx.beginPath(); ctx.moveTo(pad.l, yv); ctx.lineTo(W - pad.r, yv); ctx.stroke();
+      ctx.fillText(RESULT_LABEL[r], pad.l - 5, yv + 3);
+    });
+    // Window shading
+    const wxStart = x(wStart), wxEnd = x(wEnd);
+    ctx.fillStyle = cssVar('--surface-hover') || 'rgba(255,255,255,0.03)';
+    ctx.fillRect(wxStart, pad.t, wxEnd - wxStart, H - pad.t - pad.b);
+    // X labels
+    ctx.fillStyle = cssVar('--text-muted') || '#6b7280'; ctx.textAlign = 'center';
+    let xTicks;
+    if (kMax - kMin <= 20) { xTicks = []; for (let t = kMin; t <= kMax; t++) xTicks.push(t); }
+    else { xTicks = [kMin]; const step = 5; const start = Math.ceil(kMin / step) * step; for (let t = start; t < kMax; t += step) { if (t > kMin) xTicks.push(t); } xTicks.push(kMax); }
+    xTicks.forEach(k => { ctx.fillText('#' + k, x(k), H - 6); });
+    // Connect lines (window results only, non-troll)
+    const windowPts = fullHistory.filter(h => !trollSet.has(h.k) && h.k >= wStart && h.k <= wEnd && h.result !== 'o');
+    if (windowPts.length > 1) {
+      ctx.strokeStyle = 'rgba(0,156,59,0.45)'; ctx.lineWidth = 1.5; ctx.setLineDash([4, 3]);
+      ctx.beginPath();
+      windowPts.forEach((h, i) => { const px = x(h.k), py = y(RESULT_Y[h.result]); i === 0 ? ctx.moveTo(px, py) : ctx.lineTo(px, py); });
+      ctx.stroke(); ctx.setLineDash([]);
+    }
+    // Dots
+    fullHistory.forEach(h => {
+      const isTroll = trollSet.has(h.k);
+      const wh = windowMap[h.k];
+      const inWindow = !isTroll && h.k >= wStart && h.k <= wEnd;
+      const yVal = RESULT_Y[h.result] || 7;
+      const px = x(h.k), py = y(yVal);
+      const isHl = hl && hl.k === h.k;
+      let alpha = 1;
+      if (isTroll) alpha = 0.3;
+      else if (!inWindow) alpha = 0.2;
+      else if (wh && !wh.counted) alpha = 0.35;
+      ctx.globalAlpha = alpha;
+      const r = isHl ? 6 : 4;
+      ctx.beginPath(); ctx.arc(px, py, r, 0, Math.PI * 2);
+      ctx.fillStyle = RESULT_COLOR[h.result] || '#4b5563'; ctx.fill();
+      if (isHl) { ctx.strokeStyle = '#fff'; ctx.lineWidth = 2; ctx.stroke(); }
+      ctx.globalAlpha = 1;
+    });
+  }
+  draw(null);
+
+  canvas.onmousemove = (e) => {
+    const br = canvas.getBoundingClientRect();
+    const mx = (e.clientX - br.left) * (desiredW / br.width);
+    let closest = null, minDist = Infinity;
+    fullHistory.forEach(h => { const d = Math.abs(x(h.k) - mx); if (d < minDist) { minDist = d; closest = h; } });
+    if (closest && minDist < 20) {
+      canvas.style.cursor = 'pointer';
+      const wh = windowMap[closest.k];
+      const pts = wh ? wh.points : 0;
+      const counted = wh ? (wh.counted ? 'counted' : 'dropped') : '';
+      tip.style.display = 'block';
+      tip.innerHTML = `<div class="t-cup">Bonq #${closest.k}</div><div class="t-result" style="color:${RESULT_COLOR[closest.result]}">${RESULT_LABEL[closest.result] || closest.result}</div>${pts ? `<div class="t-pts">${pts} pts ${counted}</div>` : ''}`;
+      let tx = x(closest.k) + 12; if (tx + 120 > desiredW) tx = x(closest.k) - 130;
+      tip.style.left = tx + 'px'; tip.style.top = (y(RESULT_Y[closest.result] || 7) - 40) + 'px';
+      draw(closest);
+    } else {
+      canvas.style.cursor = ''; tip.style.display = 'none';
+      draw(null);
+    }
+  };
+  canvas.onmouseleave = () => { canvas.style.cursor = ''; tip.style.display = 'none'; draw(null); };
+}
+
+function buildRankingDetail(p) {
+  const panel = document.createElement('div');
+  panel.className = 'detail-panel';
+
+  const color = ptsColor(p.points);
+  const fullPlayer = DATA.players.find(fp => fp.name === p.name);
+  const trollSet = new Set(DATA.cups.filter(k => k.troll).map(k => k.id));
+
+  const windowMap = {};
+  p.history.forEach(h => { windowMap[h.k] = h; });
+
+  const wStart = DATA.ranking.window_start;
+  const wEnd = DATA.ranking.window_end;
+
+  const colorStyle = color ? ` style="color:${color}"` : '';
+  let html = `
+    <div class="detail-header">
+      <span class="name">${esc(p.name)}</span>
+      <button class="close-btn" onclick="selected=null;render();event.stopPropagation();">\u2715</button>
+    </div>
+    <div class="detail-stats">
+      <div class="detail-stat">Pts <span class="val"${colorStyle}>${p.points}</span></div>
+      <div class="detail-stat">Apps <span class="val">${p.apps}/${DATA.ranking.eligible_cups}</span></div>
+      <div class="detail-stat">Winner <span class="val">${p.wins}</span></div>
+      <div class="detail-stat">Counted <span class="val">${p.counted}</span></div>
+      ${p.dropped > 0 ? `<div class="detail-stat">Dropped <span class="val" style="color:var(--red)">${p.dropped}</span></div>` : ''}
+      <div class="detail-stat" style="color:var(--text-dark)">Window #${wStart}\u2013#${wEnd}</div>
+    </div>
+    <div class="chart-canvas"><canvas></canvas><div class="chart-tooltip"></div></div>
+  `;
+  panel.innerHTML = html;
+
+  // Draw chart after DOM insertion
+  if (fullPlayer) {
+    setTimeout(() => {
+      const canvas = panel.querySelector('canvas');
+      const tip = panel.querySelector('.chart-tooltip');
+      if (canvas) drawCupChart(canvas, tip, fullPlayer.history, windowMap, trollSet, wStart, wEnd);
+    }, 0);
+  }
+
+  return panel;
+}
+
+/* ── Glicko View ── */
+function renderGlicko() {
+  const search = document.getElementById('search').value.toLowerCase();
+  let list = DATA.glicko.players.filter(p => p.name.toLowerCase().includes(search));
+
+  list = [...list];
+  list.sort((a, b) => {
+    if (sortCol === 'name') return sortDir * a.name.localeCompare(b.name);
+    const va = a[sortCol] ?? 0, vb = b[sortCol] ?? 0;
+    const d = sortDir * (va - vb);
+    return d !== 0 ? d : (b.mu - a.mu);
+  });
+
+  const body = document.getElementById('tableBody');
+  body.innerHTML = '';
+
+  list.forEach((p, i) => {
+    const row = document.createElement('div');
+    row.className = 'row' + (p.name === selected ? ' selected' : '');
+
+    const color = ptsColor(p.mu);
+    const dotHtml = color ? `<span class="tier-dot" style="background:${color}"></span>` : '';
+    const muStyle = color ? ` style="color:${color}"` : '';
+
+    const w1h = p.w1 ? `<span class="w1">${p.w1}</span>` : `<span class="dim">-</span>`;
+    const w2h = p.w2 ? `<span class="w2">${p.w2}</span>` : `<span class="dim">-</span>`;
+    const w3h = p.w3 ? `<span class="w3">${p.w3}</span>` : `<span class="dim">-</span>`;
+    const finh = p.finalist ? `<span class="fin">${p.finalist}</span>` : `<span class="dim">-</span>`;
+
+    row.innerHTML = `
+      <div class="rank">${p.rank}${rankDelta(p.prev_rank, p.rank)}</div>
+      <div class="pname">${dotHtml}${esc(p.name)}</div>
+      <div class="num"${muStyle}><b>${Math.round(p.mu)}</b>${valDelta(p.prev_mu, p.mu)}</div>
+      <div class="num" style="color:var(--text-muted)">${Math.round(p.sigma)}</div>
+      <div class="num">${p.apps}</div>
+      <div class="num-c">${w1h}</div>
+      <div class="num-c">${w2h}</div>
+      <div class="num-c">${w3h}</div>
+      <div class="num">${finh}</div>
+    `;
+
+    row.onclick = () => {
+      selected = selected === p.name ? null : p.name;
+      render();
+    };
+    body.appendChild(row);
+
+    if (p.name === selected) {
+      body.appendChild(buildGlickoDetail(p));
+    }
+  });
+}
+
+function buildGlickoDetail(p) {
+  const panel = document.createElement('div');
+  panel.className = 'detail-panel';
+
+  const color = ptsColor(p.mu);
+  const colorStyle = color ? ` style="color:${color}"` : '';
+
+  let html = `
+    <div class="detail-header">
+      <span class="name">${esc(p.name)}</span>
+      <button class="close-btn" onclick="selected=null;render();event.stopPropagation();">\u2715</button>
+    </div>
+    <div class="detail-stats">
+      <div class="detail-stat">Skill <span class="val"${colorStyle}>${Math.round(p.mu)}</span></div>
+      <div class="detail-stat">\u00b1 <span class="val">${Math.round(p.sigma)}</span></div>
+      <div class="detail-stat">Apps <span class="val">${p.apps}</span></div>
+      <div class="detail-stat" style="color:var(--text-dark)">Decay ${(DATA.glicko.decay * 100).toFixed(0)}%/cup</div>
+    </div>
+    <div class="chart-canvas"><canvas></canvas><div class="chart-tooltip"></div></div>
+  `;
+
+  panel.innerHTML = html;
+
+  // Draw rating history chart
+  if (p.history && p.history.length > 0) {
+    setTimeout(() => {
+      const canvas = panel.querySelector('canvas');
+      const tip = panel.querySelector('.chart-tooltip');
+      if (canvas) drawGlickoChart(canvas, tip, p);
+    }, 0);
+  }
+
+  return panel;
+}
+
+function drawGlickoChart(canvas, tip, p) {
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const container = canvas.parentElement;
+  const containerW = container.getBoundingClientRect().width;
+  const hist = p.history;
+  const kRange = Math.max(...hist.map(h => h.k)) - Math.min(...hist.map(h => h.k)) || 1;
+  const desiredW = Math.max(containerW, kRange * 12 + 70);
+  canvas.width = desiredW * dpr; canvas.height = 180 * dpr;
+  canvas.style.width = desiredW + 'px'; canvas.style.height = '180px';
+  ctx.scale(dpr, dpr);
+  container.scrollLeft = container.scrollWidth;
+
+  const W = desiredW, H = 180;
+  const pad = { l: 46, r: 12, t: 14, b: 24 };
+  const kMin = Math.min(...hist.map(h => h.k)), kMax = Math.max(...hist.map(h => h.k));
+  const muMin = 1400, muMax = 2200;
+  function x(k) { return pad.l + (k - kMin) / (kMax - kMin || 1) * (W - pad.l - pad.r); }
+  function y(v) { return pad.t + (1 - (v - muMin) / (muMax - muMin)) * (H - pad.t - pad.b); }
+
+  function draw(hl) {
+    ctx.clearRect(0, 0, W, H);
+    // Grid
+    ctx.strokeStyle = cssVar('--border') || 'rgba(255,255,255,0.06)'; ctx.lineWidth = 1;
+    ctx.fillStyle = cssVar('--text-muted') || '#6b7280';
+    ctx.font = "9px 'JetBrains Mono',monospace"; ctx.textAlign = 'right';
+    for (let v = 1500; v <= 2200; v += 100) {
+      const yv = y(v);
+      if (yv < pad.t || yv > H - pad.b) continue;
+      ctx.beginPath(); ctx.moveTo(pad.l, yv); ctx.lineTo(W - pad.r, yv); ctx.stroke();
+      ctx.fillText(v.toString(), pad.l - 5, yv + 3);
+    }
+    // 1500 baseline
+    ctx.strokeStyle = 'rgba(0,156,59,0.35)'; ctx.setLineDash([4, 4]);
+    ctx.beginPath(); ctx.moveTo(pad.l, y(1500)); ctx.lineTo(W - pad.r, y(1500)); ctx.stroke();
+    ctx.setLineDash([]);
+    // X labels
+    ctx.fillStyle = cssVar('--text-muted') || '#6b7280'; ctx.textAlign = 'center';
+    let xTicks;
+    if (kMax - kMin <= 20) { xTicks = []; for (let t = kMin; t <= kMax; t++) xTicks.push(t); }
+    else { xTicks = [kMin]; const step = 5; const start = Math.ceil(kMin / step) * step; for (let t = start; t < kMax; t += step) { if (t > kMin) xTicks.push(t); } xTicks.push(kMax); }
+    xTicks.forEach(k => { ctx.fillText('#' + k, x(k), H - 6); });
+    // Sigma band
+    ctx.fillStyle = 'rgba(0,156,59,0.10)';
+    ctx.beginPath();
+    hist.forEach((h, i) => { i === 0 ? ctx.moveTo(x(h.k), y(h.mu + h.sigma)) : ctx.lineTo(x(h.k), y(h.mu + h.sigma)); });
+    for (let i = hist.length - 1; i >= 0; i--) { ctx.lineTo(x(hist[i].k), y(hist[i].mu - hist[i].sigma)); }
+    ctx.closePath(); ctx.fill();
+    // Rating line
+    const color = ptsColor(p.mu) || cssVar('--accent') || '#f59e0b';
+    ctx.strokeStyle = color; ctx.lineWidth = 2; ctx.lineJoin = 'round';
+    ctx.beginPath();
+    hist.forEach((h, i) => { i === 0 ? ctx.moveTo(x(h.k), y(h.mu)) : ctx.lineTo(x(h.k), y(h.mu)); });
+    ctx.stroke();
+    // Dots
+    hist.forEach(h => {
+      const isHl = hl && hl.k === h.k;
+      const r = isHl ? 5 : 3;
+      ctx.beginPath(); ctx.arc(x(h.k), y(h.mu), r, 0, Math.PI * 2);
+      ctx.fillStyle = RESULT_COLOR[h.result] || color; ctx.fill();
+      if (isHl) { ctx.strokeStyle = '#fff'; ctx.lineWidth = 2; ctx.stroke(); }
+    });
+  }
+  draw(null);
+
+  canvas.onmousemove = (e) => {
+    const br = canvas.getBoundingClientRect();
+    const mx = (e.clientX - br.left) * (desiredW / br.width);
+    let closest = null, minDist = Infinity;
+    hist.forEach(h => { const d = Math.abs(x(h.k) - mx); if (d < minDist) { minDist = d; closest = h; } });
+    if (closest && minDist < 20) {
+      canvas.style.cursor = 'pointer';
+      tip.style.display = 'block';
+      tip.innerHTML = `<div class="t-cup">Bonq #${closest.k}</div><div class="t-result" style="color:${RESULT_COLOR[closest.result] || '#999'}">${RESULT_LABEL[closest.result] || closest.result}</div><div class="t-pts">Rating: ${Math.round(closest.mu)} \u00b1${Math.round(closest.sigma)}</div>`;
+      let tx = x(closest.k) + 12; if (tx + 130 > desiredW) tx = x(closest.k) - 140;
+      tip.style.left = tx + 'px'; tip.style.top = (y(closest.mu) - 40) + 'px';
+      draw(closest);
+    } else {
+      canvas.style.cursor = ''; tip.style.display = 'none';
+      draw(null);
+    }
+  };
+  canvas.onmouseleave = () => { canvas.style.cursor = ''; tip.style.display = 'none'; draw(null); };
+}
+
+/* ── Records View ── */
+function getFiltered() {
+  const search = document.getElementById('search').value.toLowerCase();
+  const inclTroll = document.getElementById('trollToggle').checked;
+  const minApps = parseInt(document.getElementById('minApps').value);
+
+  const validCups = new Set(
+    DATA.cups.filter(k => inclTroll || !k.troll).map(k => k.id)
+  );
+
+  return DATA.players.map(p => {
+    const hist = p.history.filter(h => validCups.has(h.k));
+    if (hist.length === 0) return null;
+    const wins = hist.filter(h => h.result.startsWith('w')).length;
+    const w1 = hist.filter(h => h.result === 'w1').length;
+    const w2 = hist.filter(h => h.result === 'w2').length;
+    const w3 = hist.filter(h => h.result === 'w3').length;
+    const fin = hist.filter(h => h.result === 'f').length;
+    const apps = hist.length;
+    const pct = apps > 0 ? Math.round(wins / apps * 100) : 0;
+    const pctFin = apps > 0 ? Math.round((wins + fin) / apps * 100) : 0;
+    // Recompute prev stats from prev_history with same troll filter
+    const prevHist = (p.prev_history || []).filter(h => validCups.has(h.k));
+    const prev_wins = prevHist.filter(h => h.result.startsWith('w')).length;
+    const prev_w1 = prevHist.filter(h => h.result === 'w1').length;
+    const prev_w2 = prevHist.filter(h => h.result === 'w2').length;
+    const prev_w3 = prevHist.filter(h => h.result === 'w3').length;
+    const prev_fin = prevHist.filter(h => h.result === 'f').length;
+    const prev_apps = prevHist.length;
+    const finpct = p.present ? Math.round(100 * p.finished / p.present) : -1;
+    return { name: p.name, apps, wins, w1, w2, w3, finalist: fin, pct, pctFin, history: p.history, best: p.best,
+             finished: p.finished, present: p.present, finpct,
+             prev_apps, prev_wins, prev_w1, prev_w2, prev_w3, prev_finalist: prev_fin };
+  }).filter(p => p !== null && (p.wins > 0 || p.finalist > 0) && p.apps >= minApps && p.name.toLowerCase().includes(search));
+}
+
+function renderRecords() {
+  let list = getFiltered();
+
+  list.sort((a, b) => {
+    let va = a[sortCol], vb = b[sortCol];
+    if (sortCol === 'name') return sortDir * va.localeCompare(vb);
+    if (sortCol === 'pct') {
+      const d = sortDir * (va - vb);
+      return d !== 0 ? d : b.wins - a.wins;
+    }
+    const d = sortDir * (va - vb);
+    return d !== 0 ? d : (sortCol === 'wins' ? b.apps - a.apps : b.wins - a.wins);
+  });
+
+  const body = document.getElementById('tableBody');
+  body.innerHTML = '';
+
+  list.forEach((p, i) => {
+    const row = document.createElement('div');
+    row.className = 'row' + (p.name === selected ? ' selected' : '');
+    row.dataset.name = p.name;
+
+    const dlt = (cur, prev) => (prev != null && cur > prev)
+      ? `<span class="val-delta up">+${cur - prev}</span>` : '';
+    const w1h = p.w1 ? `<span class="w1">${p.w1}</span>${dlt(p.w1, p.prev_w1)}` : `<span class="dim">-</span>`;
+    const w2h = p.w2 ? `<span class="w2">${p.w2}</span>${dlt(p.w2, p.prev_w2)}` : `<span class="dim">-</span>`;
+    const w3h = p.w3 ? `<span class="w3">${p.w3}</span>${dlt(p.w3, p.prev_w3)}` : `<span class="dim">-</span>`;
+    const finh = p.finalist ? `<span class="fin">${p.finalist}</span>${dlt(p.finalist, p.prev_finalist)}` : `<span class="dim">-</span>`;
+    const winsCls = p.wins > 0 ? 'wins-cell' : 'dim';
+    const winsDelta = dlt(p.wins, p.prev_wins);
+
+    row.innerHTML = `
+      <div class="rank">${i + 1}</div>
+      <div class="pname">${esc(p.name)}</div>
+      <div class="num ${winsCls}">${p.wins || '-'}${winsDelta}</div>
+      <div class="num-c">${w1h}</div>
+      <div class="num-c">${w2h}</div>
+      <div class="num-c">${w3h}</div>
+      <div class="num">${finh}</div>
+      <div class="num pct" title="${p.finished}/${p.present} rounds">${p.finpct >= 0 ? p.finpct + '%' : '-'}</div>
+    `;
+
+    row.onclick = () => {
+      if (selected === p.name) { selected = null; }
+      else { selected = p.name; }
+      render();
+    };
+
+    body.appendChild(row);
+
+    if (p.name === selected) {
+      const panel = document.createElement('div');
+      panel.className = 'detail-panel';
+
+      const trollSet = new Set(DATA.cups.filter(k => k.troll).map(k => k.id));
+      const bestLabel = p.best ? (p.best <= 5 ? ordinal(p.best) : 'Finalist') : '-';
+
+      let html = `
+        <div class="detail-header">
+          <span class="name">${esc(p.name)}</span>
+          <button class="close-btn" onclick="selected=null;render();event.stopPropagation();">\u2715</button>
+        </div>
+        <div class="detail-stats">
+          <div class="detail-stat">Apps <span class="val">${p.apps}</span></div>
+          <div class="detail-stat">Winner <span class="val">${p.wins}</span></div>
+          <div class="detail-stat">Finalist <span class="val">${p.finalist}</span></div>
+          <div class="detail-stat">Best <span class="val">${bestLabel}</span></div>
+          <div class="detail-stat">Win% <span class="val">${p.pct}%</span></div>
+          <div class="detail-stat">Finals+% <span class="val">${p.pctFin}%</span></div>
+          <div class="detail-stat">Rounds finished <span class="val">${p.finished}/${p.present}</span></div>
+        </div>
+        <div class="history-grid">
+      `;
+
+      p.history.forEach(h => {
+        const isTroll = trollSet.has(h.k);
+        const trollCls = isTroll ? ' troll' : '';
+        let label = `#${h.k}: `;
+        let cls = h.result;
+
+        if (h.result === 'f') { label += 'Finalist'; cls = 'f'; }
+        else if (h.result === 'o') { label += 'Played'; cls = 'o'; }
+        else { label += ordinal(parseInt(h.result.slice(1))); }
+
+        html += `<span class="history-chip ${cls}${trollCls}">${label}</span>`;
+      });
+
+      html += '</div>';
+      panel.innerHTML = html;
+      body.appendChild(panel);
+    }
+  });
+}
+
+/* ── Utilities ── */
+function ordinal(n) {
+  const s = ['th','st','nd','rd'];
+  const v = n % 100;
+  return n + (s[(v-20)%10] || s[v] || s[0]);
+}
+
+function esc(s) {
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+function rankDelta(prevRank, currentRank) {
+  if (prevRank == null) return '<span class="rank-delta new">NEW</span>';
+  const diff = prevRank - currentRank;
+  if (diff > 0) return `<span class="rank-delta up">\u25B2${diff}</span>`;
+  if (diff < 0) return `<span class="rank-delta down">\u25BC${Math.abs(diff)}</span>`;
+  return '';
+}
+
+function valDelta(prev, current) {
+  if (prev == null) return '';
+  const diff = Math.round(current - prev);
+  if (diff > 0) return `<span class="val-delta up">+${diff}</span>`;
+  if (diff < 0) return `<span class="val-delta down">${diff}</span>`;
+  return '';
+}
+
+/* ── Event Listeners ── */
+document.getElementById('search').addEventListener('input', render);
+document.getElementById('trollToggle').addEventListener('change', render);
+document.getElementById('minApps').addEventListener('input', function() {
+  document.getElementById('minAppsVal').textContent = this.value;
+  render();
 });
 
-function renderRanking(d) {
-  const el = document.getElementById('panel-ranking');
-  if (!d.ranking.length) { el.innerHTML = emptyState(); return; }
-  const rp = d.meta.rank_points;
-  el.innerHTML = `<div class="card"><div class="tbl-wrap"><table>
-    <thead><tr><th class="num">#</th><th>Player</th><th class="num">Pts</th><th class="num">Cups</th>
-    <th class="num">W</th><th class="num">W1</th><th class="num">F</th><th class="num">Best</th><th class="num" title="rounds finished / rounds in lobby">Finished</th><th>Results</th></tr></thead>
-    <tbody>${d.ranking.map(p => `<tr>
-      <td class="num">${p.rank}</td><td class="pname">${esc(p.name)}</td>
-      <td class="num">${p.points}</td><td class="num">${p.apps}</td>
-      <td class="num">${p.wins || ''}</td><td class="num">${p.w1 || ''}</td><td class="num">${p.finalist || ''}</td>
-      <td class="num">${p.best ?? ''}</td>
-      <td class="num">${p.present ? `${p.finished}/${p.present} · ${Math.round(100*p.finished/p.present)}%` : ''}</td>
-      <td>${p.history.map(h => h.result === 'o' ? `<span class="chip" style="color:var(--text-muted)" title="#${h.cup}: ${h.cup_points} pts">${h.pos}</span>` : chip(h.result)).join(' ')}</td>
-    </tr>`).join('')}</tbody></table></div>
-    <div class="meta" style="margin:10px 0 0">Points per cup: W1 ${rp.w1} · W2 ${rp.w2} · W3 ${rp.w3} · W4 ${rp.w4} · W5 ${rp.w5} · finalist ${rp.f} (same scale as Kerki)</div></div>`;
-}
+// View tabs
+document.querySelectorAll('.view-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const newView = tab.dataset.view;
+    if (newView === viewMode) return;
+    viewMode = newView;
+    selected = null;
+    // Reset sort for each view
+    if (viewMode === 'ranking') { sortCol = 'points'; sortDir = -1; }
+    else if (viewMode === 'glicko') { sortCol = 'mu'; sortDir = -1; }
+    else if (viewMode === 'events') { sortCol = 'id'; sortDir = -1; selectedEvent = null; }
+    else { sortCol = 'wins'; sortDir = -1; }
+    document.querySelectorAll('.view-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('tableWrap').className = 'table-wrap view-' + viewMode;
+    updateSubtitle();
+    updateControls();
+    buildHeader();
+    render();
+  });
+});
 
-function renderCups(d) {
-  const el = document.getElementById('panel-cups');
-  if (!d.cups.length) { el.innerHTML = emptyState(); return; }
-  el.innerHTML = [...d.cups].reverse().map(c => `<div class="card">
-    <h2>Bonq Cup #${c.id}</h2>
-    <div class="meta">${fmtDate(c.date)} · ${c.lobby_size} ranked · ${c.scoring_rounds} rounds${c.header ? ' · ' + esc(c.header) : ''}</div>
-    <div class="maps">${c.maps.map(m => `<span>${esc(stripMap(m))}</span>`).join('')}</div>
-    ${c.map_finish?.length ? `<div class="sec">Rounds finished per map</div><div class="tbl-wrap"><table><tbody>${c.map_finish.map(([m, f, p]) => `<tr><td>${esc(stripMap(m))}</td><td class="num">${f}/${p}</td><td class="num">${p ? (100*f/p).toFixed(1) : 0}%</td><td style="width:40%"><div style="height:6px;border-radius:3px;background:var(--accent);width:${p ? 100*f/p : 0}%"></div></td></tr>`).join('')}</tbody></table></div><div class="meta" style="margin-top:6px">${c.finish_source === 'host' ? "From the host's Top-&gt;Out results: lobby = everyone still in the room when the round ended." : 'From the live log: lobby = everyone in the room when the round started.'} Spectators and AFK count, so these are floors.</div>` : ''}
-    <div class="sec">Winners</div>
-    <div class="tbl-wrap"><table><tbody>${c.winners.map((w, i) => `<tr>
-      <td>${chip('w' + (i + 1))}</td><td class="pname">${esc(w.name)}</td>
-      <td>${esc(stripMap(w.map))}</td><td class="num">${esc(w.time)}</td>
-      <td class="num" style="color:var(--text-muted)">won R${w.won} · final R${w.qualified}</td>${fin(c, w.sid)}</tr>`).join('')}</tbody></table></div>
-    ${c.finalists.length ? `<div class="sec">Finalists</div><div class="tbl-wrap"><table><tbody>${c.finalists.map(f => `<tr>
-      <td>${chip('f')}</td><td class="pname">${esc(f.name)}</td><td class="num" style="color:var(--text-muted)">final R${f.qualified}</td>${fin(c, f.sid)}</tr>`).join('')}</tbody></table></div>` : ''}
-    ${c.others.length ? `<div class="sec">Others</div><div class="tbl-wrap"><table><tbody>${c.others.map((o, i) => `<tr>
-      <td class="num">${c.winners.length + c.finalists.length + i + 1}</td><td class="pname">${esc(o.name)}</td>
-      <td class="num">${o.points} pts</td>${fin(c, o.sid)}</tr>`).join('')}</tbody></table></div>` : ''}
-    ${c.nuisances.length ? `<div class="sec">Nuisance</div><div class="meta">${c.nuisances.map(n => esc(n.name)).join(', ')}</div>` : ''}
-    ${c.rounds.length ? `<details><summary>Round by round</summary><div class="tbl-wrap"><table>
-      <thead><tr><th class="num">R</th><th>Map</th><th>1st</th><th class="num">Time</th><th>2nd</th><th>3rd</th><th class="num">Fin</th><th>W</th></tr></thead>
-      <tbody>${c.rounds.map(r => `<tr><td class="num">${r.n}</td><td>${esc(stripMap(r.map))}</td>
-        <td class="pname">${esc(r.top[0]?.name)}</td><td class="num">${esc(r.top[0]?.time)}</td>
-        <td>${esc(r.top[1]?.name)}</td><td>${esc(r.top[2]?.name)}</td>
-        <td class="num">${r.finishers ?? ''}/${r.roster}</td>
-        <td>${r.winner ? esc(r.winner) : ''}</td></tr>`).join('')}</tbody></table></div></details>` : ''}
-  </div>`).join('');
-}
+// Modals
+const infoModal = document.getElementById('infoModal');
+document.getElementById('modalCloseBtn').onclick = () => infoModal.classList.remove('open');
+infoModal.addEventListener('click', e => { if (e.target === infoModal) infoModal.classList.remove('open'); });
+const glickoModal = document.getElementById('glickoModal');
+glickoModal.addEventListener('click', e => { if (e.target === glickoModal) glickoModal.classList.remove('open'); });
 
-function emptyState() {
-  return `<div class="empty"><b>No cups ingested yet.</b></div>`;
+// Theme
+function setTheme(t) {
+  document.documentElement.setAttribute('data-theme', t);
+  localStorage.setItem('bonq-theme', t);
+  document.getElementById('themeToggle').textContent = t === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19';
 }
-
-fetch('bonq.json', {cache: 'no-store'}).then(r => r.json()).then(d => {
-  document.getElementById('sub').textContent = `MMM's biweekly topout · ${d.meta.cups} cup${d.meta.cups === 1 ? '' : 's'} · ${d.meta.players} players`;
-  document.getElementById('foot').textContent = `Built ${d.meta.generated}`;
-  renderRanking(d); renderCups(d);
-}).catch(() => {
-  document.getElementById('panel-ranking').innerHTML = `<div class="empty">Could not load bonq.json. Serve this folder with <b>python -m http.server 9005</b>.</div>`;
+document.addEventListener('DOMContentLoaded', function() {
+  var cur = document.documentElement.getAttribute('data-theme') || 'dark';
+  var btn = document.getElementById('themeToggle');
+  btn.textContent = cur === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19';
+  btn.addEventListener('click', function() {
+    setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
 });
 </script>
+
+<script data-goatcounter="https://aizpun.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
