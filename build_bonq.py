@@ -29,6 +29,16 @@ def load_cups():
     return sorted(cups, key=lambda c: c["cup"])
 
 
+def map_finish(rounds):
+    """Finishers / lobby per map across its rounds, hardest first."""
+    agg = {}
+    for r in rounds:
+        a = agg.setdefault(r["map"], [0, 0])
+        a[0] += r.get("finishers", 0)
+        a[1] += r.get("roster", 0)
+    return sorted(([m, f, p] for m, (f, p) in agg.items()), key=lambda x: x[1] / x[2] if x[2] else 1)
+
+
 def build():
     cups = load_cups()
     players = {}
@@ -38,7 +48,7 @@ def build():
         if p is None:
             p = players[sid] = {"sid": sid, "name": name, "apps": 0, "wins": 0,
                                 "w1": 0, "w2": 0, "w3": 0, "w4": 0, "w5": 0,
-                                "finalist": 0, "points": 0, "best": None, "history": []}
+                                "finalist": 0, "points": 0, "finished": 0, "present": 0, "best": None, "history": []}
         p["name"] = name   # latest canonical wins
         return p
 
@@ -84,7 +94,13 @@ def build():
             "nuisances": [{"name": x["name"], "sid": x["sid"], "points": x["points"]}
                           for x in c.get("nuisance", [])],
             "rounds": c.get("rounds", []),
+            "finish": {x["sid"]: [x["finished"], x["present"]] for x in c.get("finish_stats", [])},
+            "map_finish": map_finish(c.get("rounds", [])),
         })
+        for x in c.get("finish_stats", []):
+            if x["sid"] in players:
+                players[x["sid"]]["finished"] += x["finished"]
+                players[x["sid"]]["present"] += x["present"]
 
     for p in players.values():
         p["points"] = sum(h["points"] for h in p["history"])

@@ -97,6 +97,7 @@ details summary { cursor: pointer; color: var(--text-dim); font-size: 13px; marg
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const chip = r => r === 'o' ? '' : `<span class="chip ${r}">${r === 'f' ? 'F' : r.toUpperCase()}</span>`;
 const fmtDate = iso => { const d = new Date(iso + 'T12:00:00'); return d.toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric'}); };
+const fin = (c, sid) => { const f = c.finish?.[sid]; return f ? `<td class="num" style="color:var(--text-muted)" title="rounds finished / rounds in lobby">${f[0]}/${f[1]} · ${f[1] ? Math.round(100*f[0]/f[1]) : 0}%</td>` : '<td></td>'; };
 const stripMap = m => m.replace(/^bonq(\s*cup)?\s*#?\d+\s*[-:]\s*/i, '');
 
 document.getElementById('themeBtn').onclick = () => {
@@ -115,12 +116,13 @@ function renderRanking(d) {
   const rp = d.meta.rank_points;
   el.innerHTML = `<div class="card"><div class="tbl-wrap"><table>
     <thead><tr><th class="num">#</th><th>Player</th><th class="num">Pts</th><th class="num">Cups</th>
-    <th class="num">W</th><th class="num">W1</th><th class="num">F</th><th class="num">Best</th><th>Results</th></tr></thead>
+    <th class="num">W</th><th class="num">W1</th><th class="num">F</th><th class="num">Best</th><th class="num" title="rounds finished / rounds in lobby">Finished</th><th>Results</th></tr></thead>
     <tbody>${d.ranking.map(p => `<tr>
       <td class="num">${p.rank}</td><td class="pname">${esc(p.name)}</td>
       <td class="num">${p.points}</td><td class="num">${p.apps}</td>
       <td class="num">${p.wins || ''}</td><td class="num">${p.w1 || ''}</td><td class="num">${p.finalist || ''}</td>
       <td class="num">${p.best ?? ''}</td>
+      <td class="num">${p.present ? `${p.finished}/${p.present} · ${Math.round(100*p.finished/p.present)}%` : ''}</td>
       <td>${p.history.map(h => h.result === 'o' ? `<span class="chip" style="color:var(--text-muted)" title="#${h.cup}: ${h.cup_points} pts">${h.pos}</span>` : chip(h.result)).join(' ')}</td>
     </tr>`).join('')}</tbody></table></div>
     <div class="meta" style="margin:10px 0 0">Points per cup: W1 ${rp.w1} · W2 ${rp.w2} · W3 ${rp.w3} · W4 ${rp.w4} · W5 ${rp.w5} · finalist ${rp.f} (same scale as Kerki)</div></div>`;
@@ -133,22 +135,24 @@ function renderCups(d) {
     <h2>Bonq Cup #${c.id}</h2>
     <div class="meta">${fmtDate(c.date)} · ${c.lobby_size} ranked · ${c.scoring_rounds} rounds${c.header ? ' · ' + esc(c.header) : ''}</div>
     <div class="maps">${c.maps.map(m => `<span>${esc(stripMap(m))}</span>`).join('')}</div>
+    ${c.map_finish?.length ? `<div class="sec">Rounds finished per map</div><div class="tbl-wrap"><table><tbody>${c.map_finish.map(([m, f, p]) => `<tr><td>${esc(stripMap(m))}</td><td class="num">${f}/${p}</td><td class="num">${p ? (100*f/p).toFixed(1) : 0}%</td><td style="width:40%"><div style="height:6px;border-radius:3px;background:var(--accent);width:${p ? 100*f/p : 0}%"></div></td></tr>`).join('')}</tbody></table></div><div class="meta" style="margin-top:6px">Lobby = everyone in the room that round; spectators and AFK count, so these are floors.</div>` : ''}
     <div class="sec">Winners</div>
     <div class="tbl-wrap"><table><tbody>${c.winners.map((w, i) => `<tr>
       <td>${chip('w' + (i + 1))}</td><td class="pname">${esc(w.name)}</td>
       <td>${esc(stripMap(w.map))}</td><td class="num">${esc(w.time)}</td>
-      <td class="num" style="color:var(--text-muted)">won R${w.won} · final R${w.qualified}</td></tr>`).join('')}</tbody></table></div>
+      <td class="num" style="color:var(--text-muted)">won R${w.won} · final R${w.qualified}</td>${fin(c, w.sid)}</tr>`).join('')}</tbody></table></div>
     ${c.finalists.length ? `<div class="sec">Finalists</div><div class="tbl-wrap"><table><tbody>${c.finalists.map(f => `<tr>
-      <td>${chip('f')}</td><td class="pname">${esc(f.name)}</td><td class="num" style="color:var(--text-muted)">final R${f.qualified}</td></tr>`).join('')}</tbody></table></div>` : ''}
+      <td>${chip('f')}</td><td class="pname">${esc(f.name)}</td><td class="num" style="color:var(--text-muted)">final R${f.qualified}</td>${fin(c, f.sid)}</tr>`).join('')}</tbody></table></div>` : ''}
     ${c.others.length ? `<div class="sec">Others</div><div class="tbl-wrap"><table><tbody>${c.others.map((o, i) => `<tr>
       <td class="num">${c.winners.length + c.finalists.length + i + 1}</td><td class="pname">${esc(o.name)}</td>
-      <td class="num">${o.points} pts</td><td class="num" style="color:var(--text-muted)">${o.finishes}/${o.rounds} fin</td></tr>`).join('')}</tbody></table></div>` : ''}
+      <td class="num">${o.points} pts</td>${fin(c, o.sid)}</tr>`).join('')}</tbody></table></div>` : ''}
     ${c.nuisances.length ? `<div class="sec">Nuisance</div><div class="meta">${c.nuisances.map(n => esc(n.name)).join(', ')}</div>` : ''}
     ${c.rounds.length ? `<details><summary>Round by round</summary><div class="tbl-wrap"><table>
-      <thead><tr><th class="num">R</th><th>Map</th><th>1st</th><th class="num">Time</th><th>2nd</th><th>3rd</th><th>W</th></tr></thead>
+      <thead><tr><th class="num">R</th><th>Map</th><th>1st</th><th class="num">Time</th><th>2nd</th><th>3rd</th><th class="num">Fin</th><th>W</th></tr></thead>
       <tbody>${c.rounds.map(r => `<tr><td class="num">${r.n}</td><td>${esc(stripMap(r.map))}</td>
         <td class="pname">${esc(r.top[0]?.name)}</td><td class="num">${esc(r.top[0]?.time)}</td>
         <td>${esc(r.top[1]?.name)}</td><td>${esc(r.top[2]?.name)}</td>
+        <td class="num">${r.finishers ?? ''}/${r.roster}</td>
         <td>${r.winner ? esc(r.winner) : ''}</td></tr>`).join('')}</tbody></table></div></details>` : ''}
   </div>`).join('');
 }

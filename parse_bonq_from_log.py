@@ -338,20 +338,31 @@ def compute_standings(cup_rounds, roster, nuisance_sids, min_rounds=MIN_ROUNDS_P
              "rounds_played": rounds_played[s], "finishes": finishes[s]}
             for s in sorted(excluded, key=lambda s: -rounds_played[s])]
 
+    # Rounds finished vs rounds present. "Present" = in the lobby roster for the
+    # round; the log can't tell a driver from a spectator/AFK (the game's
+    # ZeepkistState isn't logged), so the % is a floor on the real finish rate.
+    finish_stats = sorted(
+        ({"sid": s, "name": name_of(s), "present": rounds_played[s], "finished": finishes[s],
+          "pct": round(100 * finishes[s] / rounds_played[s], 1) if rounds_played[s] else None}
+         for s in participants | set(rounds_played)),
+        key=lambda x: (-x["finished"], -(x["pct"] or 0), x["name"].lower()))
+
     # Per-round results, for the page's round-by-round view.
     rounds_out = []
     for s_idx, r in enumerate(scoring, start=1):
         lb = sorted(r["last_lb"], key=lambda x: x["pos"])
         rounds_out.append({
             "n": s_idx, "map": r["map"], "ts": r["ts"],
-            "roster": len(r["roster"]),
+            "roster": len(r["roster"]), "finishers": len(lb),
+            "finish_pct": round(100 * len(lb) / len(r["roster"]), 1) if r["roster"] else None,
             "top": [{"sid": e["sid"], "name": name_of(e["sid"]), "time": e["time"]} for e in lb[:3]],
             "winner": next((w["name"] for w in winners if w["won_scoring_round"] == s_idx), None),
         })
 
     return {"rotation": rotation, "scoring_rounds_count": last,
             "winners": winners, "finalists": finalists, "others": others,
-            "nuisance": nuisance, "excluded": excl, "rounds": rounds_out}
+            "nuisance": nuisance, "excluded": excl, "rounds": rounds_out,
+            "finish_stats": finish_stats}
 
 
 def main():
@@ -422,6 +433,13 @@ def main():
         print(f"\nExcluded, <{args.min_rounds}r or 0f ({len(st['excluded'])}):")
         for e in st["excluded"]:
             print(f"   - {e['name']:25s} pts={e['points']:>4} rounds={e['rounds_played']} finishes={e['finishes']}")
+
+    print(f"\nRounds finished (present = in lobby; spectators count as present):")
+    for r in st["rounds"]:
+        print(f"  R{r['n']:<2} {r['map'][:32]:32s} {r['finishers']:>2}/{r['roster']:<2} {r['finish_pct']:>5}%")
+    tot_f = sum(r["finishers"] for r in st["rounds"])
+    tot_p = sum(r["roster"] for r in st["rounds"])
+    print(f"  cup total: {tot_f}/{tot_p} = {100 * tot_f / tot_p:.1f}%")
 
     if args.dry_run:
         print("\n(dry run, nothing written)")
