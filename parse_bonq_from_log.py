@@ -27,7 +27,6 @@ import argparse
 import json
 import os
 import re
-import shutil
 import sys
 from collections import defaultdict
 from datetime import date as _date
@@ -527,12 +526,15 @@ def main():
                    "points_system": POINTS["name"], **st}, f, indent=2, ensure_ascii=False)
     print(f"\nJSON: {out}")
 
-    # Archive the raw log: the game-side file gets appended to/overwritten by later sessions.
+    # Archive the cup's day of the raw log. The game-side file keeps every lobby
+    # since the mod was installed (months, ~15 MB); only the cup belongs in this repo.
     os.makedirs(LOGS_DIR, exist_ok=True)
     arch = os.path.join(LOGS_DIR, f"bonq_{args.cup}.log")
     if os.path.abspath(args.log) != os.path.abspath(arch) and not os.path.exists(arch):
-        shutil.copy(args.log, arch)
-        print(f"Log archived: {arch}")
+        with open(args.log, encoding="utf-8-sig") as src, \
+                open(arch, "w", encoding="utf-8", newline="") as dst:
+            dst.writelines(l for l in src if l.startswith(cup_date))
+        print(f"Log archived ({cup_date} only): {arch}")
     print("Now run: python build_bonq.py")
 
 

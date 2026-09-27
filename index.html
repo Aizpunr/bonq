@@ -158,7 +158,7 @@ function renderCups(d) {
 }
 
 function emptyState() {
-  return `<div class="empty"><b>No cups ingested yet.</b><br>Bonq Cup #1 runs Sunday 27 Sep 2026.</div>`;
+  return `<div class="empty"><b>No cups ingested yet.</b></div>`;
 }
 
 fetch('bonq.json', {cache: 'no-store'}).then(r => r.json()).then(d => {
