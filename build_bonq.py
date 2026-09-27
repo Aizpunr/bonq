@@ -212,6 +212,28 @@ def build():
     for p in player_list:
         p['finished'], p['present'] = fin.get(p['sid'], [0, 0])
 
+    # Finishes leaderboard: everyone who was in a Bonq lobby, mappers and
+    # drop-ins included (the page filters by minimum rounds).
+    fl = {}
+    for c in cups:
+        nuis = {n["sid"] for n in c.get("nuisance", [])}
+        for x in c.get("finish_stats", []):
+            if not x["present"]:
+                continue
+            e = fl.setdefault(x["sid"], {'sid': x["sid"], 'name': names.get(x["sid"], x["name"]),
+                                         'finished': 0, 'present': 0, 'cups': 0,
+                                         'nuisance_cups': 0, 'history': []})
+            e['finished'] += x["finished"]
+            e['present'] += x["present"]
+            e['cups'] += 1
+            e['nuisance_cups'] += x["sid"] in nuis
+            e['history'].append({'k': c["cup"], 'f': x["finished"], 'p': x["present"],
+                                 'nuisance': x["sid"] in nuis})
+    finishers = sorted(fl.values(), key=lambda e: (-e['finished'], -e['finished'] / e['present'],
+                                                    e['name'].lower()))
+    for e in finishers:
+        e['pct'] = round(100 * e['finished'] / e['present'], 1)
+
     cups_out = []
     for c in cups:
         ordinal = c["winners"] + c["finalists"] + c["others"]
@@ -256,6 +278,7 @@ def build():
             'players': ranking,
         },
         'glicko': {'start': GLICKO_MU_START, 'decay': GLICKO_MU_DECAY, 'players': glicko},
+        'finishers': finishers,
     }
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(out, f, indent=1, ensure_ascii=False)

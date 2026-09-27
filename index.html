@@ -142,6 +142,15 @@ input[type="range"] { width: 70px; accent-color: var(--accent); }
 .view-glicko .table-header, .view-glicko .row {
   grid-template-columns: 52px 1fr 62px 42px 42px 36px 36px 36px 46px;
 }
+.view-finishes .table-header, .view-finishes .row {
+  grid-template-columns: 52px 1fr 72px 72px 96px 46px;
+}
+.view-finishes .row .num { white-space: nowrap; }
+.fin-bar { display: inline-block; width: 38px; height: 5px; border-radius: 3px; background: var(--surface-hover);
+  vertical-align: middle; margin-right: 6px; overflow: hidden; }
+.fin-bar span { display: block; height: 100%; background: linear-gradient(90deg, var(--br-green), var(--br-yellow)); }
+.tag-mapper { font-family: var(--mono); font-size: 9px; color: var(--text-muted); border: 1px solid var(--border-bright);
+  border-radius: 4px; padding: 0 4px; margin-left: 6px; font-weight: 400; }
 .view-events .table-header, .view-events .row {
   grid-template-columns: 52px 1fr 1fr 1fr 60px 60px;
 }
@@ -339,6 +348,14 @@ details.rounds summary { cursor: pointer; font-family: var(--mono); font-size: 1
 
 /* ── Mobile ── */
 @media (max-width: 640px) {
+  /* Finishes view mobile: hide In lobby(4), Cups(6) */
+  .view-finishes .table-header, .view-finishes .row {
+    grid-template-columns: 30px minmax(0, 1fr) 58px 44px !important; padding: 6px 8px;
+  }
+  .view-finishes .table-header > :nth-child(4), .view-finishes .row > :nth-child(4),
+  .view-finishes .table-header > :nth-child(6), .view-finishes .row > :nth-child(6) { display: none !important; }
+  .fin-bar { display: none; }
+
   /* Records view mobile */
   .view-records .table-header, .view-records .row {
     grid-template-columns: 28px 1fr 46px 32px 32px 32px 42px 48px !important;
@@ -413,6 +430,7 @@ details.rounds summary { cursor: pointer; font-family: var(--mono); font-size: 1
     <button class="view-tab" data-view="ranking">Ranking</button>
     <button class="view-tab" data-view="glicko">Skill</button>
     <button class="view-tab active" data-view="records">Records</button>
+    <button class="view-tab" data-view="finishes">Finishes</button>
     <button class="view-tab" data-view="events">Events</button>
   </div>
   <input type="text" class="search-input" id="search" placeholder="Search player...">
@@ -424,6 +442,11 @@ details.rounds summary { cursor: pointer; font-family: var(--mono); font-size: 1
     <span>Min apps</span>
     <input type="range" id="minApps" min="1" max="10" value="1">
     <span class="val" id="minAppsVal">1</span>
+  </div>
+  <div class="min-cups" id="minRoundsWrap" style="display:none">
+    <span>Min rounds</span>
+    <input type="range" id="minRounds" min="1" max="40" value="5">
+    <span class="val" id="minRoundsVal">5</span>
   </div>
 </div>
 
@@ -573,6 +596,15 @@ const GLICKO_COLS = [
   { key: 'finalist', label: 'Fin', cls: 'right' },
 ];
 
+const FINISHES_COLS = [
+  { key: 'rank', label: '#', cls: '' },
+  { key: 'name', label: 'Player', cls: '' },
+  { key: 'finished', label: 'Finished', cls: 'right', title: 'Rounds finished' },
+  { key: 'present', label: 'In lobby', cls: 'right', title: 'Rounds in the lobby (spectators and AFK included)' },
+  { key: 'pct', label: '%', cls: 'right', title: 'Finished / in lobby' },
+  { key: 'cups', label: 'Cups', cls: 'right' },
+];
+
 const EVENTS_COLS = [
   { key: 'id', label: '#', cls: '' },
   { key: 'w1', label: '1st', cls: '' },
@@ -596,6 +628,7 @@ function ptsColor(pts) {
 function getCols() {
   if (viewMode === 'ranking') return RANKING_COLS;
   if (viewMode === 'glicko') return GLICKO_COLS;
+  if (viewMode === 'finishes') return FINISHES_COLS;
   if (viewMode === 'events') return EVENTS_COLS;
   return RECORDS_COLS;
 }
@@ -618,6 +651,8 @@ function updateSubtitle() {
     el.textContent = `Rolling \u00b7 Best ${r.best_of} of last ${r.eligible_cups} cup${r.eligible_cups === 1 ? '' : 's'}`;
   } else if (viewMode === 'glicko') {
     el.textContent = `Skill Rating \u00b7 Convergent with ${(DATA.glicko.decay * 100).toFixed(0)}% decay`;
+  } else if (viewMode === 'finishes') {
+    el.textContent = 'Rounds finished \u00b7 spectators count as in the lobby, so % is a floor';
   } else if (viewMode === 'events') {
     el.textContent = `${DATA.meta.total_cups} cup${DATA.meta.total_cups === 1 ? '' : 's'} \u00b7 click a row to see full standings`;
   } else {
@@ -630,6 +665,7 @@ function updateControls() {
   const isEvents = viewMode === 'events';
   document.getElementById('trollWrap').style.display = 'none';  // Bonq has no troll cups
   document.getElementById('minCupsWrap').style.display = isRecords ? '' : 'none';
+  document.getElementById('minRoundsWrap').style.display = viewMode === 'finishes' ? '' : 'none';
   document.getElementById('tierLegend').style.display = viewMode === 'ranking' ? '' : 'none';
 }
 
@@ -662,6 +698,7 @@ function buildHeader() {
 function render() {
   if (viewMode === 'ranking') renderRanking();
   else if (viewMode === 'glicko') renderGlicko();
+  else if (viewMode === 'finishes') renderFinishes();
   else if (viewMode === 'events') renderEvents();
   else renderRecords();
 }
@@ -782,6 +819,56 @@ function stripMap(m) { return String(m || '').replace(/^bonq(\s*cup)?\s*#?\d+\s*
 function fmtDate(iso) {
   const d = new Date(iso + 'T12:00:00');
   return isNaN(d) ? (iso || '?') : d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+
+/* ── Finishes View ── */
+function renderFinishes() {
+  const search = document.getElementById('search').value.toLowerCase();
+  const minRounds = parseInt(document.getElementById('minRounds').value);
+  let list = (DATA.finishers || []).filter(p => p.present >= minRounds && p.name.toLowerCase().includes(search));
+  list = [...list];
+  list.sort((a, b) => {
+    if (sortCol === 'name') return sortDir * a.name.localeCompare(b.name);
+    const d = sortDir * ((a[sortCol] ?? 0) - (b[sortCol] ?? 0));
+    return d !== 0 ? d : (b.finished - a.finished) || (b.pct - a.pct);
+  });
+
+  const body = document.getElementById('tableBody');
+  body.innerHTML = '';
+  list.forEach((p, i) => {
+    const row = document.createElement('div');
+    row.className = 'row' + (p.name === selected ? ' selected' : '');
+    const mapper = p.nuisance_cups ? `<span class="tag-mapper" title="Raced as nuisance (mapper) in ${p.nuisance_cups} cup${p.nuisance_cups === 1 ? '' : 's'}">mapper</span>` : '';
+    row.innerHTML = `
+      <div class="rank">${i + 1}</div>
+      <div class="pname">${esc(p.name)}${mapper}</div>
+      <div class="num wins-cell">${p.finished}</div>
+      <div class="num dim">${p.present}</div>
+      <div class="num"><span class="fin-bar"><span style="width:${p.pct}%"></span></span>${Math.round(p.pct)}%</div>
+      <div class="num">${p.cups}</div>
+    `;
+    row.onclick = () => { selected = selected === p.name ? null : p.name; render(); };
+    body.appendChild(row);
+    if (p.name === selected) {
+      const panel = document.createElement('div');
+      panel.className = 'detail-panel';
+      panel.innerHTML = `
+        <div class="detail-header">
+          <span class="name">${esc(p.name)}</span>
+          <button class="close-btn" onclick="selected=null;render();event.stopPropagation();">\u2715</button>
+        </div>
+        <div class="detail-stats">
+          <div class="detail-stat">Finished <span class="val">${p.finished}</span></div>
+          <div class="detail-stat">In lobby <span class="val">${p.present}</span></div>
+          <div class="detail-stat">Rate <span class="val">${p.pct}%</span></div>
+          <div class="detail-stat">Cups <span class="val">${p.cups}</span></div>
+        </div>
+        <div class="history-grid">${p.history.map(h =>
+          `<span class="history-chip ${h.f ? 'f' : 'o'}" title="${h.nuisance ? 'raced as nuisance' : ''}">#${h.k}: ${h.f}/${h.p} \u00b7 ${h.p ? Math.round(100 * h.f / h.p) : 0}%${h.nuisance ? ' (mapper)' : ''}</span>`).join('')}</div>
+      `;
+      body.appendChild(panel);
+    }
+  });
 }
 
 /* ── Ranking View ── */
@@ -1317,6 +1404,10 @@ function valDelta(prev, current) {
 /* ── Event Listeners ── */
 document.getElementById('search').addEventListener('input', render);
 document.getElementById('trollToggle').addEventListener('change', render);
+document.getElementById('minRounds').addEventListener('input', function() {
+  document.getElementById('minRoundsVal').textContent = this.value;
+  render();
+});
 document.getElementById('minApps').addEventListener('input', function() {
   document.getElementById('minAppsVal').textContent = this.value;
   render();
@@ -1332,6 +1423,7 @@ document.querySelectorAll('.view-tab').forEach(tab => {
     // Reset sort for each view
     if (viewMode === 'ranking') { sortCol = 'points'; sortDir = -1; }
     else if (viewMode === 'glicko') { sortCol = 'mu'; sortDir = -1; }
+    else if (viewMode === 'finishes') { sortCol = 'finished'; sortDir = -1; }
     else if (viewMode === 'events') { sortCol = 'id'; sortDir = -1; selectedEvent = null; }
     else { sortCol = 'wins'; sortDir = -1; }
     document.querySelectorAll('.view-tab').forEach(t => t.classList.remove('active'));

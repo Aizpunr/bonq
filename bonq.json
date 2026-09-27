@@ -3,7 +3,7 @@
   "total_cups": 1,
   "total_players": 28,
   "last_cup": 1,
-  "generated": "2026-09-27T20:03:07Z"
+  "generated": "2026-09-27T20:22:26Z"
  },
  "cups": [
   {
@@ -1811,5 +1811,806 @@
     "prev_mu": null
    }
   ]
- }
+ },
+ "finishers": [
+  {
+   "sid": "76561198001387193",
+   "name": "Warsnac",
+   "finished": 13,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 13,
+     "p": 20,
+     "nuisance": false
+    }
+   ],
+   "pct": 65.0
+  },
+  {
+   "sid": "76561198050792757",
+   "name": "justMaki",
+   "finished": 12,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 12,
+     "p": 20,
+     "nuisance": false
+    }
+   ],
+   "pct": 60.0
+  },
+  {
+   "sid": "76561199448462477",
+   "name": "microways",
+   "finished": 12,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 12,
+     "p": 20,
+     "nuisance": false
+    }
+   ],
+   "pct": 60.0
+  },
+  {
+   "sid": "76561199024808939",
+   "name": "Kernkob",
+   "finished": 11,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 11,
+     "p": 20,
+     "nuisance": false
+    }
+   ],
+   "pct": 55.0
+  },
+  {
+   "sid": "76561199186342067",
+   "name": "PlusMicron",
+   "finished": 10,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 10,
+     "p": 20,
+     "nuisance": false
+    }
+   ],
+   "pct": 50.0
+  },
+  {
+   "sid": "76561198896246339",
+   "name": "RoundNzt",
+   "finished": 10,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 10,
+     "p": 20,
+     "nuisance": false
+    }
+   ],
+   "pct": 50.0
+  },
+  {
+   "sid": "76561199129302746",
+   "name": "brrryy",
+   "finished": 9,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 9,
+     "p": 20,
+     "nuisance": false
+    }
+   ],
+   "pct": 45.0
+  },
+  {
+   "sid": "76561198851912263",
+   "name": "Lexer",
+   "finished": 9,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 9,
+     "p": 20,
+     "nuisance": false
+    }
+   ],
+   "pct": 45.0
+  },
+  {
+   "sid": "76561198157436732",
+   "name": "variableferret",
+   "finished": 9,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 9,
+     "p": 20,
+     "nuisance": false
+    }
+   ],
+   "pct": 45.0
+  },
+  {
+   "sid": "76561199380118922",
+   "name": "Victor",
+   "finished": 9,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 1,
+   "history": [
+    {
+     "k": 1,
+     "f": 9,
+     "p": 20,
+     "nuisance": true
+    }
+   ],
+   "pct": 45.0
+  },
+  {
+   "sid": "76561198149636594",
+   "name": "Quickracer10",
+   "finished": 7,
+   "present": 15,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 7,
+     "p": 15,
+     "nuisance": false
+    }
+   ],
+   "pct": 46.7
+  },
+  {
+   "sid": "76561198031919228",
+   "name": "Akane",
+   "finished": 7,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 7,
+     "p": 20,
+     "nuisance": false
+    }
+   ],
+   "pct": 35.0
+  },
+  {
+   "sid": "76561198842622746",
+   "name": "Beans",
+   "finished": 7,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 7,
+     "p": 20,
+     "nuisance": false
+    }
+   ],
+   "pct": 35.0
+  },
+  {
+   "sid": "76561198364662649",
+   "name": "Heart-TGV",
+   "finished": 7,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 7,
+     "p": 20,
+     "nuisance": false
+    }
+   ],
+   "pct": 35.0
+  },
+  {
+   "sid": "76561199733601754",
+   "name": "LKat",
+   "finished": 7,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 1,
+   "history": [
+    {
+     "k": 1,
+     "f": 7,
+     "p": 20,
+     "nuisance": true
+    }
+   ],
+   "pct": 35.0
+  },
+  {
+   "sid": "76561199187327002",
+   "name": "Tommygaming",
+   "finished": 6,
+   "present": 18,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 6,
+     "p": 18,
+     "nuisance": false
+    }
+   ],
+   "pct": 33.3
+  },
+  {
+   "sid": "76561198126038296",
+   "name": "Noxitu",
+   "finished": 6,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 6,
+     "p": 20,
+     "nuisance": false
+    }
+   ],
+   "pct": 30.0
+  },
+  {
+   "sid": "76561198287630337",
+   "name": "SuperHeavy",
+   "finished": 5,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 5,
+     "p": 20,
+     "nuisance": false
+    }
+   ],
+   "pct": 25.0
+  },
+  {
+   "sid": "76561199101994275",
+   "name": "VroomVroomer",
+   "finished": 5,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 5,
+     "p": 20,
+     "nuisance": false
+    }
+   ],
+   "pct": 25.0
+  },
+  {
+   "sid": "76561197972890120",
+   "name": "aizpun",
+   "finished": 4,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 4,
+     "p": 20,
+     "nuisance": false
+    }
+   ],
+   "pct": 20.0
+  },
+  {
+   "sid": "76561198846673916",
+   "name": "Matic_D",
+   "finished": 4,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 4,
+     "p": 20,
+     "nuisance": false
+    }
+   ],
+   "pct": 20.0
+  },
+  {
+   "sid": "76561198315900248",
+   "name": "Ruckooe",
+   "finished": 4,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 4,
+     "p": 20,
+     "nuisance": false
+    }
+   ],
+   "pct": 20.0
+  },
+  {
+   "sid": "76561198748988602",
+   "name": "BrickEdwards",
+   "finished": 3,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 3,
+     "p": 20,
+     "nuisance": false
+    }
+   ],
+   "pct": 15.0
+  },
+  {
+   "sid": "76561199082360966",
+   "name": "B_ES",
+   "finished": 2,
+   "present": 5,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 2,
+     "p": 5,
+     "nuisance": false
+    }
+   ],
+   "pct": 40.0
+  },
+  {
+   "sid": "76561199032318188",
+   "name": "OccasionallyAmazingGamer",
+   "finished": 2,
+   "present": 8,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 2,
+     "p": 8,
+     "nuisance": false
+    }
+   ],
+   "pct": 25.0
+  },
+  {
+   "sid": "76561199153054076",
+   "name": "Milk Man",
+   "finished": 2,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 2,
+     "p": 20,
+     "nuisance": false
+    }
+   ],
+   "pct": 10.0
+  },
+  {
+   "sid": "76561198027169155",
+   "name": "DeiRex",
+   "finished": 1,
+   "present": 2,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 1,
+     "p": 2,
+     "nuisance": false
+    }
+   ],
+   "pct": 50.0
+  },
+  {
+   "sid": "76561198060405963",
+   "name": "ForestTheBoy",
+   "finished": 1,
+   "present": 5,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 1,
+     "p": 5,
+     "nuisance": false
+    }
+   ],
+   "pct": 20.0
+  },
+  {
+   "sid": "76561199589394762",
+   "name": "jofk2415",
+   "finished": 1,
+   "present": 6,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 1,
+     "p": 6,
+     "nuisance": false
+    }
+   ],
+   "pct": 16.7
+  },
+  {
+   "sid": "76561198212710700",
+   "name": "Minkus",
+   "finished": 1,
+   "present": 6,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 1,
+     "p": 6,
+     "nuisance": false
+    }
+   ],
+   "pct": 16.7
+  },
+  {
+   "sid": "76561198958881478",
+   "name": "phrogrock",
+   "finished": 1,
+   "present": 7,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 1,
+     "p": 7,
+     "nuisance": false
+    }
+   ],
+   "pct": 14.3
+  },
+  {
+   "sid": "76561198368656405",
+   "name": "joshuadwyer79",
+   "finished": 1,
+   "present": 8,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 1,
+     "p": 8,
+     "nuisance": false
+    }
+   ],
+   "pct": 12.5
+  },
+  {
+   "sid": "76561198047403251",
+   "name": "St Nicholas",
+   "finished": 1,
+   "present": 9,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 1,
+     "p": 9,
+     "nuisance": false
+    }
+   ],
+   "pct": 11.1
+  },
+  {
+   "sid": "76561198348911001",
+   "name": "Kreeeeee",
+   "finished": 1,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 1,
+   "history": [
+    {
+     "k": 1,
+     "f": 1,
+     "p": 20,
+     "nuisance": true
+    }
+   ],
+   "pct": 5.0
+  },
+  {
+   "sid": "76561199731808063",
+   "name": "Yksdjcj",
+   "finished": 1,
+   "present": 20,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 1,
+     "p": 20,
+     "nuisance": false
+    }
+   ],
+   "pct": 5.0
+  },
+  {
+   "sid": "76561198107216213",
+   "name": "13Silvers",
+   "finished": 0,
+   "present": 1,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 0,
+     "p": 1,
+     "nuisance": false
+    }
+   ],
+   "pct": 0.0
+  },
+  {
+   "sid": "76561198030518760",
+   "name": "ActuallyRuben",
+   "finished": 0,
+   "present": 5,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 0,
+     "p": 5,
+     "nuisance": false
+    }
+   ],
+   "pct": 0.0
+  },
+  {
+   "sid": "76561198172378351",
+   "name": "Brachaldis",
+   "finished": 0,
+   "present": 2,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 0,
+     "p": 2,
+     "nuisance": false
+    }
+   ],
+   "pct": 0.0
+  },
+  {
+   "sid": "76561199278221929",
+   "name": "icRS",
+   "finished": 0,
+   "present": 3,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 0,
+     "p": 3,
+     "nuisance": false
+    }
+   ],
+   "pct": 0.0
+  },
+  {
+   "sid": "76561198083300332",
+   "name": "K410K3N",
+   "finished": 0,
+   "present": 1,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 0,
+     "p": 1,
+     "nuisance": false
+    }
+   ],
+   "pct": 0.0
+  },
+  {
+   "sid": "76561198156955177",
+   "name": "LocalDerpFace",
+   "finished": 0,
+   "present": 2,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 0,
+     "p": 2,
+     "nuisance": false
+    }
+   ],
+   "pct": 0.0
+  },
+  {
+   "sid": "76561198056113005",
+   "name": "Six",
+   "finished": 0,
+   "present": 2,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 0,
+     "p": 2,
+     "nuisance": false
+    }
+   ],
+   "pct": 0.0
+  },
+  {
+   "sid": "76561198213715297",
+   "name": "stindt",
+   "finished": 0,
+   "present": 3,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 0,
+     "p": 3,
+     "nuisance": false
+    }
+   ],
+   "pct": 0.0
+  },
+  {
+   "sid": "76561198011664478",
+   "name": "tobiniho01",
+   "finished": 0,
+   "present": 1,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 0,
+     "p": 1,
+     "nuisance": false
+    }
+   ],
+   "pct": 0.0
+  },
+  {
+   "sid": "76561199185761055",
+   "name": "Winter",
+   "finished": 0,
+   "present": 1,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 0,
+     "p": 1,
+     "nuisance": false
+    }
+   ],
+   "pct": 0.0
+  },
+  {
+   "sid": "76561198305054806",
+   "name": "wokonbike",
+   "finished": 0,
+   "present": 9,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 0,
+     "p": 9,
+     "nuisance": false
+    }
+   ],
+   "pct": 0.0
+  },
+  {
+   "sid": "76561198111366624",
+   "name": "Zeus",
+   "finished": 0,
+   "present": 9,
+   "cups": 1,
+   "nuisance_cups": 0,
+   "history": [
+    {
+     "k": 1,
+     "f": 0,
+     "p": 9,
+     "nuisance": false
+    }
+   ],
+   "pct": 0.0
+  }
+ ]
 }
