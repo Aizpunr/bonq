@@ -383,12 +383,42 @@ def compute_standings(cup_rounds, roster, nuisance_sids, min_rounds=MIN_ROUNDS_P
             "finish_stats": finish_stats}
 
 
-def apply_host_totals(st, host_file):
-    """Others' points := the host file's final pointsTotal, re-ranked. Winners,
-    finalists and nuisance are NOT touched: validate_vs_topout.py checks those."""
+def apply_host_file(st, host_file, roster):
+    """When the host's topoutresults.json exists it wins over the log for:
+    - Others' points (final pointsTotal), re-ranked;
+    - rounds finished: finished = has a time, present = finished or DNF paid 20
+      (in the lobby at round close; DNF 0 = had left). The log counts presence
+      at round START; the two differ by <=1 round per player (Bonq #1).
+    Winners, finalists and nuisance are NOT touched: validate_vs_topout.py checks those."""
     with open(host_file, encoding="utf-8-sig") as f:
-        last = json.load(f)["rounds"][-1]["playerResults"]
-    tot = {str(p["steamID"]): p["pointsTotal"] for p in last}
+        hrounds = json.load(f)["rounds"]
+    if len(hrounds) != len(st["rounds"]):
+        sys.exit(f"  ERROR: host file has {len(hrounds)} rounds, log has {len(st['rounds'])}. "
+                 f"Run validate_vs_topout.py before using --host-file.")
+
+    fin, pres = defaultdict(int), defaultdict(int)
+    for h, r in zip(hrounds, st["rounds"]):
+        f_n = p_n = 0
+        for p in h["playerResults"]:
+            sid, done = str(p["steamID"]), not isinstance(p["time"], str)
+            if done or p["gainedPoints"] > 0:
+                pres[sid] += 1
+                p_n += 1
+                if done:
+                    fin[sid] += 1
+                    f_n += 1
+        r["finishers"], r["roster"] = f_n, p_n
+        r["finish_pct"] = round(100 * f_n / p_n, 1) if p_n else None
+    stats = {x["sid"]: x for x in st["finish_stats"]}
+    for sid in set(pres) | set(stats):
+        x = stats.setdefault(sid, {"sid": sid, "name": roster.get(sid, f"<{sid}>")})
+        x["present"], x["finished"] = pres[sid], fin[sid]
+        x["pct"] = round(100 * fin[sid] / pres[sid], 1) if pres[sid] else None
+    st["finish_stats"] = sorted(stats.values(),
+                                key=lambda x: (-x["finished"], -(x["pct"] or 0), x["name"].lower()))
+    st["finish_source"] = "host topoutresults.json"
+
+    tot = {str(p["steamID"]): p["pointsTotal"] for p in hrounds[-1]["playerResults"]}
     for o in st["others"]:
         h = tot.get(o["sid"])
         if h is not None and h != o["points"]:
@@ -450,7 +480,7 @@ def main():
 
     st = compute_standings(cup_rounds, roster, nuisance, args.min_rounds)
     if args.host_file:
-        apply_host_totals(st, args.host_file)
+        apply_host_file(st, args.host_file, roster)
     if _unverified_positions:
         print(f"\n  !! finishers at positions {sorted(_unverified_positions)}: points past 15th are "
               f"UNVERIFIED (scored as {POINTS['floor']}). Get the host's topoutresults.json.", file=sys.stderr)
@@ -477,7 +507,8 @@ def main():
         for e in st["excluded"]:
             print(f"   - {e['name']:25s} pts={e['points']:>4} rounds={e['rounds_played']} finishes={e['finishes']}")
 
-    print(f"\nRounds finished (present = in lobby; spectators count as present):")
+    src = st.get("finish_source", "log: present = in lobby at round start")
+    print(f"\nRounds finished ({src}; spectators count as present):")
     for r in st["rounds"]:
         print(f"  R{r['n']:<2} {r['map'][:32]:32s} {r['finishers']:>2}/{r['roster']:<2} {r['finish_pct']:>5}%")
     tot_f = sum(r["finishers"] for r in st["rounds"])

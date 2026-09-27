@@ -96,6 +96,7 @@ def build():
             "rounds": c.get("rounds", []),
             "finish": {x["sid"]: [x["finished"], x["present"]] for x in c.get("finish_stats", [])},
             "map_finish": map_finish(c.get("rounds", [])),
+            "finish_source": "host" if c.get("finish_source") else "log",
         })
         for x in c.get("finish_stats", []):
             if x["sid"] in players:

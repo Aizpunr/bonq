@@ -135,7 +135,7 @@ function renderCups(d) {
     <h2>Bonq Cup #${c.id}</h2>
     <div class="meta">${fmtDate(c.date)} · ${c.lobby_size} ranked · ${c.scoring_rounds} rounds${c.header ? ' · ' + esc(c.header) : ''}</div>
     <div class="maps">${c.maps.map(m => `<span>${esc(stripMap(m))}</span>`).join('')}</div>
-    ${c.map_finish?.length ? `<div class="sec">Rounds finished per map</div><div class="tbl-wrap"><table><tbody>${c.map_finish.map(([m, f, p]) => `<tr><td>${esc(stripMap(m))}</td><td class="num">${f}/${p}</td><td class="num">${p ? (100*f/p).toFixed(1) : 0}%</td><td style="width:40%"><div style="height:6px;border-radius:3px;background:var(--accent);width:${p ? 100*f/p : 0}%"></div></td></tr>`).join('')}</tbody></table></div><div class="meta" style="margin-top:6px">Lobby = everyone in the room that round; spectators and AFK count, so these are floors.</div>` : ''}
+    ${c.map_finish?.length ? `<div class="sec">Rounds finished per map</div><div class="tbl-wrap"><table><tbody>${c.map_finish.map(([m, f, p]) => `<tr><td>${esc(stripMap(m))}</td><td class="num">${f}/${p}</td><td class="num">${p ? (100*f/p).toFixed(1) : 0}%</td><td style="width:40%"><div style="height:6px;border-radius:3px;background:var(--accent);width:${p ? 100*f/p : 0}%"></div></td></tr>`).join('')}</tbody></table></div><div class="meta" style="margin-top:6px">${c.finish_source === 'host' ? "From the host's Top-&gt;Out results: lobby = everyone still in the room when the round ended." : 'From the live log: lobby = everyone in the room when the round started.'} Spectators and AFK count, so these are floors.</div>` : ''}
     <div class="sec">Winners</div>
     <div class="tbl-wrap"><table><tbody>${c.winners.map((w, i) => `<tr>
       <td>${chip('w' + (i + 1))}</td><td class="pname">${esc(w.name)}</td>

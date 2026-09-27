@@ -283,13 +283,6 @@
       "finishes": 0
     },
     {
-      "sid": "76561198212710700",
-      "name": "Minkus",
-      "points": 151,
-      "rounds_played": 5,
-      "finishes": 1
-    },
-    {
       "sid": "76561199082360966",
       "name": "B_ES",
       "points": 244,
@@ -300,6 +293,13 @@
       "sid": "76561198060405963",
       "name": "ForestTheBoy",
       "points": 172,
+      "rounds_played": 5,
+      "finishes": 1
+    },
+    {
+      "sid": "76561198212710700",
+      "name": "Minkus",
+      "points": 151,
       "rounds_played": 5,
       "finishes": 1
     },
@@ -325,18 +325,18 @@
       "finishes": 0
     },
     {
-      "sid": "76561198027169155",
-      "name": "DeiRex",
-      "points": 112,
-      "rounds_played": 3,
-      "finishes": 1
-    },
-    {
       "sid": "76561198213715297",
       "name": "stindt",
       "points": 60,
       "rounds_played": 3,
       "finishes": 0
+    },
+    {
+      "sid": "76561198027169155",
+      "name": "DeiRex",
+      "points": 112,
+      "rounds_played": 3,
+      "finishes": 1
     },
     {
       "sid": "76561198172378351",
@@ -360,13 +360,6 @@
       "finishes": 0
     },
     {
-      "sid": "76561199756332058",
-      "name": "GoBigGoHotWheels",
-      "points": 20,
-      "rounds_played": 1,
-      "finishes": 0
-    },
-    {
       "sid": "76561198083300332",
       "name": "K410K3N",
       "points": 20,
@@ -376,6 +369,13 @@
     {
       "sid": "76561198011664478",
       "name": "tobiniho01",
+      "points": 20,
+      "rounds_played": 1,
+      "finishes": 0
+    },
+    {
+      "sid": "76561199756332058",
+      "name": "GoBigGoHotWheels",
       "points": 20,
       "rounds_played": 1,
       "finishes": 0
@@ -393,9 +393,9 @@
       "n": 1,
       "map": "Bonq 1 - Au même endroit",
       "ts": "2026-09-27T19:02:00.269",
-      "roster": 31,
+      "roster": 32,
       "finishers": 7,
-      "finish_pct": 22.6,
+      "finish_pct": 21.9,
       "top": [
         {
           "sid": "76561199380118922",
@@ -419,9 +419,9 @@
       "n": 2,
       "map": "Bonq 1 - Magnet Slop",
       "ts": "2026-09-27T19:03:46.893",
-      "roster": 33,
+      "roster": 34,
       "finishers": 5,
-      "finish_pct": 15.2,
+      "finish_pct": 14.7,
       "top": [
         {
           "sid": "76561198050792757",
@@ -445,9 +445,9 @@
       "n": 3,
       "map": "Bonq 1 - Rapid Rotation",
       "ts": "2026-09-27T19:05:53.148",
-      "roster": 34,
+      "roster": 31,
       "finishers": 7,
-      "finish_pct": 20.6,
+      "finish_pct": 22.6,
       "top": [
         {
           "sid": "76561199733601754",
@@ -471,9 +471,9 @@
       "n": 4,
       "map": "Bonq 1 - Magnetic Bob",
       "ts": "2026-09-27T19:08:53.244",
-      "roster": 31,
+      "roster": 34,
       "finishers": 10,
-      "finish_pct": 32.3,
+      "finish_pct": 29.4,
       "top": [
         {
           "sid": "76561199448462477",
@@ -497,9 +497,9 @@
       "n": 5,
       "map": "Bonq 1 - Turntable Turnarounds",
       "ts": "2026-09-27T19:10:40.931",
-      "roster": 34,
+      "roster": 36,
       "finishers": 10,
-      "finish_pct": 29.4,
+      "finish_pct": 27.8,
       "top": [
         {
           "sid": "76561199380118922",
@@ -523,9 +523,9 @@
       "n": 6,
       "map": "Bonq 1 - Au même endroit",
       "ts": "2026-09-27T19:12:29.840",
-      "roster": 36,
+      "roster": 34,
       "finishers": 12,
-      "finish_pct": 33.3,
+      "finish_pct": 35.3,
       "top": [
         {
           "sid": "76561199024808939",
@@ -549,9 +549,9 @@
       "n": 7,
       "map": "Bonq 1 - Magnet Slop",
       "ts": "2026-09-27T19:14:07.061",
-      "roster": 35,
+      "roster": 33,
       "finishers": 7,
-      "finish_pct": 20.0,
+      "finish_pct": 21.2,
       "top": [
         {
           "sid": "76561198050792757",
@@ -575,9 +575,9 @@
       "n": 8,
       "map": "Bonq 1 - Rapid Rotation",
       "ts": "2026-09-27T19:16:04.220",
-      "roster": 33,
+      "roster": 32,
       "finishers": 6,
-      "finish_pct": 18.2,
+      "finish_pct": 18.8,
       "top": [
         {
           "sid": "76561199733601754",
@@ -601,9 +601,9 @@
       "n": 9,
       "map": "Bonq 1 - Magnetic Bob",
       "ts": "2026-09-27T19:17:44.830",
-      "roster": 31,
+      "roster": 30,
       "finishers": 9,
-      "finish_pct": 29.0,
+      "finish_pct": 30.0,
       "top": [
         {
           "sid": "76561198050792757",
@@ -627,9 +627,9 @@
       "n": 10,
       "map": "Bonq 1 - Turntable Turnarounds",
       "ts": "2026-09-27T19:19:26.267",
-      "roster": 30,
+      "roster": 26,
       "finishers": 15,
-      "finish_pct": 50.0,
+      "finish_pct": 57.7,
       "top": [
         {
           "sid": "76561199380118922",
@@ -705,9 +705,9 @@
       "n": 13,
       "map": "Bonq 1 - Rapid Rotation",
       "ts": "2026-09-27T19:24:29.438",
-      "roster": 26,
+      "roster": 28,
       "finishers": 10,
-      "finish_pct": 38.5,
+      "finish_pct": 35.7,
       "top": [
         {
           "sid": "76561198851912263",
@@ -757,9 +757,9 @@
       "n": 15,
       "map": "Bonq 1 - Turntable Turnarounds",
       "ts": "2026-09-27T19:27:49.652",
-      "roster": 28,
+      "roster": 29,
       "finishers": 15,
-      "finish_pct": 53.6,
+      "finish_pct": 51.7,
       "top": [
         {
           "sid": "76561199024808939",
@@ -783,9 +783,9 @@
       "n": 16,
       "map": "Bonq 1 - Au même endroit",
       "ts": "2026-09-27T19:29:32.151",
-      "roster": 29,
+      "roster": 31,
       "finishers": 13,
-      "finish_pct": 44.8,
+      "finish_pct": 41.9,
       "top": [
         {
           "sid": "76561198842622746",
@@ -809,9 +809,9 @@
       "n": 17,
       "map": "Bonq 1 - Magnet Slop",
       "ts": "2026-09-27T19:31:09.234",
-      "roster": 31,
+      "roster": 30,
       "finishers": 6,
-      "finish_pct": 19.4,
+      "finish_pct": 20.0,
       "top": [
         {
           "sid": "76561198896246339",
@@ -835,9 +835,9 @@
       "n": 18,
       "map": "Bonq 1 - Rapid Rotation",
       "ts": "2026-09-27T19:32:45.407",
-      "roster": 30,
+      "roster": 29,
       "finishers": 9,
-      "finish_pct": 30.0,
+      "finish_pct": 31.0,
       "top": [
         {
           "sid": "76561198851912263",
@@ -887,9 +887,9 @@
       "n": 20,
       "map": "Bonq 1 - Turntable Turnarounds",
       "ts": "2026-09-27T19:36:07.911",
-      "roster": 29,
+      "roster": 30,
       "finishers": 11,
-      "finish_pct": 37.9,
+      "finish_pct": 36.7,
       "top": [
         {
           "sid": "76561198896246339",
@@ -914,9 +914,9 @@
     {
       "sid": "76561198001387193",
       "name": "Warsnac",
-      "present": 19,
+      "present": 20,
       "finished": 13,
-      "pct": 68.4
+      "pct": 65.0
     },
     {
       "sid": "76561198050792757",
@@ -984,9 +984,9 @@
     {
       "sid": "76561198149636594",
       "name": "Quickracer10",
-      "present": 14,
+      "present": 15,
       "finished": 7,
-      "pct": 50.0
+      "pct": 46.7
     },
     {
       "sid": "76561198031919228",
@@ -1096,9 +1096,9 @@
     {
       "sid": "76561198027169155",
       "name": "DeiRex",
-      "present": 3,
+      "present": 2,
       "finished": 1,
-      "pct": 33.3
+      "pct": 50.0
     },
     {
       "sid": "76561198060405963",
@@ -1108,15 +1108,22 @@
       "pct": 20.0
     },
     {
-      "sid": "76561198212710700",
-      "name": "Minkus",
-      "present": 5,
-      "finished": 1,
-      "pct": 20.0
-    },
-    {
       "sid": "76561199589394762",
       "name": "jofk2415",
+      "present": 6,
+      "finished": 1,
+      "pct": 16.7
+    },
+    {
+      "sid": "76561198212710700",
+      "name": "Minkus",
+      "present": 6,
+      "finished": 1,
+      "pct": 16.7
+    },
+    {
+      "sid": "76561198958881478",
+      "name": "phrogrock",
       "present": 7,
       "finished": 1,
       "pct": 14.3
@@ -1124,13 +1131,6 @@
     {
       "sid": "76561198368656405",
       "name": "joshuadwyer79",
-      "present": 7,
-      "finished": 1,
-      "pct": 14.3
-    },
-    {
-      "sid": "76561198958881478",
-      "name": "phrogrock",
       "present": 8,
       "finished": 1,
       "pct": 12.5
@@ -1138,9 +1138,9 @@
     {
       "sid": "76561198047403251",
       "name": "St Nicholas",
-      "present": 10,
+      "present": 9,
       "finished": 1,
-      "pct": 10.0
+      "pct": 11.1
     },
     {
       "sid": "76561198348911001",
@@ -1159,14 +1159,14 @@
     {
       "sid": "76561198107216213",
       "name": "13Silvers",
-      "present": 0,
+      "present": 1,
       "finished": 0,
-      "pct": null
+      "pct": 0.0
     },
     {
       "sid": "76561198030518760",
       "name": "ActuallyRuben",
-      "present": 4,
+      "present": 5,
       "finished": 0,
       "pct": 0.0
     },
@@ -1180,9 +1180,9 @@
     {
       "sid": "76561199756332058",
       "name": "GoBigGoHotWheels",
-      "present": 1,
+      "present": 0,
       "finished": 0,
-      "pct": 0.0
+      "pct": null
     },
     {
       "sid": "76561199278221929",
@@ -1208,7 +1208,7 @@
     {
       "sid": "76561198056113005",
       "name": "Six",
-      "present": 3,
+      "present": 2,
       "finished": 0,
       "pct": 0.0
     },
@@ -1236,17 +1236,18 @@
     {
       "sid": "76561198305054806",
       "name": "wokonbike",
-      "present": 10,
+      "present": 9,
       "finished": 0,
       "pct": 0.0
     },
     {
       "sid": "76561198111366624",
       "name": "Zeus",
-      "present": 10,
+      "present": 9,
       "finished": 0,
       "pct": 0.0
     }
   ],
+  "finish_source": "host topoutresults.json",
   "points_source": "host topoutresults.json"
 }
