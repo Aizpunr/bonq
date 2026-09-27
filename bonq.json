@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-09-27T17:47:54Z",
+  "generated": "2026-09-27T18:04:33Z",
   "cups": 1,
   "players": 28,
   "rank_points": {
@@ -44,14 +44,6 @@
      "qualified": 13
     },
     {
-     "name": "RoundNzt",
-     "sid": "76561198896246339",
-     "map": "Bonq 1 - Magnet Slop",
-     "time": "18.880",
-     "won": 17,
-     "qualified": 17
-    },
-    {
      "name": "Lexer",
      "sid": "76561198851912263",
      "map": "Bonq 1 - Rapid Rotation",
@@ -66,6 +58,14 @@
      "time": "22.670",
      "won": 19,
      "qualified": 16
+    },
+    {
+     "name": "RoundNzt",
+     "sid": "76561198896246339",
+     "map": "Bonq 1 - Turntable Turnarounds",
+     "time": "25.175",
+     "won": 20,
+     "qualified": 17
     }
    ],
    "finalists": [
@@ -86,7 +86,7 @@
     {
      "name": "brrryy",
      "sid": "76561199129302746",
-     "points": 921,
+     "points": 920,
      "rounds": 20,
      "finishes": 9
     },
@@ -98,6 +98,13 @@
      "finishes": 9
     },
     {
+     "name": "Tommygaming",
+     "sid": "76561199187327002",
+     "points": 868,
+     "rounds": 18,
+     "finishes": 6
+    },
+    {
      "name": "Beans",
      "sid": "76561198842622746",
      "points": 852,
@@ -107,16 +114,9 @@
     {
      "name": "Heart-TGV",
      "sid": "76561198364662649",
-     "points": 852,
+     "points": 851,
      "rounds": 20,
      "finishes": 7
-    },
-    {
-     "name": "Tommygaming",
-     "sid": "76561199187327002",
-     "points": 849,
-     "rounds": 18,
-     "finishes": 6
     },
     {
      "name": "Quickracer10",
@@ -128,21 +128,21 @@
     {
      "name": "Noxitu",
      "sid": "76561198126038296",
-     "points": 771,
+     "points": 770,
      "rounds": 20,
      "finishes": 6
     },
     {
      "name": "Akane",
      "sid": "76561198031919228",
-     "points": 734,
+     "points": 733,
      "rounds": 20,
      "finishes": 7
     },
     {
      "name": "VroomVroomer",
      "sid": "76561199101994275",
-     "points": 703,
+     "points": 702,
      "rounds": 20,
      "finishes": 5
     },
@@ -177,7 +177,7 @@
     {
      "name": "Matic_D",
      "sid": "76561198846673916",
-     "points": 564,
+     "points": 562,
      "rounds": 20,
      "finishes": 4
     },
@@ -205,28 +205,28 @@
     {
      "name": "St Nicholas",
      "sid": "76561198047403251",
-     "points": 243,
+     "points": 223,
      "rounds": 10,
+     "finishes": 1
+    },
+    {
+     "name": "joshuadwyer79",
+     "sid": "76561198368656405",
+     "points": 208,
+     "rounds": 7,
      "finishes": 1
     },
     {
      "name": "phrogrock",
      "sid": "76561198958881478",
-     "points": 208,
+     "points": 188,
      "rounds": 8,
      "finishes": 1
     },
     {
      "name": "jofk2415",
      "sid": "76561199589394762",
-     "points": 205,
-     "rounds": 7,
-     "finishes": 1
-    },
-    {
-     "name": "joshuadwyer79",
-     "sid": "76561198368656405",
-     "points": 188,
+     "points": 185,
      "rounds": 7,
      "finishes": 1
     }
@@ -689,7 +689,7 @@
        "time": "18.928"
       }
      ],
-     "winner": "RoundNzt"
+     "winner": null
     },
     {
      "n": 18,
@@ -767,7 +767,7 @@
        "time": "25.902"
       }
      ],
-     "winner": null
+     "winner": "RoundNzt"
     }
    ],
    "finish": {
@@ -911,6 +911,10 @@
      1,
      20
     ],
+    "76561198107216213": [
+     0,
+     0
+    ],
     "76561198030518760": [
      0,
      4
@@ -1041,8 +1045,8 @@
    "rank": 2
   },
   {
-   "sid": "76561198896246339",
-   "name": "RoundNzt",
+   "sid": "76561198851912263",
+   "name": "Lexer",
    "apps": 1,
    "wins": 1,
    "w1": 0,
@@ -1052,7 +1056,7 @@
    "w5": 0,
    "finalist": 0,
    "points": 100,
-   "finished": 10,
+   "finished": 9,
    "present": 20,
    "best": 3,
    "history": [
@@ -1066,8 +1070,8 @@
    "rank": 3
   },
   {
-   "sid": "76561198851912263",
-   "name": "Lexer",
+   "sid": "76561199448462477",
+   "name": "microways",
    "apps": 1,
    "wins": 1,
    "w1": 0,
@@ -1077,7 +1081,7 @@
    "w5": 0,
    "finalist": 0,
    "points": 70,
-   "finished": 9,
+   "finished": 12,
    "present": 20,
    "best": 4,
    "history": [
@@ -1091,8 +1095,8 @@
    "rank": 4
   },
   {
-   "sid": "76561199448462477",
-   "name": "microways",
+   "sid": "76561198896246339",
+   "name": "RoundNzt",
    "apps": 1,
    "wins": 1,
    "w1": 0,
@@ -1102,7 +1106,7 @@
    "w5": 1,
    "finalist": 0,
    "points": 40,
-   "finished": 12,
+   "finished": 10,
    "present": 20,
    "best": 5,
    "history": [
@@ -1185,7 +1189,7 @@
     {
      "cup": 1,
      "result": "o",
-     "cup_points": 921,
+     "cup_points": 920,
      "points": 0,
      "pos": 8
     }
@@ -1219,8 +1223,8 @@
    "rank": 9
   },
   {
-   "sid": "76561198842622746",
-   "name": "Beans",
+   "sid": "76561199187327002",
+   "name": "Tommygaming",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1230,14 +1234,14 @@
    "w5": 0,
    "finalist": 0,
    "points": 0,
-   "finished": 7,
-   "present": 20,
+   "finished": 6,
+   "present": 18,
    "best": 10,
    "history": [
     {
      "cup": 1,
      "result": "o",
-     "cup_points": 852,
+     "cup_points": 868,
      "points": 0,
      "pos": 10
     }
@@ -1245,8 +1249,8 @@
    "rank": 10
   },
   {
-   "sid": "76561198364662649",
-   "name": "Heart-TGV",
+   "sid": "76561198842622746",
+   "name": "Beans",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1271,8 +1275,8 @@
    "rank": 11
   },
   {
-   "sid": "76561199187327002",
-   "name": "Tommygaming",
+   "sid": "76561198364662649",
+   "name": "Heart-TGV",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1282,14 +1286,14 @@
    "w5": 0,
    "finalist": 0,
    "points": 0,
-   "finished": 6,
-   "present": 18,
+   "finished": 7,
+   "present": 20,
    "best": 12,
    "history": [
     {
      "cup": 1,
      "result": "o",
-     "cup_points": 849,
+     "cup_points": 851,
      "points": 0,
      "pos": 12
     }
@@ -1341,7 +1345,7 @@
     {
      "cup": 1,
      "result": "o",
-     "cup_points": 771,
+     "cup_points": 770,
      "points": 0,
      "pos": 14
     }
@@ -1367,7 +1371,7 @@
     {
      "cup": 1,
      "result": "o",
-     "cup_points": 734,
+     "cup_points": 733,
      "points": 0,
      "pos": 15
     }
@@ -1393,7 +1397,7 @@
     {
      "cup": 1,
      "result": "o",
-     "cup_points": 703,
+     "cup_points": 702,
      "points": 0,
      "pos": 16
     }
@@ -1523,7 +1527,7 @@
     {
      "cup": 1,
      "result": "o",
-     "cup_points": 564,
+     "cup_points": 562,
      "points": 0,
      "pos": 21
     }
@@ -1627,12 +1631,38 @@
     {
      "cup": 1,
      "result": "o",
-     "cup_points": 243,
+     "cup_points": 223,
      "points": 0,
      "pos": 25
     }
    ],
    "rank": 25
+  },
+  {
+   "sid": "76561198368656405",
+   "name": "joshuadwyer79",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "points": 0,
+   "finished": 1,
+   "present": 7,
+   "best": 26,
+   "history": [
+    {
+     "cup": 1,
+     "result": "o",
+     "cup_points": 208,
+     "points": 0,
+     "pos": 26
+    }
+   ],
+   "rank": 26
   },
   {
    "sid": "76561198958881478",
@@ -1648,38 +1678,12 @@
    "points": 0,
    "finished": 1,
    "present": 8,
-   "best": 26,
-   "history": [
-    {
-     "cup": 1,
-     "result": "o",
-     "cup_points": 208,
-     "points": 0,
-     "pos": 26
-    }
-   ],
-   "rank": 26
-  },
-  {
-   "sid": "76561199589394762",
-   "name": "jofk2415",
-   "apps": 1,
-   "wins": 0,
-   "w1": 0,
-   "w2": 0,
-   "w3": 0,
-   "w4": 0,
-   "w5": 0,
-   "finalist": 0,
-   "points": 0,
-   "finished": 1,
-   "present": 7,
    "best": 27,
    "history": [
     {
      "cup": 1,
      "result": "o",
-     "cup_points": 205,
+     "cup_points": 188,
      "points": 0,
      "pos": 27
     }
@@ -1687,8 +1691,8 @@
    "rank": 27
   },
   {
-   "sid": "76561198368656405",
-   "name": "joshuadwyer79",
+   "sid": "76561199589394762",
+   "name": "jofk2415",
    "apps": 1,
    "wins": 0,
    "w1": 0,
@@ -1705,7 +1709,7 @@
     {
      "cup": 1,
      "result": "o",
-     "cup_points": 188,
+     "cup_points": 185,
      "points": 0,
      "pos": 28
     }

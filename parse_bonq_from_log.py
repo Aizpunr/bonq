@@ -12,13 +12,12 @@ Round selection (Bonq maps are not guaranteed to carry a cup tag):
   STARTED inside it is taken, whatever the map. Combine with --date.
 The script prints every selected round; eyeball it before trusting the result.
 
-Rules: the Top->Out mod settings Victor sent 2026-09-27, identical to Kerki
-points v2 as far as the screenshot shows (the distribution tail past 55 is
-assumed, validate against the cup's in-game board):
-- 150 125 110 100 92 85 79 73 68 63 59 55 52 49 46 44 42 40 38 37 36 35, 22nd+ = 35
-- DNF (rostered for the round, no finish) = 20
-- 1000 -> finalist, points capped. Pos 1 as finalist wins; crossing 1000 AT pos 1
-  wins that same round. 5 winners.
+Rules: the Top->Out mod settings Victor sent 2026-09-27, checked against the
+host's topoutresults.json for Bonq #1 (validate_vs_topout.py):
+- 150 125 110 100 92 85 79 73 68 63 59 55 51 48 45, 16th+ unknown (scored 35, warned)
+- DNF = 20 for anyone in the lobby when the round closes and not finished
+- 1000 -> finalist, points capped. Pos 1 as an EXISTING finalist wins; crossing 1000 at pos 1
+  does NOT win that round (host file, Bonq #1). 5 winners.
 - No discovery round: every selected round scores.
 - Nuisance (--nuisance): points off-pool, a nuisance pos 1 blocks the round's W.
 - Last-round rule: qualifying in the LAST scoring round gives no finalist tag.
@@ -39,19 +38,24 @@ CUPS_DIR = os.path.join(PROJECT_DIR, "cups")
 LOGS_DIR = os.path.join(PROJECT_DIR, "logs")
 MIN_ROUNDS_PLAYED = 6   # Kerki's rule; revisit once Bonq has a few cups
 
-_TOP = [150, 125, 110, 100, 92, 85, 79, 73, 68, 63, 59,
-        55, 52, 49, 46, 44, 42, 40, 38, 37, 36, 35]
+# Read off the host's topoutresults.json for Bonq #1: NOT Kerki's list past 12th
+# (Kerki: 52 49 46). Only 15 places were ever reached, so 16th+ is unknown.
+_TOP = [150, 125, 110, 100, 92, 85, 79, 73, 68, 63, 59, 55, 51, 48, 45]
 POINTS = {
-    "name": "Top->Out v2 (Kerki v2 settings)",
+    "name": "Bonq Top->Out (host file verified to 15th)",
     "threshold": 1000,
     "dnf": 20,
-    "floor": 35,
+    "floor": 35,        # ZeepTourney baseline; where the list meets it is unknown
     "winners": 5,
 }
+_unverified_positions = set()
 
 
 def points_for_pos(pos):
-    return _TOP[pos - 1] if pos <= len(_TOP) else POINTS["floor"]
+    if pos <= len(_TOP):
+        return _TOP[pos - 1]
+    _unverified_positions.add(pos)
+    return POINTS["floor"]
 
 
 def strip_tag(name):
@@ -278,9 +282,20 @@ def compute_standings(cup_rounds, roster, nuisance_sids, min_rounds=MIN_ROUNDS_P
         else:
             points[sid] = total
 
+    # The mod pays the DNF 20 to whoever is in the lobby when the round closes:
+    # mid-round joiners get it, mid-round leavers get 0. The log has no leave
+    # event, so "still here at the next ROUND_STARTED" stands in for it
+    # (Bonq #1: 2 mismatches vs the host file out of ~400 player-rounds).
+    pos_in_all = {id(r): i for i, r in enumerate(cup_rounds)}
+
+    def at_round_close(r):
+        j = pos_in_all[id(r)] + 1
+        return cup_rounds[j]["roster"] if j < len(cup_rounds) else r["roster"]
+
     for s_idx, r in enumerate(scoring, start=1):
         for sid in r["roster"]:
             rounds_played[sid] += 1
+            participants.add(sid)
         lb = sorted(r["last_lb"], key=lambda x: x["pos"])
         finished = set()
         for rank0, e in enumerate(lb):
@@ -288,13 +303,16 @@ def compute_standings(cup_rounds, roster, nuisance_sids, min_rounds=MIN_ROUNDS_P
             finishes[e["sid"]] += 1
             finished.add(e["sid"])
             add(e["sid"], points_for_pos(rank0 + 1), s_idx)
-        for sid in r["roster"]:
+        for sid in at_round_close(r):
             if sid not in finished:
                 participants.add(sid)
                 add(sid, POINTS["dnf"], s_idx)
+        # Must already be a finalist BEFORE this round. Crossing 1000 at pos 1
+        # only makes you a finalist: the host's topoutresults.json for Bonq #1
+        # shows RoundNzt 921 -> 1071 at pos 1 in S17 with no W (won S20).
         w = lb[0]["sid"] if lb else None
         if (w and w not in nuisance_sids and w in qualified_round
-                and qualified_round[w] <= s_idx and w not in won_in_round
+                and qualified_round[w] < s_idx and w not in won_in_round
                 and len(winners_in_order) < POINTS["winners"]):
             won_in_round[w] = s_idx
             winners_in_order.append(w)
@@ -365,6 +383,23 @@ def compute_standings(cup_rounds, roster, nuisance_sids, min_rounds=MIN_ROUNDS_P
             "finish_stats": finish_stats}
 
 
+def apply_host_totals(st, host_file):
+    """Others' points := the host file's final pointsTotal, re-ranked. Winners,
+    finalists and nuisance are NOT touched: validate_vs_topout.py checks those."""
+    with open(host_file, encoding="utf-8-sig") as f:
+        last = json.load(f)["rounds"][-1]["playerResults"]
+    tot = {str(p["steamID"]): p["pointsTotal"] for p in last}
+    for o in st["others"]:
+        h = tot.get(o["sid"])
+        if h is not None and h != o["points"]:
+            print(f"  host total: {o['name']} {o['points']} -> {h}")
+            o["points"] = h
+    st["others"].sort(key=lambda o: (-o["points"], o["name"].lower()))
+    for i, o in enumerate(st["others"], 1):
+        o["rank"] = i
+    st["points_source"] = "host topoutresults.json"
+
+
 def main():
     # Player names carry emoji / math alphanumerics; the Windows console is cp1252.
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -381,6 +416,9 @@ def main():
     p.add_argument("--min-rounds", type=int, default=MIN_ROUNDS_PLAYED)
     p.add_argument("--accept-names", action="store_true", help="Skip Steam ID resolution")
     p.add_argument("--dry-run", action="store_true", help="Print only, write nothing")
+    p.add_argument("--host-file", default=None,
+                   help="Host's topoutresults.json: its final pointsTotal overrides ours for "
+                        "Others (the mod's own bookkeeping has quirks the log can't reproduce)")
     args = p.parse_args()
 
     nuisance = {s.strip() for s in args.nuisance.split(",") if s.strip()}
@@ -411,6 +449,11 @@ def main():
     report_identity(subs, unknown, exempt, bool(registry), not args.accept_names)
 
     st = compute_standings(cup_rounds, roster, nuisance, args.min_rounds)
+    if args.host_file:
+        apply_host_totals(st, args.host_file)
+    if _unverified_positions:
+        print(f"\n  !! finishers at positions {sorted(_unverified_positions)}: points past 15th are "
+              f"UNVERIFIED (scored as {POINTS['floor']}). Get the host's topoutresults.json.", file=sys.stderr)
     rotation = st["rotation"]
     if len(rotation) != 5:
         print(f"\n  WARN: expected 5 maps, found {len(rotation)}", file=sys.stderr)

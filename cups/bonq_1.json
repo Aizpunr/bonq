@@ -2,7 +2,7 @@
   "cup": 1,
   "date": "2026-09-27",
   "header": "Bonq Cup #1 - Maps by Kreeeeee, LKat, Victor",
-  "points_system": "Top->Out v2 (Kerki v2 settings)",
+  "points_system": "Bonq Top->Out (host file verified to 15th)",
   "rotation": [
     "Bonq 1 - Au même endroit",
     "Bonq 1 - Magnet Slop",
@@ -32,15 +32,6 @@
     },
     {
       "rank": 3,
-      "sid": "76561198896246339",
-      "name": "RoundNzt",
-      "won_scoring_round": 17,
-      "qualified_scoring_round": 17,
-      "map": "Bonq 1 - Magnet Slop",
-      "time": "18.880"
-    },
-    {
-      "rank": 4,
       "sid": "76561198851912263",
       "name": "Lexer",
       "won_scoring_round": 18,
@@ -49,13 +40,22 @@
       "time": "23.185"
     },
     {
-      "rank": 5,
+      "rank": 4,
       "sid": "76561199448462477",
       "name": "microways",
       "won_scoring_round": 19,
       "qualified_scoring_round": 16,
       "map": "Bonq 1 - Magnetic Bob",
       "time": "22.670"
+    },
+    {
+      "rank": 5,
+      "sid": "76561198896246339",
+      "name": "RoundNzt",
+      "won_scoring_round": 20,
+      "qualified_scoring_round": 17,
+      "map": "Bonq 1 - Turntable Turnarounds",
+      "time": "25.175"
     }
   ],
   "finalists": [
@@ -79,7 +79,7 @@
       "rank": 2,
       "sid": "76561199129302746",
       "name": "brrryy",
-      "points": 921,
+      "points": 920,
       "rounds_played": 20,
       "finishes": 9
     },
@@ -93,6 +93,14 @@
     },
     {
       "rank": 4,
+      "sid": "76561199187327002",
+      "name": "Tommygaming",
+      "points": 868,
+      "rounds_played": 18,
+      "finishes": 6
+    },
+    {
+      "rank": 5,
       "sid": "76561198842622746",
       "name": "Beans",
       "points": 852,
@@ -100,20 +108,12 @@
       "finishes": 7
     },
     {
-      "rank": 5,
+      "rank": 6,
       "sid": "76561198364662649",
       "name": "Heart-TGV",
-      "points": 852,
+      "points": 851,
       "rounds_played": 20,
       "finishes": 7
-    },
-    {
-      "rank": 6,
-      "sid": "76561199187327002",
-      "name": "Tommygaming",
-      "points": 849,
-      "rounds_played": 18,
-      "finishes": 6
     },
     {
       "rank": 7,
@@ -127,7 +127,7 @@
       "rank": 8,
       "sid": "76561198126038296",
       "name": "Noxitu",
-      "points": 771,
+      "points": 770,
       "rounds_played": 20,
       "finishes": 6
     },
@@ -135,7 +135,7 @@
       "rank": 9,
       "sid": "76561198031919228",
       "name": "Akane",
-      "points": 734,
+      "points": 733,
       "rounds_played": 20,
       "finishes": 7
     },
@@ -143,7 +143,7 @@
       "rank": 10,
       "sid": "76561199101994275",
       "name": "VroomVroomer",
-      "points": 703,
+      "points": 702,
       "rounds_played": 20,
       "finishes": 5
     },
@@ -183,7 +183,7 @@
       "rank": 15,
       "sid": "76561198846673916",
       "name": "Matic_D",
-      "points": 564,
+      "points": 562,
       "rounds_played": 20,
       "finishes": 4
     },
@@ -215,31 +215,31 @@
       "rank": 19,
       "sid": "76561198047403251",
       "name": "St Nicholas",
-      "points": 243,
+      "points": 223,
       "rounds_played": 10,
       "finishes": 1
     },
     {
       "rank": 20,
-      "sid": "76561198958881478",
-      "name": "phrogrock",
+      "sid": "76561198368656405",
+      "name": "joshuadwyer79",
       "points": 208,
-      "rounds_played": 8,
-      "finishes": 1
-    },
-    {
-      "rank": 21,
-      "sid": "76561199589394762",
-      "name": "jofk2415",
-      "points": 205,
       "rounds_played": 7,
       "finishes": 1
     },
     {
-      "rank": 22,
-      "sid": "76561198368656405",
-      "name": "joshuadwyer79",
+      "rank": 21,
+      "sid": "76561198958881478",
+      "name": "phrogrock",
       "points": 188,
+      "rounds_played": 8,
+      "finishes": 1
+    },
+    {
+      "rank": 22,
+      "sid": "76561199589394762",
+      "name": "jofk2415",
+      "points": 185,
       "rounds_played": 7,
       "finishes": 1
     }
@@ -271,21 +271,21 @@
     {
       "sid": "76561198305054806",
       "name": "wokonbike",
-      "points": 200,
+      "points": 180,
       "rounds_played": 10,
       "finishes": 0
     },
     {
       "sid": "76561198111366624",
       "name": "Zeus",
-      "points": 200,
+      "points": 180,
       "rounds_played": 10,
       "finishes": 0
     },
     {
       "sid": "76561198212710700",
       "name": "Minkus",
-      "points": 132,
+      "points": 151,
       "rounds_played": 5,
       "finishes": 1
     },
@@ -306,21 +306,14 @@
     {
       "sid": "76561198030518760",
       "name": "ActuallyRuben",
-      "points": 80,
+      "points": 100,
       "rounds_played": 4,
       "finishes": 0
     },
     {
-      "sid": "76561198027169155",
-      "name": "DeiRex",
-      "points": 132,
-      "rounds_played": 3,
-      "finishes": 1
-    },
-    {
       "sid": "76561198056113005",
       "name": "Six",
-      "points": 60,
+      "points": 40,
       "rounds_played": 3,
       "finishes": 0
     },
@@ -332,17 +325,17 @@
       "finishes": 0
     },
     {
+      "sid": "76561198027169155",
+      "name": "DeiRex",
+      "points": 112,
+      "rounds_played": 3,
+      "finishes": 1
+    },
+    {
       "sid": "76561198213715297",
       "name": "stindt",
       "points": 60,
       "rounds_played": 3,
-      "finishes": 0
-    },
-    {
-      "sid": "76561198156955177",
-      "name": "LocalDerpFace",
-      "points": 40,
-      "rounds_played": 2,
       "finishes": 0
     },
     {
@@ -353,8 +346,15 @@
       "finishes": 0
     },
     {
-      "sid": "76561198011664478",
-      "name": "tobiniho01",
+      "sid": "76561198156955177",
+      "name": "LocalDerpFace",
+      "points": 40,
+      "rounds_played": 2,
+      "finishes": 0
+    },
+    {
+      "sid": "76561199185761055",
+      "name": "Winter",
       "points": 20,
       "rounds_played": 1,
       "finishes": 0
@@ -374,10 +374,17 @@
       "finishes": 0
     },
     {
-      "sid": "76561199185761055",
-      "name": "Winter",
+      "sid": "76561198011664478",
+      "name": "tobiniho01",
       "points": 20,
       "rounds_played": 1,
+      "finishes": 0
+    },
+    {
+      "sid": "76561198107216213",
+      "name": "13Silvers",
+      "points": 20,
+      "rounds_played": 0,
       "finishes": 0
     }
   ],
@@ -822,7 +829,7 @@
           "time": "18.928"
         }
       ],
-      "winner": "RoundNzt"
+      "winner": null
     },
     {
       "n": 18,
@@ -900,7 +907,7 @@
           "time": "25.902"
         }
       ],
-      "winner": null
+      "winner": "RoundNzt"
     }
   ],
   "finish_stats": [
@@ -1150,6 +1157,13 @@
       "pct": 5.0
     },
     {
+      "sid": "76561198107216213",
+      "name": "13Silvers",
+      "present": 0,
+      "finished": 0,
+      "pct": null
+    },
+    {
       "sid": "76561198030518760",
       "name": "ActuallyRuben",
       "present": 4,
@@ -1233,5 +1247,6 @@
       "finished": 0,
       "pct": 0.0
     }
-  ]
+  ],
+  "points_source": "host topoutresults.json"
 }
