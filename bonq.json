@@ -3,7 +3,7 @@
   "total_cups": 1,
   "total_players": 28,
   "last_cup": 1,
-  "generated": "2026-09-27T20:22:26Z"
+  "generated": "2026-09-27T20:24:29Z"
  },
  "cups": [
   {
@@ -1819,13 +1819,11 @@
    "finished": 13,
    "present": 20,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 13,
-     "p": 20,
-     "nuisance": false
+     "p": 20
     }
    ],
    "pct": 65.0
@@ -1836,13 +1834,11 @@
    "finished": 12,
    "present": 20,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 12,
-     "p": 20,
-     "nuisance": false
+     "p": 20
     }
    ],
    "pct": 60.0
@@ -1853,13 +1849,11 @@
    "finished": 12,
    "present": 20,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 12,
-     "p": 20,
-     "nuisance": false
+     "p": 20
     }
    ],
    "pct": 60.0
@@ -1870,13 +1864,11 @@
    "finished": 11,
    "present": 20,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 11,
-     "p": 20,
-     "nuisance": false
+     "p": 20
     }
    ],
    "pct": 55.0
@@ -1887,13 +1879,11 @@
    "finished": 10,
    "present": 20,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 10,
-     "p": 20,
-     "nuisance": false
+     "p": 20
     }
    ],
    "pct": 50.0
@@ -1904,13 +1894,11 @@
    "finished": 10,
    "present": 20,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 10,
-     "p": 20,
-     "nuisance": false
+     "p": 20
     }
    ],
    "pct": 50.0
@@ -1921,13 +1909,11 @@
    "finished": 9,
    "present": 20,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 9,
-     "p": 20,
-     "nuisance": false
+     "p": 20
     }
    ],
    "pct": 45.0
@@ -1938,13 +1924,11 @@
    "finished": 9,
    "present": 20,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 9,
-     "p": 20,
-     "nuisance": false
+     "p": 20
     }
    ],
    "pct": 45.0
@@ -1955,30 +1939,11 @@
    "finished": 9,
    "present": 20,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 9,
-     "p": 20,
-     "nuisance": false
-    }
-   ],
-   "pct": 45.0
-  },
-  {
-   "sid": "76561199380118922",
-   "name": "Victor",
-   "finished": 9,
-   "present": 20,
-   "cups": 1,
-   "nuisance_cups": 1,
-   "history": [
-    {
-     "k": 1,
-     "f": 9,
-     "p": 20,
-     "nuisance": true
+     "p": 20
     }
    ],
    "pct": 45.0
@@ -1989,13 +1954,11 @@
    "finished": 7,
    "present": 15,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 7,
-     "p": 15,
-     "nuisance": false
+     "p": 15
     }
    ],
    "pct": 46.7
@@ -2006,13 +1969,11 @@
    "finished": 7,
    "present": 20,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 7,
-     "p": 20,
-     "nuisance": false
+     "p": 20
     }
    ],
    "pct": 35.0
@@ -2023,13 +1984,11 @@
    "finished": 7,
    "present": 20,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 7,
-     "p": 20,
-     "nuisance": false
+     "p": 20
     }
    ],
    "pct": 35.0
@@ -2040,30 +1999,11 @@
    "finished": 7,
    "present": 20,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 7,
-     "p": 20,
-     "nuisance": false
-    }
-   ],
-   "pct": 35.0
-  },
-  {
-   "sid": "76561199733601754",
-   "name": "LKat",
-   "finished": 7,
-   "present": 20,
-   "cups": 1,
-   "nuisance_cups": 1,
-   "history": [
-    {
-     "k": 1,
-     "f": 7,
-     "p": 20,
-     "nuisance": true
+     "p": 20
     }
    ],
    "pct": 35.0
@@ -2074,13 +2014,11 @@
    "finished": 6,
    "present": 18,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 6,
-     "p": 18,
-     "nuisance": false
+     "p": 18
     }
    ],
    "pct": 33.3
@@ -2091,13 +2029,11 @@
    "finished": 6,
    "present": 20,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 6,
-     "p": 20,
-     "nuisance": false
+     "p": 20
     }
    ],
    "pct": 30.0
@@ -2108,13 +2044,11 @@
    "finished": 5,
    "present": 20,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 5,
-     "p": 20,
-     "nuisance": false
+     "p": 20
     }
    ],
    "pct": 25.0
@@ -2125,13 +2059,11 @@
    "finished": 5,
    "present": 20,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 5,
-     "p": 20,
-     "nuisance": false
+     "p": 20
     }
    ],
    "pct": 25.0
@@ -2142,13 +2074,11 @@
    "finished": 4,
    "present": 20,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 4,
-     "p": 20,
-     "nuisance": false
+     "p": 20
     }
    ],
    "pct": 20.0
@@ -2159,13 +2089,11 @@
    "finished": 4,
    "present": 20,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 4,
-     "p": 20,
-     "nuisance": false
+     "p": 20
     }
    ],
    "pct": 20.0
@@ -2176,13 +2104,11 @@
    "finished": 4,
    "present": 20,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 4,
-     "p": 20,
-     "nuisance": false
+     "p": 20
     }
    ],
    "pct": 20.0
@@ -2193,13 +2119,11 @@
    "finished": 3,
    "present": 20,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 3,
-     "p": 20,
-     "nuisance": false
+     "p": 20
     }
    ],
    "pct": 15.0
@@ -2210,13 +2134,11 @@
    "finished": 2,
    "present": 5,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 2,
-     "p": 5,
-     "nuisance": false
+     "p": 5
     }
    ],
    "pct": 40.0
@@ -2227,13 +2149,11 @@
    "finished": 2,
    "present": 8,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 2,
-     "p": 8,
-     "nuisance": false
+     "p": 8
     }
    ],
    "pct": 25.0
@@ -2244,13 +2164,11 @@
    "finished": 2,
    "present": 20,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 2,
-     "p": 20,
-     "nuisance": false
+     "p": 20
     }
    ],
    "pct": 10.0
@@ -2261,13 +2179,11 @@
    "finished": 1,
    "present": 2,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 1,
-     "p": 2,
-     "nuisance": false
+     "p": 2
     }
    ],
    "pct": 50.0
@@ -2278,13 +2194,11 @@
    "finished": 1,
    "present": 5,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 1,
-     "p": 5,
-     "nuisance": false
+     "p": 5
     }
    ],
    "pct": 20.0
@@ -2295,13 +2209,11 @@
    "finished": 1,
    "present": 6,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 1,
-     "p": 6,
-     "nuisance": false
+     "p": 6
     }
    ],
    "pct": 16.7
@@ -2312,13 +2224,11 @@
    "finished": 1,
    "present": 6,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 1,
-     "p": 6,
-     "nuisance": false
+     "p": 6
     }
    ],
    "pct": 16.7
@@ -2329,13 +2239,11 @@
    "finished": 1,
    "present": 7,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 1,
-     "p": 7,
-     "nuisance": false
+     "p": 7
     }
    ],
    "pct": 14.3
@@ -2346,13 +2254,11 @@
    "finished": 1,
    "present": 8,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 1,
-     "p": 8,
-     "nuisance": false
+     "p": 8
     }
    ],
    "pct": 12.5
@@ -2363,33 +2269,14 @@
    "finished": 1,
    "present": 9,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 1,
-     "p": 9,
-     "nuisance": false
+     "p": 9
     }
    ],
    "pct": 11.1
-  },
-  {
-   "sid": "76561198348911001",
-   "name": "Kreeeeee",
-   "finished": 1,
-   "present": 20,
-   "cups": 1,
-   "nuisance_cups": 1,
-   "history": [
-    {
-     "k": 1,
-     "f": 1,
-     "p": 20,
-     "nuisance": true
-    }
-   ],
-   "pct": 5.0
   },
   {
    "sid": "76561199731808063",
@@ -2397,13 +2284,11 @@
    "finished": 1,
    "present": 20,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 1,
-     "p": 20,
-     "nuisance": false
+     "p": 20
     }
    ],
    "pct": 5.0
@@ -2414,13 +2299,11 @@
    "finished": 0,
    "present": 1,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 0,
-     "p": 1,
-     "nuisance": false
+     "p": 1
     }
    ],
    "pct": 0.0
@@ -2431,13 +2314,11 @@
    "finished": 0,
    "present": 5,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 0,
-     "p": 5,
-     "nuisance": false
+     "p": 5
     }
    ],
    "pct": 0.0
@@ -2448,13 +2329,11 @@
    "finished": 0,
    "present": 2,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 0,
-     "p": 2,
-     "nuisance": false
+     "p": 2
     }
    ],
    "pct": 0.0
@@ -2465,13 +2344,11 @@
    "finished": 0,
    "present": 3,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 0,
-     "p": 3,
-     "nuisance": false
+     "p": 3
     }
    ],
    "pct": 0.0
@@ -2482,13 +2359,11 @@
    "finished": 0,
    "present": 1,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 0,
-     "p": 1,
-     "nuisance": false
+     "p": 1
     }
    ],
    "pct": 0.0
@@ -2499,13 +2374,11 @@
    "finished": 0,
    "present": 2,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 0,
-     "p": 2,
-     "nuisance": false
+     "p": 2
     }
    ],
    "pct": 0.0
@@ -2516,13 +2389,11 @@
    "finished": 0,
    "present": 2,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 0,
-     "p": 2,
-     "nuisance": false
+     "p": 2
     }
    ],
    "pct": 0.0
@@ -2533,13 +2404,11 @@
    "finished": 0,
    "present": 3,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 0,
-     "p": 3,
-     "nuisance": false
+     "p": 3
     }
    ],
    "pct": 0.0
@@ -2550,13 +2419,11 @@
    "finished": 0,
    "present": 1,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 0,
-     "p": 1,
-     "nuisance": false
+     "p": 1
     }
    ],
    "pct": 0.0
@@ -2567,13 +2434,11 @@
    "finished": 0,
    "present": 1,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 0,
-     "p": 1,
-     "nuisance": false
+     "p": 1
     }
    ],
    "pct": 0.0
@@ -2584,13 +2449,11 @@
    "finished": 0,
    "present": 9,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 0,
-     "p": 9,
-     "nuisance": false
+     "p": 9
     }
    ],
    "pct": 0.0
@@ -2601,13 +2464,11 @@
    "finished": 0,
    "present": 9,
    "cups": 1,
-   "nuisance_cups": 0,
    "history": [
     {
      "k": 1,
      "f": 0,
-     "p": 9,
-     "nuisance": false
+     "p": 9
     }
    ],
    "pct": 0.0

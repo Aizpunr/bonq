@@ -202,33 +202,32 @@ def build():
     for p in player_list:
         p['prev_history'] = prev_p.get(p['sid'], [])
 
-    # Rounds finished, all cups.
+    # Rounds finished, all cups. Rounds a player raced as nuisance (mapper)
+    # don't count: they know their own maps.
+    def racing_stats(c):
+        nuis = {n["sid"] for n in c.get("nuisance", [])}
+        return [x for x in c.get("finish_stats", []) if x["sid"] not in nuis and x["present"]]
+
     fin = {}
     for c in cups:
-        for x in c.get("finish_stats", []):
+        for x in racing_stats(c):
             a = fin.setdefault(x["sid"], [0, 0])
             a[0] += x["finished"]
             a[1] += x["present"]
     for p in player_list:
         p['finished'], p['present'] = fin.get(p['sid'], [0, 0])
 
-    # Finishes leaderboard: everyone who was in a Bonq lobby, mappers and
-    # drop-ins included (the page filters by minimum rounds).
+    # Finishes leaderboard: everyone who raced in a Bonq lobby, drop-ins
+    # included (the page filters by minimum rounds), nuisance cups excluded.
     fl = {}
     for c in cups:
-        nuis = {n["sid"] for n in c.get("nuisance", [])}
-        for x in c.get("finish_stats", []):
-            if not x["present"]:
-                continue
+        for x in racing_stats(c):
             e = fl.setdefault(x["sid"], {'sid': x["sid"], 'name': names.get(x["sid"], x["name"]),
-                                         'finished': 0, 'present': 0, 'cups': 0,
-                                         'nuisance_cups': 0, 'history': []})
+                                         'finished': 0, 'present': 0, 'cups': 0, 'history': []})
             e['finished'] += x["finished"]
             e['present'] += x["present"]
             e['cups'] += 1
-            e['nuisance_cups'] += x["sid"] in nuis
-            e['history'].append({'k': c["cup"], 'f': x["finished"], 'p': x["present"],
-                                 'nuisance': x["sid"] in nuis})
+            e['history'].append({'k': c["cup"], 'f': x["finished"], 'p': x["present"]})
     finishers = sorted(fl.values(), key=lambda e: (-e['finished'], -e['finished'] / e['present'],
                                                     e['name'].lower()))
     for e in finishers:

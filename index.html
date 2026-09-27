@@ -149,8 +149,6 @@ input[type="range"] { width: 70px; accent-color: var(--accent); }
 .fin-bar { display: inline-block; width: 38px; height: 5px; border-radius: 3px; background: var(--surface-hover);
   vertical-align: middle; margin-right: 6px; overflow: hidden; }
 .fin-bar span { display: block; height: 100%; background: linear-gradient(90deg, var(--br-green), var(--br-yellow)); }
-.tag-mapper { font-family: var(--mono); font-size: 9px; color: var(--text-muted); border: 1px solid var(--border-bright);
-  border-radius: 4px; padding: 0 4px; margin-left: 6px; font-weight: 400; }
 .view-events .table-header, .view-events .row {
   grid-template-columns: 52px 1fr 1fr 1fr 60px 60px;
 }
@@ -652,7 +650,7 @@ function updateSubtitle() {
   } else if (viewMode === 'glicko') {
     el.textContent = `Skill Rating \u00b7 Convergent with ${(DATA.glicko.decay * 100).toFixed(0)}% decay`;
   } else if (viewMode === 'finishes') {
-    el.textContent = 'Rounds finished \u00b7 spectators count as in the lobby, so % is a floor';
+    el.textContent = 'Rounds finished \u00b7 nuisance (mappers) excluded \u00b7 spectators count as in the lobby, so % is a floor';
   } else if (viewMode === 'events') {
     el.textContent = `${DATA.meta.total_cups} cup${DATA.meta.total_cups === 1 ? '' : 's'} \u00b7 click a row to see full standings`;
   } else {
@@ -838,10 +836,9 @@ function renderFinishes() {
   list.forEach((p, i) => {
     const row = document.createElement('div');
     row.className = 'row' + (p.name === selected ? ' selected' : '');
-    const mapper = p.nuisance_cups ? `<span class="tag-mapper" title="Raced as nuisance (mapper) in ${p.nuisance_cups} cup${p.nuisance_cups === 1 ? '' : 's'}">mapper</span>` : '';
     row.innerHTML = `
       <div class="rank">${i + 1}</div>
-      <div class="pname">${esc(p.name)}${mapper}</div>
+      <div class="pname">${esc(p.name)}</div>
       <div class="num wins-cell">${p.finished}</div>
       <div class="num dim">${p.present}</div>
       <div class="num"><span class="fin-bar"><span style="width:${p.pct}%"></span></span>${Math.round(p.pct)}%</div>
@@ -864,7 +861,7 @@ function renderFinishes() {
           <div class="detail-stat">Cups <span class="val">${p.cups}</span></div>
         </div>
         <div class="history-grid">${p.history.map(h =>
-          `<span class="history-chip ${h.f ? 'f' : 'o'}" title="${h.nuisance ? 'raced as nuisance' : ''}">#${h.k}: ${h.f}/${h.p} \u00b7 ${h.p ? Math.round(100 * h.f / h.p) : 0}%${h.nuisance ? ' (mapper)' : ''}</span>`).join('')}</div>
+          `<span class="history-chip ${h.f ? 'f' : 'o'}">#${h.k}: ${h.f}/${h.p} \u00b7 ${h.p ? Math.round(100 * h.f / h.p) : 0}%</span>`).join('')}</div>
       `;
       body.appendChild(panel);
     }
