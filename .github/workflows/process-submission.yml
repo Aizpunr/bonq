@@ -49,7 +49,11 @@ jobs:
         run: pip install pytest
       - name: Tests
         run: if [ -d tests ]; then python -m pytest -q tests; fi
+      - name: Worker not configured yet
+        if: env.BONQ_WORKER_URL == '' || env.BONQ_POLLER_TOKEN == ''
+        run: echo "BONQ_WORKER_URL / BONQ_POLLER_TOKEN secrets are not set, nothing to poll."
       - name: Poll and process
+        if: env.BONQ_WORKER_URL != '' && env.BONQ_POLLER_TOKEN != ''
         env:
           ONLY_ID: ${{ inputs.id }}
           DRY_RUN: ${{ inputs.dry_run }}
