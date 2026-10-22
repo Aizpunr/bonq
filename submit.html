@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit a Cup - Bonq</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📤</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script>(function(){ var t = 'dark'; try { t = localStorage.getItem('bonq-theme') || 'dark'; } catch (e) {} document.documentElement.setAttribute('data-theme', t); })();</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --accent: #fedf00; --br-green: #009c3b; --br-yellow: #fedf00; --br-blue: #002776;
+    --green: #10b981; --red: #ef4444; --blue: #3b82f6; --mono: 'JetBrains Mono', monospace;
+  }
+  [data-theme="dark"] {
+    --bg: #04101e; --surface: rgba(255,255,255,0.02); --border: rgba(255,255,255,0.06);
+    --border-bright: rgba(255,255,255,0.08); --text: #e5e7eb; --text-dim: #9ca3af;
+    --text-muted: #6b7280; --text-dark: #4b5563;
+    --surface-hover: rgba(255,255,255,0.05); --row-hover: rgba(255,255,255,0.03);
+    --btn-border: rgba(255,255,255,0.15); --btn-border-hover: rgba(255,255,255,0.3);
+    --row-border: rgba(255,255,255,0.03); --pname: #f3f4f6; --link: #ccc;
+    --scrollbar: rgba(255,255,255,0.1);
+  }
+  [data-theme="light"] {
+    --accent: #009c3b; --bg: #f4f8f2; --surface: rgba(0,0,0,0.02); --border: rgba(0,0,0,0.08);
+    --border-bright: rgba(0,0,0,0.12); --text: #1f2937; --text-dim: #4b5563;
+    --text-muted: #6b7280; --text-dark: #9ca3af;
+    --surface-hover: rgba(0,0,0,0.05); --row-hover: rgba(0,0,0,0.03);
+    --btn-border: rgba(0,0,0,0.15); --btn-border-hover: rgba(0,0,0,0.3);
+    --row-border: rgba(0,0,0,0.05); --pname: #111827; --link: #4b5563;
+    --scrollbar: rgba(0,0,0,0.15);
+  }
+  html { background: var(--bg); color: var(--text); }
+  body { font-family: 'Space Grotesk', system-ui, sans-serif; min-height: 100vh; padding: 20px 16px; background: var(--bg); }
+  ::selection { background: rgba(245,158,11,0.3); }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-thumb { background: var(--scrollbar); border-radius: 3px; }
+
+  .container { max-width: 900px; margin: 0 auto; }
+  .header { text-align: center; margin-bottom: 20px; position: relative; }
+  .header h1 { font-size: 20px; font-weight: 800; letter-spacing: -0.5px; }
+  .header h1 span { color: var(--accent); }
+  .header .sub { font-family: var(--mono); font-size: 11px; color: var(--text-muted); margin-top: 4px; }
+  .back-link { font-family: var(--mono); font-size: 11px; color: var(--text-muted); text-decoration: none; transition: color 0.15s; }
+  .back-link:hover { color: var(--accent); }
+  .top-link { display: inline-block; margin-bottom: 14px; }
+  .theme-toggle {
+    position: absolute; top: 0; right: 0;
+    background: var(--surface-hover); border: 1px solid var(--border);
+    border-radius: 8px; padding: 5px 10px; cursor: pointer; color: var(--text);
+    font-size: 16px; line-height: 1; transition: border-color 0.15s;
+  }
+  .theme-toggle:hover { border-color: var(--btn-border-hover); }
+
+  .section { margin-bottom: 22px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+  .section-title { font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 12px; font-family: var(--mono); display: flex; align-items: center; gap: 8px; }
+  .step { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: rgba(245,158,11,0.15); color: var(--accent); font-size: 11px; }
+  .help { font-size: 13px; color: var(--text-dim); line-height: 1.55; }
+  .help code, .mono { font-family: var(--mono); font-size: 11.5px; }
+  .help code { background: var(--surface-hover); padding: 1px 5px; border-radius: 4px; word-break: break-all; }
+  .help ul { margin: 8px 0 0 18px; }
+  .help li { margin-bottom: 4px; }
+
+  .dropzone {
+    display: block; border: 2px dashed var(--border-bright); border-radius: 10px;
+    padding: 28px 16px; text-align: center; cursor: pointer; transition: border-color 0.15s, background 0.15s;
+  }
+  .dropzone:hover, .dropzone.over { border-color: var(--accent); background: rgba(245,158,11,0.05); }
+  .dropzone .big { font-size: 15px; font-weight: 700; }
+  .dropzone .small { font-family: var(--mono); font-size: 11px; color: var(--text-muted); margin-top: 6px; }
+  .dropzone input { display: none; }
+  .file-info { margin-top: 10px; font-family: var(--mono); font-size: 11.5px; color: var(--text-dim); }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 16px; }
+  .field label { display: block; font-family: var(--mono); font-size: 11px; color: var(--text-muted); margin-bottom: 5px; }
+  .field .hint { font-family: var(--mono); font-size: 10.5px; color: var(--text-dark); margin-top: 4px; }
+  .input, select.input {
+    width: 100%; background: var(--surface-hover); border: 1px solid var(--border); border-radius: 8px;
+    padding: 8px 10px; color: var(--text); font-family: var(--mono); font-size: 13px; outline: none;
+    transition: border-color 0.15s; min-height: 38px;
+  }
+  select.input option { background: var(--bg); color: var(--text); }
+  .input:focus { border-color: var(--accent); }
+  .input::placeholder { color: var(--text-dark); }
+  .input.invalid { border-color: var(--red); }
+
+  .namelist { max-height: 260px; overflow-y: auto; border: 1px solid var(--border); border-radius: 8px; padding: 4px; margin-top: 8px; }
+  .namelist label { display: flex; align-items: center; gap: 8px; padding: 5px 8px; border-radius: 5px; font-family: var(--mono); font-size: 12px; cursor: pointer; }
+  .namelist label:hover { background: var(--row-hover); }
+  .namelist label.locked { color: var(--text-muted); cursor: default; }
+  .namelist .tag { font-size: 10px; color: var(--accent); margin-left: auto; }
+  .namelist input { accent-color: var(--accent); width: 15px; height: 15px; }
+
+  .kv { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 14px; }
+  .kv div { background: var(--surface-hover); border-radius: 8px; padding: 10px 12px; }
+  .kv .k { font-family: var(--mono); font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+  .kv .v { font-size: 16px; font-weight: 700; margin-top: 3px; word-break: break-word; }
+  .kv .v small { font-family: var(--mono); font-size: 11px; color: var(--text-dim); font-weight: 400; }
+  .podium { list-style: none; margin-bottom: 12px; }
+  .podium li { display: flex; gap: 10px; align-items: baseline; padding: 6px 0; border-bottom: 1px solid var(--row-border); font-family: var(--mono); font-size: 13px; }
+  .podium .pos { width: 26px; color: var(--accent); font-weight: 700; }
+  .podium .nm { flex: 1; color: var(--pname); font-weight: 600; word-break: break-word; }
+  .podium .tm { color: var(--text-dim); }
+  .msg { font-family: var(--mono); font-size: 12px; line-height: 1.5; padding: 8px 12px; border-radius: 8px; margin-top: 8px; }
+  .msg.warn { background: rgba(245,158,11,0.10); color: var(--accent); }
+  .msg.err { background: rgba(239,68,68,0.10); color: var(--red); }
+  .msg.ok { background: rgba(16,185,129,0.10); color: var(--green); }
+  .msg.note { background: var(--surface-hover); color: var(--text-muted); }
+  details.full { margin-top: 12px; }
+  details.full summary { cursor: pointer; font-family: var(--mono); font-size: 12px; color: var(--text-dim); }
+  table.lb { width: 100%; border-collapse: collapse; margin-top: 8px; font-family: var(--mono); font-size: 12px; }
+  table.lb th { text-align: left; font-size: 10px; color: var(--text-muted); text-transform: uppercase; padding: 5px 6px; border-bottom: 1px solid var(--border-bright); }
+  table.lb td { padding: 5px 6px; border-bottom: 1px solid var(--row-border); word-break: break-word; }
+  table.lb td.num { text-align: right; color: var(--text-dim); white-space: nowrap; }
+
+  .submit-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 12px; }
+  .btn {
+    min-height: 40px; padding: 8px 20px; border-radius: 8px; border: 1px solid var(--accent);
+    background: rgba(245,158,11,0.15); color: var(--accent); font-family: var(--mono); font-size: 13px; font-weight: 700; cursor: pointer;
+  }
+  .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  .btn.small { min-height: 30px; padding: 4px 12px; font-size: 11px; border-color: var(--border); background: transparent; color: var(--text-muted); }
+  .missing { font-family: var(--mono); font-size: 11px; color: var(--text-muted); }
+
+  .status-table { width: 100%; border-collapse: collapse; font-family: var(--mono); font-size: 12px; }
+  .status-table th { text-align: left; font-size: 10px; color: var(--text-muted); text-transform: uppercase; padding: 6px; border-bottom: 1px solid var(--border-bright); }
+  .status-table td { padding: 7px 6px; border-bottom: 1px solid var(--row-border); vertical-align: top; word-break: break-word; }
+  .status-table tr.mine td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
+  .pill { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10.5px; font-weight: 700; white-space: nowrap; }
+  .pill.received { background: rgba(107,114,128,0.2); color: var(--text-dim); }
+  .pill.processed { background: rgba(59,130,246,0.15); color: var(--blue); }
+  .pill.published { background: rgba(16,185,129,0.15); color: var(--green); }
+  .pill.failed { background: rgba(239,68,68,0.15); color: var(--red); }
+  .pill.duplicate, .pill.superseded { background: var(--surface-hover); color: var(--text-muted); }
+  .legend { display: grid; grid-template-columns: auto 1fr; gap: 6px 10px; margin-top: 12px; font-size: 12px; color: var(--text-dim); align-items: baseline; }
+  .empty { padding: 18px; text-align: center; font-family: var(--mono); font-size: 12px; color: var(--text-dark); }
+  .footer { margin-top: 24px; text-align: center; }
+
+  @media (max-width: 640px) {
+    .grid2 { grid-template-columns: 1fr; }
+    .input, select.input { font-size: 16px; }
+    .status-table .hide-sm { display: none; }
+    .header h1 { padding: 0 44px; }
+  }
+
+.header h1 { display: inline-block; background: linear-gradient(135deg,#009c3b 0%,#fedf00 50%,#2f6bd9 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+.header::after { content:''; display:block; height:3px; width:120px; margin:10px auto 0; border-radius:2px; background:linear-gradient(90deg,var(--br-green) 0 33%,var(--br-yellow) 33% 66%,var(--br-blue) 66%); }
+[data-theme="light"] .header h1 { background-image:linear-gradient(135deg,#009c3b 0%,#c9a400 50%,#002776 100%); }
+.namelist label { overflow-wrap:anywhere; }
+.help { overflow-wrap:anywhere; }
+</style>
+</head>
+<body>
+<div class="container">
+  <a class="back-link top-link" href="index.html">&larr; back to Bonq Cup</a>
+  <div class="header"><h1>Submit a cup</h1><div class="sub">Bonq Cup, a community effort</div>
+    <button class="theme-toggle" id="themeToggle" title="Toggle light/dark mode" aria-label="Toggle light/dark mode">Theme</button></div>
+  <div id="closedNotice" class="msg warn" hidden>Submissions are not open yet. You can still preview your file.</div>
+  <div class="section help">
+    Usually the host sends the results, but anyone who has the file can help. Check the preview, then send it.
+    Submissions are reviewed before they appear on the site.
+    <ul>
+      <li>On the host's PC, find <code>%APPDATA%\Zeepkist\Mods\TopOutTournament\topoutresults.json</code>.</li>
+      <li>Send it the same night, before the next tournament overwrites it. Use <code>topoutresults.json</code>, not <code>topoutresults_bckp.json</code> unless asked.</li>
+      <li>The preview stays in your browser. Nothing is uploaded until you press Submit.</li>
+    </ul>
+    <p><a class="back-link" href="SUBMIT.md">More about submitting and privacy</a></p>
+  </div>
+  <form id="submitForm">
+  <div class="section">
+    <div class="section-title"><span class="step">1</span> Host results</div>
+    <label class="dropzone" id="dropzone" for="fileInput"><span class="big">Drop topoutresults.json here</span><br>
+      <span class="small">or choose the file below</span></label>
+    <input id="fileInput" type="file" accept=".json,application/json" required aria-label="Host results JSON">
+    <div class="file-info" id="fileInfo"></div><div id="fileMsg" role="status"></div>
+  </div>
+  <div class="section">
+    <div class="section-title"><span class="step">2</span> Cup details</div>
+    <div class="grid2">
+      <div class="field"><label for="cupInput">Cup number</label><input class="input" id="cupInput" type="number" min="2" max="999" required value="2"><div class="hint" id="cupHint"></div></div>
+      <div class="field"><label for="dateInput">Date played</label><input class="input" id="dateInput" type="date" required><div class="hint" id="dateHint"></div></div>
+      <div class="field"><label for="headerInput">Header</label><input class="input" id="headerInput" maxlength="160"><div class="hint">Filled from the map authors. You can edit it.</div></div>
+      <div class="field"><label for="submitterInput">Your name (optional)</label><input class="input" id="submitterInput" maxlength="40" autocomplete="off"></div>
+      <div class="field"><label>Nuisance players</label><div class="hint" id="mapperHint">Map authors will appear here.</div><div class="namelist" id="nameList"></div><div class="hint">The host's nuisance flags are preselected. Change them if needed.</div></div>
+      <div class="field"><label for="logInput">LiveLeaderboardLogger log (optional)</label><input id="logInput" type="file" accept=".log,.txt,text/plain"><div class="hint">BepInEx\LiveLeaderboardLogger.log. Only lines from the chosen cup day are sent.</div><div id="logInfo" class="file-info" role="status"></div></div>
+    </div>
+  </div>
+  <div class="section" id="previewSection" hidden><div class="section-title"><span class="step">3</span> Check the result</div><div id="preview"></div></div>
+  <div class="section"><div class="section-title"><span class="step">4</span> Send it</div><div id="turnstile"></div>
+    <div class="submit-row"><button class="btn" id="submitBtn" type="submit" disabled>Submit cup</button><span class="missing" id="missing"></span></div>
+    <div id="submitMsg" role="status"></div></div>
+  </form>
+  <div class="section"><div class="section-title" style="justify-content:space-between"><span>Recent submissions</span><button class="btn small" id="refreshBtn">Refresh</button></div>
+    <div id="statusBody" aria-live="polite"></div>
+    <div class="legend">
+      <span class="pill received">received</span><span>Waiting for the automatic check.</span>
+      <span class="pill processed">processed</span><span>A review is open. Waiting for approval.</span>
+      <span class="pill published">published</span><span>Live on the site.</span>
+      <span class="pill duplicate">duplicate</span><span>This cup or exact file was already processed or sent.</span>
+      <span class="pill superseded">superseded</span><span>Another submission was chosen for this cup.</span>
+      <span class="pill failed">failed</span><span>The check stopped. The note says why; contact aizpun.</span>
+    </div></div>
+  <div class="footer"><a class="back-link" href="index.html">&larr; back to Bonq Cup</a></div>
+</div>
+<script src="bonq_host_parser.js"></script>
+<script>
+'use strict';
+var PROD_WORKER_URL = ''; // set after wrangler deploy
+var PROD_TURNSTILE_SITE_KEY = '0x4AAAAAAFPeGhO9snC2zYTV';
+var TEST_TURNSTILE_SITE_KEY = '1x00000000000000000000AA';
+var IS_LOCAL = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+var WORKER_URL = (new URLSearchParams(location.search).get('worker') || (IS_LOCAL ? 'http://127.0.0.1:8787' : PROD_WORKER_URL)).replace(/\/+$/, '');
+var SITE_KEY = IS_LOCAL ? TEST_TURNSTILE_SITE_KEY : PROD_TURNSTILE_SITE_KEY;
+var CONFIGURED = Boolean(WORKER_URL && SITE_KEY);
+var P = window.BonqHostParser;
+var state = {file:null,text:null,parsed:null,nuisance:[],logText:null,trimmed:'',logLoading:false,logError:'',hostLoading:false,token:null,widgetId:null,submitting:false,headerEdited:false,hostRead:0,logRead:0};
+function $(id) { return document.getElementById(id); }
+function esc(s) { var d=document.createElement('div'); d.textContent=s==null?'':String(s); return d.innerHTML; }
+function msg(cls,text) { return '<div class="msg '+cls+'">'+esc(text)+'</div>'; }
+function load(key,fallback) { try { var v=JSON.parse(localStorage.getItem(key)); return Array.isArray(v)?v:fallback; } catch(e) { return fallback; } }
+function store(key,value) { try { localStorage.setItem(key,JSON.stringify(value)); } catch(e) {} }
+$('themeToggle').onclick=function() { var t=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark'; document.documentElement.setAttribute('data-theme',t); try { localStorage.setItem('bonq-theme',t); } catch(e) {} };
+function localDate(d) { return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
+var sunday=new Date(); sunday.setDate(sunday.getDate()-sunday.getDay()); $('dateInput').value=localDate(sunday);
+var cupEdited=false;
+fetch('bonq.json',{cache:'no-store'}).then(r=>{if(!r.ok) throw Error(); return r.json();}).then(data=>{
+  var last=Math.max(0,...data.cups.map(c=>Number(c.cup ?? c.id)).filter(Number.isFinite));
+  if(!cupEdited) $('cupInput').value=Math.max(2,last+1);
+  $('cupHint').textContent='Last published cup: #'+last;
+  updatePreview();
+}).catch(()=>{$('cupHint').textContent='Could not load the last cup. Please check the number.';});
+function selectedNuisance() { return Array.from($('nameList').querySelectorAll('input:checked')).map(e=>e.value); }
+function renderPlayers(players) {
+  $('nameList').replaceChildren();
+  players.slice().sort((a,b)=>a.name.localeCompare(b.name)).forEach(p=>{
+    var label=document.createElement('label'), box=document.createElement('input');
+    box.type='checkbox'; box.value=p.sid; box.checked=p.flaggedNuisance;
+    box.addEventListener('change',()=>{state.nuisance=selectedNuisance();updatePreview();});
+    label.append(box,document.createTextNode(p.name)); $('nameList').append(label);
+  });
+}
+async function readHost(file) {
+  var read=++state.hostRead;
+  state.file=null; state.text=null; state.parsed=null; state.hostLoading=true;
+  $('previewSection').hidden=true; $('nameList').replaceChildren(); $('fileMsg').textContent=''; $('fileInfo').textContent=''; refreshSubmit();
+  try {
+    if(!file || !/\.json$/i.test(file.name)) throw Error('Choose topoutresults.json.');
+    if(file.size>5*1024*1024) throw Error('The host file must be at most 5 MB.');
+    var text=await file.text(); if(read!==state.hostRead) return;
+    var parsed=P.parseHostFile(text,{cup:Number($('cupInput').value)});
+    state.file=file; state.text=text; state.nuisance=parsed.players.filter(p=>p.flaggedNuisance).map(p=>p.sid);
+    renderPlayers(parsed.players); $('fileInfo').textContent=file.name+' ('+Math.ceil(file.size/1024)+' KB)'; updatePreview(); renderTurnstile();
+  } catch(e) { if(read===state.hostRead) $('fileMsg').innerHTML=msg('err',e.message); }
+  finally { if(read===state.hostRead) {state.hostLoading=false;refreshSubmit();} }
+}
+$('fileInput').addEventListener('change',()=>readHost($('fileInput').files[0]));
+['dragenter','dragover'].forEach(type=>$('dropzone').addEventListener(type,e=>{e.preventDefault();$('dropzone').classList.add('over');}));
+['dragleave','drop'].forEach(type=>$('dropzone').addEventListener(type,e=>{e.preventDefault();$('dropzone').classList.remove('over');}));
+$('dropzone').addEventListener('drop',e=>{if(e.dataTransfer.files.length) { $('fileInput').files=e.dataTransfer.files;readHost(e.dataTransfer.files[0]); }});
+function updatePreview() {
+  state.parsed=null;
+  if(state.text!==null) {
+    try {
+      var p=P.parseHostFile(state.text,{cup:Number($('cupInput').value),nuisance:state.nuisance}); state.parsed=p;
+      $('previewSection').hidden=false;
+      $('mapperHint').textContent='Map authors: '+p.mappers.join(', ');
+      if(!state.headerEdited) $('headerInput').value='Bonq Cup #'+$('cupInput').value+' - Maps by '+p.mappers.join(', ');
+      $('preview').innerHTML='<div class="help">'+p.rounds.length+' rounds. Maps by '+esc(p.mappers.join(', '))+'</div><ol class="podium">'+p.winners.map(w=>'<li><span class="pos">'+w.rank+'.</span><span class="nm">'+esc(w.name)+'</span><span class="tm">'+esc(w.map)+' | '+esc(w.time)+' s</span></li>').join('')+'</ol><div class="help"><b>Finalists:</b> '+esc(p.finalists.map(f=>f.name).join(', ')||'None')+'</div><table class="lb"><caption>Top 10 Others</caption><thead><tr><th>Player</th><th>Points</th></tr></thead><tbody>'+p.others.slice(0,10).map(o=>'<tr><td>'+esc(o.name)+'</td><td>'+esc(o.points)+'</td></tr>').join('')+'</tbody></table>'+p.warnings.map(w=>msg('warn',w)).join('');
+      $('fileMsg').textContent='';
+    } catch(e) { $('previewSection').hidden=true; $('fileMsg').innerHTML=msg('err',e.message); }
+  }
+  refreshSubmit();
+}
+function trimSelectedLog() {
+  state.trimmed=state.logText===null?'':P.trimLog(state.logText,$('dateInput').value);
+  var count=state.trimmed?state.trimmed.split('\n').length:0;
+  $('logInfo').textContent=state.logLoading?'Reading log...':state.logError||(state.logText===null?'':count+' lines from '+$('dateInput').value+(count?' will be sent.':' match. Choose the cup date or remove the log.'));
+  refreshSubmit();
+}
+$('logInput').addEventListener('change',async()=>{
+  var read=++state.logRead, file=$('logInput').files[0]; state.logText=null; state.logError=''; state.logLoading=!!file; trimSelectedLog();
+  if(!file) return;
+  try { var text=await file.text(); if(read===state.logRead) state.logText=text; }
+  catch(e) { if(read===state.logRead) state.logError='Could not read the optional log. Choose it again or remove it.'; }
+  finally { if(read===state.logRead) {state.logLoading=false;trimSelectedLog();} }
+});
+function dateProblem() {
+  var date=$('dateInput').value, dt=Date.parse(date+'T00:00:00Z');
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(date)||!Number.isFinite(dt)||new Date(dt).toISOString().slice(0,10)!==date) return 'a valid date';
+  var today=Date.parse(new Date().toISOString().slice(0,10)+'T00:00:00Z');
+  if(dt<today-60*86400000||dt>today+86400000) return 'a date within the last 60 days and no later than tomorrow';
+  return '';
+}
+function refreshDate() {
+  var day=new Date($('dateInput').value+'T12:00:00').getDay();
+  $('dateHint').textContent=Number.isFinite(day)&&day!==0?'This date is not a Sunday. Check it before sending.':'';
+  trimSelectedLog();
+}
+function problems() {
+  var out=[],cup=Number($('cupInput').value);
+  if(!state.file||!state.parsed||state.hostLoading) out.push('a readable host file');
+  else if(!state.parsed.winners.length) out.push('a host file with winners');
+  if(!Number.isInteger(cup)||cup<2||cup>999) out.push('a cup number from 2 to 999');
+  var dp=dateProblem(); if(dp) out.push(dp);
+  for(var [id,max] of [['headerInput',160],['submitterInput',40]]) {
+    var value=$(id).value.trim(); if(value.length>max||value.startsWith('--')||/[\r\n\0]/.test(value)) out.push('a valid '+(id==='headerInput'?'header':'submitter name'));
+  }
+  if(state.nuisance.length>20||state.nuisance.some(s=>!/^\d{17}$/.test(s))) out.push('at most 20 nuisance players with valid Steam IDs');
+  if(state.logLoading||state.logError||(state.logText!==null&&!state.trimmed)) out.push('a readable log with lines matching the cup date, or no log');
+  if(CONFIGURED&&!state.token) out.push('the anti-bot check');
+  return out;
+}
+function refreshSubmit() {
+  var missing=problems(); $('missing').textContent=!CONFIGURED?'Submissions are not open yet.':missing.length?'Still needed: '+missing.join('; '):'';
+  $('submitBtn').disabled=!CONFIGURED||!!missing.length||state.submitting;
+}
+$('cupInput').addEventListener('input',()=>{cupEdited=true;updatePreview();});
+$('headerInput').addEventListener('input',()=>{state.headerEdited=true;refreshSubmit();});
+$('submitterInput').addEventListener('input',refreshSubmit);
+$('dateInput').addEventListener('input',refreshDate);
+window.onTurnstileLoad=function(){renderTurnstile();};
+function renderTurnstile() {
+  if(!CONFIGURED||state.widgetId!==null||!window.turnstile||!state.file) return;
+  state.widgetId=window.turnstile.render('#turnstile',{sitekey:SITE_KEY,callback:t=>{state.token=t;refreshSubmit();},'expired-callback':()=>{state.token=null;refreshSubmit();},'error-callback':()=>{state.token=null;refreshSubmit();}});
+}
+$('submitForm').addEventListener('submit',async e=>{
+  e.preventDefault(); if(state.submitting||!CONFIGURED||problems().length) return;
+  var p=state.parsed,fd=new FormData();
+  fd.append('file',state.file,state.file.name);
+  if(state.logText!==null) fd.append('log',new Blob([state.trimmed],{type:'text/plain'}),'LiveLeaderboardLogger.log');
+  fd.append('cup',String(Number($('cupInput').value))); fd.append('date',$('dateInput').value);
+  fd.append('nuisance',JSON.stringify(state.nuisance)); fd.append('header',$('headerInput').value.trim()); fd.append('submitter',$('submitterInput').value.trim());
+  fd.append('preview',JSON.stringify({winner:p.winners[0]?.name||null,winners:p.winners.map(w=>w.name),players:p.winners.length+p.finalists.length+p.others.length,rounds:p.rounds.length}));
+  fd.append('cf-turnstile-response',state.token||'');
+  state.submitting=true;refreshSubmit();$('submitMsg').innerHTML=msg('note','Sending...');
+  try {
+    var r=await fetch(WORKER_URL+'/submit',{method:'POST',body:fd});
+    var res=await r.json().catch(()=>({ok:false,message:'The submit service answered with HTTP '+r.status+'.'}));
+    if(!r.ok||!res.ok) throw Error(res.message||'The submission was rejected.');
+    var mine=load('bonq_my_submissions',[]);if(!mine.includes(res.id)) mine.push(res.id);store('bonq_my_submissions',mine.slice(-50));
+    $('submitMsg').innerHTML=msg(res.status==='duplicate'?'warn':'ok',res.status==='duplicate'?'This exact file was already sent. Submission '+res.id+'.':'Received. Thank you! Submission '+res.id+'. Watch its status below.');
+    loadStatus();
+  } catch(e) { $('submitMsg').innerHTML=msg('err',e.message||'Could not reach the submit service. Try again.'); }
+  finally {state.submitting=false;state.token=null;if(window.turnstile&&state.widgetId!==null) window.turnstile.reset(state.widgetId);refreshSubmit();}
+});
+async function loadStatus() {
+  if(!CONFIGURED) {$('statusBody').innerHTML='<div class="empty">Submissions are not open yet.</div>';return;}
+  try {
+    var r=await fetch(WORKER_URL+'/status',{cache:'no-store'}); if(!r.ok) throw Error(); var res=await r.json(),rows=res.submissions||[],mine=new Set(load('bonq_my_submissions',[]));
+    if(!rows.length) {$('statusBody').innerHTML='<div class="empty">No submissions yet.</div>';return;}
+    $('statusBody').innerHTML='<table class="status-table"><thead><tr><th>Cup</th><th class="hide-sm">By</th><th>Sent</th><th>Status</th><th>Note</th></tr></thead><tbody>'+rows.slice(0,50).map(s=>{
+      var status=['received','processed','failed','published','duplicate','superseded'].includes(s.status)?s.status:'received';
+      return '<tr class="'+(mine.has(s.id)?'mine':'')+'"><td>Bonq #'+esc(s.cup)+(mine.has(s.id)?' (yours)':'')+'</td><td class="hide-sm">'+esc(s.submitter||'-')+'</td><td>'+esc(s.received_at)+'</td><td><span class="pill '+status+'">'+esc(status)+'</span></td><td>'+esc(s.note||'')+'</td></tr>';
+    }).join('')+'</tbody></table>';
+  } catch(e) {$('statusBody').innerHTML='<div class="empty">Could not load submissions.</div>';}
+}
+$('refreshBtn').addEventListener('click',loadStatus);
+setInterval(()=>{if(document.visibilityState==='visible') loadStatus();},30000);
+$('closedNotice').hidden=CONFIGURED; refreshDate();refreshSubmit();loadStatus();
+</script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>
+</body>
+</html>

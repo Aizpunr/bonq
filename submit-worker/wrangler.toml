@@ -1,0 +1,16 @@
+# Secrets are set with wrangler secret put, never written here.
+name = "bonq-submit"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+workers_dev = true
+
+[[kv_namespaces]]
+binding = "SUBMISSIONS"
+id = "REPLACE_WITH_KV_ID"
+preview_id = "REPLACE_WITH_PREVIEW_KV_ID"
+
+[vars]
+ALLOWED_ORIGINS = "https://aizpunr.github.io,http://localhost:9005,http://127.0.0.1:9005"
+TURNSTILE_HOSTNAMES = "aizpunr.github.io,localhost,127.0.0.1"
+MAX_INDEX = "200"
+DAILY_SUBMIT_CAP = "20"

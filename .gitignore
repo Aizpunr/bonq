@@ -1,2 +1,14 @@
 __pycache__/
 *.pyc
+submit-worker/node_modules/
+submit-worker/.dev.vars
+submit-worker/.wrangler/
+
+# Submission poller local configuration and runtime files
+submit_config.json
+poll.log
+poll.log.*
+.submissions_state.json
+.submissions_state.json.tmp
+.submissions.lock
+PAUSE

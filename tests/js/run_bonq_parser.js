@@ -1,0 +1,15 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const assert = require('node:assert/strict');
+const P = require('../../bonq_host_parser.js');
+const text = fs.readFileSync(path.join(__dirname, '../../host/bonq_1_topoutresults.json'), 'utf8');
+const result = P.parseHostFile(text, {cup:1});
+assert.equal(result.winners.length, 5);
+assert.equal(result.winners[0].name, 'justMaki');
+assert.equal(P.trimLog('other\n2026-09-27 hello\r\n2026-09-28 no', '2026-09-27'), '2026-09-27 hello');
+assert.equal(result.winners[0].sid, '76561198050792757');
+assert.deepEqual(P.parseHostFile('﻿' + text.replace(/^﻿/, ''), {cup:1}).winners, result.winners);
+assert.equal(P.parseHostFile(text, {cup:1, nuisance:[]}).nuisance.length, 0);
+assert.ok(result.players.some(p => p.flaggedNuisance));
+assert.equal(P.trimLog('2026-09-28 no', '2026-09-27'), '');
+process.stdout.write(JSON.stringify(result));

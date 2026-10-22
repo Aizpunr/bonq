@@ -65,7 +65,8 @@ def strip_tag(name):
 # ── Steam ID registry (shared across all comps) ───────────────────
 # Same logic as kerki/parse_kerki_from_log.py: Steam ID is the identity, the
 # in-game name is not (players rename mid-cup).
-PLAYERS_MASTER = os.path.normpath(
+# BONQ_PLAYERS_JSON: CI checks the COTD repo out somewhere else.
+PLAYERS_MASTER = os.environ.get('BONQ_PLAYERS_JSON') or os.path.normpath(
     os.path.join(PROJECT_DIR, '..', 'zeepkist cotd elo', 'players.json'))
 
 IDENTITY_EXCEPTIONS = {
@@ -288,6 +289,8 @@ def compute_standings(cup_rounds, roster, nuisance_sids, min_rounds=MIN_ROUNDS_P
     pos_in_all = {id(r): i for i, r in enumerate(cup_rounds)}
 
     def at_round_close(r):
+        if "close_roster" in r:   # host file: who was paid at close is known exactly
+            return r["close_roster"]
         j = pos_in_all[id(r)] + 1
         return cup_rounds[j]["roster"] if j < len(cup_rounds) else r["roster"]
 

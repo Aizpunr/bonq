@@ -1,0 +1,26 @@
+name: Missing Bonq submission reminder
+on:
+  schedule:
+    - cron: '0 12 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: heads-up
+  cancel-in-progress: false
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    env:
+      BONQ_WORKER_URL: ${{ secrets.BONQ_WORKER_URL }}
+      BONQ_POLLER_TOKEN: ${{ secrets.BONQ_POLLER_TOKEN }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - run: python heads_up.py
