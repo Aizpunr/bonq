@@ -211,7 +211,11 @@ def main():
     ap.add_argument("--accept-names", action="store_true")
     ap.add_argument("--report", default=None, help="Write warnings/identity/diffs as JSON here")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--compare", action="store_true",
+                    help="Resend of a published cup: dry run, the cup may already exist")
     args = ap.parse_args()
+    if args.compare:
+        args.dry_run = True
 
     try:
         _date.fromisoformat(args.date)
@@ -221,6 +225,8 @@ def main():
     host = load_host(args.host_file)
     rounds, roster, roster_names = host_rounds(host)
     warnings, errors = sequence_warnings(args.cup, args.date)
+    if args.compare:
+        errors = [e for e in errors if "already exists" not in e]
 
     s = host["settings"]
     if (s.get("threshold"), s.get("winners")) != (P.POINTS["threshold"], P.POINTS["winners"]):
@@ -313,6 +319,9 @@ def main():
                        "winners": [w["name"] for w in winners],
                        "finalists": [x["name"] for x in finalists],
                        "nuisance": [n["name"] for n in nuis],
+                       "winner_sids": [w["sid"] for w in winners],
+                       "finalist_sids": [x["sid"] for x in finalists],
+                       "nuisance_sids": sorted(n["sid"] for n in nuis),
                        "players": len(others) + len(winners) + len(finalists),
                        "rounds": len(rounds), "warnings": warnings, "errors": errors,
                        "cross_check": diffs,

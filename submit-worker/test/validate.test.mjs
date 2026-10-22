@@ -40,13 +40,13 @@ test('log validation', () => {
 
 test('Worker submit, auth, downloads, dedupe, status and reindex', async () => {
   const { default: worker } = await import('../src/index.js');
-  const store = new Map(), metadata = new Map();
+  const store = new Map(), metadata = new Map(), writes = [];
   const env = {
     ALLOWED_ORIGINS: 'https://aizpunr.github.io', TURNSTILE_HOSTNAMES: 'aizpunr.github.io',
     TURNSTILE_SECRET: 'test-secret', POLLER_TOKEN: 'test-token',
     SUBMISSIONS: {
       async get(k) { return store.get(k) ?? null; },
-      async put(k, v, opts) { store.set(k, v); metadata.set(k, opts?.metadata); },
+      async put(k, v, opts) { writes.push(k); store.set(k, v); metadata.set(k, opts?.metadata); },
       async getWithMetadata(k) { return {value:store.get(k) ?? null, metadata:metadata.get(k)}; },
       async list() { return {keys:[...store.keys()].filter(k => k.startsWith('sub:')).map(name => ({name})), list_complete:true}; },
     },
@@ -59,17 +59,55 @@ test('Worker submit, auth, downloads, dedupe, status and reindex', async () => {
   const originalFetch = globalThis.fetch;
   globalThis.fetch = async () => Response.json({success:true, hostname:'aizpunr.github.io'});
   try {
-    const upload = async log => {
+    const upload = async (log, cup = '2', extra = {}) => {
       const form = new FormData();
       form.set('file', new Blob([fixture]), 'topoutresults.json');
-      form.set('cup', '2'); form.set('date', new Date().toISOString().slice(0,10));
+      form.set('cup', cup); form.set('date', new Date().toISOString().slice(0,10));
       form.set('cf-turnstile-response', 'test-response');
       if (log) form.set('log', '[LiveLeaderboardLogger] LEADERBOARD|x');
+      for (const [key, value] of Object.entries(extra)) form.set(key, value);
       return (await call('/submit', {method:'POST', body:form, headers:{Origin:'https://aizpunr.github.io'}})).json();
     };
     const result = await upload(true);
     assert.equal(result.status, 'received');
-    assert.equal((await upload(false)).status, 'duplicate');
+    const writesBeforeDuplicate = writes.length;
+    const duplicate = await upload(false, '2', {header:'Second header', submitter:'Second sender', nuisance:'["76561198842622746"]', preview:'{"winner":"Second"}'});
+    assert.notEqual(duplicate.id, result.id);
+    assert.equal(duplicate.status, 'duplicate');
+    assert.equal(duplicate.same_file_as, result.id);
+    assert.equal(duplicate.message, 'This exact host file was already sent. It is kept on record.');
+    const duplicateRecord = JSON.parse(store.get('sub:' + duplicate.id));
+    assert.equal(duplicateRecord.note, 'same file as ' + result.id);
+    assert.equal(duplicateRecord.same_file_as, result.id);
+    assert.equal(duplicateRecord.has_log, false);
+    assert.equal(duplicateRecord.header, 'Second header');
+    assert.equal(duplicateRecord.submitter, 'Second sender');
+    assert.deepEqual(duplicateRecord.nuisance, ['76561198842622746']);
+    assert.deepEqual(duplicateRecord.preview, {winner:'Second'});
+    assert.deepEqual(writes.slice(writesBeforeDuplicate), ['sub:' + duplicate.id, 'index']);
+    assert.equal([...store.keys()].filter(k => k.startsWith('sub:')).length, 2);
+    assert.equal([...store.keys()].filter(k => k.startsWith('file:')).length, 1);
+    const otherCup = await upload(true, '3');
+    assert.notEqual(otherCup.id, result.id);
+    assert.notEqual(otherCup.id, duplicate.id);
+    assert.equal(otherCup.same_file_as, result.id);
+    const otherRecord = JSON.parse(store.get('sub:' + otherCup.id));
+    assert.equal(otherRecord.status, 'duplicate');
+    assert.match(otherRecord.note, /^REVIEW: /);
+    assert.ok(otherRecord.note.includes('Bonq #2'));
+    assert.equal(otherRecord.has_log, true);
+    assert.equal([...store.keys()].filter(k => k.startsWith('log:')).length, 1);
+    env.DAILY_SUBMIT_CAP = '3';
+    const writesBeforeCap = writes.length;
+    const cappedForm = new FormData();
+    cappedForm.set('file', new Blob([fixture]), 'topoutresults.json');
+    cappedForm.set('cup', '2');
+    cappedForm.set('date', new Date().toISOString().slice(0,10));
+    cappedForm.set('cf-turnstile-response', 'test-response');
+    const capped = await call('/submit', {method:'POST', body:cappedForm, headers:{Origin:'https://aizpunr.github.io'}});
+    assert.equal(capped.status, 429);
+    assert.equal((await capped.json()).error, 'rate_limited');
+    assert.equal(writes.length, writesBeforeCap);
     assert.deepEqual(new Uint8Array(await (await call('/file/' + result.id)).arrayBuffer()), new Uint8Array(fixture));
     assert.match(await (await call('/log/' + result.id)).text(), /LiveLeaderboardLogger/);
     assert.equal((await call('/file/' + result.id, {}, false)).status, 401);
@@ -78,11 +116,12 @@ test('Worker submit, auth, downloads, dedupe, status and reindex', async () => {
     await call('/status/' + result.id, {method:'POST', body:JSON.stringify({status:'published',note:'done'})});
     assert.equal((await (await call('/pending')).json()).submissions.length, 0);
     store.set('index', '[]');
-    assert.equal((await (await call('/reindex', {method:'POST'})).json()).records, 1);
+    assert.equal((await (await call('/reindex', {method:'POST'})).json()).records, 3);
     const publicRows = (await (await call('/status', {}, false)).json()).submissions;
-    assert.equal(publicRows[0].status, 'published');
-    assert.equal(publicRows[0].note, 'done');
-    assert.equal(publicRows[0].has_log, true);
-    assert.equal(publicRows[0].size, fixture.length);
+    const published = publicRows.find(row => row.id === result.id);
+    assert.equal(published.status, 'published');
+    assert.equal(published.note, 'done');
+    assert.equal(published.has_log, true);
+    assert.equal(published.size, fixture.length);
   } finally { globalThis.fetch = originalFetch; }
 });

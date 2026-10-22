@@ -32,6 +32,8 @@ Check the five winners, their maps and times, finalists, top 10 Others, round co
 
 Complete the anti-bot check and press Submit. An automatic check opens a review. Submissions appear on the site once approved.
 
+Sending a cup again is fine: every file is kept on record, compared with the published result, and anything that differs is flagged for review.
+
 The Recent submissions table shows progress. Submissions sent from this browser are marked as yours.
 
 | Status | Meaning |
@@ -39,7 +41,7 @@ The Recent submissions table shows progress. Submissions sent from this browser 
 | received | Waiting for the automatic check. |
 | processed | A review is open, waiting for approval. |
 | published | Live on the site. |
-| duplicate | This cup or exact file was already processed or sent. |
+| duplicate | Kept on record and checked against the published cup. REVIEW means it differs. |
 | superseded | Another submission was chosen for this cup. |
 | failed | The check stopped. Read the note and contact aizpun. |
 

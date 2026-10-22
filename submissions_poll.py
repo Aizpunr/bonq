@@ -47,7 +47,6 @@ class Ctx:
         self.dry_run = args.dry_run
         self.no_git = args.no_git
         self.only_id = args.id
-        self.rehearsal = args.rehearsal or args.ci
         self.exit_code = 0
         self.subdir = self.repo
         os.makedirs(self.subdir, exist_ok=True)
@@ -374,7 +373,7 @@ def run_cup(ctx, sub, paths):
     try:
         result = run(cmd)
         output = result.stdout + result.stderr
-        if result.returncode or f"BONQ {sub['cup']} COMPLETE" not in result.stdout:
+        if result.returncode or not completed(result.stdout, sub['cup']):
             errors = [line.strip() for line in output.splitlines() if line.strip().startswith('ERROR')]
             raise RuntimeError(errors[-1] if errors else f'parser failed (exit {result.returncode})')
         result = run([ctx.python, 'build_bonq.py'])
@@ -395,9 +394,80 @@ def run_cup(ctx, sub, paths):
         failure(ctx, sub, str(exc))
 
 
+def completed(stdout, cup):
+    return f'BONQ {cup} COMPLETE' in (line.strip() for line in stdout.splitlines())
+
+
 def published(ctx, cup):
     return subprocess.run(['git', 'cat-file', '-e', f'{ctx.remote}/main:cups/bonq_{cup}.json'],
                           cwd=ctx.repo, capture_output=True, timeout=30).returncode == 0
+
+
+def published_cup(ctx, cup):
+    """The published cups/bonq_N.json (origin/main; the local file with --no-git), or None."""
+    if ctx.no_git:
+        path = Path(ctx.repo) / 'cups' / f'bonq_{cup}.json'
+        return load_json(str(path), None) if path.exists() else None
+    r = subprocess.run(['git', 'show', f'{ctx.remote}/main:cups/bonq_{cup}.json'], cwd=ctx.repo,
+                       capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=30)
+    return json.loads(r.stdout) if r.returncode == 0 else None
+
+
+def diff_vs_published(report, pub):
+    """What a resent file says differently from the published cup. Empty = agrees."""
+    name = {x['sid']: x['name'] for k in ('winners', 'finalists', 'others', 'nuisance', 'excluded')
+            for x in pub.get(k, [])}
+    who = lambda sids: ', '.join(name.get(s, s) for s in sids) or 'none'
+    pub_w = [w['sid'] for w in pub.get('winners', [])]
+    pub_f = sorted(f['sid'] for f in pub.get('finalists', []))
+    pub_n = sorted(n['sid'] for n in pub.get('nuisance', []))
+    pub_players = sum(len(pub.get(k, [])) for k in ('winners', 'finalists', 'others'))
+    out = []
+    if report.get('winner_sids') != pub_w:
+        out.append(f"winners {', '.join(report.get('winners', [])) or 'none'} (published {who(pub_w)})")
+    if sorted(report.get('finalist_sids', [])) != pub_f:
+        out.append(f"finalists {', '.join(report.get('finalists', [])) or 'none'} (published {who(pub_f)})")
+    if sorted(report.get('nuisance_sids', [])) != pub_n:
+        out.append(f"nuisance {', '.join(report.get('nuisance', [])) or 'none'} (published {who(pub_n)})")
+    if report.get('players') != pub_players:
+        out.append(f"{report.get('players')} players (published {pub_players})")
+    if report.get('rounds') != pub.get('scoring_rounds_count'):
+        out.append(f"{report.get('rounds')} rounds (published {pub.get('scoring_rounds_count')})")
+    if report.get('date') != pub.get('date'):
+        out.append(f"date {report.get('date')} (published {pub.get('date')})")
+    return out
+
+
+def compare_with_published(ctx, sub, paths, pub):
+    """Parse a resend of a published cup with ITS submitter's settings and say whether it agrees.
+    The record becomes `duplicate`, prefixed REVIEW when anything differs (abuse or a mistake)."""
+    host, logfile = paths
+    report_path = Path(ctx.workdir) / f"compare-{sub['id']}.json"
+    cmd = [ctx.python, 'parse_bonq_from_host.py', str(sub['cup']), '--date', sub['date'],
+           '--host-file', str(host), '--report', str(report_path), '--compare']
+    if 'nuisance' in sub:
+        cmd += ['--nuisance', ','.join(sub['nuisance'])]
+    result = subprocess.run(cmd, cwd=ctx.repo, capture_output=True, text=True, encoding='utf-8',
+                            errors='replace', timeout=NEW_CUP_TIMEOUT_S,
+                            env=dict(os.environ, PYTHONIOENCODING='utf-8'))
+    report = load_json(str(report_path), None)
+    if result.returncode or not report:
+        errors = [l.strip() for l in (result.stdout + result.stderr).splitlines() if 'ERROR' in l]
+        return f"REVIEW: resend of published Bonq #{sub['cup']} could not be parsed: " + \
+            (errors[-1] if errors else f'exit {result.returncode}')
+    diffs = diff_vs_published(report, pub)
+    if not diffs:
+        return f"matches the published Bonq #{sub['cup']}"
+    return f"REVIEW: DIFFERS from the published Bonq #{sub['cup']}: " + '; '.join(diffs)
+
+
+def open_cup_prs(ctx):
+    """Open cup-N PRs on GitHub. Only these hold the queue: a closed, unmerged one must not."""
+    try:
+        prs = json.loads(gh(ctx, 'pr', 'list', '--state', 'open', '--json', 'headRefName'))
+    except (RuntimeError, OSError, subprocess.SubprocessError, ValueError) as exc:
+        raise RuntimeError(f'could not list open PRs: {exc}')
+    return [p['headRefName'] for p in prs if re.fullmatch(r'cup-\d+', p.get('headRefName', ''))]
 
 
 def _pass(ctx, args):
@@ -429,11 +499,9 @@ def _pass(ctx, args):
         if sub['status'] == 'received' and (not ctx.only_id or ctx.only_id == sub['id']):
             by_cup.setdefault(sub['cup'], []).append(sub)
     ran = False
+    open_prs = open_cup_prs(ctx) if ctx.ci else []
     for cup, subs in sorted(by_cup.items()):
-        if not ctx.no_git and published(ctx, cup):
-            for sub in subs:
-                post_status(ctx, sub['id'], 'duplicate', 'cup already published on origin/main')
-            continue
+        pub = published_cup(ctx, cup)
         paths, scores = {}, {}
         for sub in subs:
             problem = unsafe_args(sub)
@@ -446,16 +514,27 @@ def _pass(ctx, args):
             except (WorkerError, OSError, ValueError, KeyError, TypeError) as exc:
                 failure(ctx, sub, str(exc))
         valid = [s for s in subs if s['id'] in scores]
+        if pub is not None:
+            # aizpun 2026-10-22: every file sent for a published cup stays on record
+            # as `duplicate`, checked against what was published.
+            for sub in valid:
+                if ctx.dry_run:
+                    log.info('[dry-run] would compare %s with published Bonq #%s', sub['id'], cup)
+                    continue
+                post_status(ctx, sub['id'], 'duplicate', compare_with_published(ctx, sub, paths[sub['id']], pub))
+            continue
         if not valid:
             continue
+        # One file per cup is processed. The others stay `received` and are compared
+        # with the result once it is published, so a conflicting file is never hidden.
         best = best_submission(valid, scores)
-        for sub in valid:
-            if sub is not best:
-                post_status(ctx, sub['id'], 'superseded', 'superseded by ' + best['id'])
+        if len(valid) > 1:
+            log.info('cup %s: %d files, processing %s, the rest wait for publication',
+                     cup, len(valid), best['id'])
         if ran:
             continue
-        if ctx.ci and (any(s['status'] == 'processed' for s in pending) or remote_branch_exists(ctx, cup)):
-            log.info('cup %s waits for an existing processed cup or branch', cup)
+        if ctx.ci and (open_prs or remote_branch_exists(ctx, cup)):
+            log.info('cup %s waits: open cup PRs %s, or branch %s exists', cup, open_prs, cup_branch(cup))
             continue
         if (Path(ctx.repo) / 'cups' / f'bonq_{cup}.json').exists():
             log.info('cup %s already exists locally; awaiting publication', cup)
@@ -490,7 +569,7 @@ def one_pass(ctx, args):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
-    for flag in ['once', 'ci', 'dry-run', 'no-git', 'reindex', 'rehearsal']:
+    for flag in ['once', 'ci', 'dry-run', 'no-git', 'reindex']:
         ap.add_argument('--' + flag, action='store_true')
     for flag in ['repo', 'worker', 'id']:
         ap.add_argument('--' + flag)

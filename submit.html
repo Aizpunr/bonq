@@ -198,7 +198,7 @@
       <span class="pill received">received</span><span>Waiting for the automatic check.</span>
       <span class="pill processed">processed</span><span>A review is open. Waiting for approval.</span>
       <span class="pill published">published</span><span>Live on the site.</span>
-      <span class="pill duplicate">duplicate</span><span>This cup or exact file was already processed or sent.</span>
+      <span class="pill duplicate">duplicate</span><span>Kept on record and checked against the published cup. REVIEW means it differs.</span>
       <span class="pill superseded">superseded</span><span>Another submission was chosen for this cup.</span>
       <span class="pill failed">failed</span><span>The check stopped. The note says why; contact aizpun.</span>
     </div></div>
@@ -340,7 +340,7 @@ $('submitForm').addEventListener('submit',async e=>{
     var res=await r.json().catch(()=>({ok:false,message:'The submit service answered with HTTP '+r.status+'.'}));
     if(!r.ok||!res.ok) throw Error(res.message||'The submission was rejected.');
     var mine=load('bonq_my_submissions',[]);if(!mine.includes(res.id)) mine.push(res.id);store('bonq_my_submissions',mine.slice(-50));
-    $('submitMsg').innerHTML=msg(res.status==='duplicate'?'warn':'ok',res.status==='duplicate'?'This exact file was already sent. Submission '+res.id+'.':'Received. Thank you! Submission '+res.id+'. Watch its status below.');
+    $('submitMsg').innerHTML=msg(res.status==='duplicate'?'warn':'ok',res.status==='duplicate'?'This exact file was already sent (submission '+res.same_file_as+'). Yours is kept on record as '+res.id+'.':'Received. Thank you! Submission '+res.id+'. Watch its status below.');
     loadStatus();
   } catch(e) { $('submitMsg').innerHTML=msg('err',e.message||'Could not reach the submit service. Try again.'); }
   finally {state.submitting=false;state.token=null;if(window.turnstile&&state.widgetId!==null) window.turnstile.reset(state.widgetId);refreshSubmit();}

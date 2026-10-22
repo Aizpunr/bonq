@@ -129,18 +129,16 @@ async function submit(request, env, cors, origin) {
     return err(cors, 403, 'turnstile_failed', 'The anti-bot check failed. Complete it again and resubmit.', { codes: ts.codes });
   }
 
-  const sha256 = await sha256Hex(bytes);
-  const existing = await env.SUBMISSIONS.get('sha:' + sha256);
-  if (existing) {
-    return json(cors, 200, { ok: true, id: existing, status: 'duplicate', message: 'This exact host file was already submitted.' });
-  }
-
   const index = await readIndex(env);
   const cap = intVar(env.DAILY_SUBMIT_CAP, 20);
   const dayAgo = Date.now() - 24 * 3600 * 1000;
   if (index.filter(r => Date.parse(r.received_at) > dayAgo).length >= cap) {
     return err(cors, 429, 'rate_limited', 'Too many submissions in the last 24 hours. Try again tomorrow.');
   }
+
+  const sha256 = await sha256Hex(bytes);
+  const existing = await env.SUBMISSIONS.get('sha:' + sha256);
+  const first = existing ? await readJson(env, 'sub:' + existing) : null;
 
   const now = new Date().toISOString();
   const id = makeId();
@@ -159,6 +157,17 @@ async function submit(request, env, cors, origin) {
     preview: fields.preview,
     note: '',
   };
+
+  if (existing) {
+    rec.status = 'duplicate';
+    rec.same_file_as = existing;
+    rec.note = first && first.cup !== rec.cup
+      ? `REVIEW: same file as ${existing}, which was sent as Bonq #${first.cup}`
+      : `same file as ${existing}`;
+    await env.SUBMISSIONS.put('sub:' + id, JSON.stringify(rec));
+    await writeIndexWith(env, rec);
+    return json(cors, 200, { ok: true, id, status: 'duplicate', same_file_as: existing, message: 'This exact host file was already sent. It is kept on record.' });
+  }
 
   await env.SUBMISSIONS.put('file:' + id, bytes, { metadata: { cup: rec.cup, sha256, size: rec.size } });
   if (logBytes !== null) await env.SUBMISSIONS.put('log:' + id, logBytes);
@@ -286,6 +295,11 @@ async function updateStatus(request, env, cors, id) {
 // The index is read-modify-written, so two writes landing together can drop
 // one record from it. sub:<id> stays authoritative: /status/<id> re-inserts a
 // missing record and /reindex rebuilds the whole index from sub: keys.
+
+async function readJson(env, key) {
+  const raw = await env.SUBMISSIONS.get(key);
+  return raw ? JSON.parse(raw) : null;
+}
 
 async function readIndex(env) {
   const raw = await env.SUBMISSIONS.get('index');
