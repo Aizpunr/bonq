@@ -10,15 +10,8 @@ Receives host Top->Out results from `submit.html` for `submissions_poll.py`, whi
    npx wrangler kv namespace create BONQ_SUBMISSIONS
    npx wrangler kv namespace create BONQ_SUBMISSIONS --preview
    ```
-3. Reuse the existing COTD Turnstile widget. Ensure its allowed hostnames include `aizpunr.github.io`, `localhost` and `127.0.0.1`. Put its public site key in `submit.html` (`PROD_TURNSTILE_SITE_KEY`). Copy its secret to the clipboard and store it:
-   ```powershell
-   Get-Clipboard | npx wrangler secret put TURNSTILE_SECRET
-   ```
-4. Generate a NEW poller token, then paste it at the secret prompt:
-   ```powershell
-   python -c "import secrets; print(secrets.token_urlsafe(32))"
-   npx wrangler secret put POLLER_TOKEN
-   ```
+3. Reuse the existing COTD Turnstile widget (its hostnames `aizpunr.github.io` and `localhost` cover this page). Its public site key is already in `submit.html` (`PROD_TURNSTILE_SITE_KEY`). Store its secret as `TURNSTILE_SECRET`, either in the dashboard (Workers & Pages, bonq-submit, Settings, Variables and Secrets, type Secret) or from Python. Do NOT pipe it from PowerShell (`Get-Clipboard | npx wrangler ...`): PowerShell 5 appends a line break that becomes part of the secret (TyO, 2026-10-22, every poller call got 401). The Worker trims both secrets as a safety net.
+4. Generate a NEW poller token (never reuse another comp's), store it as `POLLER_TOKEN` the same way, and keep a copy for the GitHub secret. Done 2026-10-25: the copy is in `C:\Users\rafa\.claude\local\bonq_poller_token.txt`.
 5. Run `npx wrangler deploy`. Put the printed URL into `submit.html` (`PROD_WORKER_URL`).
 6. In GitHub Settings > Secrets and variables > Actions add `BONQ_WORKER_URL` (the Worker URL) and `BONQ_POLLER_TOKEN` (the new token).
 7. In Settings > Actions > General > Workflow permissions select **Read and write permissions** and tick **Allow GitHub Actions to create and approve pull requests**.

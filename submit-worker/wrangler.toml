@@ -6,8 +6,8 @@ workers_dev = true
 
 [[kv_namespaces]]
 binding = "SUBMISSIONS"
-id = "REPLACE_WITH_KV_ID"
-preview_id = "REPLACE_WITH_PREVIEW_KV_ID"
+id = "889caf5c463e45a1bdb680579c20d016"
+preview_id = "0b76be4810224cc4a593c2455a133713"
 
 [vars]
 ALLOWED_ORIGINS = "https://aizpunr.github.io,http://localhost:9005,http://127.0.0.1:9005"

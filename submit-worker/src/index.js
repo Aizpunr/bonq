@@ -343,7 +343,9 @@ async function reindex(env) {
 async function authorize(request, env, cors) {
   const h = request.headers.get('Authorization') || '';
   const m = h.match(/^Bearer (.+)$/);
-  if (!env.POLLER_TOKEN || !m || !(await safeEqual(m[1], env.POLLER_TOKEN))) {
+  // Trimmed like TURNSTILE_SECRET: a secret stored with a stray line break must still match.
+  const token = (env.POLLER_TOKEN || '').trim();
+  if (!token || !m || !(await safeEqual(m[1].trim(), token))) {
     return err(cors, 401, 'unauthorized', 'Missing or wrong poller token.');
   }
   return null;
