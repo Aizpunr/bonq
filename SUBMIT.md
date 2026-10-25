@@ -9,10 +9,12 @@ Open [Submit a cup](https://aizpunr.github.io/bonq/submit.html).
 On the host's PC, find:
 
 ```
-%APPDATA%\Zeepkist\Mods\TopOutTournament\topoutresults.json
+%APPDATA%\Zeepkist\Mods\TopOutTournament\
 ```
 
-Copy and send it the same night, before the next tournament overwrites it. Send `topoutresults.json`, not `topoutresults_bckp.json` unless asked.
+When a tournament ends, the mod renames its results file to `topoutresults_bckp.json`, so after the cup that is the file to send. Check its date is the cup day. While a tournament is still running, the file is `topoutresults.json`.
+
+Send it the same night: starting another Top->Out tournament deletes the old backup.
 
 Optionally, include `BepInEx\LiveLeaderboardLogger.log` from the Zeepkist game folder. The browser keeps only lines starting with the chosen cup date before uploading. A full log can be large; you do not need to trim it yourself. If no lines match, check the date or remove the optional log.
 

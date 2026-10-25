@@ -162,8 +162,9 @@
     Usually the host sends the results, but anyone who has the file can help. Check the preview, then send it.
     Submissions are reviewed before they appear on the site.
     <ul>
-      <li>On the host's PC, find <code>%APPDATA%\Zeepkist\Mods\TopOutTournament\topoutresults.json</code>.</li>
-      <li>Send it the same night, before the next tournament overwrites it. Use <code>topoutresults.json</code>, not <code>topoutresults_bckp.json</code> unless asked.</li>
+      <li>On the host's PC, open <code>%APPDATA%\Zeepkist\Mods\TopOutTournament</code>.</li>
+      <li>Once the tournament has ended, its results are <code>topoutresults_bckp.json</code> (the mod renames the file when a tournament ends). Check the file's date is the cup day. If the tournament is still running, send <code>topoutresults.json</code>.</li>
+      <li>Send it the same night: starting another Top-&gt;Out tournament deletes the backup.</li>
       <li>The preview stays in your browser. Nothing is uploaded until you press Submit.</li>
     </ul>
     <p><a class="back-link" href="SUBMIT.md">More about submitting and privacy</a></p>
@@ -171,7 +172,7 @@
   <form id="submitForm">
   <div class="section">
     <div class="section-title"><span class="step">1</span> Host results</div>
-    <label class="dropzone" id="dropzone" for="fileInput"><span class="big">Drop topoutresults.json here</span><br>
+    <label class="dropzone" id="dropzone" for="fileInput"><span class="big">Drop topoutresults_bckp.json (or topoutresults.json) here</span><br>
       <span class="small">or choose the file below</span></label>
     <input id="fileInput" type="file" accept=".json,application/json" required aria-label="Host results JSON">
     <div class="file-info" id="fileInfo"></div><div id="fileMsg" role="status"></div>
@@ -246,7 +247,7 @@ async function readHost(file) {
   state.file=null; state.text=null; state.parsed=null; state.hostLoading=true;
   $('previewSection').hidden=true; $('nameList').replaceChildren(); $('fileMsg').textContent=''; $('fileInfo').textContent=''; refreshSubmit();
   try {
-    if(!file || !/\.json$/i.test(file.name)) throw Error('Choose topoutresults.json.');
+    if(!file || !/\.json$/i.test(file.name)) throw Error('Choose the results file (topoutresults_bckp.json or topoutresults.json).');
     if(file.size>5*1024*1024) throw Error('The host file must be at most 5 MB.');
     var text=await file.text(); if(read!==state.hostRead) return;
     var parsed=P.parseHostFile(text,{cup:Number($('cupInput').value)});
