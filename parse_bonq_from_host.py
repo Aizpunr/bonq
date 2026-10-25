@@ -22,6 +22,7 @@ host file has no timestamps) and rounds_played counts presence at round CLOSE.
 import argparse
 import json
 import os
+import re
 import shutil
 import sys
 from collections import defaultdict
@@ -232,8 +233,9 @@ def main():
     if (s.get("threshold"), s.get("winners")) != (P.POINTS["threshold"], P.POINTS["winners"]):
         warnings.append(f"mod settings threshold={s.get('threshold')} winners={s.get('winners')} "
                         f"(Bonq is 1000 / 5)")
-    tag = f"bonq {args.cup} -"
-    untagged = sorted({r["map"] for r in rounds if tag not in r["map"].lower()})
+    # Maps are named "Bonq 1 - ..." (#1) or "Bonq Cup 2 - ..." (#2).
+    tag = re.compile(rf"\bbonq (cup )?{args.cup} -", re.I)
+    untagged = sorted({r["map"] for r in rounds if not tag.search(r["map"])})
     if untagged:
         warnings.append(f"maps not tagged 'Bonq {args.cup} -': {untagged}")
 
@@ -261,17 +263,19 @@ def main():
     elif len(winners) < P.POINTS["winners"]:
         warnings.append(f"only {len(winners)} winners (tournament not finished, or an old file?)")
 
-    # Finish positions past the verified table: record what the mod actually paid.
-    tail = defaultdict(set)
+    # The mod's payout vs our table: a difference means the host changed the settings
+    # (or we read a position wrong), and the log parser would score that cup wrongly.
+    off = defaultdict(set)
     for h in host["rounds"]:
         done = sorted((p["time"], p["gainedPoints"]) for p in h["playerResults"]
                       if not isinstance(p["time"], str))
         for pos, (_t, g) in enumerate(done, 1):
-            if pos > len(P._TOP):
-                tail[pos].add(g)
-    if tail:
-        warnings.append("points past 15th seen (not yet in the table): "
-                        + ", ".join(f"{p}th={sorted(g)}" for p, g in sorted(tail.items())))
+            if g != P.points_for_pos(pos):
+                off[pos].add(g)
+    if off:
+        warnings.append("points differ from the Bonq table: "
+                        + ", ".join(f"pos {p} paid {sorted(g)} (table {P.points_for_pos(p)})"
+                                    for p, g in sorted(off.items())))
 
     rotation = []
     authors = {}

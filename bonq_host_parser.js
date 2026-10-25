@@ -69,7 +69,7 @@
     const mappers = [...new Set(authors.filter(Boolean))], warnings = [];
     const settings = host.settings;
     if (settings.threshold !== 1000 || settings.winners !== 5) warnings.push(`mod settings threshold=${settings.threshold} winners=${settings.winners} (Bonq is 1000 / 5)`);
-    const untagged = [...new Set(rounds.filter(r=>!r.map.toLowerCase().includes(`bonq ${cup} -`)).map(r=>r.map))].sort(cmp);
+    const untagged = [...new Set(rounds.filter(r=>{ const m = /\bbonq (?:cup )?(\d+) -/i.exec(r.map); return !m || Number(m[1]) !== Number(cup); }).map(r=>r.map))].sort(cmp);
     if (untagged.length) warnings.push(`maps not tagged 'Bonq ${cup} -': ${JSON.stringify(untagged)}`);
     if (winners.length < 5) warnings.push(`only ${winners.length} winners (tournament not finished, or an old file?)`);
     if (rotation.length !== 5) warnings.push(`expected 5 maps, found ${rotation.length}`);

@@ -14,7 +14,7 @@ The script prints every selected round; eyeball it before trusting the result.
 
 Rules: the Top->Out mod settings Victor sent 2026-09-27, checked against the
 host's topoutresults.json for Bonq #1 (validate_vs_topout.py):
-- 150 125 110 100 92 85 79 73 68 63 59 55 51 48 45, 16th+ unknown (scored 35, warned)
+- 150 125 110 100 92 85 79 73 68 63 59 55 51 48 45 42 39 37 35 33 31 30, then 35 (seen to 24th)
 - DNF = 20 for anyone in the lobby when the round closes and not finished
 - 1000 -> finalist, points capped. Pos 1 as an EXISTING finalist wins; crossing 1000 at pos 1
   does NOT win that round (host file, Bonq #1). 5 winners.
@@ -37,23 +37,27 @@ CUPS_DIR = os.path.join(PROJECT_DIR, "cups")
 LOGS_DIR = os.path.join(PROJECT_DIR, "logs")
 MIN_ROUNDS_PLAYED = 6   # Kerki's rule; revisit once Bonq has a few cups
 
-# Read off the host's topoutresults.json for Bonq #1: NOT Kerki's list past 12th
-# (Kerki: 52 49 46). Only 15 places were ever reached, so 16th+ is unknown.
-_TOP = [150, 125, 110, 100, 92, 85, 79, 73, 68, 63, 59, 55, 51, 48, 45]
+# Read off the hosts' topoutresults.json: Bonq #1 to 15th, Bonq #2 to 24th. NOT
+# Kerki's list past 12th (Kerki: 52 49 46). The list ends at 22nd (30), after which
+# the ZeepTourney baseline 35 applies, so 22nd pays less than 23rd.
+_TOP = [150, 125, 110, 100, 92, 85, 79, 73, 68, 63, 59, 55, 51, 48, 45,
+        42, 39, 37, 35, 33, 31, 30]
 POINTS = {
-    "name": "Bonq Top->Out (host file verified to 15th)",
+    "name": "Bonq Top->Out (host files verified to 24th)",
     "threshold": 1000,
     "dnf": 20,
-    "floor": 35,        # ZeepTourney baseline; where the list meets it is unknown
+    "floor": 35,        # ZeepTourney baseline, seen at 23rd and 24th (Bonq #2)
     "winners": 5,
 }
+_VERIFIED_TO = 24
 _unverified_positions = set()
 
 
 def points_for_pos(pos):
     if pos <= len(_TOP):
         return _TOP[pos - 1]
-    _unverified_positions.add(pos)
+    if pos > _VERIFIED_TO:
+        _unverified_positions.add(pos)
     return POINTS["floor"]
 
 
@@ -484,7 +488,7 @@ def main():
     if args.host_file:
         apply_host_file(st, args.host_file, roster)
     if _unverified_positions:
-        print(f"\n  !! finishers at positions {sorted(_unverified_positions)}: points past 15th are "
+        print(f"\n  !! finishers at positions {sorted(_unverified_positions)}: points past {_VERIFIED_TO}th are "
               f"UNVERIFIED (scored as {POINTS['floor']}). Get the host's topoutresults.json.", file=sys.stderr)
     rotation = st["rotation"]
     if len(rotation) != 5:
