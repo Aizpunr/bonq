@@ -1,0 +1,1016 @@
+{
+  "cup": 2,
+  "date": "2026-10-25",
+  "header": "Bonq Cup #2 - Maps by LKat, Milk Man, Victor",
+  "points_system": "Bonq Top->Out (host files verified to 24th)",
+  "rotation": [
+    "Bonq Cup 2 - Soap Turnarounds",
+    "Bonq Cup 2 - Primitive stuff idk",
+    "Bonq Cup 2 - Normal Magnet Track",
+    "Bonq Cup 2 - icRS",
+    "Bonq Cup 2 - Glider Map"
+  ],
+  "scoring_rounds_count": 18,
+  "winners": [
+    {
+      "rank": 1,
+      "sid": "76561198050792757",
+      "name": "justMaki",
+      "won_scoring_round": 11,
+      "qualified_scoring_round": 9,
+      "map": "Bonq Cup 2 - Soap Turnarounds",
+      "time": "17.562"
+    },
+    {
+      "rank": 2,
+      "sid": "76561198896246339",
+      "name": "RoundNzt",
+      "won_scoring_round": 15,
+      "qualified_scoring_round": 14,
+      "map": "Bonq Cup 2 - Glider Map",
+      "time": "20.267"
+    },
+    {
+      "rank": 3,
+      "sid": "76561198428660617",
+      "name": "BB_Benji",
+      "won_scoring_round": 16,
+      "qualified_scoring_round": 15,
+      "map": "Bonq Cup 2 - Soap Turnarounds",
+      "time": "18.179"
+    },
+    {
+      "rank": 4,
+      "sid": "76561199590715014",
+      "name": "Stick",
+      "won_scoring_round": 17,
+      "qualified_scoring_round": 13,
+      "map": "Bonq Cup 2 - Primitive stuff idk",
+      "time": "17.113"
+    },
+    {
+      "rank": 5,
+      "sid": "76561199186342067",
+      "name": "PlusMicron",
+      "won_scoring_round": 18,
+      "qualified_scoring_round": 12,
+      "map": "Bonq Cup 2 - Normal Magnet Track",
+      "time": "15.873"
+    }
+  ],
+  "finalists": [
+    {
+      "rank": 1,
+      "sid": "76561198974231691",
+      "name": "agix",
+      "qualified_scoring_round": 16
+    },
+    {
+      "rank": 2,
+      "sid": "76561198364662649",
+      "name": "Heart-TGV",
+      "qualified_scoring_round": 16
+    },
+    {
+      "rank": 3,
+      "sid": "76561198357858848",
+      "name": "MALIYO",
+      "qualified_scoring_round": 17
+    },
+    {
+      "rank": 4,
+      "sid": "76561198047403251",
+      "name": "St Nicholas",
+      "qualified_scoring_round": 17
+    }
+  ],
+  "others": [
+    {
+      "rank": 1,
+      "sid": "76561198159073318",
+      "name": "GuAlexItar",
+      "points": 1028,
+      "rounds_played": 18,
+      "finishes": 13
+    },
+    {
+      "rank": 2,
+      "sid": "76561199129302746",
+      "name": "brrryy",
+      "points": 1005,
+      "rounds_played": 18,
+      "finishes": 11
+    },
+    {
+      "rank": 3,
+      "sid": "76561198040861578",
+      "name": "wunderBarr",
+      "points": 937,
+      "rounds_played": 18,
+      "finishes": 9
+    },
+    {
+      "rank": 4,
+      "sid": "76561198136572067",
+      "name": "Tudge Boat",
+      "points": 885,
+      "rounds_played": 17,
+      "finishes": 11
+    },
+    {
+      "rank": 5,
+      "sid": "76561198846673916",
+      "name": "Matic_D",
+      "points": 874,
+      "rounds_played": 18,
+      "finishes": 14
+    },
+    {
+      "rank": 6,
+      "sid": "76561198157436732",
+      "name": "variableferret",
+      "points": 815,
+      "rounds_played": 18,
+      "finishes": 8
+    },
+    {
+      "rank": 7,
+      "sid": "76561198111366624",
+      "name": "Zeus",
+      "points": 782,
+      "rounds_played": 18,
+      "finishes": 10
+    },
+    {
+      "rank": 8,
+      "sid": "76561199218214543",
+      "name": "Wheelie",
+      "points": 754,
+      "rounds_played": 18,
+      "finishes": 8
+    },
+    {
+      "rank": 9,
+      "sid": "76561198126038296",
+      "name": "Noxitu",
+      "points": 726,
+      "rounds_played": 18,
+      "finishes": 9
+    },
+    {
+      "rank": 10,
+      "sid": "76561198030518760",
+      "name": "ActuallyRuben",
+      "points": 705,
+      "rounds_played": 18,
+      "finishes": 11
+    },
+    {
+      "rank": 11,
+      "sid": "76561199101994275",
+      "name": "VroomVroomer",
+      "points": 644,
+      "rounds_played": 18,
+      "finishes": 9
+    },
+    {
+      "rank": 12,
+      "sid": "76561198299114586",
+      "name": "gilgool",
+      "points": 445,
+      "rounds_played": 13,
+      "finishes": 5
+    },
+    {
+      "rank": 13,
+      "sid": "76561198125000151",
+      "name": "Irisdice",
+      "points": 402,
+      "rounds_played": 10,
+      "finishes": 5
+    },
+    {
+      "rank": 14,
+      "sid": "76561198305054806",
+      "name": "wokonbike",
+      "points": 375,
+      "rounds_played": 11,
+      "finishes": 5
+    },
+    {
+      "rank": 15,
+      "sid": "76561198109773525",
+      "name": "Valco",
+      "points": 185,
+      "rounds_played": 7,
+      "finishes": 2
+    }
+  ],
+  "nuisance": [
+    {
+      "sid": "76561199380118922",
+      "name": "Victor",
+      "points": 1155,
+      "rounds_played": 18,
+      "finishes": 8
+    },
+    {
+      "sid": "76561199733601754",
+      "name": "LKat",
+      "points": 637,
+      "rounds_played": 18,
+      "finishes": 5
+    }
+  ],
+  "excluded": [
+    {
+      "sid": "76561198357638671",
+      "name": "Murrl",
+      "points": 156,
+      "rounds_played": 5,
+      "finishes": 2
+    },
+    {
+      "sid": "76561199053404858",
+      "name": "Roader",
+      "points": 119,
+      "rounds_played": 4,
+      "finishes": 1
+    },
+    {
+      "sid": "76561198001387193",
+      "name": "Warsnac",
+      "points": 158,
+      "rounds_played": 4,
+      "finishes": 2
+    },
+    {
+      "sid": "76561198758353504",
+      "name": "M4DSCOTSM4N",
+      "points": 75,
+      "rounds_played": 3,
+      "finishes": 1
+    },
+    {
+      "sid": "76561199731808063",
+      "name": "Yksdjcj",
+      "points": 60,
+      "rounds_played": 3,
+      "finishes": 0
+    },
+    {
+      "sid": "76561199126724675",
+      "name": "ZOMAN",
+      "points": 165,
+      "rounds_played": 3,
+      "finishes": 1
+    },
+    {
+      "sid": "76561198180736527",
+      "name": "Alastair Hatherly",
+      "points": 75,
+      "rounds_played": 3,
+      "finishes": 1
+    },
+    {
+      "sid": "76561199282497311",
+      "name": "groovy",
+      "points": 40,
+      "rounds_played": 2,
+      "finishes": 0
+    },
+    {
+      "sid": "76561198212621772",
+      "name": "Slate",
+      "points": 20,
+      "rounds_played": 1,
+      "finishes": 0
+    },
+    {
+      "sid": "76561199152009769",
+      "name": "ItGnu3",
+      "points": 0,
+      "rounds_played": 0,
+      "finishes": 0
+    }
+  ],
+  "rounds": [
+    {
+      "n": 1,
+      "map": "Bonq Cup 2 - Soap Turnarounds",
+      "ts": null,
+      "roster": 25,
+      "finishers": 6,
+      "finish_pct": 24.0,
+      "top": [
+        {
+          "sid": "76561199380118922",
+          "name": "Victor",
+          "time": "18.217"
+        },
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "18.547"
+        },
+        {
+          "sid": "76561199590715014",
+          "name": "Stick",
+          "time": "19.005"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 2,
+      "map": "Bonq Cup 2 - Primitive stuff idk",
+      "ts": null,
+      "roster": 28,
+      "finishers": 24,
+      "finish_pct": 85.7,
+      "top": [
+        {
+          "sid": "76561199380118922",
+          "name": "Victor",
+          "time": "17.679"
+        },
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "17.802"
+        },
+        {
+          "sid": "76561198364662649",
+          "name": "Heart-TGV",
+          "time": "17.983"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 3,
+      "map": "Bonq Cup 2 - Normal Magnet Track",
+      "ts": null,
+      "roster": 29,
+      "finishers": 7,
+      "finish_pct": 24.1,
+      "top": [
+        {
+          "sid": "76561199590715014",
+          "name": "Stick",
+          "time": "16.188"
+        },
+        {
+          "sid": "76561199733601754",
+          "name": "LKat",
+          "time": "17.397"
+        },
+        {
+          "sid": "76561199380118922",
+          "name": "Victor",
+          "time": "17.594"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 4,
+      "map": "Bonq Cup 2 - icRS",
+      "ts": null,
+      "roster": 28,
+      "finishers": 20,
+      "finish_pct": 71.4,
+      "top": [
+        {
+          "sid": "76561198896246339",
+          "name": "RoundNzt",
+          "time": "23.309"
+        },
+        {
+          "sid": "76561199380118922",
+          "name": "Victor",
+          "time": "23.551"
+        },
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "23.875"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 5,
+      "map": "Bonq Cup 2 - Glider Map",
+      "ts": null,
+      "roster": 26,
+      "finishers": 11,
+      "finish_pct": 42.3,
+      "top": [
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "20.897"
+        },
+        {
+          "sid": "76561198136572067",
+          "name": "Tudge Boat",
+          "time": "21.044"
+        },
+        {
+          "sid": "76561198159073318",
+          "name": "GuAlexItar",
+          "time": "22.293"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 6,
+      "map": "Bonq Cup 2 - Soap Turnarounds",
+      "ts": null,
+      "roster": 25,
+      "finishers": 15,
+      "finish_pct": 60.0,
+      "top": [
+        {
+          "sid": "76561199380118922",
+          "name": "Victor",
+          "time": "18.258"
+        },
+        {
+          "sid": "76561198974231691",
+          "name": "agix",
+          "time": "18.404"
+        },
+        {
+          "sid": "76561199218214543",
+          "name": "Wheelie",
+          "time": "18.513"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 7,
+      "map": "Bonq Cup 2 - Primitive stuff idk",
+      "ts": null,
+      "roster": 26,
+      "finishers": 24,
+      "finish_pct": 92.3,
+      "top": [
+        {
+          "sid": "76561199186342067",
+          "name": "PlusMicron",
+          "time": "17.236"
+        },
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "17.507"
+        },
+        {
+          "sid": "76561199380118922",
+          "name": "Victor",
+          "time": "17.733"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 8,
+      "map": "Bonq Cup 2 - Normal Magnet Track",
+      "ts": null,
+      "roster": 26,
+      "finishers": 12,
+      "finish_pct": 46.2,
+      "top": [
+        {
+          "sid": "76561199590715014",
+          "name": "Stick",
+          "time": "15.311"
+        },
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "15.740"
+        },
+        {
+          "sid": "76561198896246339",
+          "name": "RoundNzt",
+          "time": "17.250"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 9,
+      "map": "Bonq Cup 2 - icRS",
+      "ts": null,
+      "roster": 25,
+      "finishers": 18,
+      "finish_pct": 72.0,
+      "top": [
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "23.149"
+        },
+        {
+          "sid": "76561199733601754",
+          "name": "LKat",
+          "time": "23.952"
+        },
+        {
+          "sid": "76561198974231691",
+          "name": "agix",
+          "time": "24.215"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 10,
+      "map": "Bonq Cup 2 - Glider Map",
+      "ts": null,
+      "roster": 25,
+      "finishers": 13,
+      "finish_pct": 52.0,
+      "top": [
+        {
+          "sid": "76561199186342067",
+          "name": "PlusMicron",
+          "time": "20.147"
+        },
+        {
+          "sid": "76561199590715014",
+          "name": "Stick",
+          "time": "21.536"
+        },
+        {
+          "sid": "76561198030518760",
+          "name": "ActuallyRuben",
+          "time": "21.726"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 11,
+      "map": "Bonq Cup 2 - Soap Turnarounds",
+      "ts": null,
+      "roster": 26,
+      "finishers": 14,
+      "finish_pct": 53.8,
+      "top": [
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "17.562"
+        },
+        {
+          "sid": "76561198974231691",
+          "name": "agix",
+          "time": "18.314"
+        },
+        {
+          "sid": "76561198364662649",
+          "name": "Heart-TGV",
+          "time": "18.525"
+        }
+      ],
+      "winner": "justMaki"
+    },
+    {
+      "n": 12,
+      "map": "Bonq Cup 2 - Primitive stuff idk",
+      "ts": null,
+      "roster": 25,
+      "finishers": 21,
+      "finish_pct": 84.0,
+      "top": [
+        {
+          "sid": "76561198357858848",
+          "name": "MALIYO",
+          "time": "17.257"
+        },
+        {
+          "sid": "76561199186342067",
+          "name": "PlusMicron",
+          "time": "17.271"
+        },
+        {
+          "sid": "76561198896246339",
+          "name": "RoundNzt",
+          "time": "17.293"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 13,
+      "map": "Bonq Cup 2 - Normal Magnet Track",
+      "ts": null,
+      "roster": 26,
+      "finishers": 10,
+      "finish_pct": 38.5,
+      "top": [
+        {
+          "sid": "76561198428660617",
+          "name": "BB_Benji",
+          "time": "15.602"
+        },
+        {
+          "sid": "76561199590715014",
+          "name": "Stick",
+          "time": "15.952"
+        },
+        {
+          "sid": "76561199186342067",
+          "name": "PlusMicron",
+          "time": "16.075"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 14,
+      "map": "Bonq Cup 2 - icRS",
+      "ts": null,
+      "roster": 26,
+      "finishers": 17,
+      "finish_pct": 65.4,
+      "top": [
+        {
+          "sid": "76561198896246339",
+          "name": "RoundNzt",
+          "time": "23.182"
+        },
+        {
+          "sid": "76561199590715014",
+          "name": "Stick",
+          "time": "23.778"
+        },
+        {
+          "sid": "76561198157436732",
+          "name": "variableferret",
+          "time": "23.869"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 15,
+      "map": "Bonq Cup 2 - Glider Map",
+      "ts": null,
+      "roster": 25,
+      "finishers": 13,
+      "finish_pct": 52.0,
+      "top": [
+        {
+          "sid": "76561198896246339",
+          "name": "RoundNzt",
+          "time": "20.267"
+        },
+        {
+          "sid": "76561198428660617",
+          "name": "BB_Benji",
+          "time": "21.013"
+        },
+        {
+          "sid": "76561199101994275",
+          "name": "VroomVroomer",
+          "time": "21.866"
+        }
+      ],
+      "winner": "RoundNzt"
+    },
+    {
+      "n": 16,
+      "map": "Bonq Cup 2 - Soap Turnarounds",
+      "ts": null,
+      "roster": 25,
+      "finishers": 13,
+      "finish_pct": 52.0,
+      "top": [
+        {
+          "sid": "76561198428660617",
+          "name": "BB_Benji",
+          "time": "18.179"
+        },
+        {
+          "sid": "76561198364662649",
+          "name": "Heart-TGV",
+          "time": "18.263"
+        },
+        {
+          "sid": "76561198040861578",
+          "name": "wunderBarr",
+          "time": "18.428"
+        }
+      ],
+      "winner": "BB_Benji"
+    },
+    {
+      "n": 17,
+      "map": "Bonq Cup 2 - Primitive stuff idk",
+      "ts": null,
+      "roster": 24,
+      "finishers": 16,
+      "finish_pct": 66.7,
+      "top": [
+        {
+          "sid": "76561199590715014",
+          "name": "Stick",
+          "time": "17.113"
+        },
+        {
+          "sid": "76561199126724675",
+          "name": "ZOMAN",
+          "time": "17.207"
+        },
+        {
+          "sid": "76561198357858848",
+          "name": "MALIYO",
+          "time": "17.368"
+        }
+      ],
+      "winner": "Stick"
+    },
+    {
+      "n": 18,
+      "map": "Bonq Cup 2 - Normal Magnet Track",
+      "ts": null,
+      "roster": 24,
+      "finishers": 7,
+      "finish_pct": 29.2,
+      "top": [
+        {
+          "sid": "76561199186342067",
+          "name": "PlusMicron",
+          "time": "15.873"
+        },
+        {
+          "sid": "76561198357858848",
+          "name": "MALIYO",
+          "time": "15.944"
+        },
+        {
+          "sid": "76561198136572067",
+          "name": "Tudge Boat",
+          "time": "16.751"
+        }
+      ],
+      "winner": "PlusMicron"
+    }
+  ],
+  "finish_stats": [
+    {
+      "sid": "76561198846673916",
+      "name": "Matic_D",
+      "present": 18,
+      "finished": 14,
+      "pct": 77.8
+    },
+    {
+      "sid": "76561198047403251",
+      "name": "St Nicholas",
+      "present": 18,
+      "finished": 14,
+      "pct": 77.8
+    },
+    {
+      "sid": "76561199590715014",
+      "name": "Stick",
+      "present": 18,
+      "finished": 14,
+      "pct": 77.8
+    },
+    {
+      "sid": "76561198428660617",
+      "name": "BB_Benji",
+      "present": 18,
+      "finished": 13,
+      "pct": 72.2
+    },
+    {
+      "sid": "76561198159073318",
+      "name": "GuAlexItar",
+      "present": 18,
+      "finished": 13,
+      "pct": 72.2
+    },
+    {
+      "sid": "76561199186342067",
+      "name": "PlusMicron",
+      "present": 18,
+      "finished": 13,
+      "pct": 72.2
+    },
+    {
+      "sid": "76561198974231691",
+      "name": "agix",
+      "present": 18,
+      "finished": 12,
+      "pct": 66.7
+    },
+    {
+      "sid": "76561198364662649",
+      "name": "Heart-TGV",
+      "present": 18,
+      "finished": 12,
+      "pct": 66.7
+    },
+    {
+      "sid": "76561198136572067",
+      "name": "Tudge Boat",
+      "present": 17,
+      "finished": 11,
+      "pct": 64.7
+    },
+    {
+      "sid": "76561198030518760",
+      "name": "ActuallyRuben",
+      "present": 18,
+      "finished": 11,
+      "pct": 61.1
+    },
+    {
+      "sid": "76561199129302746",
+      "name": "brrryy",
+      "present": 18,
+      "finished": 11,
+      "pct": 61.1
+    },
+    {
+      "sid": "76561198357858848",
+      "name": "MALIYO",
+      "present": 18,
+      "finished": 11,
+      "pct": 61.1
+    },
+    {
+      "sid": "76561198896246339",
+      "name": "RoundNzt",
+      "present": 18,
+      "finished": 11,
+      "pct": 61.1
+    },
+    {
+      "sid": "76561198050792757",
+      "name": "justMaki",
+      "present": 18,
+      "finished": 10,
+      "pct": 55.6
+    },
+    {
+      "sid": "76561198111366624",
+      "name": "Zeus",
+      "present": 18,
+      "finished": 10,
+      "pct": 55.6
+    },
+    {
+      "sid": "76561198126038296",
+      "name": "Noxitu",
+      "present": 18,
+      "finished": 9,
+      "pct": 50.0
+    },
+    {
+      "sid": "76561199101994275",
+      "name": "VroomVroomer",
+      "present": 18,
+      "finished": 9,
+      "pct": 50.0
+    },
+    {
+      "sid": "76561198040861578",
+      "name": "wunderBarr",
+      "present": 18,
+      "finished": 9,
+      "pct": 50.0
+    },
+    {
+      "sid": "76561198157436732",
+      "name": "variableferret",
+      "present": 18,
+      "finished": 8,
+      "pct": 44.4
+    },
+    {
+      "sid": "76561199380118922",
+      "name": "Victor",
+      "present": 18,
+      "finished": 8,
+      "pct": 44.4
+    },
+    {
+      "sid": "76561199218214543",
+      "name": "Wheelie",
+      "present": 18,
+      "finished": 8,
+      "pct": 44.4
+    },
+    {
+      "sid": "76561198125000151",
+      "name": "Irisdice",
+      "present": 10,
+      "finished": 5,
+      "pct": 50.0
+    },
+    {
+      "sid": "76561198305054806",
+      "name": "wokonbike",
+      "present": 11,
+      "finished": 5,
+      "pct": 45.5
+    },
+    {
+      "sid": "76561198299114586",
+      "name": "gilgool",
+      "present": 13,
+      "finished": 5,
+      "pct": 38.5
+    },
+    {
+      "sid": "76561199733601754",
+      "name": "LKat",
+      "present": 18,
+      "finished": 5,
+      "pct": 27.8
+    },
+    {
+      "sid": "76561198001387193",
+      "name": "Warsnac",
+      "present": 4,
+      "finished": 2,
+      "pct": 50.0
+    },
+    {
+      "sid": "76561198357638671",
+      "name": "Murrl",
+      "present": 5,
+      "finished": 2,
+      "pct": 40.0
+    },
+    {
+      "sid": "76561198109773525",
+      "name": "Valco",
+      "present": 7,
+      "finished": 2,
+      "pct": 28.6
+    },
+    {
+      "sid": "76561198180736527",
+      "name": "Alastair Hatherly",
+      "present": 3,
+      "finished": 1,
+      "pct": 33.3
+    },
+    {
+      "sid": "76561198758353504",
+      "name": "M4DSCOTSM4N",
+      "present": 3,
+      "finished": 1,
+      "pct": 33.3
+    },
+    {
+      "sid": "76561199126724675",
+      "name": "ZOMAN",
+      "present": 3,
+      "finished": 1,
+      "pct": 33.3
+    },
+    {
+      "sid": "76561199053404858",
+      "name": "Roader",
+      "present": 4,
+      "finished": 1,
+      "pct": 25.0
+    },
+    {
+      "sid": "76561199282497311",
+      "name": "groovy",
+      "present": 2,
+      "finished": 0,
+      "pct": 0.0
+    },
+    {
+      "sid": "76561198212621772",
+      "name": "Slate",
+      "present": 1,
+      "finished": 0,
+      "pct": 0.0
+    },
+    {
+      "sid": "76561199731808063",
+      "name": "Yksdjcj",
+      "present": 3,
+      "finished": 0,
+      "pct": 0.0
+    }
+  ],
+  "finish_source": "host topoutresults.json",
+  "points_source": "host topoutresults.json"
+}

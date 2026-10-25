@@ -1,0 +1,5795 @@
+﻿{
+  "settings": {
+    "firstFinishStartsTimer": true,
+    "threshold": 1000,
+    "winners": 5,
+    "roundTime": 300,
+    "timeFromFirstFinish": 60,
+    "allowNuisances": true,
+    "winnerIsNuisance": false
+  },
+  "rounds": [
+    {
+      "roundNumber": 0,
+      "level": {
+        "UID": "_2TE4Jcri0CJ7KL_[MMM]Victor",
+        "WorkshopID": 0,
+        "Name": "Bonq Cup 2 - Soap Turnarounds",
+        "Collaborators": null,
+        "OverrideAuthorName": null,
+        "Author": "[GGG]LKat",
+        "played": false
+      },
+      "playerResults": [
+        {
+          "steamID": 76561199380118922,
+          "username": "[MMM]Victor",
+          "time": 18.2173367,
+          "gainedPoints": 150,
+          "pointsTotal": 150,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199733601754,
+          "username": "[MMM]LKat",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198157436732,
+          "username": "[CSC] variableferret",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198030518760,
+          "username": "ActuallyRuben",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198047403251,
+          "username": "St Nicholas",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199129302746,
+          "username": "brrryy",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199186342067,
+          "username": "[CSC] PlusMicron",
+          "time": 20.3799858,
+          "gainedPoints": 85,
+          "pointsTotal": 85,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198364662649,
+          "username": "[T7]Heart",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198305054806,
+          "username": "wokonbike",
+          "time": 19.1546631,
+          "gainedPoints": 100,
+          "pointsTotal": 100,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198159073318,
+          "username": "[CTR]GuAlexItar",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198846673916,
+          "username": "Matic_D",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199053404858,
+          "username": "Roader",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199218214543,
+          "username": "[ZET] Wheelie",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198111366624,
+          "username": "[SLOW]Zeus",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198758353504,
+          "username": "M4DSCOTSM4N",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198040861578,
+          "username": "wunderBarr",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198126038296,
+          "username": "Noxitu",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198428660617,
+          "username": "BB_Benji",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357858848,
+          "username": "MALIYO",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199101994275,
+          "username": "VroomVroomer",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198974231691,
+          "username": "[AC9K]agix",
+          "time": 19.7858086,
+          "gainedPoints": 92,
+          "pointsTotal": 92,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198050792757,
+          "username": "justMaki",
+          "time": 18.5469933,
+          "gainedPoints": 125,
+          "pointsTotal": 125,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199590715014,
+          "username": "[ZET]Stick",
+          "time": 19.005291,
+          "gainedPoints": 110,
+          "pointsTotal": 110,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198896246339,
+          "username": "RoundNzt",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198001387193,
+          "username": "Warsnac",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        }
+      ]
+    },
+    {
+      "roundNumber": 1,
+      "level": {
+        "UID": "jE-7f4CjyUusM84_[MMM]Victor",
+        "WorkshopID": 0,
+        "Name": "Bonq Cup 2 - Primitive stuff idk",
+        "Collaborators": null,
+        "OverrideAuthorName": null,
+        "Author": "[MMM]Milk Man",
+        "played": false
+      },
+      "playerResults": [
+        {
+          "steamID": 76561199380118922,
+          "username": "[MMM]Victor",
+          "time": 17.6785622,
+          "gainedPoints": 150,
+          "pointsTotal": 150,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199733601754,
+          "username": "[MMM]LKat",
+          "time": 20.3072624,
+          "gainedPoints": 37,
+          "pointsTotal": 37,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198157436732,
+          "username": "[CSC] variableferret",
+          "time": 19.0425968,
+          "gainedPoints": 63,
+          "pointsTotal": 83,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198030518760,
+          "username": "ActuallyRuben",
+          "time": 23.6935329,
+          "gainedPoints": 30,
+          "pointsTotal": 50,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198047403251,
+          "username": "St Nicholas",
+          "time": 18.98872,
+          "gainedPoints": 68,
+          "pointsTotal": 88,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199129302746,
+          "username": "brrryy",
+          "time": 19.46438,
+          "gainedPoints": 48,
+          "pointsTotal": 68,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199186342067,
+          "username": "[CSC] PlusMicron",
+          "time": 18.7154331,
+          "gainedPoints": 79,
+          "pointsTotal": 164,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198364662649,
+          "username": "[T7]Heart",
+          "time": 17.9830055,
+          "gainedPoints": 110,
+          "pointsTotal": 130,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198305054806,
+          "username": "wokonbike",
+          "time": 24.1886158,
+          "gainedPoints": 35,
+          "pointsTotal": 135,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198159073318,
+          "username": "[CTR]GuAlexItar",
+          "time": 18.3390255,
+          "gainedPoints": 85,
+          "pointsTotal": 105,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198846673916,
+          "username": "Matic_D",
+          "time": 23.6862926,
+          "gainedPoints": 31,
+          "pointsTotal": 51,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199053404858,
+          "username": "Roader",
+          "time": 19.0791359,
+          "gainedPoints": 59,
+          "pointsTotal": 79,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199218214543,
+          "username": "[ZET] Wheelie",
+          "time": 19.937479,
+          "gainedPoints": 45,
+          "pointsTotal": 65,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198111366624,
+          "username": "[SLOW]Zeus",
+          "time": 20.1744137,
+          "gainedPoints": 42,
+          "pointsTotal": 62,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198758353504,
+          "username": "M4DSCOTSM4N",
+          "time": 25.1086082,
+          "gainedPoints": 35,
+          "pointsTotal": 55,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198040861578,
+          "username": "wunderBarr",
+          "time": 18.0138359,
+          "gainedPoints": 100,
+          "pointsTotal": 120,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198126038296,
+          "username": "Noxitu",
+          "time": 22.67811,
+          "gainedPoints": 33,
+          "pointsTotal": 53,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198428660617,
+          "username": "BB_Benji",
+          "time": 18.88578,
+          "gainedPoints": 73,
+          "pointsTotal": 93,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357858848,
+          "username": "MALIYO",
+          "time": 18.0192356,
+          "gainedPoints": 92,
+          "pointsTotal": 112,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199101994275,
+          "username": "VroomVroomer",
+          "time": 21.5429153,
+          "gainedPoints": 35,
+          "pointsTotal": 55,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198974231691,
+          "username": "[AC9K]agix",
+          "time": 19.39559,
+          "gainedPoints": 51,
+          "pointsTotal": 143,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198050792757,
+          "username": "justMaki",
+          "time": 17.8024578,
+          "gainedPoints": 125,
+          "pointsTotal": 250,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199590715014,
+          "username": "[ZET]Stick",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 130,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198896246339,
+          "username": "RoundNzt",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 40,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198001387193,
+          "username": "Warsnac",
+          "time": 19.1860027,
+          "gainedPoints": 55,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198299114586,
+          "username": "gilgool",
+          "time": 20.2761726,
+          "gainedPoints": 39,
+          "pointsTotal": 39,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198136572067,
+          "username": "Tudge Boat",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198109773525,
+          "username": "[BORK] Valco",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        }
+      ]
+    },
+    {
+      "roundNumber": 2,
+      "level": {
+        "UID": "YQPBu402OUiSJAj_[MMM]Victor",
+        "WorkshopID": 0,
+        "Name": "Bonq Cup 2 - Normal Magnet Track",
+        "Collaborators": null,
+        "OverrideAuthorName": null,
+        "Author": "[MMM]Victor",
+        "played": false
+      },
+      "playerResults": [
+        {
+          "steamID": 76561199380118922,
+          "username": "[MMM]Victor",
+          "time": 17.5937557,
+          "gainedPoints": 110,
+          "pointsTotal": 110,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199733601754,
+          "username": "[MMM]LKat",
+          "time": 17.397192,
+          "gainedPoints": 125,
+          "pointsTotal": 125,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198157436732,
+          "username": "[CSC] variableferret",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 103,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198030518760,
+          "username": "ActuallyRuben",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 70,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198047403251,
+          "username": "St Nicholas",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 108,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199129302746,
+          "username": "brrryy",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 88,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199186342067,
+          "username": "[CSC] PlusMicron",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 184,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198364662649,
+          "username": "[T7]Heart",
+          "time": 19.6505928,
+          "gainedPoints": 85,
+          "pointsTotal": 215,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198305054806,
+          "username": "wokonbike",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 155,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198159073318,
+          "username": "[CTR]GuAlexItar",
+          "time": 20.0656319,
+          "gainedPoints": 79,
+          "pointsTotal": 184,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198846673916,
+          "username": "Matic_D",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 71,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199053404858,
+          "username": "Roader",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 99,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199218214543,
+          "username": "[ZET] Wheelie",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 85,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198111366624,
+          "username": "[SLOW]Zeus",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 82,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198758353504,
+          "username": "M4DSCOTSM4N",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198040861578,
+          "username": "wunderBarr",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 140,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198126038296,
+          "username": "Noxitu",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 73,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198428660617,
+          "username": "BB_Benji",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 113,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357858848,
+          "username": "MALIYO",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 132,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199101994275,
+          "username": "VroomVroomer",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198974231691,
+          "username": "[AC9K]agix",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 163,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198050792757,
+          "username": "justMaki",
+          "time": 19.1823711,
+          "gainedPoints": 92,
+          "pointsTotal": 342,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199590715014,
+          "username": "[ZET]Stick",
+          "time": 16.18756,
+          "gainedPoints": 150,
+          "pointsTotal": 280,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198896246339,
+          "username": "RoundNzt",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 60,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198001387193,
+          "username": "Warsnac",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 95,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198299114586,
+          "username": "gilgool",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 59,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198136572067,
+          "username": "Tudge Boat",
+          "time": 18.4674,
+          "gainedPoints": 100,
+          "pointsTotal": 120,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198109773525,
+          "username": "[BORK] Valco",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 40,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198180736527,
+          "username": "Alastair Hatherly",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        }
+      ]
+    },
+    {
+      "roundNumber": 3,
+      "level": {
+        "UID": "tlQ0CqgUdECDTGj_[MMM]Victor",
+        "WorkshopID": 0,
+        "Name": "Bonq Cup 2 - icRS",
+        "Collaborators": null,
+        "OverrideAuthorName": null,
+        "Author": "[MMM]Victor",
+        "played": false
+      },
+      "playerResults": [
+        {
+          "steamID": 76561199380118922,
+          "username": "[MMM]Victor",
+          "time": 23.5506821,
+          "gainedPoints": 125,
+          "pointsTotal": 125,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199733601754,
+          "username": "[MMM]LKat",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198157436732,
+          "username": "[CSC] variableferret",
+          "time": 25.1254673,
+          "gainedPoints": 73,
+          "pointsTotal": 176,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198030518760,
+          "username": "ActuallyRuben",
+          "time": 27.720295,
+          "gainedPoints": 42,
+          "pointsTotal": 112,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198047403251,
+          "username": "St Nicholas",
+          "time": 25.107275,
+          "gainedPoints": 79,
+          "pointsTotal": 187,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199129302746,
+          "username": "brrryy",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 108,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199186342067,
+          "username": "[CSC] PlusMicron",
+          "time": 25.3268261,
+          "gainedPoints": 68,
+          "pointsTotal": 252,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198364662649,
+          "username": "[T7]Heart",
+          "time": 24.9607315,
+          "gainedPoints": 92,
+          "pointsTotal": 307,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198305054806,
+          "username": "wokonbike",
+          "time": 28.2567768,
+          "gainedPoints": 37,
+          "pointsTotal": 192,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198159073318,
+          "username": "[CTR]GuAlexItar",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 204,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198846673916,
+          "username": "Matic_D",
+          "time": 30.9371758,
+          "gainedPoints": 33,
+          "pointsTotal": 104,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199053404858,
+          "username": "Roader",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 119,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199218214543,
+          "username": "[ZET] Wheelie",
+          "time": 25.06781,
+          "gainedPoints": 85,
+          "pointsTotal": 170,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198111366624,
+          "username": "[SLOW]Zeus",
+          "time": 26.063158,
+          "gainedPoints": 55,
+          "pointsTotal": 137,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198758353504,
+          "username": "M4DSCOTSM4N",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198040861578,
+          "username": "wunderBarr",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 160,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198126038296,
+          "username": "Noxitu",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 93,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198428660617,
+          "username": "BB_Benji",
+          "time": 26.035162,
+          "gainedPoints": 59,
+          "pointsTotal": 172,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357858848,
+          "username": "MALIYO",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 152,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199101994275,
+          "username": "VroomVroomer",
+          "time": 26.1321316,
+          "gainedPoints": 51,
+          "pointsTotal": 126,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198974231691,
+          "username": "[AC9K]agix",
+          "time": 24.4277821,
+          "gainedPoints": 100,
+          "pointsTotal": 263,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198050792757,
+          "username": "justMaki",
+          "time": 23.875227,
+          "gainedPoints": 110,
+          "pointsTotal": 452,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199590715014,
+          "username": "[ZET]Stick",
+          "time": 27.3716736,
+          "gainedPoints": 45,
+          "pointsTotal": 325,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198896246339,
+          "username": "RoundNzt",
+          "time": 23.30918,
+          "gainedPoints": 150,
+          "pointsTotal": 210,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198001387193,
+          "username": "Warsnac",
+          "time": 25.4763947,
+          "gainedPoints": 63,
+          "pointsTotal": 158,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198299114586,
+          "username": "gilgool",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 79,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198136572067,
+          "username": "Tudge Boat",
+          "time": 28.0902042,
+          "gainedPoints": 39,
+          "pointsTotal": 159,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198109773525,
+          "username": "[BORK] Valco",
+          "time": 26.2342873,
+          "gainedPoints": 48,
+          "pointsTotal": 88,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198180736527,
+          "username": "Alastair Hatherly",
+          "time": 28.3456478,
+          "gainedPoints": 35,
+          "pointsTotal": 55,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        }
+      ]
+    },
+    {
+      "roundNumber": 4,
+      "level": {
+        "UID": "7zBqVboOxESf7oj_[MMM]Victor",
+        "WorkshopID": 0,
+        "Name": "Bonq Cup 2 - Glider Map",
+        "Collaborators": null,
+        "OverrideAuthorName": null,
+        "Author": "[MMM]Victor",
+        "played": false
+      },
+      "playerResults": [
+        {
+          "steamID": 76561199380118922,
+          "username": "[MMM]Victor",
+          "time": 26.2383633,
+          "gainedPoints": 68,
+          "pointsTotal": 68,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199733601754,
+          "username": "[MMM]LKat",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198157436732,
+          "username": "[CSC] variableferret",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 196,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198030518760,
+          "username": "ActuallyRuben",
+          "time": 23.8822536,
+          "gainedPoints": 73,
+          "pointsTotal": 185,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198047403251,
+          "username": "St Nicholas",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 207,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199129302746,
+          "username": "brrryy",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 128,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199186342067,
+          "username": "[CSC] PlusMicron",
+          "time": 22.2998333,
+          "gainedPoints": 100,
+          "pointsTotal": 352,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198364662649,
+          "username": "[T7]Heart",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 327,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198305054806,
+          "username": "wokonbike",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 212,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198159073318,
+          "username": "[CTR]GuAlexItar",
+          "time": 22.2932281,
+          "gainedPoints": 110,
+          "pointsTotal": 314,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198846673916,
+          "username": "Matic_D",
+          "time": 29.428,
+          "gainedPoints": 59,
+          "pointsTotal": 163,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199053404858,
+          "username": "Roader",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 119,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199218214543,
+          "username": "[ZET] Wheelie",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 190,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198111366624,
+          "username": "[SLOW]Zeus",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 157,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198758353504,
+          "username": "M4DSCOTSM4N",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198040861578,
+          "username": "wunderBarr",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 180,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198126038296,
+          "username": "Noxitu",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 113,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198428660617,
+          "username": "BB_Benji",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 192,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357858848,
+          "username": "MALIYO",
+          "time": 22.6419621,
+          "gainedPoints": 85,
+          "pointsTotal": 237,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199101994275,
+          "username": "VroomVroomer",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 146,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198974231691,
+          "username": "[AC9K]agix",
+          "time": 29.2883587,
+          "gainedPoints": 63,
+          "pointsTotal": 326,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198050792757,
+          "username": "justMaki",
+          "time": 20.8969612,
+          "gainedPoints": 150,
+          "pointsTotal": 602,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199590715014,
+          "username": "[ZET]Stick",
+          "time": 23.2485,
+          "gainedPoints": 79,
+          "pointsTotal": 404,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198896246339,
+          "username": "RoundNzt",
+          "time": 22.6003036,
+          "gainedPoints": 92,
+          "pointsTotal": 302,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198001387193,
+          "username": "Warsnac",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 158,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198299114586,
+          "username": "gilgool",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 99,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198136572067,
+          "username": "Tudge Boat",
+          "time": 21.0443859,
+          "gainedPoints": 125,
+          "pointsTotal": 284,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198109773525,
+          "username": "[BORK] Valco",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 108,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198180736527,
+          "username": "Alastair Hatherly",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        }
+      ]
+    },
+    {
+      "roundNumber": 5,
+      "level": {
+        "UID": "_2TE4Jcri0CJ7KL_[MMM]Victor",
+        "WorkshopID": 0,
+        "Name": "Bonq Cup 2 - Soap Turnarounds",
+        "Collaborators": null,
+        "OverrideAuthorName": null,
+        "Author": "[GGG]LKat",
+        "played": false
+      },
+      "playerResults": [
+        {
+          "steamID": 76561199380118922,
+          "username": "[MMM]Victor",
+          "time": 18.2584667,
+          "gainedPoints": 150,
+          "pointsTotal": 150,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199733601754,
+          "username": "[MMM]LKat",
+          "time": 19.467823,
+          "gainedPoints": 51,
+          "pointsTotal": 51,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198157436732,
+          "username": "[CSC] variableferret",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 216,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198030518760,
+          "username": "ActuallyRuben",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 205,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198047403251,
+          "username": "St Nicholas",
+          "time": 19.4120312,
+          "gainedPoints": 55,
+          "pointsTotal": 262,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199129302746,
+          "username": "brrryy",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 148,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199186342067,
+          "username": "[CSC] PlusMicron",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 372,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198364662649,
+          "username": "[T7]Heart",
+          "time": 18.6674938,
+          "gainedPoints": 92,
+          "pointsTotal": 419,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198305054806,
+          "username": "wokonbike",
+          "time": 20.0012474,
+          "gainedPoints": 48,
+          "pointsTotal": 260,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198159073318,
+          "username": "[CTR]GuAlexItar",
+          "time": 22.1586571,
+          "gainedPoints": 45,
+          "pointsTotal": 359,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198846673916,
+          "username": "Matic_D",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 183,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199053404858,
+          "username": "Roader",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 119,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199218214543,
+          "username": "[ZET] Wheelie",
+          "time": 18.5127411,
+          "gainedPoints": 110,
+          "pointsTotal": 300,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198111366624,
+          "username": "[SLOW]Zeus",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 177,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198758353504,
+          "username": "M4DSCOTSM4N",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198040861578,
+          "username": "wunderBarr",
+          "time": 19.1530437,
+          "gainedPoints": 68,
+          "pointsTotal": 248,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198126038296,
+          "username": "Noxitu",
+          "time": 18.9495583,
+          "gainedPoints": 79,
+          "pointsTotal": 192,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198428660617,
+          "username": "BB_Benji",
+          "time": 19.1906528,
+          "gainedPoints": 59,
+          "pointsTotal": 251,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357858848,
+          "username": "MALIYO",
+          "time": 18.59092,
+          "gainedPoints": 100,
+          "pointsTotal": 337,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199101994275,
+          "username": "VroomVroomer",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 166,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198974231691,
+          "username": "[AC9K]agix",
+          "time": 18.4044285,
+          "gainedPoints": 125,
+          "pointsTotal": 451,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198050792757,
+          "username": "justMaki",
+          "time": 18.7372417,
+          "gainedPoints": 85,
+          "pointsTotal": 687,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199590715014,
+          "username": "[ZET]Stick",
+          "time": 19.18514,
+          "gainedPoints": 63,
+          "pointsTotal": 467,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198896246339,
+          "username": "RoundNzt",
+          "time": 19.0602741,
+          "gainedPoints": 73,
+          "pointsTotal": 375,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198001387193,
+          "username": "Warsnac",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 158,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198299114586,
+          "username": "gilgool",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 119,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198136572067,
+          "username": "Tudge Boat",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 304,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198109773525,
+          "username": "[BORK] Valco",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 128,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198180736527,
+          "username": "Alastair Hatherly",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        }
+      ]
+    },
+    {
+      "roundNumber": 6,
+      "level": {
+        "UID": "jE-7f4CjyUusM84_[MMM]Victor",
+        "WorkshopID": 0,
+        "Name": "Bonq Cup 2 - Primitive stuff idk",
+        "Collaborators": null,
+        "OverrideAuthorName": null,
+        "Author": "[MMM]Milk Man",
+        "played": false
+      },
+      "playerResults": [
+        {
+          "steamID": 76561199380118922,
+          "username": "[MMM]Victor",
+          "time": 17.7334023,
+          "gainedPoints": 110,
+          "pointsTotal": 110,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199733601754,
+          "username": "[MMM]LKat",
+          "time": 19.7817173,
+          "gainedPoints": 39,
+          "pointsTotal": 39,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198157436732,
+          "username": "[CSC] variableferret",
+          "time": 18.8366547,
+          "gainedPoints": 51,
+          "pointsTotal": 267,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198030518760,
+          "username": "ActuallyRuben",
+          "time": 19.4518089,
+          "gainedPoints": 42,
+          "pointsTotal": 247,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198047403251,
+          "username": "St Nicholas",
+          "time": 17.7472973,
+          "gainedPoints": 92,
+          "pointsTotal": 354,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199129302746,
+          "username": "brrryy",
+          "time": 18.0452137,
+          "gainedPoints": 79,
+          "pointsTotal": 227,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199186342067,
+          "username": "[CSC] PlusMicron",
+          "time": 17.2358112,
+          "gainedPoints": 150,
+          "pointsTotal": 522,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198364662649,
+          "username": "[T7]Heart",
+          "time": 17.788805,
+          "gainedPoints": 85,
+          "pointsTotal": 504,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198305054806,
+          "username": "wokonbike",
+          "time": 22.1000118,
+          "gainedPoints": 35,
+          "pointsTotal": 295,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198159073318,
+          "username": "[CTR]GuAlexItar",
+          "time": 18.0845432,
+          "gainedPoints": 68,
+          "pointsTotal": 427,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198846673916,
+          "username": "Matic_D",
+          "time": 20.7977371,
+          "gainedPoints": 30,
+          "pointsTotal": 213,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199053404858,
+          "username": "Roader",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 119,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199218214543,
+          "username": "[ZET] Wheelie",
+          "time": 18.2395363,
+          "gainedPoints": 59,
+          "pointsTotal": 359,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198111366624,
+          "username": "[SLOW]Zeus",
+          "time": 20.4323578,
+          "gainedPoints": 35,
+          "pointsTotal": 212,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198758353504,
+          "username": "M4DSCOTSM4N",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198040861578,
+          "username": "wunderBarr",
+          "time": 17.74574,
+          "gainedPoints": 100,
+          "pointsTotal": 348,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198126038296,
+          "username": "Noxitu",
+          "time": 20.6483517,
+          "gainedPoints": 31,
+          "pointsTotal": 223,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198428660617,
+          "username": "BB_Benji",
+          "time": 19.05643,
+          "gainedPoints": 48,
+          "pointsTotal": 299,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357858848,
+          "username": "MALIYO",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 357,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199101994275,
+          "username": "VroomVroomer",
+          "time": 21.36796,
+          "gainedPoints": 35,
+          "pointsTotal": 201,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198974231691,
+          "username": "[AC9K]agix",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 471,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198050792757,
+          "username": "justMaki",
+          "time": 17.5066776,
+          "gainedPoints": 125,
+          "pointsTotal": 812,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199590715014,
+          "username": "[ZET]Stick",
+          "time": 18.1931973,
+          "gainedPoints": 63,
+          "pointsTotal": 530,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198896246339,
+          "username": "RoundNzt",
+          "time": 18.0747948,
+          "gainedPoints": 73,
+          "pointsTotal": 448,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198001387193,
+          "username": "Warsnac",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 158,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198299114586,
+          "username": "gilgool",
+          "time": 18.8143673,
+          "gainedPoints": 55,
+          "pointsTotal": 174,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198136572067,
+          "username": "Tudge Boat",
+          "time": 20.4526386,
+          "gainedPoints": 33,
+          "pointsTotal": 337,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198109773525,
+          "username": "[BORK] Valco",
+          "time": 20.0099487,
+          "gainedPoints": 37,
+          "pointsTotal": 165,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198180736527,
+          "username": "Alastair Hatherly",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198125000151,
+          "username": "Irisdice",
+          "time": 19.2752171,
+          "gainedPoints": 45,
+          "pointsTotal": 45,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        }
+      ]
+    },
+    {
+      "roundNumber": 7,
+      "level": {
+        "UID": "YQPBu402OUiSJAj_[MMM]Victor",
+        "WorkshopID": 0,
+        "Name": "Bonq Cup 2 - Normal Magnet Track",
+        "Collaborators": null,
+        "OverrideAuthorName": null,
+        "Author": "[MMM]Victor",
+        "played": false
+      },
+      "playerResults": [
+        {
+          "steamID": 76561199380118922,
+          "username": "[MMM]Victor",
+          "time": 17.48747,
+          "gainedPoints": 92,
+          "pointsTotal": 92,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199733601754,
+          "username": "[MMM]LKat",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198157436732,
+          "username": "[CSC] variableferret",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 287,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198030518760,
+          "username": "ActuallyRuben",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 267,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198047403251,
+          "username": "St Nicholas",
+          "time": 19.5984745,
+          "gainedPoints": 55,
+          "pointsTotal": 409,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199129302746,
+          "username": "brrryy",
+          "time": 17.2621975,
+          "gainedPoints": 100,
+          "pointsTotal": 327,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199186342067,
+          "username": "[CSC] PlusMicron",
+          "time": 19.1622677,
+          "gainedPoints": 68,
+          "pointsTotal": 590,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198364662649,
+          "username": "[T7]Heart",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 524,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198305054806,
+          "username": "wokonbike",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 315,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198159073318,
+          "username": "[CTR]GuAlexItar",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 447,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198846673916,
+          "username": "Matic_D",
+          "time": 17.7676754,
+          "gainedPoints": 79,
+          "pointsTotal": 292,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199053404858,
+          "username": "Roader",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 119,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199218214543,
+          "username": "[ZET] Wheelie",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 379,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198111366624,
+          "username": "[SLOW]Zeus",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 232,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198758353504,
+          "username": "M4DSCOTSM4N",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198040861578,
+          "username": "wunderBarr",
+          "time": 19.237915,
+          "gainedPoints": 63,
+          "pointsTotal": 411,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198126038296,
+          "username": "Noxitu",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 243,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198428660617,
+          "username": "BB_Benji",
+          "time": 17.75897,
+          "gainedPoints": 85,
+          "pointsTotal": 384,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357858848,
+          "username": "MALIYO",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 377,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199101994275,
+          "username": "VroomVroomer",
+          "time": 19.2863579,
+          "gainedPoints": 59,
+          "pointsTotal": 260,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198974231691,
+          "username": "[AC9K]agix",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 491,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198050792757,
+          "username": "justMaki",
+          "time": 15.7404385,
+          "gainedPoints": 125,
+          "pointsTotal": 937,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199590715014,
+          "username": "[ZET]Stick",
+          "time": 15.3105907,
+          "gainedPoints": 150,
+          "pointsTotal": 680,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198896246339,
+          "username": "RoundNzt",
+          "time": 17.24998,
+          "gainedPoints": 110,
+          "pointsTotal": 558,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198001387193,
+          "username": "Warsnac",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 158,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198299114586,
+          "username": "gilgool",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 194,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198136572067,
+          "username": "Tudge Boat",
+          "time": 18.54259,
+          "gainedPoints": 73,
+          "pointsTotal": 410,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198109773525,
+          "username": "[BORK] Valco",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 185,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198180736527,
+          "username": "Alastair Hatherly",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198125000151,
+          "username": "Irisdice",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 65,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        }
+      ]
+    },
+    {
+      "roundNumber": 8,
+      "level": {
+        "UID": "tlQ0CqgUdECDTGj_[MMM]Victor",
+        "WorkshopID": 0,
+        "Name": "Bonq Cup 2 - icRS",
+        "Collaborators": null,
+        "OverrideAuthorName": null,
+        "Author": "[MMM]Victor",
+        "played": false
+      },
+      "playerResults": [
+        {
+          "steamID": 76561199380118922,
+          "username": "[MMM]Victor",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199733601754,
+          "username": "[MMM]LKat",
+          "time": 23.9522514,
+          "gainedPoints": 125,
+          "pointsTotal": 125,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198157436732,
+          "username": "[CSC] variableferret",
+          "time": 24.583231,
+          "gainedPoints": 92,
+          "pointsTotal": 379,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198030518760,
+          "username": "ActuallyRuben",
+          "time": 27.7771587,
+          "gainedPoints": 37,
+          "pointsTotal": 304,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198047403251,
+          "username": "St Nicholas",
+          "time": 24.2156334,
+          "gainedPoints": 100,
+          "pointsTotal": 509,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199129302746,
+          "username": "brrryy",
+          "time": 24.7111816,
+          "gainedPoints": 79,
+          "pointsTotal": 406,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199186342067,
+          "username": "[CSC] PlusMicron",
+          "time": 24.7768288,
+          "gainedPoints": 63,
+          "pointsTotal": 653,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198364662649,
+          "username": "[T7]Heart",
+          "time": 24.740921,
+          "gainedPoints": 73,
+          "pointsTotal": 597,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198305054806,
+          "username": "wokonbike",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 335,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198159073318,
+          "username": "[CTR]GuAlexItar",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 467,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198846673916,
+          "username": "Matic_D",
+          "time": 25.04831,
+          "gainedPoints": 59,
+          "pointsTotal": 351,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199053404858,
+          "username": "Roader",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 119,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199218214543,
+          "username": "[ZET] Wheelie",
+          "time": 26.7248631,
+          "gainedPoints": 39,
+          "pointsTotal": 418,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198111366624,
+          "username": "[SLOW]Zeus",
+          "time": 24.7565517,
+          "gainedPoints": 68,
+          "pointsTotal": 300,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198758353504,
+          "username": "M4DSCOTSM4N",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198040861578,
+          "username": "wunderBarr",
+          "time": 26.0088711,
+          "gainedPoints": 45,
+          "pointsTotal": 456,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198126038296,
+          "username": "Noxitu",
+          "time": 24.6364765,
+          "gainedPoints": 85,
+          "pointsTotal": 328,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198428660617,
+          "username": "BB_Benji",
+          "time": 26.4327564,
+          "gainedPoints": 42,
+          "pointsTotal": 426,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357858848,
+          "username": "MALIYO",
+          "time": 25.4225426,
+          "gainedPoints": 55,
+          "pointsTotal": 432,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199101994275,
+          "username": "VroomVroomer",
+          "time": 25.659544,
+          "gainedPoints": 48,
+          "pointsTotal": 308,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198974231691,
+          "username": "[AC9K]agix",
+          "time": 24.2152634,
+          "gainedPoints": 110,
+          "pointsTotal": 601,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198050792757,
+          "username": "justMaki",
+          "time": 23.1485023,
+          "gainedPoints": 150,
+          "pointsTotal": 1087,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199590715014,
+          "username": "[ZET]Stick",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 700,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198896246339,
+          "username": "RoundNzt",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 578,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198001387193,
+          "username": "Warsnac",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 158,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198299114586,
+          "username": "gilgool",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 214,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198136572067,
+          "username": "Tudge Boat",
+          "time": 25.55303,
+          "gainedPoints": 51,
+          "pointsTotal": 461,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198109773525,
+          "username": "[BORK] Valco",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 185,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198180736527,
+          "username": "Alastair Hatherly",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198125000151,
+          "username": "Irisdice",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 85,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        }
+      ]
+    },
+    {
+      "roundNumber": 9,
+      "level": {
+        "UID": "7zBqVboOxESf7oj_[MMM]Victor",
+        "WorkshopID": 0,
+        "Name": "Bonq Cup 2 - Glider Map",
+        "Collaborators": null,
+        "OverrideAuthorName": null,
+        "Author": "[MMM]Victor",
+        "played": false
+      },
+      "playerResults": [
+        {
+          "steamID": 76561199380118922,
+          "username": "[MMM]Victor",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199733601754,
+          "username": "[MMM]LKat",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198157436732,
+          "username": "[CSC] variableferret",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 399,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198030518760,
+          "username": "ActuallyRuben",
+          "time": 21.72648,
+          "gainedPoints": 110,
+          "pointsTotal": 414,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198047403251,
+          "username": "St Nicholas",
+          "time": 22.4851742,
+          "gainedPoints": 92,
+          "pointsTotal": 601,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199129302746,
+          "username": "brrryy",
+          "time": 23.3842449,
+          "gainedPoints": 73,
+          "pointsTotal": 479,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199186342067,
+          "username": "[CSC] PlusMicron",
+          "time": 20.1466045,
+          "gainedPoints": 150,
+          "pointsTotal": 803,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198364662649,
+          "username": "[T7]Heart",
+          "time": 25.1650524,
+          "gainedPoints": 51,
+          "pointsTotal": 648,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198305054806,
+          "username": "wokonbike",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 355,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198159073318,
+          "username": "[CTR]GuAlexItar",
+          "time": 23.9696064,
+          "gainedPoints": 63,
+          "pointsTotal": 530,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198846673916,
+          "username": "Matic_D",
+          "time": 25.0808449,
+          "gainedPoints": 55,
+          "pointsTotal": 406,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199053404858,
+          "username": "Roader",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 119,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199218214543,
+          "username": "[ZET] Wheelie",
+          "time": 23.43142,
+          "gainedPoints": 68,
+          "pointsTotal": 486,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198111366624,
+          "username": "[SLOW]Zeus",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 320,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198758353504,
+          "username": "M4DSCOTSM4N",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198040861578,
+          "username": "wunderBarr",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 476,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198126038296,
+          "username": "Noxitu",
+          "time": 23.072794,
+          "gainedPoints": 85,
+          "pointsTotal": 413,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198428660617,
+          "username": "BB_Benji",
+          "time": 22.0529785,
+          "gainedPoints": 100,
+          "pointsTotal": 526,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357858848,
+          "username": "MALIYO",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 452,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199101994275,
+          "username": "VroomVroomer",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 328,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198974231691,
+          "username": "[AC9K]agix",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 621,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198050792757,
+          "username": "justMaki",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 1020,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199590715014,
+          "username": "[ZET]Stick",
+          "time": 21.5363712,
+          "gainedPoints": 125,
+          "pointsTotal": 825,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198896246339,
+          "username": "RoundNzt",
+          "time": 24.0260468,
+          "gainedPoints": 59,
+          "pointsTotal": 637,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198001387193,
+          "username": "Warsnac",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 158,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198299114586,
+          "username": "gilgool",
+          "time": 23.36896,
+          "gainedPoints": 79,
+          "pointsTotal": 293,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198136572067,
+          "username": "Tudge Boat",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 481,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198109773525,
+          "username": "[BORK] Valco",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 185,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198180736527,
+          "username": "Alastair Hatherly",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198125000151,
+          "username": "Irisdice",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 105,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        }
+      ]
+    },
+    {
+      "roundNumber": 10,
+      "level": {
+        "UID": "_2TE4Jcri0CJ7KL_[MMM]Victor",
+        "WorkshopID": 0,
+        "Name": "Bonq Cup 2 - Soap Turnarounds",
+        "Collaborators": null,
+        "OverrideAuthorName": null,
+        "Author": "[GGG]LKat",
+        "played": false
+      },
+      "playerResults": [
+        {
+          "steamID": 76561199380118922,
+          "username": "[MMM]Victor",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199733601754,
+          "username": "[MMM]LKat",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198157436732,
+          "username": "[CSC] variableferret",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 419,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198030518760,
+          "username": "ActuallyRuben",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 434,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198047403251,
+          "username": "St Nicholas",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 621,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199129302746,
+          "username": "brrryy",
+          "time": 18.9818726,
+          "gainedPoints": 63,
+          "pointsTotal": 542,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199186342067,
+          "username": "[CSC] PlusMicron",
+          "time": 18.8161945,
+          "gainedPoints": 79,
+          "pointsTotal": 882,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198364662649,
+          "username": "[T7]Heart",
+          "time": 18.5250874,
+          "gainedPoints": 110,
+          "pointsTotal": 758,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198305054806,
+          "username": "wokonbike",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 375,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198159073318,
+          "username": "[CTR]GuAlexItar",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 550,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198846673916,
+          "username": "Matic_D",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 426,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199053404858,
+          "username": "Roader",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 119,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199218214543,
+          "username": "[ZET] Wheelie",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 506,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198111366624,
+          "username": "[SLOW]Zeus",
+          "time": 19.8294353,
+          "gainedPoints": 48,
+          "pointsTotal": 368,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198758353504,
+          "username": "M4DSCOTSM4N",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198040861578,
+          "username": "wunderBarr",
+          "time": 18.5283356,
+          "gainedPoints": 100,
+          "pointsTotal": 576,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198126038296,
+          "username": "Noxitu",
+          "time": 19.1346188,
+          "gainedPoints": 55,
+          "pointsTotal": 468,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198428660617,
+          "username": "BB_Benji",
+          "time": 19.0668488,
+          "gainedPoints": 59,
+          "pointsTotal": 585,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357858848,
+          "username": "MALIYO",
+          "time": 18.9783726,
+          "gainedPoints": 68,
+          "pointsTotal": 520,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199101994275,
+          "username": "VroomVroomer",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 348,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198974231691,
+          "username": "[AC9K]agix",
+          "time": 18.3143616,
+          "gainedPoints": 125,
+          "pointsTotal": 746,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198050792757,
+          "username": "justMaki",
+          "time": 17.5622845,
+          "gainedPoints": 150,
+          "pointsTotal": 1150,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": 0
+        },
+        {
+          "steamID": 76561199590715014,
+          "username": "[ZET]Stick",
+          "time": 18.815836,
+          "gainedPoints": 85,
+          "pointsTotal": 910,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198896246339,
+          "username": "RoundNzt",
+          "time": 18.668663,
+          "gainedPoints": 92,
+          "pointsTotal": 729,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198001387193,
+          "username": "Warsnac",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 158,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198299114586,
+          "username": "gilgool",
+          "time": 18.9723225,
+          "gainedPoints": 73,
+          "pointsTotal": 366,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198136572067,
+          "username": "Tudge Boat",
+          "time": 19.2538681,
+          "gainedPoints": 51,
+          "pointsTotal": 532,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198109773525,
+          "username": "[BORK] Valco",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 185,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198180736527,
+          "username": "Alastair Hatherly",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198125000151,
+          "username": "Irisdice",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 125,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357638671,
+          "username": "Murrl",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        }
+      ]
+    },
+    {
+      "roundNumber": 11,
+      "level": {
+        "UID": "jE-7f4CjyUusM84_[MMM]Victor",
+        "WorkshopID": 0,
+        "Name": "Bonq Cup 2 - Primitive stuff idk",
+        "Collaborators": null,
+        "OverrideAuthorName": null,
+        "Author": "[MMM]Milk Man",
+        "played": false
+      },
+      "playerResults": [
+        {
+          "steamID": 76561199380118922,
+          "username": "[MMM]Victor",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199733601754,
+          "username": "[MMM]LKat",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198157436732,
+          "username": "[CSC] variableferret",
+          "time": 17.5831261,
+          "gainedPoints": 73,
+          "pointsTotal": 492,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198030518760,
+          "username": "ActuallyRuben",
+          "time": 21.1573467,
+          "gainedPoints": 33,
+          "pointsTotal": 467,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198047403251,
+          "username": "St Nicholas",
+          "time": 17.7596226,
+          "gainedPoints": 68,
+          "pointsTotal": 689,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199129302746,
+          "username": "brrryy",
+          "time": 17.47788,
+          "gainedPoints": 92,
+          "pointsTotal": 634,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199186342067,
+          "username": "[CSC] PlusMicron",
+          "time": 17.2712326,
+          "gainedPoints": 125,
+          "pointsTotal": 1007,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198364662649,
+          "username": "[T7]Heart",
+          "time": 17.453558,
+          "gainedPoints": 100,
+          "pointsTotal": 858,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198305054806,
+          "username": "wokonbike",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 375,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198159073318,
+          "username": "[CTR]GuAlexItar",
+          "time": 19.240551,
+          "gainedPoints": 45,
+          "pointsTotal": 595,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198846673916,
+          "username": "Matic_D",
+          "time": 20.933054,
+          "gainedPoints": 35,
+          "pointsTotal": 461,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199053404858,
+          "username": "Roader",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 119,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199218214543,
+          "username": "[ZET] Wheelie",
+          "time": 17.847229,
+          "gainedPoints": 63,
+          "pointsTotal": 569,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198111366624,
+          "username": "[SLOW]Zeus",
+          "time": 20.491415,
+          "gainedPoints": 37,
+          "pointsTotal": 405,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198758353504,
+          "username": "M4DSCOTSM4N",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198040861578,
+          "username": "wunderBarr",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 596,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198126038296,
+          "username": "Noxitu",
+          "time": 21.9892731,
+          "gainedPoints": 31,
+          "pointsTotal": 499,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198428660617,
+          "username": "BB_Benji",
+          "time": 17.5703163,
+          "gainedPoints": 79,
+          "pointsTotal": 664,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357858848,
+          "username": "MALIYO",
+          "time": 17.2567673,
+          "gainedPoints": 150,
+          "pointsTotal": 670,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199101994275,
+          "username": "VroomVroomer",
+          "time": 19.2493019,
+          "gainedPoints": 42,
+          "pointsTotal": 390,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198974231691,
+          "username": "[AC9K]agix",
+          "time": 18.5635662,
+          "gainedPoints": 48,
+          "pointsTotal": 794,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198050792757,
+          "username": "justMaki",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 1021,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": 0
+        },
+        {
+          "steamID": 76561199590715014,
+          "username": "[ZET]Stick",
+          "time": 17.4983234,
+          "gainedPoints": 85,
+          "pointsTotal": 995,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198896246339,
+          "username": "RoundNzt",
+          "time": 17.293129,
+          "gainedPoints": 110,
+          "pointsTotal": 839,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198001387193,
+          "username": "Warsnac",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 158,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198299114586,
+          "username": "gilgool",
+          "time": 19.4247456,
+          "gainedPoints": 39,
+          "pointsTotal": 405,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198136572067,
+          "username": "Tudge Boat",
+          "time": 18.3182468,
+          "gainedPoints": 55,
+          "pointsTotal": 587,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198109773525,
+          "username": "[BORK] Valco",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 185,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198180736527,
+          "username": "Alastair Hatherly",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198125000151,
+          "username": "Irisdice",
+          "time": 18.1200447,
+          "gainedPoints": 59,
+          "pointsTotal": 184,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357638671,
+          "username": "Murrl",
+          "time": 18.3456268,
+          "gainedPoints": 51,
+          "pointsTotal": 71,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        }
+      ]
+    },
+    {
+      "roundNumber": 12,
+      "level": {
+        "UID": "YQPBu402OUiSJAj_[MMM]Victor",
+        "WorkshopID": 0,
+        "Name": "Bonq Cup 2 - Normal Magnet Track",
+        "Collaborators": null,
+        "OverrideAuthorName": null,
+        "Author": "[MMM]Victor",
+        "played": false
+      },
+      "playerResults": [
+        {
+          "steamID": 76561199380118922,
+          "username": "[MMM]Victor",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199733601754,
+          "username": "[MMM]LKat",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198157436732,
+          "username": "[CSC] variableferret",
+          "time": 16.2367535,
+          "gainedPoints": 85,
+          "pointsTotal": 577,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198030518760,
+          "username": "ActuallyRuben",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 487,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198047403251,
+          "username": "St Nicholas",
+          "time": 19.8856869,
+          "gainedPoints": 68,
+          "pointsTotal": 757,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199129302746,
+          "username": "brrryy",
+          "time": 19.80114,
+          "gainedPoints": 73,
+          "pointsTotal": 707,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199186342067,
+          "username": "[CSC] PlusMicron",
+          "time": 16.0747013,
+          "gainedPoints": 110,
+          "pointsTotal": 1110,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198364662649,
+          "username": "[T7]Heart",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 878,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198305054806,
+          "username": "wokonbike",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 375,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198159073318,
+          "username": "[CTR]GuAlexItar",
+          "time": 17.4515266,
+          "gainedPoints": 79,
+          "pointsTotal": 674,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198846673916,
+          "username": "Matic_D",
+          "time": 16.1385,
+          "gainedPoints": 100,
+          "pointsTotal": 561,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199053404858,
+          "username": "Roader",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 119,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199218214543,
+          "username": "[ZET] Wheelie",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 589,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198111366624,
+          "username": "[SLOW]Zeus",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 425,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198758353504,
+          "username": "M4DSCOTSM4N",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198040861578,
+          "username": "wunderBarr",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 616,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198126038296,
+          "username": "Noxitu",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 519,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198428660617,
+          "username": "BB_Benji",
+          "time": 15.6017456,
+          "gainedPoints": 150,
+          "pointsTotal": 814,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357858848,
+          "username": "MALIYO",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 690,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199101994275,
+          "username": "VroomVroomer",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 410,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198974231691,
+          "username": "[AC9K]agix",
+          "time": 20.2238388,
+          "gainedPoints": 63,
+          "pointsTotal": 857,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198050792757,
+          "username": "justMaki",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 1021,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": 0
+        },
+        {
+          "steamID": 76561199590715014,
+          "username": "[ZET]Stick",
+          "time": 15.952487,
+          "gainedPoints": 125,
+          "pointsTotal": 1120,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198896246339,
+          "username": "RoundNzt",
+          "time": 16.2144318,
+          "gainedPoints": 92,
+          "pointsTotal": 931,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198001387193,
+          "username": "Warsnac",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 158,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198299114586,
+          "username": "gilgool",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 425,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198136572067,
+          "username": "Tudge Boat",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 607,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198109773525,
+          "username": "[BORK] Valco",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 185,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198180736527,
+          "username": "Alastair Hatherly",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198125000151,
+          "username": "Irisdice",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 204,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357638671,
+          "username": "Murrl",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 91,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199731808063,
+          "username": "[RABI]Yksdjcj",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        }
+      ]
+    },
+    {
+      "roundNumber": 13,
+      "level": {
+        "UID": "tlQ0CqgUdECDTGj_[MMM]Victor",
+        "WorkshopID": 0,
+        "Name": "Bonq Cup 2 - icRS",
+        "Collaborators": null,
+        "OverrideAuthorName": null,
+        "Author": "[MMM]Victor",
+        "played": false
+      },
+      "playerResults": [
+        {
+          "steamID": 76561199380118922,
+          "username": "[MMM]Victor",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199733601754,
+          "username": "[MMM]LKat",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198157436732,
+          "username": "[CSC] variableferret",
+          "time": 23.8693771,
+          "gainedPoints": 110,
+          "pointsTotal": 687,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198030518760,
+          "username": "ActuallyRuben",
+          "time": 27.5775948,
+          "gainedPoints": 39,
+          "pointsTotal": 526,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198047403251,
+          "username": "St Nicholas",
+          "time": 24.5915871,
+          "gainedPoints": 68,
+          "pointsTotal": 825,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199129302746,
+          "username": "brrryy",
+          "time": 24.5135632,
+          "gainedPoints": 73,
+          "pointsTotal": 780,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199186342067,
+          "username": "[CSC] PlusMicron",
+          "time": 24.7099419,
+          "gainedPoints": 63,
+          "pointsTotal": 1063,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198364662649,
+          "username": "[T7]Heart",
+          "time": 24.9373474,
+          "gainedPoints": 59,
+          "pointsTotal": 937,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198305054806,
+          "username": "wokonbike",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 375,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198159073318,
+          "username": "[CTR]GuAlexItar",
+          "time": 25.232214,
+          "gainedPoints": 51,
+          "pointsTotal": 725,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198846673916,
+          "username": "Matic_D",
+          "time": 26.07542,
+          "gainedPoints": 48,
+          "pointsTotal": 609,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199053404858,
+          "username": "Roader",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 119,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199218214543,
+          "username": "[ZET] Wheelie",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 609,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198111366624,
+          "username": "[SLOW]Zeus",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 445,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198758353504,
+          "username": "M4DSCOTSM4N",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198040861578,
+          "username": "wunderBarr",
+          "time": 24.21873,
+          "gainedPoints": 92,
+          "pointsTotal": 708,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198126038296,
+          "username": "Noxitu",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 539,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198428660617,
+          "username": "BB_Benji",
+          "time": 24.4229317,
+          "gainedPoints": 85,
+          "pointsTotal": 899,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357858848,
+          "username": "MALIYO",
+          "time": 24.0608425,
+          "gainedPoints": 100,
+          "pointsTotal": 790,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199101994275,
+          "username": "VroomVroomer",
+          "time": 26.5357056,
+          "gainedPoints": 42,
+          "pointsTotal": 452,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198974231691,
+          "username": "[AC9K]agix",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 877,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198050792757,
+          "username": "justMaki",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 1021,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": 0
+        },
+        {
+          "steamID": 76561199590715014,
+          "username": "[ZET]Stick",
+          "time": 23.778347,
+          "gainedPoints": 125,
+          "pointsTotal": 1125,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198896246339,
+          "username": "RoundNzt",
+          "time": 23.1821556,
+          "gainedPoints": 150,
+          "pointsTotal": 1081,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198001387193,
+          "username": "Warsnac",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 158,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198299114586,
+          "username": "gilgool",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 445,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198136572067,
+          "username": "Tudge Boat",
+          "time": 25.0958366,
+          "gainedPoints": 55,
+          "pointsTotal": 662,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198109773525,
+          "username": "[BORK] Valco",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 185,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198180736527,
+          "username": "Alastair Hatherly",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198125000151,
+          "username": "Irisdice",
+          "time": 24.4934921,
+          "gainedPoints": 79,
+          "pointsTotal": 283,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357638671,
+          "username": "Murrl",
+          "time": 26.46074,
+          "gainedPoints": 45,
+          "pointsTotal": 136,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199731808063,
+          "username": "[RABI]Yksdjcj",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 40,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        }
+      ]
+    },
+    {
+      "roundNumber": 14,
+      "level": {
+        "UID": "7zBqVboOxESf7oj_[MMM]Victor",
+        "WorkshopID": 0,
+        "Name": "Bonq Cup 2 - Glider Map",
+        "Collaborators": null,
+        "OverrideAuthorName": null,
+        "Author": "[MMM]Victor",
+        "played": false
+      },
+      "playerResults": [
+        {
+          "steamID": 76561199380118922,
+          "username": "[MMM]Victor",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199733601754,
+          "username": "[MMM]LKat",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198157436732,
+          "username": "[CSC] variableferret",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 707,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198030518760,
+          "username": "ActuallyRuben",
+          "time": 23.8585224,
+          "gainedPoints": 63,
+          "pointsTotal": 589,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198047403251,
+          "username": "St Nicholas",
+          "time": 23.3233166,
+          "gainedPoints": 73,
+          "pointsTotal": 898,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199129302746,
+          "username": "brrryy",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 800,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199186342067,
+          "username": "[CSC] PlusMicron",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 1020,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198364662649,
+          "username": "[T7]Heart",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 957,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198305054806,
+          "username": "wokonbike",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 375,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198159073318,
+          "username": "[CTR]GuAlexItar",
+          "time": 22.141573,
+          "gainedPoints": 100,
+          "pointsTotal": 825,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198846673916,
+          "username": "Matic_D",
+          "time": 24.9556122,
+          "gainedPoints": 55,
+          "pointsTotal": 664,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199053404858,
+          "username": "Roader",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 119,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199218214543,
+          "username": "[ZET] Wheelie",
+          "time": 22.735117,
+          "gainedPoints": 85,
+          "pointsTotal": 694,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198111366624,
+          "username": "[SLOW]Zeus",
+          "time": 23.02955,
+          "gainedPoints": 79,
+          "pointsTotal": 524,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198758353504,
+          "username": "M4DSCOTSM4N",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198040861578,
+          "username": "wunderBarr",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 728,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198126038296,
+          "username": "Noxitu",
+          "time": 22.511055,
+          "gainedPoints": 92,
+          "pointsTotal": 631,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198428660617,
+          "username": "BB_Benji",
+          "time": 21.0128727,
+          "gainedPoints": 125,
+          "pointsTotal": 1024,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357858848,
+          "username": "MALIYO",
+          "time": 23.8115311,
+          "gainedPoints": 68,
+          "pointsTotal": 858,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199101994275,
+          "username": "VroomVroomer",
+          "time": 21.86626,
+          "gainedPoints": 110,
+          "pointsTotal": 562,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198974231691,
+          "username": "[AC9K]agix",
+          "time": 24.5059853,
+          "gainedPoints": 59,
+          "pointsTotal": 936,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198050792757,
+          "username": "justMaki",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 1021,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": 0
+        },
+        {
+          "steamID": 76561199590715014,
+          "username": "[ZET]Stick",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 1020,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198896246339,
+          "username": "RoundNzt",
+          "time": 20.2670841,
+          "gainedPoints": 150,
+          "pointsTotal": 1150,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": 1
+        },
+        {
+          "steamID": 76561198001387193,
+          "username": "Warsnac",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 158,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198299114586,
+          "username": "gilgool",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 445,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198136572067,
+          "username": "Tudge Boat",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 682,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198109773525,
+          "username": "[BORK] Valco",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 185,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198180736527,
+          "username": "Alastair Hatherly",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198125000151,
+          "username": "Irisdice",
+          "time": 25.92161,
+          "gainedPoints": 51,
+          "pointsTotal": 334,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357638671,
+          "username": "Murrl",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 156,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199731808063,
+          "username": "[RABI]Yksdjcj",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 60,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        }
+      ]
+    },
+    {
+      "roundNumber": 15,
+      "level": {
+        "UID": "_2TE4Jcri0CJ7KL_[MMM]Victor",
+        "WorkshopID": 0,
+        "Name": "Bonq Cup 2 - Soap Turnarounds",
+        "Collaborators": null,
+        "OverrideAuthorName": null,
+        "Author": "[GGG]LKat",
+        "played": false
+      },
+      "playerResults": [
+        {
+          "steamID": 76561199380118922,
+          "username": "[MMM]Victor",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199733601754,
+          "username": "[MMM]LKat",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198157436732,
+          "username": "[CSC] variableferret",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 727,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198030518760,
+          "username": "ActuallyRuben",
+          "time": 21.60973,
+          "gainedPoints": 51,
+          "pointsTotal": 640,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198047403251,
+          "username": "St Nicholas",
+          "time": 19.2096348,
+          "gainedPoints": 63,
+          "pointsTotal": 961,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199129302746,
+          "username": "brrryy",
+          "time": 18.7281513,
+          "gainedPoints": 100,
+          "pointsTotal": 900,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199186342067,
+          "username": "[CSC] PlusMicron",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 1020,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198364662649,
+          "username": "[T7]Heart",
+          "time": 18.2634544,
+          "gainedPoints": 125,
+          "pointsTotal": 1082,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198305054806,
+          "username": "wokonbike",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 375,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198159073318,
+          "username": "[CTR]GuAlexItar",
+          "time": 20.81664,
+          "gainedPoints": 55,
+          "pointsTotal": 880,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198846673916,
+          "username": "Matic_D",
+          "time": 19.2512436,
+          "gainedPoints": 59,
+          "pointsTotal": 723,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199053404858,
+          "username": "Roader",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 119,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199218214543,
+          "username": "[ZET] Wheelie",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 714,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198111366624,
+          "username": "[SLOW]Zeus",
+          "time": 18.7675114,
+          "gainedPoints": 79,
+          "pointsTotal": 603,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198758353504,
+          "username": "M4DSCOTSM4N",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198040861578,
+          "username": "wunderBarr",
+          "time": 18.4283619,
+          "gainedPoints": 110,
+          "pointsTotal": 838,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198126038296,
+          "username": "Noxitu",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 651,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198428660617,
+          "username": "BB_Benji",
+          "time": 18.1785145,
+          "gainedPoints": 150,
+          "pointsTotal": 1150,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": 2
+        },
+        {
+          "steamID": 76561198357858848,
+          "username": "MALIYO",
+          "time": 18.88801,
+          "gainedPoints": 73,
+          "pointsTotal": 931,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199101994275,
+          "username": "VroomVroomer",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 582,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198974231691,
+          "username": "[AC9K]agix",
+          "time": 18.73788,
+          "gainedPoints": 92,
+          "pointsTotal": 1028,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198050792757,
+          "username": "justMaki",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 1021,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": 0
+        },
+        {
+          "steamID": 76561199590715014,
+          "username": "[ZET]Stick",
+          "time": 18.7410526,
+          "gainedPoints": 85,
+          "pointsTotal": 1085,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198896246339,
+          "username": "RoundNzt",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 1021,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": 1
+        },
+        {
+          "steamID": 76561198001387193,
+          "username": "Warsnac",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 158,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198299114586,
+          "username": "gilgool",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 445,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198136572067,
+          "username": "Tudge Boat",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 702,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198109773525,
+          "username": "[BORK] Valco",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 185,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198180736527,
+          "username": "Alastair Hatherly",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198125000151,
+          "username": "Irisdice",
+          "time": 18.912035,
+          "gainedPoints": 68,
+          "pointsTotal": 402,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357638671,
+          "username": "Murrl",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 156,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199731808063,
+          "username": "[RABI]Yksdjcj",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 60,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199126724675,
+          "username": "ZOMAN",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199152009769,
+          "username": "[L]ItGnu3",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 0,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199282497311,
+          "username": "groovy",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        }
+      ]
+    },
+    {
+      "roundNumber": 16,
+      "level": {
+        "UID": "jE-7f4CjyUusM84_[MMM]Victor",
+        "WorkshopID": 0,
+        "Name": "Bonq Cup 2 - Primitive stuff idk",
+        "Collaborators": null,
+        "OverrideAuthorName": null,
+        "Author": "[MMM]Milk Man",
+        "played": false
+      },
+      "playerResults": [
+        {
+          "steamID": 76561199380118922,
+          "username": "[MMM]Victor",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199733601754,
+          "username": "[MMM]LKat",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198157436732,
+          "username": "[CSC] variableferret",
+          "time": 17.91225,
+          "gainedPoints": 68,
+          "pointsTotal": 795,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198030518760,
+          "username": "ActuallyRuben",
+          "time": 19.6717262,
+          "gainedPoints": 45,
+          "pointsTotal": 685,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198047403251,
+          "username": "St Nicholas",
+          "time": 17.4864273,
+          "gainedPoints": 92,
+          "pointsTotal": 1053,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199129302746,
+          "username": "brrryy",
+          "time": 17.5817986,
+          "gainedPoints": 85,
+          "pointsTotal": 985,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199186342067,
+          "username": "[CSC] PlusMicron",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 1020,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198364662649,
+          "username": "[T7]Heart",
+          "time": 18.1124744,
+          "gainedPoints": 59,
+          "pointsTotal": 1059,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198305054806,
+          "username": "wokonbike",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 375,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198159073318,
+          "username": "[CTR]GuAlexItar",
+          "time": 17.9705849,
+          "gainedPoints": 63,
+          "pointsTotal": 943,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198846673916,
+          "username": "Matic_D",
+          "time": 19.1090679,
+          "gainedPoints": 51,
+          "pointsTotal": 774,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199053404858,
+          "username": "Roader",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 119,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199218214543,
+          "username": "[ZET] Wheelie",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 734,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198111366624,
+          "username": "[SLOW]Zeus",
+          "time": 17.474371,
+          "gainedPoints": 100,
+          "pointsTotal": 703,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198758353504,
+          "username": "M4DSCOTSM4N",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198040861578,
+          "username": "wunderBarr",
+          "time": 17.80626,
+          "gainedPoints": 79,
+          "pointsTotal": 917,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198126038296,
+          "username": "Noxitu",
+          "time": 18.68022,
+          "gainedPoints": 55,
+          "pointsTotal": 706,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198428660617,
+          "username": "BB_Benji",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 1021,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": 2
+        },
+        {
+          "steamID": 76561198357858848,
+          "username": "MALIYO",
+          "time": 17.3678741,
+          "gainedPoints": 110,
+          "pointsTotal": 1041,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199101994275,
+          "username": "VroomVroomer",
+          "time": 22.5172863,
+          "gainedPoints": 42,
+          "pointsTotal": 624,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198974231691,
+          "username": "[AC9K]agix",
+          "time": 19.2272644,
+          "gainedPoints": 48,
+          "pointsTotal": 1048,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198050792757,
+          "username": "justMaki",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 1021,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": 0
+        },
+        {
+          "steamID": 76561199590715014,
+          "username": "[ZET]Stick",
+          "time": 17.1125469,
+          "gainedPoints": 150,
+          "pointsTotal": 1150,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": 3
+        },
+        {
+          "steamID": 76561198896246339,
+          "username": "RoundNzt",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 1021,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": 1
+        },
+        {
+          "steamID": 76561198001387193,
+          "username": "Warsnac",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 158,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198299114586,
+          "username": "gilgool",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 445,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198136572067,
+          "username": "Tudge Boat",
+          "time": 17.8261433,
+          "gainedPoints": 73,
+          "pointsTotal": 775,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198109773525,
+          "username": "[BORK] Valco",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 185,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198180736527,
+          "username": "Alastair Hatherly",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198125000151,
+          "username": "Irisdice",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 402,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357638671,
+          "username": "Murrl",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 156,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199731808063,
+          "username": "[RABI]Yksdjcj",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 60,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199126724675,
+          "username": "ZOMAN",
+          "time": 17.2072124,
+          "gainedPoints": 125,
+          "pointsTotal": 145,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199152009769,
+          "username": "[L]ItGnu3",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 0,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199282497311,
+          "username": "groovy",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 40,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        }
+      ]
+    },
+    {
+      "roundNumber": 17,
+      "level": {
+        "UID": "YQPBu402OUiSJAj_[MMM]Victor",
+        "WorkshopID": 0,
+        "Name": "Bonq Cup 2 - Normal Magnet Track",
+        "Collaborators": null,
+        "OverrideAuthorName": null,
+        "Author": "[MMM]Victor",
+        "played": false
+      },
+      "playerResults": [
+        {
+          "steamID": 76561199380118922,
+          "username": "[MMM]Victor",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199733601754,
+          "username": "[MMM]LKat",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": true,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198157436732,
+          "username": "[CSC] variableferret",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 815,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198030518760,
+          "username": "ActuallyRuben",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 705,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198047403251,
+          "username": "St Nicholas",
+          "time": 20.3131618,
+          "gainedPoints": 92,
+          "pointsTotal": 1092,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199129302746,
+          "username": "brrryy",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 1005,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199186342067,
+          "username": "[CSC] PlusMicron",
+          "time": 15.8733625,
+          "gainedPoints": 150,
+          "pointsTotal": 1150,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": 4
+        },
+        {
+          "steamID": 76561198364662649,
+          "username": "[T7]Heart",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 1020,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198305054806,
+          "username": "wokonbike",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 375,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198159073318,
+          "username": "[CTR]GuAlexItar",
+          "time": 21.1554661,
+          "gainedPoints": 85,
+          "pointsTotal": 1028,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198846673916,
+          "username": "Matic_D",
+          "time": 17.5247555,
+          "gainedPoints": 100,
+          "pointsTotal": 874,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199053404858,
+          "username": "Roader",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 119,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199218214543,
+          "username": "[ZET] Wheelie",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 754,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198111366624,
+          "username": "[SLOW]Zeus",
+          "time": 21.6071243,
+          "gainedPoints": 79,
+          "pointsTotal": 782,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198758353504,
+          "username": "M4DSCOTSM4N",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198040861578,
+          "username": "wunderBarr",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 937,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198126038296,
+          "username": "Noxitu",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 726,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198428660617,
+          "username": "BB_Benji",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 1021,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": 2
+        },
+        {
+          "steamID": 76561198357858848,
+          "username": "MALIYO",
+          "time": 15.9435883,
+          "gainedPoints": 125,
+          "pointsTotal": 1125,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199101994275,
+          "username": "VroomVroomer",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 644,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198974231691,
+          "username": "[AC9K]agix",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 1020,
+          "finalist": true,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198050792757,
+          "username": "justMaki",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 1021,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": 0
+        },
+        {
+          "steamID": 76561199590715014,
+          "username": "[ZET]Stick",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 1021,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": 3
+        },
+        {
+          "steamID": 76561198896246339,
+          "username": "RoundNzt",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 1021,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": 1
+        },
+        {
+          "steamID": 76561198001387193,
+          "username": "Warsnac",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 158,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198299114586,
+          "username": "gilgool",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 445,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198136572067,
+          "username": "Tudge Boat",
+          "time": 16.7505646,
+          "gainedPoints": 110,
+          "pointsTotal": 885,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198109773525,
+          "username": "[BORK] Valco",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 185,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198180736527,
+          "username": "Alastair Hatherly",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 75,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198125000151,
+          "username": "Irisdice",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 402,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198357638671,
+          "username": "Murrl",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 156,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199731808063,
+          "username": "[RABI]Yksdjcj",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 60,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199126724675,
+          "username": "ZOMAN",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 165,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199152009769,
+          "username": "[L]ItGnu3",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 0,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561199282497311,
+          "username": "groovy",
+          "time": "NaN",
+          "gainedPoints": 0,
+          "pointsTotal": 40,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        },
+        {
+          "steamID": 76561198212621772,
+          "username": "Slate",
+          "time": "NaN",
+          "gainedPoints": 20,
+          "pointsTotal": 20,
+          "finalist": false,
+          "nuisance": false,
+          "winnerPosition": -1
+        }
+      ]
+    }
+  ]
+}

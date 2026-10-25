@@ -1,9 +1,9 @@
 {
  "meta": {
-  "total_cups": 1,
-  "total_players": 28,
-  "last_cup": 1,
-  "generated": "2026-09-27T20:24:29Z"
+  "total_cups": 2,
+  "total_players": 42,
+  "last_cup": 2,
+  "generated": "2026-10-25T18:19:48Z"
  },
  "cups": [
   {
@@ -865,14 +865,758 @@
     ]
    ],
    "finish_source": "host"
+  },
+  {
+   "id": 2,
+   "date": "2026-10-25",
+   "troll": false,
+   "winners": [
+    "justMaki",
+    "RoundNzt",
+    "BB_Benji",
+    "Stick",
+    "PlusMicron"
+   ],
+   "finalists": [
+    "agix",
+    "Heart-TGV",
+    "MALIYO",
+    "St Nicholas"
+   ],
+   "others": [
+    "GuAlexItar",
+    "brrryy",
+    "wunderBarr",
+    "Tudge Boat",
+    "Matic_D",
+    "variableferret",
+    "Zeus",
+    "Wheelie",
+    "Noxitu",
+    "ActuallyRuben",
+    "VroomVroomer",
+    "gilgool",
+    "Irisdice",
+    "wokonbike",
+    "Valco"
+   ],
+   "nuisances": [
+    "Victor",
+    "LKat"
+   ],
+   "lobby_size": 24,
+   "sof": null,
+   "header": "Bonq Cup #2 - Maps by LKat, Milk Man, Victor",
+   "maps": [
+    "Bonq Cup 2 - Soap Turnarounds",
+    "Bonq Cup 2 - Primitive stuff idk",
+    "Bonq Cup 2 - Normal Magnet Track",
+    "Bonq Cup 2 - icRS",
+    "Bonq Cup 2 - Glider Map"
+   ],
+   "scoring_rounds": 18,
+   "winners_detail": [
+    {
+     "name": "justMaki",
+     "map": "Bonq Cup 2 - Soap Turnarounds",
+     "time": "17.562",
+     "won": 11,
+     "qualified": 9
+    },
+    {
+     "name": "RoundNzt",
+     "map": "Bonq Cup 2 - Glider Map",
+     "time": "20.267",
+     "won": 15,
+     "qualified": 14
+    },
+    {
+     "name": "BB_Benji",
+     "map": "Bonq Cup 2 - Soap Turnarounds",
+     "time": "18.179",
+     "won": 16,
+     "qualified": 15
+    },
+    {
+     "name": "Stick",
+     "map": "Bonq Cup 2 - Primitive stuff idk",
+     "time": "17.113",
+     "won": 17,
+     "qualified": 13
+    },
+    {
+     "name": "PlusMicron",
+     "map": "Bonq Cup 2 - Normal Magnet Track",
+     "time": "15.873",
+     "won": 18,
+     "qualified": 12
+    }
+   ],
+   "others_points": [
+    1028,
+    1005,
+    937,
+    885,
+    874,
+    815,
+    782,
+    754,
+    726,
+    705,
+    644,
+    445,
+    402,
+    375,
+    185
+   ],
+   "rounds": [
+    {
+     "n": 1,
+     "map": "Bonq Cup 2 - Soap Turnarounds",
+     "ts": null,
+     "roster": 25,
+     "finishers": 6,
+     "finish_pct": 24.0,
+     "top": [
+      {
+       "sid": "76561199380118922",
+       "name": "Victor",
+       "time": "18.217"
+      },
+      {
+       "sid": "76561198050792757",
+       "name": "justMaki",
+       "time": "18.547"
+      },
+      {
+       "sid": "76561199590715014",
+       "name": "Stick",
+       "time": "19.005"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 2,
+     "map": "Bonq Cup 2 - Primitive stuff idk",
+     "ts": null,
+     "roster": 28,
+     "finishers": 24,
+     "finish_pct": 85.7,
+     "top": [
+      {
+       "sid": "76561199380118922",
+       "name": "Victor",
+       "time": "17.679"
+      },
+      {
+       "sid": "76561198050792757",
+       "name": "justMaki",
+       "time": "17.802"
+      },
+      {
+       "sid": "76561198364662649",
+       "name": "Heart-TGV",
+       "time": "17.983"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 3,
+     "map": "Bonq Cup 2 - Normal Magnet Track",
+     "ts": null,
+     "roster": 29,
+     "finishers": 7,
+     "finish_pct": 24.1,
+     "top": [
+      {
+       "sid": "76561199590715014",
+       "name": "Stick",
+       "time": "16.188"
+      },
+      {
+       "sid": "76561199733601754",
+       "name": "LKat",
+       "time": "17.397"
+      },
+      {
+       "sid": "76561199380118922",
+       "name": "Victor",
+       "time": "17.594"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 4,
+     "map": "Bonq Cup 2 - icRS",
+     "ts": null,
+     "roster": 28,
+     "finishers": 20,
+     "finish_pct": 71.4,
+     "top": [
+      {
+       "sid": "76561198896246339",
+       "name": "RoundNzt",
+       "time": "23.309"
+      },
+      {
+       "sid": "76561199380118922",
+       "name": "Victor",
+       "time": "23.551"
+      },
+      {
+       "sid": "76561198050792757",
+       "name": "justMaki",
+       "time": "23.875"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 5,
+     "map": "Bonq Cup 2 - Glider Map",
+     "ts": null,
+     "roster": 26,
+     "finishers": 11,
+     "finish_pct": 42.3,
+     "top": [
+      {
+       "sid": "76561198050792757",
+       "name": "justMaki",
+       "time": "20.897"
+      },
+      {
+       "sid": "76561198136572067",
+       "name": "Tudge Boat",
+       "time": "21.044"
+      },
+      {
+       "sid": "76561198159073318",
+       "name": "GuAlexItar",
+       "time": "22.293"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 6,
+     "map": "Bonq Cup 2 - Soap Turnarounds",
+     "ts": null,
+     "roster": 25,
+     "finishers": 15,
+     "finish_pct": 60.0,
+     "top": [
+      {
+       "sid": "76561199380118922",
+       "name": "Victor",
+       "time": "18.258"
+      },
+      {
+       "sid": "76561198974231691",
+       "name": "agix",
+       "time": "18.404"
+      },
+      {
+       "sid": "76561199218214543",
+       "name": "Wheelie",
+       "time": "18.513"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 7,
+     "map": "Bonq Cup 2 - Primitive stuff idk",
+     "ts": null,
+     "roster": 26,
+     "finishers": 24,
+     "finish_pct": 92.3,
+     "top": [
+      {
+       "sid": "76561199186342067",
+       "name": "PlusMicron",
+       "time": "17.236"
+      },
+      {
+       "sid": "76561198050792757",
+       "name": "justMaki",
+       "time": "17.507"
+      },
+      {
+       "sid": "76561199380118922",
+       "name": "Victor",
+       "time": "17.733"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 8,
+     "map": "Bonq Cup 2 - Normal Magnet Track",
+     "ts": null,
+     "roster": 26,
+     "finishers": 12,
+     "finish_pct": 46.2,
+     "top": [
+      {
+       "sid": "76561199590715014",
+       "name": "Stick",
+       "time": "15.311"
+      },
+      {
+       "sid": "76561198050792757",
+       "name": "justMaki",
+       "time": "15.740"
+      },
+      {
+       "sid": "76561198896246339",
+       "name": "RoundNzt",
+       "time": "17.250"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 9,
+     "map": "Bonq Cup 2 - icRS",
+     "ts": null,
+     "roster": 25,
+     "finishers": 18,
+     "finish_pct": 72.0,
+     "top": [
+      {
+       "sid": "76561198050792757",
+       "name": "justMaki",
+       "time": "23.149"
+      },
+      {
+       "sid": "76561199733601754",
+       "name": "LKat",
+       "time": "23.952"
+      },
+      {
+       "sid": "76561198974231691",
+       "name": "agix",
+       "time": "24.215"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 10,
+     "map": "Bonq Cup 2 - Glider Map",
+     "ts": null,
+     "roster": 25,
+     "finishers": 13,
+     "finish_pct": 52.0,
+     "top": [
+      {
+       "sid": "76561199186342067",
+       "name": "PlusMicron",
+       "time": "20.147"
+      },
+      {
+       "sid": "76561199590715014",
+       "name": "Stick",
+       "time": "21.536"
+      },
+      {
+       "sid": "76561198030518760",
+       "name": "ActuallyRuben",
+       "time": "21.726"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 11,
+     "map": "Bonq Cup 2 - Soap Turnarounds",
+     "ts": null,
+     "roster": 26,
+     "finishers": 14,
+     "finish_pct": 53.8,
+     "top": [
+      {
+       "sid": "76561198050792757",
+       "name": "justMaki",
+       "time": "17.562"
+      },
+      {
+       "sid": "76561198974231691",
+       "name": "agix",
+       "time": "18.314"
+      },
+      {
+       "sid": "76561198364662649",
+       "name": "Heart-TGV",
+       "time": "18.525"
+      }
+     ],
+     "winner": "justMaki"
+    },
+    {
+     "n": 12,
+     "map": "Bonq Cup 2 - Primitive stuff idk",
+     "ts": null,
+     "roster": 25,
+     "finishers": 21,
+     "finish_pct": 84.0,
+     "top": [
+      {
+       "sid": "76561198357858848",
+       "name": "MALIYO",
+       "time": "17.257"
+      },
+      {
+       "sid": "76561199186342067",
+       "name": "PlusMicron",
+       "time": "17.271"
+      },
+      {
+       "sid": "76561198896246339",
+       "name": "RoundNzt",
+       "time": "17.293"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 13,
+     "map": "Bonq Cup 2 - Normal Magnet Track",
+     "ts": null,
+     "roster": 26,
+     "finishers": 10,
+     "finish_pct": 38.5,
+     "top": [
+      {
+       "sid": "76561198428660617",
+       "name": "BB_Benji",
+       "time": "15.602"
+      },
+      {
+       "sid": "76561199590715014",
+       "name": "Stick",
+       "time": "15.952"
+      },
+      {
+       "sid": "76561199186342067",
+       "name": "PlusMicron",
+       "time": "16.075"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 14,
+     "map": "Bonq Cup 2 - icRS",
+     "ts": null,
+     "roster": 26,
+     "finishers": 17,
+     "finish_pct": 65.4,
+     "top": [
+      {
+       "sid": "76561198896246339",
+       "name": "RoundNzt",
+       "time": "23.182"
+      },
+      {
+       "sid": "76561199590715014",
+       "name": "Stick",
+       "time": "23.778"
+      },
+      {
+       "sid": "76561198157436732",
+       "name": "variableferret",
+       "time": "23.869"
+      }
+     ],
+     "winner": null
+    },
+    {
+     "n": 15,
+     "map": "Bonq Cup 2 - Glider Map",
+     "ts": null,
+     "roster": 25,
+     "finishers": 13,
+     "finish_pct": 52.0,
+     "top": [
+      {
+       "sid": "76561198896246339",
+       "name": "RoundNzt",
+       "time": "20.267"
+      },
+      {
+       "sid": "76561198428660617",
+       "name": "BB_Benji",
+       "time": "21.013"
+      },
+      {
+       "sid": "76561199101994275",
+       "name": "VroomVroomer",
+       "time": "21.866"
+      }
+     ],
+     "winner": "RoundNzt"
+    },
+    {
+     "n": 16,
+     "map": "Bonq Cup 2 - Soap Turnarounds",
+     "ts": null,
+     "roster": 25,
+     "finishers": 13,
+     "finish_pct": 52.0,
+     "top": [
+      {
+       "sid": "76561198428660617",
+       "name": "BB_Benji",
+       "time": "18.179"
+      },
+      {
+       "sid": "76561198364662649",
+       "name": "Heart-TGV",
+       "time": "18.263"
+      },
+      {
+       "sid": "76561198040861578",
+       "name": "wunderBarr",
+       "time": "18.428"
+      }
+     ],
+     "winner": "BB_Benji"
+    },
+    {
+     "n": 17,
+     "map": "Bonq Cup 2 - Primitive stuff idk",
+     "ts": null,
+     "roster": 24,
+     "finishers": 16,
+     "finish_pct": 66.7,
+     "top": [
+      {
+       "sid": "76561199590715014",
+       "name": "Stick",
+       "time": "17.113"
+      },
+      {
+       "sid": "76561199126724675",
+       "name": "ZOMAN",
+       "time": "17.207"
+      },
+      {
+       "sid": "76561198357858848",
+       "name": "MALIYO",
+       "time": "17.368"
+      }
+     ],
+     "winner": "Stick"
+    },
+    {
+     "n": 18,
+     "map": "Bonq Cup 2 - Normal Magnet Track",
+     "ts": null,
+     "roster": 24,
+     "finishers": 7,
+     "finish_pct": 29.2,
+     "top": [
+      {
+       "sid": "76561199186342067",
+       "name": "PlusMicron",
+       "time": "15.873"
+      },
+      {
+       "sid": "76561198357858848",
+       "name": "MALIYO",
+       "time": "15.944"
+      },
+      {
+       "sid": "76561198136572067",
+       "name": "Tudge Boat",
+       "time": "16.751"
+      }
+     ],
+     "winner": "PlusMicron"
+    }
+   ],
+   "finish": {
+    "Matic_D": [
+     14,
+     18
+    ],
+    "St Nicholas": [
+     14,
+     18
+    ],
+    "Stick": [
+     14,
+     18
+    ],
+    "BB_Benji": [
+     13,
+     18
+    ],
+    "GuAlexItar": [
+     13,
+     18
+    ],
+    "PlusMicron": [
+     13,
+     18
+    ],
+    "agix": [
+     12,
+     18
+    ],
+    "Heart-TGV": [
+     12,
+     18
+    ],
+    "Tudge Boat": [
+     11,
+     17
+    ],
+    "ActuallyRuben": [
+     11,
+     18
+    ],
+    "brrryy": [
+     11,
+     18
+    ],
+    "MALIYO": [
+     11,
+     18
+    ],
+    "RoundNzt": [
+     11,
+     18
+    ],
+    "justMaki": [
+     10,
+     18
+    ],
+    "Zeus": [
+     10,
+     18
+    ],
+    "Noxitu": [
+     9,
+     18
+    ],
+    "VroomVroomer": [
+     9,
+     18
+    ],
+    "wunderBarr": [
+     9,
+     18
+    ],
+    "variableferret": [
+     8,
+     18
+    ],
+    "Victor": [
+     8,
+     18
+    ],
+    "Wheelie": [
+     8,
+     18
+    ],
+    "Irisdice": [
+     5,
+     10
+    ],
+    "wokonbike": [
+     5,
+     11
+    ],
+    "gilgool": [
+     5,
+     13
+    ],
+    "LKat": [
+     5,
+     18
+    ],
+    "Warsnac": [
+     2,
+     4
+    ],
+    "Murrl": [
+     2,
+     5
+    ],
+    "Valco": [
+     2,
+     7
+    ],
+    "Alastair Hatherly": [
+     1,
+     3
+    ],
+    "M4DSCOTSM4N": [
+     1,
+     3
+    ],
+    "ZOMAN": [
+     1,
+     3
+    ],
+    "Roader": [
+     1,
+     4
+    ],
+    "groovy": [
+     0,
+     2
+    ],
+    "Slate": [
+     0,
+     1
+    ],
+    "Yksdjcj": [
+     0,
+     3
+    ]
+   },
+   "map_finish": [
+    [
+     "Bonq Cup 2 - Normal Magnet Track",
+     36,
+     105
+    ],
+    [
+     "Bonq Cup 2 - Soap Turnarounds",
+     48,
+     101
+    ],
+    [
+     "Bonq Cup 2 - Glider Map",
+     37,
+     76
+    ],
+    [
+     "Bonq Cup 2 - icRS",
+     55,
+     79
+    ],
+    [
+     "Bonq Cup 2 - Primitive stuff idk",
+     85,
+     103
+    ]
+   ],
+   "finish_source": "host"
   }
  ],
  "players": [
   {
    "sid": "76561198050792757",
-   "apps": 1,
-   "wins": 1,
-   "w1": 1,
+   "apps": 2,
+   "wins": 2,
+   "w1": 2,
    "w2": 0,
    "w3": 0,
    "w4": 0,
@@ -883,12 +1627,83 @@
     {
      "k": 1,
      "result": "w1"
+    },
+    {
+     "k": 2,
+     "result": "w1"
     }
    ],
    "name": "justMaki",
-   "prev_history": [],
-   "finished": 12,
-   "present": 20
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "w1"
+    }
+   ],
+   "finished": 22,
+   "present": 38
+  },
+  {
+   "sid": "76561198896246339",
+   "apps": 2,
+   "wins": 2,
+   "w1": 0,
+   "w2": 1,
+   "w3": 0,
+   "w4": 0,
+   "w5": 1,
+   "finalist": 0,
+   "best": 2,
+   "history": [
+    {
+     "k": 1,
+     "result": "w5"
+    },
+    {
+     "k": 2,
+     "result": "w2"
+    }
+   ],
+   "name": "RoundNzt",
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "w5"
+    }
+   ],
+   "finished": 21,
+   "present": 38
+  },
+  {
+   "sid": "76561199186342067",
+   "apps": 2,
+   "wins": 1,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 1,
+   "finalist": 0,
+   "best": 5,
+   "history": [
+    {
+     "k": 1,
+     "result": "o"
+    },
+    {
+     "k": 2,
+     "result": "w5"
+    }
+   ],
+   "name": "PlusMicron",
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "o"
+    }
+   ],
+   "finished": 23,
+   "present": 38
   },
   {
    "sid": "76561199024808939",
@@ -908,7 +1723,12 @@
     }
    ],
    "name": "Kernkob",
-   "prev_history": [],
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "w2"
+    }
+   ],
    "finished": 11,
    "present": 20
   },
@@ -930,7 +1750,12 @@
     }
    ],
    "name": "Lexer",
-   "prev_history": [],
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "w3"
+    }
+   ],
    "finished": 9,
    "present": 20
   },
@@ -952,31 +1777,275 @@
     }
    ],
    "name": "microways",
-   "prev_history": [],
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "w4"
+    }
+   ],
    "finished": 12,
    "present": 20
   },
   {
-   "sid": "76561198896246339",
+   "sid": "76561198428660617",
+   "apps": 1,
+   "wins": 1,
+   "w1": 0,
+   "w2": 0,
+   "w3": 1,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "best": 3,
+   "history": [
+    {
+     "k": 2,
+     "result": "w3"
+    }
+   ],
+   "name": "BB_Benji",
+   "prev_history": [],
+   "finished": 13,
+   "present": 18
+  },
+  {
+   "sid": "76561199590715014",
    "apps": 1,
    "wins": 1,
    "w1": 0,
    "w2": 0,
    "w3": 0,
-   "w4": 0,
-   "w5": 1,
+   "w4": 1,
+   "w5": 0,
    "finalist": 0,
-   "best": 5,
+   "best": 4,
+   "history": [
+    {
+     "k": 2,
+     "result": "w4"
+    }
+   ],
+   "name": "Stick",
+   "prev_history": [],
+   "finished": 14,
+   "present": 18
+  },
+  {
+   "sid": "76561199129302746",
+   "apps": 2,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "best": null,
    "history": [
     {
      "k": 1,
-     "result": "w5"
+     "result": "o"
+    },
+    {
+     "k": 2,
+     "result": "o"
     }
    ],
-   "name": "RoundNzt",
-   "prev_history": [],
-   "finished": 10,
-   "present": 20
+   "name": "brrryy",
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "o"
+    }
+   ],
+   "finished": 20,
+   "present": 38
+  },
+  {
+   "sid": "76561198157436732",
+   "apps": 2,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "best": null,
+   "history": [
+    {
+     "k": 1,
+     "result": "o"
+    },
+    {
+     "k": 2,
+     "result": "o"
+    }
+   ],
+   "name": "variableferret",
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "o"
+    }
+   ],
+   "finished": 17,
+   "present": 38
+  },
+  {
+   "sid": "76561198364662649",
+   "apps": 2,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 1,
+   "best": 6,
+   "history": [
+    {
+     "k": 1,
+     "result": "o"
+    },
+    {
+     "k": 2,
+     "result": "f"
+    }
+   ],
+   "name": "Heart-TGV",
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "o"
+    }
+   ],
+   "finished": 19,
+   "present": 38
+  },
+  {
+   "sid": "76561198126038296",
+   "apps": 2,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "best": null,
+   "history": [
+    {
+     "k": 1,
+     "result": "o"
+    },
+    {
+     "k": 2,
+     "result": "o"
+    }
+   ],
+   "name": "Noxitu",
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "o"
+    }
+   ],
+   "finished": 15,
+   "present": 38
+  },
+  {
+   "sid": "76561199101994275",
+   "apps": 2,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "best": null,
+   "history": [
+    {
+     "k": 1,
+     "result": "o"
+    },
+    {
+     "k": 2,
+     "result": "o"
+    }
+   ],
+   "name": "VroomVroomer",
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "o"
+    }
+   ],
+   "finished": 14,
+   "present": 38
+  },
+  {
+   "sid": "76561198846673916",
+   "apps": 2,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "best": null,
+   "history": [
+    {
+     "k": 1,
+     "result": "o"
+    },
+    {
+     "k": 2,
+     "result": "o"
+    }
+   ],
+   "name": "Matic_D",
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "o"
+    }
+   ],
+   "finished": 18,
+   "present": 38
+  },
+  {
+   "sid": "76561198047403251",
+   "apps": 2,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 1,
+   "best": 6,
+   "history": [
+    {
+     "k": 1,
+     "result": "o"
+    },
+    {
+     "k": 2,
+     "result": "f"
+    }
+   ],
+   "name": "St Nicholas",
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "o"
+    }
+   ],
+   "finished": 15,
+   "present": 27
   },
   {
    "sid": "76561198001387193",
@@ -996,75 +2065,14 @@
     }
    ],
    "name": "Warsnac",
-   "prev_history": [],
-   "finished": 13,
-   "present": 20
-  },
-  {
-   "sid": "76561199186342067",
-   "apps": 1,
-   "wins": 0,
-   "w1": 0,
-   "w2": 0,
-   "w3": 0,
-   "w4": 0,
-   "w5": 0,
-   "finalist": 0,
-   "best": null,
-   "history": [
+   "prev_history": [
     {
      "k": 1,
-     "result": "o"
+     "result": "f"
     }
    ],
-   "name": "PlusMicron",
-   "prev_history": [],
-   "finished": 10,
-   "present": 20
-  },
-  {
-   "sid": "76561199129302746",
-   "apps": 1,
-   "wins": 0,
-   "w1": 0,
-   "w2": 0,
-   "w3": 0,
-   "w4": 0,
-   "w5": 0,
-   "finalist": 0,
-   "best": null,
-   "history": [
-    {
-     "k": 1,
-     "result": "o"
-    }
-   ],
-   "name": "brrryy",
-   "prev_history": [],
-   "finished": 9,
-   "present": 20
-  },
-  {
-   "sid": "76561198157436732",
-   "apps": 1,
-   "wins": 0,
-   "w1": 0,
-   "w2": 0,
-   "w3": 0,
-   "w4": 0,
-   "w5": 0,
-   "finalist": 0,
-   "best": null,
-   "history": [
-    {
-     "k": 1,
-     "result": "o"
-    }
-   ],
-   "name": "variableferret",
-   "prev_history": [],
-   "finished": 9,
-   "present": 20
+   "finished": 15,
+   "present": 24
   },
   {
    "sid": "76561199187327002",
@@ -1084,7 +2092,12 @@
     }
    ],
    "name": "Tommygaming",
-   "prev_history": [],
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "o"
+    }
+   ],
    "finished": 6,
    "present": 18
   },
@@ -1106,29 +2119,12 @@
     }
    ],
    "name": "Beans",
-   "prev_history": [],
-   "finished": 7,
-   "present": 20
-  },
-  {
-   "sid": "76561198364662649",
-   "apps": 1,
-   "wins": 0,
-   "w1": 0,
-   "w2": 0,
-   "w3": 0,
-   "w4": 0,
-   "w5": 0,
-   "finalist": 0,
-   "best": null,
-   "history": [
+   "prev_history": [
     {
      "k": 1,
      "result": "o"
     }
    ],
-   "name": "Heart-TGV",
-   "prev_history": [],
    "finished": 7,
    "present": 20
   },
@@ -1150,31 +2146,14 @@
     }
    ],
    "name": "Quickracer10",
-   "prev_history": [],
-   "finished": 7,
-   "present": 15
-  },
-  {
-   "sid": "76561198126038296",
-   "apps": 1,
-   "wins": 0,
-   "w1": 0,
-   "w2": 0,
-   "w3": 0,
-   "w4": 0,
-   "w5": 0,
-   "finalist": 0,
-   "best": null,
-   "history": [
+   "prev_history": [
     {
      "k": 1,
      "result": "o"
     }
    ],
-   "name": "Noxitu",
-   "prev_history": [],
-   "finished": 6,
-   "present": 20
+   "finished": 7,
+   "present": 15
   },
   {
    "sid": "76561198031919228",
@@ -1194,30 +2173,13 @@
     }
    ],
    "name": "Akane",
-   "prev_history": [],
-   "finished": 7,
-   "present": 20
-  },
-  {
-   "sid": "76561199101994275",
-   "apps": 1,
-   "wins": 0,
-   "w1": 0,
-   "w2": 0,
-   "w3": 0,
-   "w4": 0,
-   "w5": 0,
-   "finalist": 0,
-   "best": null,
-   "history": [
+   "prev_history": [
     {
      "k": 1,
      "result": "o"
     }
    ],
-   "name": "VroomVroomer",
-   "prev_history": [],
-   "finished": 5,
+   "finished": 7,
    "present": 20
   },
   {
@@ -1238,7 +2200,12 @@
     }
    ],
    "name": "SuperHeavy",
-   "prev_history": [],
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "o"
+    }
+   ],
    "finished": 5,
    "present": 20
   },
@@ -1260,7 +2227,12 @@
     }
    ],
    "name": "Ruckooe",
-   "prev_history": [],
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "o"
+    }
+   ],
    "finished": 4,
    "present": 20
   },
@@ -1282,7 +2254,12 @@
     }
    ],
    "name": "aizpun",
-   "prev_history": [],
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "o"
+    }
+   ],
    "finished": 4,
    "present": 20
   },
@@ -1304,30 +2281,13 @@
     }
    ],
    "name": "BrickEdwards",
-   "prev_history": [],
-   "finished": 3,
-   "present": 20
-  },
-  {
-   "sid": "76561198846673916",
-   "apps": 1,
-   "wins": 0,
-   "w1": 0,
-   "w2": 0,
-   "w3": 0,
-   "w4": 0,
-   "w5": 0,
-   "finalist": 0,
-   "best": null,
-   "history": [
+   "prev_history": [
     {
      "k": 1,
      "result": "o"
     }
    ],
-   "name": "Matic_D",
-   "prev_history": [],
-   "finished": 4,
+   "finished": 3,
    "present": 20
   },
   {
@@ -1348,7 +2308,12 @@
     }
    ],
    "name": "Milk Man",
-   "prev_history": [],
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "o"
+    }
+   ],
    "finished": 2,
    "present": 20
   },
@@ -1370,9 +2335,14 @@
     }
    ],
    "name": "Yksdjcj",
-   "prev_history": [],
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "o"
+    }
+   ],
    "finished": 1,
-   "present": 20
+   "present": 23
   },
   {
    "sid": "76561199032318188",
@@ -1392,31 +2362,14 @@
     }
    ],
    "name": "OccasionallyAmazingGamer",
-   "prev_history": [],
-   "finished": 2,
-   "present": 8
-  },
-  {
-   "sid": "76561198047403251",
-   "apps": 1,
-   "wins": 0,
-   "w1": 0,
-   "w2": 0,
-   "w3": 0,
-   "w4": 0,
-   "w5": 0,
-   "finalist": 0,
-   "best": null,
-   "history": [
+   "prev_history": [
     {
      "k": 1,
      "result": "o"
     }
    ],
-   "name": "St Nicholas",
-   "prev_history": [],
-   "finished": 1,
-   "present": 9
+   "finished": 2,
+   "present": 8
   },
   {
    "sid": "76561198368656405",
@@ -1436,7 +2389,12 @@
     }
    ],
    "name": "joshuadwyer79",
-   "prev_history": [],
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "o"
+    }
+   ],
    "finished": 1,
    "present": 8
   },
@@ -1458,7 +2416,12 @@
     }
    ],
    "name": "phrogrock",
-   "prev_history": [],
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "o"
+    }
+   ],
    "finished": 1,
    "present": 7
   },
@@ -1480,32 +2443,301 @@
     }
    ],
    "name": "jofk2415",
-   "prev_history": [],
+   "prev_history": [
+    {
+     "k": 1,
+     "result": "o"
+    }
+   ],
    "finished": 1,
    "present": 6
+  },
+  {
+   "sid": "76561198974231691",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 1,
+   "best": 6,
+   "history": [
+    {
+     "k": 2,
+     "result": "f"
+    }
+   ],
+   "name": "agix",
+   "prev_history": [],
+   "finished": 12,
+   "present": 18
+  },
+  {
+   "sid": "76561198357858848",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 1,
+   "best": 6,
+   "history": [
+    {
+     "k": 2,
+     "result": "f"
+    }
+   ],
+   "name": "MALIYO",
+   "prev_history": [],
+   "finished": 11,
+   "present": 18
+  },
+  {
+   "sid": "76561198159073318",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "best": null,
+   "history": [
+    {
+     "k": 2,
+     "result": "o"
+    }
+   ],
+   "name": "GuAlexItar",
+   "prev_history": [],
+   "finished": 13,
+   "present": 18
+  },
+  {
+   "sid": "76561198040861578",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "best": null,
+   "history": [
+    {
+     "k": 2,
+     "result": "o"
+    }
+   ],
+   "name": "wunderBarr",
+   "prev_history": [],
+   "finished": 9,
+   "present": 18
+  },
+  {
+   "sid": "76561198136572067",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "best": null,
+   "history": [
+    {
+     "k": 2,
+     "result": "o"
+    }
+   ],
+   "name": "Tudge Boat",
+   "prev_history": [],
+   "finished": 11,
+   "present": 17
+  },
+  {
+   "sid": "76561198111366624",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "best": null,
+   "history": [
+    {
+     "k": 2,
+     "result": "o"
+    }
+   ],
+   "name": "Zeus",
+   "prev_history": [],
+   "finished": 10,
+   "present": 27
+  },
+  {
+   "sid": "76561199218214543",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "best": null,
+   "history": [
+    {
+     "k": 2,
+     "result": "o"
+    }
+   ],
+   "name": "Wheelie",
+   "prev_history": [],
+   "finished": 8,
+   "present": 18
+  },
+  {
+   "sid": "76561198030518760",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "best": null,
+   "history": [
+    {
+     "k": 2,
+     "result": "o"
+    }
+   ],
+   "name": "ActuallyRuben",
+   "prev_history": [],
+   "finished": 11,
+   "present": 23
+  },
+  {
+   "sid": "76561198299114586",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "best": null,
+   "history": [
+    {
+     "k": 2,
+     "result": "o"
+    }
+   ],
+   "name": "gilgool",
+   "prev_history": [],
+   "finished": 5,
+   "present": 13
+  },
+  {
+   "sid": "76561198125000151",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "best": null,
+   "history": [
+    {
+     "k": 2,
+     "result": "o"
+    }
+   ],
+   "name": "Irisdice",
+   "prev_history": [],
+   "finished": 5,
+   "present": 10
+  },
+  {
+   "sid": "76561198305054806",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "best": null,
+   "history": [
+    {
+     "k": 2,
+     "result": "o"
+    }
+   ],
+   "name": "wokonbike",
+   "prev_history": [],
+   "finished": 5,
+   "present": 20
+  },
+  {
+   "sid": "76561198109773525",
+   "apps": 1,
+   "wins": 0,
+   "w1": 0,
+   "w2": 0,
+   "w3": 0,
+   "w4": 0,
+   "w5": 0,
+   "finalist": 0,
+   "best": null,
+   "history": [
+    {
+     "k": 2,
+     "result": "o"
+    }
+   ],
+   "name": "Valco",
+   "prev_history": [],
+   "finished": 2,
+   "present": 7
   }
  ],
  "ranking": {
   "window": 26,
   "best_of": 18,
   "window_start": 1,
-  "window_end": 1,
-  "eligible_cups": 1,
+  "window_end": 2,
+  "eligible_cups": 2,
   "players": [
    {
     "name": "justMaki",
     "sid": "76561198050792757",
-    "points": 200,
-    "points_all": 200,
-    "apps": 1,
-    "wins": 1,
-    "w1": 1,
+    "points": 400,
+    "points_all": 400,
+    "apps": 2,
+    "wins": 2,
+    "w1": 2,
     "w2": 0,
     "w3": 0,
     "w4": 0,
     "w5": 0,
     "finalist": 0,
-    "counted": 1,
+    "counted": 2,
     "dropped": 0,
     "history": [
      {
@@ -1513,11 +2745,50 @@
       "result": "w1",
       "points": 200,
       "counted": true
+     },
+     {
+      "k": 2,
+      "result": "w1",
+      "points": 200,
+      "counted": true
      }
     ],
     "rank": 1,
-    "prev_rank": null,
-    "prev_points": null
+    "prev_rank": 1,
+    "prev_points": 200
+   },
+   {
+    "name": "RoundNzt",
+    "sid": "76561198896246339",
+    "points": 180,
+    "points_all": 180,
+    "apps": 2,
+    "wins": 2,
+    "w1": 0,
+    "w2": 1,
+    "w3": 0,
+    "w4": 0,
+    "w5": 1,
+    "finalist": 0,
+    "counted": 2,
+    "dropped": 0,
+    "history": [
+     {
+      "k": 1,
+      "result": "w5",
+      "points": 40,
+      "counted": true
+     },
+     {
+      "k": 2,
+      "result": "w2",
+      "points": 140,
+      "counted": true
+     }
+    ],
+    "rank": 2,
+    "prev_rank": 5,
+    "prev_points": 40
    },
    {
     "name": "Kernkob",
@@ -1542,9 +2813,9 @@
       "counted": true
      }
     ],
-    "rank": 2,
-    "prev_rank": null,
-    "prev_points": null
+    "rank": 3,
+    "prev_rank": 2,
+    "prev_points": 140
    },
    {
     "name": "Lexer",
@@ -1569,7 +2840,34 @@
       "counted": true
      }
     ],
-    "rank": 3,
+    "rank": 4,
+    "prev_rank": 3,
+    "prev_points": 100
+   },
+   {
+    "name": "BB_Benji",
+    "sid": "76561198428660617",
+    "points": 100,
+    "points_all": 100,
+    "apps": 1,
+    "wins": 1,
+    "w1": 0,
+    "w2": 0,
+    "w3": 1,
+    "w4": 0,
+    "w5": 0,
+    "finalist": 0,
+    "counted": 1,
+    "dropped": 0,
+    "history": [
+     {
+      "k": 2,
+      "result": "w3",
+      "points": 100,
+      "counted": true
+     }
+    ],
+    "rank": 5,
     "prev_rank": null,
     "prev_points": null
    },
@@ -1596,16 +2894,43 @@
       "counted": true
      }
     ],
-    "rank": 4,
+    "rank": 6,
+    "prev_rank": 4,
+    "prev_points": 70
+   },
+   {
+    "name": "Stick",
+    "sid": "76561199590715014",
+    "points": 70,
+    "points_all": 70,
+    "apps": 1,
+    "wins": 1,
+    "w1": 0,
+    "w2": 0,
+    "w3": 0,
+    "w4": 1,
+    "w5": 0,
+    "finalist": 0,
+    "counted": 1,
+    "dropped": 0,
+    "history": [
+     {
+      "k": 2,
+      "result": "w4",
+      "points": 70,
+      "counted": true
+     }
+    ],
+    "rank": 7,
     "prev_rank": null,
     "prev_points": null
    },
    {
-    "name": "RoundNzt",
-    "sid": "76561198896246339",
+    "name": "PlusMicron",
+    "sid": "76561199186342067",
     "points": 40,
     "points_all": 40,
-    "apps": 1,
+    "apps": 2,
     "wins": 1,
     "w1": 0,
     "w2": 0,
@@ -1617,13 +2942,67 @@
     "dropped": 0,
     "history": [
      {
-      "k": 1,
+      "k": 2,
       "result": "w5",
       "points": 40,
       "counted": true
      }
     ],
-    "rank": 5,
+    "rank": 8,
+    "prev_rank": null,
+    "prev_points": null
+   },
+   {
+    "name": "Heart-TGV",
+    "sid": "76561198364662649",
+    "points": 10,
+    "points_all": 10,
+    "apps": 2,
+    "wins": 0,
+    "w1": 0,
+    "w2": 0,
+    "w3": 0,
+    "w4": 0,
+    "w5": 0,
+    "finalist": 1,
+    "counted": 1,
+    "dropped": 0,
+    "history": [
+     {
+      "k": 2,
+      "result": "f",
+      "points": 10,
+      "counted": true
+     }
+    ],
+    "rank": 9,
+    "prev_rank": null,
+    "prev_points": null
+   },
+   {
+    "name": "St Nicholas",
+    "sid": "76561198047403251",
+    "points": 10,
+    "points_all": 10,
+    "apps": 2,
+    "wins": 0,
+    "w1": 0,
+    "w2": 0,
+    "w3": 0,
+    "w4": 0,
+    "w5": 0,
+    "finalist": 1,
+    "counted": 1,
+    "dropped": 0,
+    "history": [
+     {
+      "k": 2,
+      "result": "f",
+      "points": 10,
+      "counted": true
+     }
+    ],
+    "rank": 10,
     "prev_rank": null,
     "prev_points": null
    },
@@ -1650,7 +3029,61 @@
       "counted": true
      }
     ],
-    "rank": 6,
+    "rank": 11,
+    "prev_rank": 6,
+    "prev_points": 10
+   },
+   {
+    "name": "agix",
+    "sid": "76561198974231691",
+    "points": 10,
+    "points_all": 10,
+    "apps": 1,
+    "wins": 0,
+    "w1": 0,
+    "w2": 0,
+    "w3": 0,
+    "w4": 0,
+    "w5": 0,
+    "finalist": 1,
+    "counted": 1,
+    "dropped": 0,
+    "history": [
+     {
+      "k": 2,
+      "result": "f",
+      "points": 10,
+      "counted": true
+     }
+    ],
+    "rank": 12,
+    "prev_rank": null,
+    "prev_points": null
+   },
+   {
+    "name": "MALIYO",
+    "sid": "76561198357858848",
+    "points": 10,
+    "points_all": 10,
+    "apps": 1,
+    "wins": 0,
+    "w1": 0,
+    "w2": 0,
+    "w3": 0,
+    "w4": 0,
+    "w5": 0,
+    "finalist": 1,
+    "counted": 1,
+    "dropped": 0,
+    "history": [
+     {
+      "k": 2,
+      "result": "f",
+      "points": 10,
+      "counted": true
+     }
+    ],
+    "rank": 13,
     "prev_rank": null,
     "prev_points": null
    }
@@ -1663,11 +3096,11 @@
    {
     "name": "justMaki",
     "sid": "76561198050792757",
-    "mu": 1952.3,
-    "sigma": 173.6,
-    "apps": 1,
-    "wins": 1,
-    "w1": 1,
+    "mu": 2015.8,
+    "sigma": 131.1,
+    "apps": 2,
+    "wins": 2,
+    "w1": 2,
     "w2": 0,
     "w3": 0,
     "w4": 0,
@@ -1679,17 +3112,23 @@
       "mu": 1952.3,
       "sigma": 173.6,
       "result": "w1"
+     },
+     {
+      "k": 2,
+      "mu": 2015.8,
+      "sigma": 131.1,
+      "result": "w1"
      }
     ],
     "rank": 1,
-    "prev_rank": null,
-    "prev_mu": null
+    "prev_rank": 1,
+    "prev_mu": 1952.3
    },
    {
     "name": "Kernkob",
     "sid": "76561199024808939",
-    "mu": 1839.2,
-    "sigma": 173.6,
+    "mu": 1832.4,
+    "sigma": 188.6,
     "apps": 1,
     "wins": 1,
     "w1": 0,
@@ -1707,14 +3146,70 @@
      }
     ],
     "rank": 2,
+    "prev_rank": 2,
+    "prev_mu": 1839.2
+   },
+   {
+    "name": "RoundNzt",
+    "sid": "76561198896246339",
+    "mu": 1826.8,
+    "sigma": 134.1,
+    "apps": 2,
+    "wins": 2,
+    "w1": 0,
+    "w2": 1,
+    "w3": 0,
+    "w4": 0,
+    "w5": 1,
+    "finalist": 0,
+    "history": [
+     {
+      "k": 1,
+      "mu": 1726.2,
+      "sigma": 173.6,
+      "result": "w5"
+     },
+     {
+      "k": 2,
+      "mu": 1826.8,
+      "sigma": 134.1,
+      "result": "w2"
+     }
+    ],
+    "rank": 3,
+    "prev_rank": 5,
+    "prev_mu": 1726.2
+   },
+   {
+    "name": "BB_Benji",
+    "sid": "76561198428660617",
+    "mu": 1782.7,
+    "sigma": 173.6,
+    "apps": 1,
+    "wins": 1,
+    "w1": 0,
+    "w2": 0,
+    "w3": 1,
+    "w4": 0,
+    "w5": 0,
+    "finalist": 0,
+    "history": [
+     {
+      "k": 2,
+      "mu": 1782.7,
+      "sigma": 173.6,
+      "result": "w3"
+     }
+    ],
+    "rank": 4,
     "prev_rank": null,
     "prev_mu": null
    },
    {
     "name": "Lexer",
     "sid": "76561198851912263",
-    "mu": 1782.7,
-    "sigma": 173.6,
+    "mu": 1777.0,
+    "sigma": 188.6,
     "apps": 1,
     "wins": 1,
     "w1": 0,
@@ -1731,15 +3226,40 @@
       "result": "w3"
      }
     ],
-    "rank": 3,
+    "rank": 5,
+    "prev_rank": 3,
+    "prev_mu": 1782.7
+   },
+   {
+    "name": "Stick",
+    "sid": "76561199590715014",
+    "mu": 1763.8,
+    "sigma": 173.6,
+    "apps": 1,
+    "wins": 1,
+    "w1": 0,
+    "w2": 0,
+    "w3": 0,
+    "w4": 1,
+    "w5": 0,
+    "finalist": 0,
+    "history": [
+     {
+      "k": 2,
+      "mu": 1763.8,
+      "sigma": 173.6,
+      "result": "w4"
+     }
+    ],
+    "rank": 6,
     "prev_rank": null,
     "prev_mu": null
    },
    {
     "name": "microways",
     "sid": "76561199448462477",
-    "mu": 1763.8,
-    "sigma": 173.6,
+    "mu": 1758.6,
+    "sigma": 188.6,
     "apps": 1,
     "wins": 1,
     "w1": 0,
@@ -1756,16 +3276,16 @@
       "result": "w4"
      }
     ],
-    "rank": 4,
-    "prev_rank": null,
-    "prev_mu": null
+    "rank": 7,
+    "prev_rank": 4,
+    "prev_mu": 1763.8
    },
    {
-    "name": "RoundNzt",
-    "sid": "76561198896246339",
-    "mu": 1726.2,
-    "sigma": 173.6,
-    "apps": 1,
+    "name": "PlusMicron",
+    "sid": "76561199186342067",
+    "mu": 1652.7,
+    "sigma": 142.7,
+    "apps": 2,
     "wins": 1,
     "w1": 0,
     "w2": 0,
@@ -1776,20 +3296,76 @@
     "history": [
      {
       "k": 1,
-      "mu": 1726.2,
+      "mu": 1500.0,
       "sigma": 173.6,
+      "result": "o"
+     },
+     {
+      "k": 2,
+      "mu": 1652.7,
+      "sigma": 142.7,
       "result": "w5"
      }
     ],
-    "rank": 5,
+    "rank": 8,
+    "prev_rank": null,
+    "prev_mu": null
+   },
+   {
+    "name": "agix",
+    "sid": "76561198974231691",
+    "mu": 1650.8,
+    "sigma": 173.6,
+    "apps": 1,
+    "wins": 0,
+    "w1": 0,
+    "w2": 0,
+    "w3": 0,
+    "w4": 0,
+    "w5": 0,
+    "finalist": 1,
+    "history": [
+     {
+      "k": 2,
+      "mu": 1650.8,
+      "sigma": 173.6,
+      "result": "f"
+     }
+    ],
+    "rank": 9,
+    "prev_rank": null,
+    "prev_mu": null
+   },
+   {
+    "name": "MALIYO",
+    "sid": "76561198357858848",
+    "mu": 1650.8,
+    "sigma": 173.6,
+    "apps": 1,
+    "wins": 0,
+    "w1": 0,
+    "w2": 0,
+    "w3": 0,
+    "w4": 0,
+    "w5": 0,
+    "finalist": 1,
+    "history": [
+     {
+      "k": 2,
+      "mu": 1650.8,
+      "sigma": 173.6,
+      "result": "f"
+     }
+    ],
+    "rank": 10,
     "prev_rank": null,
     "prev_mu": null
    },
    {
     "name": "Warsnac",
     "sid": "76561198001387193",
-    "mu": 1650.8,
-    "sigma": 173.6,
+    "mu": 1647.8,
+    "sigma": 188.6,
     "apps": 1,
     "wins": 0,
     "w1": 0,
@@ -1806,7 +3382,69 @@
       "result": "f"
      }
     ],
-    "rank": 6,
+    "rank": 11,
+    "prev_rank": 6,
+    "prev_mu": 1650.8
+   },
+   {
+    "name": "St Nicholas",
+    "sid": "76561198047403251",
+    "mu": 1586.0,
+    "sigma": 131.1,
+    "apps": 2,
+    "wins": 0,
+    "w1": 0,
+    "w2": 0,
+    "w3": 0,
+    "w4": 0,
+    "w5": 0,
+    "finalist": 1,
+    "history": [
+     {
+      "k": 1,
+      "mu": 1500.0,
+      "sigma": 173.6,
+      "result": "o"
+     },
+     {
+      "k": 2,
+      "mu": 1586.0,
+      "sigma": 131.1,
+      "result": "f"
+     }
+    ],
+    "rank": 12,
+    "prev_rank": null,
+    "prev_mu": null
+   },
+   {
+    "name": "Heart-TGV",
+    "sid": "76561198364662649",
+    "mu": 1586.0,
+    "sigma": 131.1,
+    "apps": 2,
+    "wins": 0,
+    "w1": 0,
+    "w2": 0,
+    "w3": 0,
+    "w4": 0,
+    "w5": 0,
+    "finalist": 1,
+    "history": [
+     {
+      "k": 1,
+      "mu": 1500.0,
+      "sigma": 173.6,
+      "result": "o"
+     },
+     {
+      "k": 2,
+      "mu": 1586.0,
+      "sigma": 131.1,
+      "result": "f"
+     }
+    ],
+    "rank": 13,
     "prev_rank": null,
     "prev_mu": null
    }
@@ -1814,34 +3452,284 @@
  },
  "finishers": [
   {
-   "sid": "76561198001387193",
-   "name": "Warsnac",
-   "finished": 13,
-   "present": 20,
-   "cups": 1,
+   "sid": "76561199186342067",
+   "name": "PlusMicron",
+   "finished": 23,
+   "present": 38,
+   "cups": 2,
    "history": [
     {
      "k": 1,
-     "f": 13,
+     "f": 10,
      "p": 20
+    },
+    {
+     "k": 2,
+     "f": 13,
+     "p": 18
     }
    ],
-   "pct": 65.0
+   "pct": 60.5
   },
   {
    "sid": "76561198050792757",
    "name": "justMaki",
-   "finished": 12,
-   "present": 20,
-   "cups": 1,
+   "finished": 22,
+   "present": 38,
+   "cups": 2,
    "history": [
     {
      "k": 1,
      "f": 12,
      "p": 20
+    },
+    {
+     "k": 2,
+     "f": 10,
+     "p": 18
     }
    ],
-   "pct": 60.0
+   "pct": 57.9
+  },
+  {
+   "sid": "76561198896246339",
+   "name": "RoundNzt",
+   "finished": 21,
+   "present": 38,
+   "cups": 2,
+   "history": [
+    {
+     "k": 1,
+     "f": 10,
+     "p": 20
+    },
+    {
+     "k": 2,
+     "f": 11,
+     "p": 18
+    }
+   ],
+   "pct": 55.3
+  },
+  {
+   "sid": "76561199129302746",
+   "name": "brrryy",
+   "finished": 20,
+   "present": 38,
+   "cups": 2,
+   "history": [
+    {
+     "k": 1,
+     "f": 9,
+     "p": 20
+    },
+    {
+     "k": 2,
+     "f": 11,
+     "p": 18
+    }
+   ],
+   "pct": 52.6
+  },
+  {
+   "sid": "76561198364662649",
+   "name": "Heart-TGV",
+   "finished": 19,
+   "present": 38,
+   "cups": 2,
+   "history": [
+    {
+     "k": 1,
+     "f": 7,
+     "p": 20
+    },
+    {
+     "k": 2,
+     "f": 12,
+     "p": 18
+    }
+   ],
+   "pct": 50.0
+  },
+  {
+   "sid": "76561198846673916",
+   "name": "Matic_D",
+   "finished": 18,
+   "present": 38,
+   "cups": 2,
+   "history": [
+    {
+     "k": 1,
+     "f": 4,
+     "p": 20
+    },
+    {
+     "k": 2,
+     "f": 14,
+     "p": 18
+    }
+   ],
+   "pct": 47.4
+  },
+  {
+   "sid": "76561198157436732",
+   "name": "variableferret",
+   "finished": 17,
+   "present": 38,
+   "cups": 2,
+   "history": [
+    {
+     "k": 1,
+     "f": 9,
+     "p": 20
+    },
+    {
+     "k": 2,
+     "f": 8,
+     "p": 18
+    }
+   ],
+   "pct": 44.7
+  },
+  {
+   "sid": "76561198001387193",
+   "name": "Warsnac",
+   "finished": 15,
+   "present": 24,
+   "cups": 2,
+   "history": [
+    {
+     "k": 1,
+     "f": 13,
+     "p": 20
+    },
+    {
+     "k": 2,
+     "f": 2,
+     "p": 4
+    }
+   ],
+   "pct": 62.5
+  },
+  {
+   "sid": "76561198047403251",
+   "name": "St Nicholas",
+   "finished": 15,
+   "present": 27,
+   "cups": 2,
+   "history": [
+    {
+     "k": 1,
+     "f": 1,
+     "p": 9
+    },
+    {
+     "k": 2,
+     "f": 14,
+     "p": 18
+    }
+   ],
+   "pct": 55.6
+  },
+  {
+   "sid": "76561198126038296",
+   "name": "Noxitu",
+   "finished": 15,
+   "present": 38,
+   "cups": 2,
+   "history": [
+    {
+     "k": 1,
+     "f": 6,
+     "p": 20
+    },
+    {
+     "k": 2,
+     "f": 9,
+     "p": 18
+    }
+   ],
+   "pct": 39.5
+  },
+  {
+   "sid": "76561199590715014",
+   "name": "Stick",
+   "finished": 14,
+   "present": 18,
+   "cups": 1,
+   "history": [
+    {
+     "k": 2,
+     "f": 14,
+     "p": 18
+    }
+   ],
+   "pct": 77.8
+  },
+  {
+   "sid": "76561199101994275",
+   "name": "VroomVroomer",
+   "finished": 14,
+   "present": 38,
+   "cups": 2,
+   "history": [
+    {
+     "k": 1,
+     "f": 5,
+     "p": 20
+    },
+    {
+     "k": 2,
+     "f": 9,
+     "p": 18
+    }
+   ],
+   "pct": 36.8
+  },
+  {
+   "sid": "76561198428660617",
+   "name": "BB_Benji",
+   "finished": 13,
+   "present": 18,
+   "cups": 1,
+   "history": [
+    {
+     "k": 2,
+     "f": 13,
+     "p": 18
+    }
+   ],
+   "pct": 72.2
+  },
+  {
+   "sid": "76561198159073318",
+   "name": "GuAlexItar",
+   "finished": 13,
+   "present": 18,
+   "cups": 1,
+   "history": [
+    {
+     "k": 2,
+     "f": 13,
+     "p": 18
+    }
+   ],
+   "pct": 72.2
+  },
+  {
+   "sid": "76561198974231691",
+   "name": "agix",
+   "finished": 12,
+   "present": 18,
+   "cups": 1,
+   "history": [
+    {
+     "k": 2,
+     "f": 12,
+     "p": 18
+    }
+   ],
+   "pct": 66.7
   },
   {
    "sid": "76561199448462477",
@@ -1859,6 +3747,36 @@
    "pct": 60.0
   },
   {
+   "sid": "76561198136572067",
+   "name": "Tudge Boat",
+   "finished": 11,
+   "present": 17,
+   "cups": 1,
+   "history": [
+    {
+     "k": 2,
+     "f": 11,
+     "p": 17
+    }
+   ],
+   "pct": 64.7
+  },
+  {
+   "sid": "76561198357858848",
+   "name": "MALIYO",
+   "finished": 11,
+   "present": 18,
+   "cups": 1,
+   "history": [
+    {
+     "k": 2,
+     "f": 11,
+     "p": 18
+    }
+   ],
+   "pct": 61.1
+  },
+  {
    "sid": "76561199024808939",
    "name": "Kernkob",
    "finished": 11,
@@ -1874,49 +3792,59 @@
    "pct": 55.0
   },
   {
-   "sid": "76561199186342067",
-   "name": "PlusMicron",
-   "finished": 10,
-   "present": 20,
-   "cups": 1,
+   "sid": "76561198030518760",
+   "name": "ActuallyRuben",
+   "finished": 11,
+   "present": 23,
+   "cups": 2,
    "history": [
     {
      "k": 1,
-     "f": 10,
-     "p": 20
+     "f": 0,
+     "p": 5
+    },
+    {
+     "k": 2,
+     "f": 11,
+     "p": 18
     }
    ],
-   "pct": 50.0
+   "pct": 47.8
   },
   {
-   "sid": "76561198896246339",
-   "name": "RoundNzt",
+   "sid": "76561198111366624",
+   "name": "Zeus",
    "finished": 10,
-   "present": 20,
-   "cups": 1,
+   "present": 27,
+   "cups": 2,
    "history": [
     {
      "k": 1,
+     "f": 0,
+     "p": 9
+    },
+    {
+     "k": 2,
      "f": 10,
-     "p": 20
+     "p": 18
     }
    ],
-   "pct": 50.0
+   "pct": 37.0
   },
   {
-   "sid": "76561199129302746",
-   "name": "brrryy",
+   "sid": "76561198040861578",
+   "name": "wunderBarr",
    "finished": 9,
-   "present": 20,
+   "present": 18,
    "cups": 1,
    "history": [
     {
-     "k": 1,
+     "k": 2,
      "f": 9,
-     "p": 20
+     "p": 18
     }
    ],
-   "pct": 45.0
+   "pct": 50.0
   },
   {
    "sid": "76561198851912263",
@@ -1934,19 +3862,19 @@
    "pct": 45.0
   },
   {
-   "sid": "76561198157436732",
-   "name": "variableferret",
-   "finished": 9,
-   "present": 20,
+   "sid": "76561199218214543",
+   "name": "Wheelie",
+   "finished": 8,
+   "present": 18,
    "cups": 1,
    "history": [
     {
-     "k": 1,
-     "f": 9,
-     "p": 20
+     "k": 2,
+     "f": 8,
+     "p": 18
     }
    ],
-   "pct": 45.0
+   "pct": 44.4
   },
   {
    "sid": "76561198149636594",
@@ -1994,21 +3922,6 @@
    "pct": 35.0
   },
   {
-   "sid": "76561198364662649",
-   "name": "Heart-TGV",
-   "finished": 7,
-   "present": 20,
-   "cups": 1,
-   "history": [
-    {
-     "k": 1,
-     "f": 7,
-     "p": 20
-    }
-   ],
-   "pct": 35.0
-  },
-  {
    "sid": "76561199187327002",
    "name": "Tommygaming",
    "finished": 6,
@@ -2024,19 +3937,34 @@
    "pct": 33.3
   },
   {
-   "sid": "76561198126038296",
-   "name": "Noxitu",
-   "finished": 6,
-   "present": 20,
+   "sid": "76561198125000151",
+   "name": "Irisdice",
+   "finished": 5,
+   "present": 10,
    "cups": 1,
    "history": [
     {
-     "k": 1,
-     "f": 6,
-     "p": 20
+     "k": 2,
+     "f": 5,
+     "p": 10
     }
    ],
-   "pct": 30.0
+   "pct": 50.0
+  },
+  {
+   "sid": "76561198299114586",
+   "name": "gilgool",
+   "finished": 5,
+   "present": 13,
+   "cups": 1,
+   "history": [
+    {
+     "k": 2,
+     "f": 5,
+     "p": 13
+    }
+   ],
+   "pct": 38.5
   },
   {
    "sid": "76561198287630337",
@@ -2054,16 +3982,21 @@
    "pct": 25.0
   },
   {
-   "sid": "76561199101994275",
-   "name": "VroomVroomer",
+   "sid": "76561198305054806",
+   "name": "wokonbike",
    "finished": 5,
    "present": 20,
-   "cups": 1,
+   "cups": 2,
    "history": [
     {
      "k": 1,
+     "f": 0,
+     "p": 9
+    },
+    {
+     "k": 2,
      "f": 5,
-     "p": 20
+     "p": 11
     }
    ],
    "pct": 25.0
@@ -2071,21 +4004,6 @@
   {
    "sid": "76561197972890120",
    "name": "aizpun",
-   "finished": 4,
-   "present": 20,
-   "cups": 1,
-   "history": [
-    {
-     "k": 1,
-     "f": 4,
-     "p": 20
-    }
-   ],
-   "pct": 20.0
-  },
-  {
-   "sid": "76561198846673916",
-   "name": "Matic_D",
    "finished": 4,
    "present": 20,
    "cups": 1,
@@ -2144,6 +4062,36 @@
    "pct": 40.0
   },
   {
+   "sid": "76561198357638671",
+   "name": "Murrl",
+   "finished": 2,
+   "present": 5,
+   "cups": 1,
+   "history": [
+    {
+     "k": 2,
+     "f": 2,
+     "p": 5
+    }
+   ],
+   "pct": 40.0
+  },
+  {
+   "sid": "76561198109773525",
+   "name": "Valco",
+   "finished": 2,
+   "present": 7,
+   "cups": 1,
+   "history": [
+    {
+     "k": 2,
+     "f": 2,
+     "p": 7
+    }
+   ],
+   "pct": 28.6
+  },
+  {
    "sid": "76561199032318188",
    "name": "OccasionallyAmazingGamer",
    "finished": 2,
@@ -2187,6 +4135,66 @@
     }
    ],
    "pct": 50.0
+  },
+  {
+   "sid": "76561198180736527",
+   "name": "Alastair Hatherly",
+   "finished": 1,
+   "present": 3,
+   "cups": 1,
+   "history": [
+    {
+     "k": 2,
+     "f": 1,
+     "p": 3
+    }
+   ],
+   "pct": 33.3
+  },
+  {
+   "sid": "76561198758353504",
+   "name": "M4DSCOTSM4N",
+   "finished": 1,
+   "present": 3,
+   "cups": 1,
+   "history": [
+    {
+     "k": 2,
+     "f": 1,
+     "p": 3
+    }
+   ],
+   "pct": 33.3
+  },
+  {
+   "sid": "76561199126724675",
+   "name": "ZOMAN",
+   "finished": 1,
+   "present": 3,
+   "cups": 1,
+   "history": [
+    {
+     "k": 2,
+     "f": 1,
+     "p": 3
+    }
+   ],
+   "pct": 33.3
+  },
+  {
+   "sid": "76561199053404858",
+   "name": "Roader",
+   "finished": 1,
+   "present": 4,
+   "cups": 1,
+   "history": [
+    {
+     "k": 2,
+     "f": 1,
+     "p": 4
+    }
+   ],
+   "pct": 25.0
   },
   {
    "sid": "76561198060405963",
@@ -2264,34 +4272,24 @@
    "pct": 12.5
   },
   {
-   "sid": "76561198047403251",
-   "name": "St Nicholas",
-   "finished": 1,
-   "present": 9,
-   "cups": 1,
-   "history": [
-    {
-     "k": 1,
-     "f": 1,
-     "p": 9
-    }
-   ],
-   "pct": 11.1
-  },
-  {
    "sid": "76561199731808063",
    "name": "Yksdjcj",
    "finished": 1,
-   "present": 20,
-   "cups": 1,
+   "present": 23,
+   "cups": 2,
    "history": [
     {
      "k": 1,
      "f": 1,
      "p": 20
+    },
+    {
+     "k": 2,
+     "f": 0,
+     "p": 3
     }
    ],
-   "pct": 5.0
+   "pct": 4.3
   },
   {
    "sid": "76561198107216213",
@@ -2309,21 +4307,6 @@
    "pct": 0.0
   },
   {
-   "sid": "76561198030518760",
-   "name": "ActuallyRuben",
-   "finished": 0,
-   "present": 5,
-   "cups": 1,
-   "history": [
-    {
-     "k": 1,
-     "f": 0,
-     "p": 5
-    }
-   ],
-   "pct": 0.0
-  },
-  {
    "sid": "76561198172378351",
    "name": "Brachaldis",
    "finished": 0,
@@ -2332,6 +4315,21 @@
    "history": [
     {
      "k": 1,
+     "f": 0,
+     "p": 2
+    }
+   ],
+   "pct": 0.0
+  },
+  {
+   "sid": "76561199282497311",
+   "name": "groovy",
+   "finished": 0,
+   "present": 2,
+   "cups": 1,
+   "history": [
+    {
+     "k": 2,
      "f": 0,
      "p": 2
     }
@@ -2399,6 +4397,21 @@
    "pct": 0.0
   },
   {
+   "sid": "76561198212621772",
+   "name": "Slate",
+   "finished": 0,
+   "present": 1,
+   "cups": 1,
+   "history": [
+    {
+     "k": 2,
+     "f": 0,
+     "p": 1
+    }
+   ],
+   "pct": 0.0
+  },
+  {
    "sid": "76561198213715297",
    "name": "stindt",
    "finished": 0,
@@ -2439,36 +4452,6 @@
      "k": 1,
      "f": 0,
      "p": 1
-    }
-   ],
-   "pct": 0.0
-  },
-  {
-   "sid": "76561198305054806",
-   "name": "wokonbike",
-   "finished": 0,
-   "present": 9,
-   "cups": 1,
-   "history": [
-    {
-     "k": 1,
-     "f": 0,
-     "p": 9
-    }
-   ],
-   "pct": 0.0
-  },
-  {
-   "sid": "76561198111366624",
-   "name": "Zeus",
-   "finished": 0,
-   "present": 9,
-   "cups": 1,
-   "history": [
-    {
-     "k": 1,
-     "f": 0,
-     "p": 9
     }
    ],
    "pct": 0.0
