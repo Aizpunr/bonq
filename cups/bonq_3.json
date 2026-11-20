@@ -1,0 +1,797 @@
+{
+  "cup": 3,
+  "date": "2026-11-20",
+  "header": "Bonq Cup #3 - Maps by Kreeeeee, Victor, LKat",
+  "points_system": "Bonq Top->Out (host files verified to 24th)",
+  "rotation": [
+    "Bonq Cup 3 - Saomtimes Saop",
+    "Bonq Cup 3 - Mandatory Bonq Ice Magnet Map",
+    "Bonq Cup 3 - Cookie Surfer",
+    "Bonq Cup 3 - bind honk",
+    "Bonq Cup 3 - Agonized"
+  ],
+  "scoring_rounds_count": 17,
+  "winners": [
+    {
+      "rank": 1,
+      "sid": "76561198050792757",
+      "name": "justMaki",
+      "won_scoring_round": 12,
+      "qualified_scoring_round": 11,
+      "map": "Bonq Cup 3 - Mandatory Bonq Ice Magnet Map",
+      "time": "18.797"
+    },
+    {
+      "rank": 2,
+      "sid": "76561198896246339",
+      "name": "RoundNzt",
+      "won_scoring_round": 13,
+      "qualified_scoring_round": 11,
+      "map": "Bonq Cup 3 - Cookie Surfer",
+      "time": "20.664"
+    },
+    {
+      "rank": 3,
+      "sid": "76561198152852852",
+      "name": "JakeAdjacent",
+      "won_scoring_round": 15,
+      "qualified_scoring_round": 13,
+      "map": "Bonq Cup 3 - Agonized",
+      "time": "20.339"
+    },
+    {
+      "rank": 4,
+      "sid": "76561198212710700",
+      "name": "Minkus",
+      "won_scoring_round": 16,
+      "qualified_scoring_round": 14,
+      "map": "Bonq Cup 3 - Saomtimes Saop",
+      "time": "19.564"
+    },
+    {
+      "rank": 5,
+      "sid": "76561198428660617",
+      "name": "BB_Benji",
+      "won_scoring_round": 17,
+      "qualified_scoring_round": 14,
+      "map": "Bonq Cup 3 - Mandatory Bonq Ice Magnet Map",
+      "time": "20.155"
+    }
+  ],
+  "finalists": [
+    {
+      "rank": 1,
+      "sid": "76561199448462477",
+      "name": "microways",
+      "qualified_scoring_round": 14
+    }
+  ],
+  "others": [
+    {
+      "rank": 1,
+      "sid": "76561198846673916",
+      "name": "Matic_D",
+      "points": 951,
+      "rounds_played": 17,
+      "finishes": 9
+    },
+    {
+      "rank": 2,
+      "sid": "76561199129302746",
+      "name": "brrryy",
+      "points": 921,
+      "rounds_played": 17,
+      "finishes": 8
+    },
+    {
+      "rank": 3,
+      "sid": "76561198126038296",
+      "name": "Noxitu",
+      "points": 723,
+      "rounds_played": 17,
+      "finishes": 6
+    },
+    {
+      "rank": 4,
+      "sid": "76561199890574393",
+      "name": "Barn",
+      "points": 494,
+      "rounds_played": 17,
+      "finishes": 3
+    },
+    {
+      "rank": 5,
+      "sid": "76561199153054076",
+      "name": "Milk Man",
+      "points": 383,
+      "rounds_played": 17,
+      "finishes": 1
+    },
+    {
+      "rank": 6,
+      "sid": "76561197975483812",
+      "name": "Dunke",
+      "points": 342,
+      "rounds_played": 7,
+      "finishes": 3
+    },
+    {
+      "rank": 7,
+      "sid": "76561199093841299",
+      "name": "Shinikage221",
+      "points": 288,
+      "rounds_played": 12,
+      "finishes": 1
+    },
+    {
+      "rank": 8,
+      "sid": "76561199105833064",
+      "name": "Hagavi",
+      "points": 199,
+      "rounds_played": 8,
+      "finishes": 1
+    },
+    {
+      "rank": 9,
+      "sid": "76561198122894680",
+      "name": "Waaksaam",
+      "points": 185,
+      "rounds_played": 6,
+      "finishes": 1
+    }
+  ],
+  "nuisance": [
+    {
+      "sid": "76561199380118922",
+      "name": "Victor",
+      "points": 1402,
+      "rounds_played": 17,
+      "finishes": 10
+    }
+  ],
+  "excluded": [
+    {
+      "sid": "76561198030518760",
+      "name": "ActuallyRuben",
+      "points": 180,
+      "rounds_played": 9,
+      "finishes": 0
+    },
+    {
+      "sid": "76561199187327002",
+      "name": "Tommygaming",
+      "points": 80,
+      "rounds_played": 4,
+      "finishes": 0
+    },
+    {
+      "sid": "76561198315900248",
+      "name": "Ruckooe",
+      "points": 80,
+      "rounds_played": 4,
+      "finishes": 0
+    },
+    {
+      "sid": "76561198305054806",
+      "name": "wokonbike",
+      "points": 20,
+      "rounds_played": 1,
+      "finishes": 0
+    },
+    {
+      "sid": "76561198027169155",
+      "name": "DeiRex",
+      "points": 20,
+      "rounds_played": 1,
+      "finishes": 0
+    },
+    {
+      "sid": "76561198171003110",
+      "name": "",
+      "points": 20,
+      "rounds_played": 1,
+      "finishes": 0
+    },
+    {
+      "sid": "76561198083300332",
+      "name": "K410K3N",
+      "points": 20,
+      "rounds_played": 1,
+      "finishes": 0
+    }
+  ],
+  "rounds": [
+    {
+      "n": 1,
+      "map": "Bonq Cup 3 - Saomtimes Saop",
+      "ts": null,
+      "roster": 19,
+      "finishers": 8,
+      "finish_pct": 42.1,
+      "top": [
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "19.470"
+        },
+        {
+          "sid": "76561198896246339",
+          "name": "RoundNzt",
+          "time": "19.561"
+        },
+        {
+          "sid": "76561198212710700",
+          "name": "Minkus",
+          "time": "20.828"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 2,
+      "map": "Bonq Cup 3 - Mandatory Bonq Ice Magnet Map",
+      "ts": null,
+      "roster": 15,
+      "finishers": 2,
+      "finish_pct": 13.3,
+      "top": [
+        {
+          "sid": "76561199380118922",
+          "name": "Victor",
+          "time": "18.850"
+        },
+        {
+          "sid": "76561198428660617",
+          "name": "BB_Benji",
+          "time": "21.066"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 3,
+      "map": "Bonq Cup 3 - Cookie Surfer",
+      "ts": null,
+      "roster": 15,
+      "finishers": 7,
+      "finish_pct": 46.7,
+      "top": [
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "20.985"
+        },
+        {
+          "sid": "76561198896246339",
+          "name": "RoundNzt",
+          "time": "21.295"
+        },
+        {
+          "sid": "76561199448462477",
+          "name": "microways",
+          "time": "21.983"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 4,
+      "map": "Bonq Cup 3 - bind honk",
+      "ts": null,
+      "roster": 15,
+      "finishers": 3,
+      "finish_pct": 20.0,
+      "top": [
+        {
+          "sid": "76561199380118922",
+          "name": "Victor",
+          "time": "20.429"
+        },
+        {
+          "sid": "76561198896246339",
+          "name": "RoundNzt",
+          "time": "21.469"
+        },
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "22.748"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 5,
+      "map": "Bonq Cup 3 - Agonized",
+      "ts": null,
+      "roster": 15,
+      "finishers": 7,
+      "finish_pct": 46.7,
+      "top": [
+        {
+          "sid": "76561199380118922",
+          "name": "Victor",
+          "time": "20.672"
+        },
+        {
+          "sid": "76561198212710700",
+          "name": "Minkus",
+          "time": "20.701"
+        },
+        {
+          "sid": "76561198152852852",
+          "name": "JakeAdjacent",
+          "time": "20.721"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 6,
+      "map": "Bonq Cup 3 - Saomtimes Saop",
+      "ts": null,
+      "roster": 15,
+      "finishers": 9,
+      "finish_pct": 60.0,
+      "top": [
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "19.938"
+        },
+        {
+          "sid": "76561199380118922",
+          "name": "Victor",
+          "time": "20.840"
+        },
+        {
+          "sid": "76561199448462477",
+          "name": "microways",
+          "time": "20.899"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 7,
+      "map": "Bonq Cup 3 - Mandatory Bonq Ice Magnet Map",
+      "ts": null,
+      "roster": 15,
+      "finishers": 3,
+      "finish_pct": 20.0,
+      "top": [
+        {
+          "sid": "76561199380118922",
+          "name": "Victor",
+          "time": "19.496"
+        },
+        {
+          "sid": "76561198896246339",
+          "name": "RoundNzt",
+          "time": "19.640"
+        },
+        {
+          "sid": "76561199448462477",
+          "name": "microways",
+          "time": "19.678"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 8,
+      "map": "Bonq Cup 3 - Cookie Surfer",
+      "ts": null,
+      "roster": 16,
+      "finishers": 10,
+      "finish_pct": 62.5,
+      "top": [
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "20.770"
+        },
+        {
+          "sid": "76561198896246339",
+          "name": "RoundNzt",
+          "time": "20.988"
+        },
+        {
+          "sid": "76561198212710700",
+          "name": "Minkus",
+          "time": "21.272"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 9,
+      "map": "Bonq Cup 3 - bind honk",
+      "ts": null,
+      "roster": 16,
+      "finishers": 10,
+      "finish_pct": 62.5,
+      "top": [
+        {
+          "sid": "76561199380118922",
+          "name": "Victor",
+          "time": "20.339"
+        },
+        {
+          "sid": "76561198896246339",
+          "name": "RoundNzt",
+          "time": "20.463"
+        },
+        {
+          "sid": "76561199129302746",
+          "name": "brrryy",
+          "time": "20.511"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 10,
+      "map": "Bonq Cup 3 - Agonized",
+      "ts": null,
+      "roster": 15,
+      "finishers": 9,
+      "finish_pct": 60.0,
+      "top": [
+        {
+          "sid": "76561198152852852",
+          "name": "JakeAdjacent",
+          "time": "20.429"
+        },
+        {
+          "sid": "76561199380118922",
+          "name": "Victor",
+          "time": "20.436"
+        },
+        {
+          "sid": "76561198212710700",
+          "name": "Minkus",
+          "time": "20.484"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 11,
+      "map": "Bonq Cup 3 - Saomtimes Saop",
+      "ts": null,
+      "roster": 15,
+      "finishers": 11,
+      "finish_pct": 73.3,
+      "top": [
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "19.225"
+        },
+        {
+          "sid": "76561198896246339",
+          "name": "RoundNzt",
+          "time": "19.761"
+        },
+        {
+          "sid": "76561198152852852",
+          "name": "JakeAdjacent",
+          "time": "19.801"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 12,
+      "map": "Bonq Cup 3 - Mandatory Bonq Ice Magnet Map",
+      "ts": null,
+      "roster": 16,
+      "finishers": 3,
+      "finish_pct": 18.8,
+      "top": [
+        {
+          "sid": "76561198050792757",
+          "name": "justMaki",
+          "time": "18.797"
+        },
+        {
+          "sid": "76561198428660617",
+          "name": "BB_Benji",
+          "time": "20.779"
+        },
+        {
+          "sid": "76561198152852852",
+          "name": "JakeAdjacent",
+          "time": "21.111"
+        }
+      ],
+      "winner": "justMaki"
+    },
+    {
+      "n": 13,
+      "map": "Bonq Cup 3 - Cookie Surfer",
+      "ts": null,
+      "roster": 13,
+      "finishers": 7,
+      "finish_pct": 53.8,
+      "top": [
+        {
+          "sid": "76561198896246339",
+          "name": "RoundNzt",
+          "time": "20.664"
+        },
+        {
+          "sid": "76561198152852852",
+          "name": "JakeAdjacent",
+          "time": "20.883"
+        },
+        {
+          "sid": "76561198212710700",
+          "name": "Minkus",
+          "time": "20.995"
+        }
+      ],
+      "winner": "RoundNzt"
+    },
+    {
+      "n": 14,
+      "map": "Bonq Cup 3 - bind honk",
+      "ts": null,
+      "roster": 14,
+      "finishers": 6,
+      "finish_pct": 42.9,
+      "top": [
+        {
+          "sid": "76561199448462477",
+          "name": "microways",
+          "time": "20.805"
+        },
+        {
+          "sid": "76561198212710700",
+          "name": "Minkus",
+          "time": "20.819"
+        },
+        {
+          "sid": "76561198152852852",
+          "name": "JakeAdjacent",
+          "time": "21.026"
+        }
+      ],
+      "winner": null
+    },
+    {
+      "n": 15,
+      "map": "Bonq Cup 3 - Agonized",
+      "ts": null,
+      "roster": 15,
+      "finishers": 6,
+      "finish_pct": 40.0,
+      "top": [
+        {
+          "sid": "76561198152852852",
+          "name": "JakeAdjacent",
+          "time": "20.339"
+        },
+        {
+          "sid": "76561198212710700",
+          "name": "Minkus",
+          "time": "20.365"
+        },
+        {
+          "sid": "76561199448462477",
+          "name": "microways",
+          "time": "21.005"
+        }
+      ],
+      "winner": "JakeAdjacent"
+    },
+    {
+      "n": 16,
+      "map": "Bonq Cup 3 - Saomtimes Saop",
+      "ts": null,
+      "roster": 15,
+      "finishers": 6,
+      "finish_pct": 40.0,
+      "top": [
+        {
+          "sid": "76561198212710700",
+          "name": "Minkus",
+          "time": "19.564"
+        },
+        {
+          "sid": "76561199129302746",
+          "name": "brrryy",
+          "time": "20.016"
+        },
+        {
+          "sid": "76561198846673916",
+          "name": "Matic_D",
+          "time": "21.023"
+        }
+      ],
+      "winner": "Minkus"
+    },
+    {
+      "n": 17,
+      "map": "Bonq Cup 3 - Mandatory Bonq Ice Magnet Map",
+      "ts": null,
+      "roster": 14,
+      "finishers": 1,
+      "finish_pct": 7.1,
+      "top": [
+        {
+          "sid": "76561198428660617",
+          "name": "BB_Benji",
+          "time": "20.155"
+        }
+      ],
+      "winner": "BB_Benji"
+    }
+  ],
+  "finish_stats": [
+    {
+      "sid": "76561198428660617",
+      "name": "BB_Benji",
+      "present": 17,
+      "finished": 12,
+      "pct": 70.6
+    },
+    {
+      "sid": "76561199448462477",
+      "name": "microways",
+      "present": 17,
+      "finished": 12,
+      "pct": 70.6
+    },
+    {
+      "sid": "76561198152852852",
+      "name": "JakeAdjacent",
+      "present": 17,
+      "finished": 11,
+      "pct": 64.7
+    },
+    {
+      "sid": "76561198212710700",
+      "name": "Minkus",
+      "present": 17,
+      "finished": 11,
+      "pct": 64.7
+    },
+    {
+      "sid": "76561198896246339",
+      "name": "RoundNzt",
+      "present": 17,
+      "finished": 10,
+      "pct": 58.8
+    },
+    {
+      "sid": "76561199380118922",
+      "name": "Victor",
+      "present": 17,
+      "finished": 10,
+      "pct": 58.8
+    },
+    {
+      "sid": "76561198050792757",
+      "name": "justMaki",
+      "present": 17,
+      "finished": 9,
+      "pct": 52.9
+    },
+    {
+      "sid": "76561198846673916",
+      "name": "Matic_D",
+      "present": 17,
+      "finished": 9,
+      "pct": 52.9
+    },
+    {
+      "sid": "76561199129302746",
+      "name": "brrryy",
+      "present": 17,
+      "finished": 8,
+      "pct": 47.1
+    },
+    {
+      "sid": "76561198126038296",
+      "name": "Noxitu",
+      "present": 17,
+      "finished": 6,
+      "pct": 35.3
+    },
+    {
+      "sid": "76561197975483812",
+      "name": "Dunke",
+      "present": 7,
+      "finished": 3,
+      "pct": 42.9
+    },
+    {
+      "sid": "76561199890574393",
+      "name": "Barn",
+      "present": 17,
+      "finished": 3,
+      "pct": 17.6
+    },
+    {
+      "sid": "76561198122894680",
+      "name": "Waaksaam",
+      "present": 6,
+      "finished": 1,
+      "pct": 16.7
+    },
+    {
+      "sid": "76561199105833064",
+      "name": "Hagavi",
+      "present": 8,
+      "finished": 1,
+      "pct": 12.5
+    },
+    {
+      "sid": "76561199093841299",
+      "name": "Shinikage221",
+      "present": 12,
+      "finished": 1,
+      "pct": 8.3
+    },
+    {
+      "sid": "76561199153054076",
+      "name": "Milk Man",
+      "present": 17,
+      "finished": 1,
+      "pct": 5.9
+    },
+    {
+      "sid": "76561198171003110",
+      "name": "",
+      "present": 1,
+      "finished": 0,
+      "pct": 0.0
+    },
+    {
+      "sid": "76561198030518760",
+      "name": "ActuallyRuben",
+      "present": 9,
+      "finished": 0,
+      "pct": 0.0
+    },
+    {
+      "sid": "76561198027169155",
+      "name": "DeiRex",
+      "present": 1,
+      "finished": 0,
+      "pct": 0.0
+    },
+    {
+      "sid": "76561198083300332",
+      "name": "K410K3N",
+      "present": 1,
+      "finished": 0,
+      "pct": 0.0
+    },
+    {
+      "sid": "76561198315900248",
+      "name": "Ruckooe",
+      "present": 4,
+      "finished": 0,
+      "pct": 0.0
+    },
+    {
+      "sid": "76561199187327002",
+      "name": "Tommygaming",
+      "present": 4,
+      "finished": 0,
+      "pct": 0.0
+    },
+    {
+      "sid": "76561198305054806",
+      "name": "wokonbike",
+      "present": 1,
+      "finished": 0,
+      "pct": 0.0
+    }
+  ],
+  "finish_source": "host topoutresults.json",
+  "points_source": "host topoutresults.json"
+}
